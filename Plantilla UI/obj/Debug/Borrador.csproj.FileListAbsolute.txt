@@ -1,0 +1,11 @@
+C:\Users\dresq\OneDrive\Escritorio\Borrador\bin\Debug\Borrador.exe.config
+C:\Users\dresq\OneDrive\Escritorio\Borrador\bin\Debug\Borrador.exe
+C:\Users\dresq\OneDrive\Escritorio\Borrador\bin\Debug\Borrador.pdb
+C:\Users\dresq\OneDrive\Escritorio\Borrador\obj\Debug\Borrador.csproj.AssemblyReference.cache
+C:\Users\dresq\OneDrive\Escritorio\Borrador\obj\Debug\Borrador.Properties.Resources.resources
+C:\Users\dresq\OneDrive\Escritorio\Borrador\obj\Debug\Borrador.csproj.GenerateResource.cache
+C:\Users\dresq\OneDrive\Escritorio\Borrador\obj\Debug\Borrador.csproj.CoreCompileInputs.cache
+C:\Users\dresq\OneDrive\Escritorio\Borrador\obj\Debug\Borrador.exe
+C:\Users\dresq\OneDrive\Escritorio\Borrador\obj\Debug\Borrador.pdb
+C:\Users\dresq\OneDrive\Escritorio\Borrador\obj\Debug\Borrador.exe.config
+C:\Users\dresq\OneDrive\Escritorio\Borrador\obj\Debug\Borrador.MainForm.resources
