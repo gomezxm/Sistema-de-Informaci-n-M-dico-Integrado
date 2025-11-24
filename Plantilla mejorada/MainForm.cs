@@ -71,7 +71,7 @@ namespace Borrador
                             //button.Image = Properties.Resources.icon_enfermeria;
                             break;
                         case "btnLaboratorio":
-                            //button.Tag = typeof(UCOrdenLaboratorio);
+                            button.Tag = typeof(UCOrdenLaboratorio);
                             //button.Image = Properties.Resources.icon_laboratorio;
                             break;
                         case "btnImagenologia":
@@ -231,23 +231,36 @@ namespace Borrador
             // Muestra u oculta el texto de los botones de navegación
             foreach (Control control in pnlSideMenu.Controls)
             {
-                if (control is Button button && button.Tag is Type) // Asegúrate de que sea un botón de menú
+                // Asegúrate de que solo procesas botones de menú que tienen asignado un UserControl (Type)
+                if (control is Button button && button.Tag is Type)
                 {
-                    // Si el menú está expandido, muestra el texto original
-                    if (showText)
+                    if (showText) // Menú Expandido
                     {
-                        // Recupera el texto completo
-                        string originalText = (string)button.Tag; // Puedes guardar el texto original en Tag temporalmente
-                        button.Text = "  " + button.Name.Replace("btn", ""); // O reconstruir el texto del botón
-                        button.TextAlign = ContentAlignment.MiddleLeft; // Alineación para texto + icono
-                        button.Padding = new Padding(15, 0, 0, 0); // Padding para el icono
+                        // ELIMINA O COMENTA ESTA LÍNEA: 
+                        // string originalText = (string)button.Tag; 
+
+                        // USA ESTA LÍNEA PARA RECONSTRUIR EL TEXTO COMPLETO:
+                        // button.Name.Replace("btn", "") tomará "Pacientes" de "btnPacientes"
+                        button.Text = "  " + button.Name.Replace("btn", "");
+
+                        // El texto del botón original ya está definido en MainForm.Designer.cs, 
+                        // pero si quieres ser más específico, puedes crear un nuevo método.
+
+                        // MEJOR OPCIÓN: Asigna el texto predefinido que ya tenías en Designer.cs
+                        // Si quieres usar el texto de Designer.cs (ej: "  Gestión de Pacientes 1"), 
+                        // necesitarías guardarlo en una propiedad separada. 
+                        // Por ahora, usaremos la reconstrucción simple.
+
+                        button.TextAlign = ContentAlignment.MiddleLeft;
+                        button.Padding = new Padding(15, 0, 0, 0);
                     }
-                    else // Si el menú está colapsado, oculta el texto
+                    else // Menú Colapsado
                     {
-                        button.Text = ""; // Vacía el texto, dejando solo el icono
-                        button.TextAlign = ContentAlignment.MiddleCenter; // Centra el icono
-                        button.Padding = new Padding(0); // Elimina el padding extra para que el icono esté centrado
+                        button.Text = "";
+                        button.TextAlign = ContentAlignment.MiddleCenter;
+                        button.Padding = new Padding(0);
                     }
+
                     // Forzar redibujado
                     button.Invalidate();
                     button.Update();
