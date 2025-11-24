@@ -55,49 +55,70 @@ namespace Borrador
                     switch (button.Name)
                     {
                         case "btnPacientes":
-                            //button.Tag = typeof(UCPacientesCRUD);
+                            //Modulo 1
+                            button.Tag = typeof(UCPacientesCRUD);
                            // button.Image = Properties.Resources.icon_pacientes; // Asegúrate de tener este recurso
                             break;
                         case "btnAgenda":
-                            //button.Tag = typeof(UCAgendaCitasMedico);
+                            //Modulo 2
+                            button.Tag = typeof(UCAgendaCitasMedico);
                            // button.Image = Properties.Resources.icon_agenda; // Asegúrate de tener este recurso
                             break;
+
                         case "btnConsultasMedicas":
-                            //button.Tag = typeof(UCConsultaMedica);
+                            //Modulo 3
+                            button.Tag = typeof(UCConsultaMedica);
                             //button.Image = Properties.Resources.icon_consultas;
                             break;
+
                         case "btnEnfermeria":
-                            //button.Tag = typeof(UCHojaEnfermeria);
+                            //Modulo 4
+                            button.Tag = typeof(UCHojaEnfermeria);
                             //button.Image = Properties.Resources.icon_enfermeria;
                             break;
+
                         case "btnLaboratorio":
+                            //Modulo 5
                             button.Tag = typeof(UCOrdenLaboratorio);
                             //button.Image = Properties.Resources.icon_laboratorio;
                             break;
+
                         case "btnImagenologia":
-                            //button.Tag = typeof(UCEstudiosImagen);
+                            //Modulo 6
+                            button.Tag = typeof(UCEstudiosImagen);
                             //button.Image = Properties.Resources.icon_imagenologia;
                             break;
+
                         case "btnFarmacia":
-                            //button.Tag = typeof(UCInventarioFarmacia);
+                            //Modulo 7
+                            button.Tag = typeof(UCInventarioFarmacia);
                            // button.Image = Properties.Resources.icon_farmacia;
                             break;
+
                         case "btnCirugias":
-                            //button.Tag = typeof(UCAgendaCirugias);
+                            //Modulo 8
+                            button.Tag = typeof(UCAgendaCirugias);
                            // button.Image = Properties.Resources.icon_cirugias;
                             break;
+
                         case "btnHospitalizacion":
-                            //button.Tag = typeof(UCAdmisionHospitalaria);
+                            //Modulo 9
+                            button.Tag = typeof(UCAdmisionHospitalaria);
                             //button.Image = Properties.Resources.icon_hospitalizacion;
                             break;
+
                         case "btnUrgencias":
-                            //button.Tag = typeof(UCRegistroUrgencias);
+                            //Modulo 10
+                            button.Tag = typeof(UCRegistroUrgencias);
                             //button.Image = Properties.Resources.icon_urgencias;
                             break;
+
                         case "btnAdministrativo":
-                            //button.Tag = typeof(UCFacturacion);
+                            //Modulo 11
+                            button.Tag = typeof(UCFacturacion);
                             //button.Image = Properties.Resources.icon_administrativo;
                             break;
+
                         default:
                             button.Tag = null;
                             break;

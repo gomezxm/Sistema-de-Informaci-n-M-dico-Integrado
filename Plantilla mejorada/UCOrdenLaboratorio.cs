@@ -37,7 +37,7 @@ namespace Borrador
 
         public UCOrdenLaboratorio()
         {
-            //InitializeComponent(); // Comentado o eliminado
+            
             SetupLayoutAndControls();
             LoadSampleData(); // Nuevo método para cargar datos de prueba
             btnGuardar.Click += BtnGuardar_Click; // Conectar el evento Click
@@ -81,7 +81,7 @@ namespace Borrador
             dgvExamenes.Columns.Add("Nombre", "Nombre del Examen");
             dgvExamenes.Columns["Nombre"].Width = 400; // Columna más ancha para el nombre
 
-            // *** LA CORRECCIÓN CLAVE ***: Crear la columna como DataGridViewCheckBoxColumn
+            // Crear la columna como DataGridViewCheckBoxColumn
             DataGridViewCheckBoxColumn checkColumn = new DataGridViewCheckBoxColumn();
             checkColumn.Name = "Seleccionar";
             checkColumn.HeaderText = "Sel.";
@@ -100,7 +100,7 @@ namespace Borrador
             this.Controls.Add(btnGuardar);
         }
 
-        // --- NUEVOS MÉTODOS DE FUNCIONALIDAD ---
+        // MÉTODOS DE FUNCIONALIDAD
 
         private void LoadSampleData()
         {
@@ -185,6 +185,17 @@ namespace Borrador
                 $"Prioridad: {this.Prioridad}\n" +
                 $"Exámenes seleccionados: {this.IdsExamenes.Count}",
                 "Orden de Laboratorio Guardada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // UCOrdenLaboratorio
+            // 
+            this.Name = "UCOrdenLaboratorio";
+            this.ResumeLayout(false);
+
         }
     }
 }

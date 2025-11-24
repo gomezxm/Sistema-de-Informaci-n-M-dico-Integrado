@@ -69,7 +69,37 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UCAdmisionHospitalaria.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCAgendaCirugias.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCAgendaCitasMedico.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCConsultaMedica.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCEstudiosImagen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCFacturacion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCHojaEnfermeria.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCInventarioFarmacia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="UCOrdenLaboratorio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCPacientesCRUD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCRegistroUrgencias.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <EmbeddedResource Include="MainForm.resx">
@@ -85,6 +115,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UCOrdenLaboratorio.resx">
+      <DependentUpon>UCOrdenLaboratorio.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
