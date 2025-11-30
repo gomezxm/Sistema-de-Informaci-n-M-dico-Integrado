@@ -303,5 +303,6 @@ namespace Borrador
             }
             btnToggleMenu.Location = new Point(pnlLogo.Width - btnToggleMenu.Width - 10, btnToggleMenu.Location.Y); // Mueve el botón de hamburguesa
         }
+
     }
 }
