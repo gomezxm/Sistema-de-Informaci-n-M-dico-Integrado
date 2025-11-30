@@ -123,15 +123,11 @@
         },
         {
           "DockedWidth": 129,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
@@ -147,6 +143,10 @@
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "UCFacturacion.cs",
@@ -156,8 +156,7 @@
               "RelativeToolTip": "UCFacturacion.cs",
               "ViewState": "AgIAACABAAAAAAAAAAAiwC4BAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T19:04:42.69Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-24T19:04:42.69Z"
             },
             {
               "$type": "Document",
@@ -217,8 +216,7 @@
               "RelativeToolTip": "UCHojaEnfermeria.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T18:59:36.171Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-24T18:59:36.171Z"
             },
             {
               "$type": "Document",
@@ -266,8 +264,7 @@
               "RelativeToolTip": "MainForm.cs",
               "ViewState": "AgIAAE4AAAAAAAAAAAAwwF0AAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T18:49:12.348Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-24T18:49:12.348Z"
             },
             {
               "$type": "Document",
@@ -278,8 +275,7 @@
               "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\MainForm.cs [Dise\u00F1o]",
               "RelativeToolTip": "MainForm.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T18:48:58.775Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-11-24T18:48:58.775Z"
             },
             {
               "$type": "Document",
@@ -303,8 +299,7 @@
               "RelativeToolTip": "MainForm.Designer.cs",
               "ViewState": "AgIAAE4AAAAAAAAAAAAYwFkAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T16:47:14.193Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-23T16:47:14.193Z"
             },
             {
               "$type": "Document",
