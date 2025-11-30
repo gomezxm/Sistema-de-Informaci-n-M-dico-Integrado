@@ -87,6 +87,12 @@
     <Compile Include="UCFacturacion.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="UCFrmInventarioFarmacia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCFrmInventarioFarmacia.Designer.cs">
+      <DependentUpon>UCFrmInventarioFarmacia.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCHojaEnfermeria.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -115,6 +121,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UCFrmInventarioFarmacia.resx">
+      <DependentUpon>UCFrmInventarioFarmacia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCInventarioFarmacia.resx">
+      <DependentUpon>UCInventarioFarmacia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UCOrdenLaboratorio.resx">
       <DependentUpon>UCOrdenLaboratorio.cs</DependentUpon>
     </EmbeddedResource>
