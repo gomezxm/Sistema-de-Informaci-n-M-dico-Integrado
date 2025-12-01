@@ -71,7 +71,7 @@
             this.pnlSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlSideMenu.Location = new System.Drawing.Point(0, 0);
             this.pnlSideMenu.Name = "pnlSideMenu";
-            this.pnlSideMenu.Size = new System.Drawing.Size(230, 869);
+            this.pnlSideMenu.Size = new System.Drawing.Size(320, 869);
             this.pnlSideMenu.TabIndex = 0;
             // 
             // btnAdministrativo
@@ -82,10 +82,10 @@
             this.btnAdministrativo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdministrativo.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnAdministrativo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdministrativo.Location = new System.Drawing.Point(0, 600);
+            this.btnAdministrativo.Location = new System.Drawing.Point(0, 603);
             this.btnAdministrativo.Name = "btnAdministrativo";
             this.btnAdministrativo.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnAdministrativo.Size = new System.Drawing.Size(230, 76);
+            this.btnAdministrativo.Size = new System.Drawing.Size(320, 76);
             this.btnAdministrativo.TabIndex = 10;
             this.btnAdministrativo.Text = "  Administrativo y  Financiero 11";
             this.btnAdministrativo.UseVisualStyleBackColor = false;
@@ -98,10 +98,10 @@
             this.btnUrgencias.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUrgencias.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnUrgencias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUrgencias.Location = new System.Drawing.Point(0, 550);
+            this.btnUrgencias.Location = new System.Drawing.Point(0, 553);
             this.btnUrgencias.Name = "btnUrgencias";
             this.btnUrgencias.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnUrgencias.Size = new System.Drawing.Size(230, 50);
+            this.btnUrgencias.Size = new System.Drawing.Size(320, 50);
             this.btnUrgencias.TabIndex = 9;
             this.btnUrgencias.Text = "  Cirugías y Quirófano 10";
             this.btnUrgencias.UseVisualStyleBackColor = false;
@@ -114,10 +114,10 @@
             this.btnHospitalizacion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHospitalizacion.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnHospitalizacion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHospitalizacion.Location = new System.Drawing.Point(0, 500);
+            this.btnHospitalizacion.Location = new System.Drawing.Point(0, 503);
             this.btnHospitalizacion.Name = "btnHospitalizacion";
             this.btnHospitalizacion.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnHospitalizacion.Size = new System.Drawing.Size(230, 50);
+            this.btnHospitalizacion.Size = new System.Drawing.Size(320, 50);
             this.btnHospitalizacion.TabIndex = 8;
             this.btnHospitalizacion.Text = "  Urgencias 9";
             this.btnHospitalizacion.UseVisualStyleBackColor = false;
@@ -130,10 +130,10 @@
             this.btnCirugias.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCirugias.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnCirugias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCirugias.Location = new System.Drawing.Point(0, 450);
+            this.btnCirugias.Location = new System.Drawing.Point(0, 453);
             this.btnCirugias.Name = "btnCirugias";
             this.btnCirugias.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnCirugias.Size = new System.Drawing.Size(230, 50);
+            this.btnCirugias.Size = new System.Drawing.Size(320, 50);
             this.btnCirugias.TabIndex = 7;
             this.btnCirugias.Text = "  Hospitalización 8";
             this.btnCirugias.UseVisualStyleBackColor = false;
@@ -146,10 +146,10 @@
             this.btnFarmacia.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFarmacia.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnFarmacia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFarmacia.Location = new System.Drawing.Point(0, 400);
+            this.btnFarmacia.Location = new System.Drawing.Point(0, 403);
             this.btnFarmacia.Name = "btnFarmacia";
             this.btnFarmacia.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnFarmacia.Size = new System.Drawing.Size(230, 50);
+            this.btnFarmacia.Size = new System.Drawing.Size(320, 50);
             this.btnFarmacia.TabIndex = 6;
             this.btnFarmacia.Text = "  Farmacia 7";
             this.btnFarmacia.UseVisualStyleBackColor = false;
@@ -162,10 +162,10 @@
             this.btnImagenologia.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnImagenologia.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnImagenologia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnImagenologia.Location = new System.Drawing.Point(0, 350);
+            this.btnImagenologia.Location = new System.Drawing.Point(0, 353);
             this.btnImagenologia.Name = "btnImagenologia";
             this.btnImagenologia.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnImagenologia.Size = new System.Drawing.Size(230, 50);
+            this.btnImagenologia.Size = new System.Drawing.Size(320, 50);
             this.btnImagenologia.TabIndex = 5;
             this.btnImagenologia.Text = "  Imagenología 6";
             this.btnImagenologia.UseVisualStyleBackColor = false;
@@ -178,10 +178,10 @@
             this.btnLaboratorio.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLaboratorio.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnLaboratorio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLaboratorio.Location = new System.Drawing.Point(0, 300);
+            this.btnLaboratorio.Location = new System.Drawing.Point(0, 303);
             this.btnLaboratorio.Name = "btnLaboratorio";
             this.btnLaboratorio.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnLaboratorio.Size = new System.Drawing.Size(230, 50);
+            this.btnLaboratorio.Size = new System.Drawing.Size(320, 50);
             this.btnLaboratorio.TabIndex = 4;
             this.btnLaboratorio.Text = "  Laboratorio Clínico 5";
             this.btnLaboratorio.UseVisualStyleBackColor = false;
@@ -194,10 +194,10 @@
             this.btnEnfermeria.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEnfermeria.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnEnfermeria.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEnfermeria.Location = new System.Drawing.Point(0, 250);
+            this.btnEnfermeria.Location = new System.Drawing.Point(0, 253);
             this.btnEnfermeria.Name = "btnEnfermeria";
             this.btnEnfermeria.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnEnfermeria.Size = new System.Drawing.Size(230, 50);
+            this.btnEnfermeria.Size = new System.Drawing.Size(320, 50);
             this.btnEnfermeria.TabIndex = 3;
             this.btnEnfermeria.Text = "  Enfermería 4";
             this.btnEnfermeria.UseVisualStyleBackColor = false;
@@ -210,10 +210,10 @@
             this.btnConsultasMedicas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsultasMedicas.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnConsultasMedicas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConsultasMedicas.Location = new System.Drawing.Point(0, 200);
+            this.btnConsultasMedicas.Location = new System.Drawing.Point(0, 203);
             this.btnConsultasMedicas.Name = "btnConsultasMedicas";
             this.btnConsultasMedicas.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnConsultasMedicas.Size = new System.Drawing.Size(230, 50);
+            this.btnConsultasMedicas.Size = new System.Drawing.Size(320, 50);
             this.btnConsultasMedicas.TabIndex = 2;
             this.btnConsultasMedicas.Text = "  Consultas Médicas 3";
             this.btnConsultasMedicas.UseVisualStyleBackColor = false;
@@ -226,13 +226,14 @@
             this.btnAgenda.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgenda.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnAgenda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgenda.Location = new System.Drawing.Point(0, 150);
+            this.btnAgenda.Location = new System.Drawing.Point(0, 153);
             this.btnAgenda.Name = "btnAgenda";
             this.btnAgenda.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnAgenda.Size = new System.Drawing.Size(230, 50);
+            this.btnAgenda.Size = new System.Drawing.Size(320, 50);
             this.btnAgenda.TabIndex = 1;
             this.btnAgenda.Text = "  Agenda y Citas 2";
             this.btnAgenda.UseVisualStyleBackColor = false;
+            this.btnAgenda.Click += new System.EventHandler(this.btnAgenda_Click);
             // 
             // btnPacientes
             // 
@@ -242,12 +243,12 @@
             this.btnPacientes.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPacientes.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnPacientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPacientes.Location = new System.Drawing.Point(0, 100);
+            this.btnPacientes.Location = new System.Drawing.Point(0, 103);
             this.btnPacientes.Name = "btnPacientes";
             this.btnPacientes.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnPacientes.Size = new System.Drawing.Size(230, 50);
+            this.btnPacientes.Size = new System.Drawing.Size(320, 50);
             this.btnPacientes.TabIndex = 0;
-            this.btnPacientes.Text = "  Gestión de Pacientes 1";
+            this.btnPacientes.Text = "  Gestión de Pacientes";
             this.btnPacientes.UseVisualStyleBackColor = false;
             // 
             // pnlLogo
@@ -258,7 +259,7 @@
             this.pnlLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlLogo.Location = new System.Drawing.Point(0, 0);
             this.pnlLogo.Name = "pnlLogo";
-            this.pnlLogo.Size = new System.Drawing.Size(230, 100);
+            this.pnlLogo.Size = new System.Drawing.Size(320, 103);
             this.pnlLogo.TabIndex = 11;
             // 
             // lblClinicManager
@@ -289,19 +290,20 @@
             this.btnToggleMenu.FlatAppearance.BorderSize = 0;
             this.btnToggleMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnToggleMenu.Image = global::Borrador.Properties.Resources.icon_hamburguesa;
-            this.btnToggleMenu.Location = new System.Drawing.Point(164, 28);
+            this.btnToggleMenu.Location = new System.Drawing.Point(255, 33);
             this.btnToggleMenu.Name = "btnToggleMenu";
             this.btnToggleMenu.Size = new System.Drawing.Size(59, 59);
             this.btnToggleMenu.TabIndex = 2;
             this.btnToggleMenu.UseVisualStyleBackColor = false;
+            this.btnToggleMenu.Click += new System.EventHandler(this.btnToggleMenu_Click_1);
             // 
             // pnlContent
             // 
             this.pnlContent.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContent.Location = new System.Drawing.Point(230, 0);
+            this.pnlContent.Location = new System.Drawing.Point(320, 0);
             this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(1359, 869);
+            this.pnlContent.Size = new System.Drawing.Size(1269, 869);
             this.pnlContent.TabIndex = 1;
             // 
             // tmrMenu

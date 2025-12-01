@@ -3,28 +3,76 @@
   "WorkspaceRootPath": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\ucinventariofarmacia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:ucinventariofarmacia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\ucmodulo2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:ucmodulo2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\mdulo6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:mdulo6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\uchojaenfermeria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:uchojaenfermeria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\ucinventariofarmacia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:ucinventariofarmacia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\ucfacturacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:ucfacturacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\ucestudiosimagen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:ucestudiosimagen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\ucfrminventariofarmacia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:ucfrminventariofarmacia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\ucordenlaboratorioform1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:ucordenlaboratorioform1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\ucpacientescrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,24 +83,56 @@
       "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:ucregistrourgencias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\ucestudiosimagen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:ucestudiosimagen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\ucmodulo2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:ucmodulo2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\ucconsultamedica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:ucconsultamedica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\ucmodulo2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:ucmodulo2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\ucagendacitasmedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:ucagendacitasmedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\ucadmisionhospitalariaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:ucadmisionhospitalariaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\ucordenlaboratorioform1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:ucordenlaboratorioform1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\ucfrminventariofarmacia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:ucfrminventariofarmacia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\ucfrminventariofarmacia.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:ucfrminventariofarmacia.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\ucadmisionhospitalariaform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:ucadmisionhospitalariaform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\ucadmisionhospitalariaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:ucadmisionhospitalariaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\ucagendacirugias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:ucagendacirugias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\ucadmisionhospitalaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:ucadmisionhospitalaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\ucagendacitasmedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:ucagendacitasmedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\ucconsultamedica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:ucconsultamedica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -65,7 +145,7 @@
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 256,
+      "VerticalTabListWidth": 362,
       "DocumentGroups": [
         {
           "DockedWidth": 271,
@@ -123,24 +203,11 @@
         },
         {
           "DockedWidth": 129,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 32,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UCInventarioFarmacia.cs",
-              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCInventarioFarmacia.cs",
-              "RelativeDocumentMoniker": "UCInventarioFarmacia.cs",
-              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCInventarioFarmacia.cs",
-              "RelativeToolTip": "UCInventarioFarmacia.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T19:01:42.131Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -148,19 +215,280 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Modulo10.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo10.cs",
+              "RelativeDocumentMoniker": "Modulo10.cs",
+              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo10.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Modulo10.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T16:15:05.57Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Modulo9.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo9.cs",
+              "RelativeDocumentMoniker": "Modulo9.cs",
+              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo9.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Modulo9.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T16:14:51.58Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Modulo8.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo8.cs",
+              "RelativeDocumentMoniker": "Modulo8.cs",
+              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo8.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Modulo8.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T16:14:28.764Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Modulo7.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo7.cs",
+              "RelativeDocumentMoniker": "Modulo7.cs",
+              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo7.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Modulo7.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T16:14:11.679Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Mdulo6.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Mdulo6.cs",
+              "RelativeDocumentMoniker": "Mdulo6.cs",
+              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Mdulo6.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Mdulo6.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T16:13:57.047Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Modulo3.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo3.cs",
+              "RelativeDocumentMoniker": "Modulo3.cs",
+              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo3.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Modulo3.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T16:13:40.531Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Modulo2.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo2.cs",
+              "RelativeDocumentMoniker": "Modulo2.cs",
+              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo2.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Modulo2.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T16:13:21.35Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Modulo1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo1.cs",
+              "RelativeDocumentMoniker": "Modulo1.cs",
+              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Modulo1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T16:13:03.169Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Modulo5.cs",
+              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo5.cs",
+              "RelativeDocumentMoniker": "Modulo5.cs",
+              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo5.cs",
+              "RelativeToolTip": "Modulo5.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAYwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T16:00:28.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Modulo5.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo5.cs",
+              "RelativeDocumentMoniker": "Modulo5.cs",
+              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo5.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Modulo5.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T15:59:43.617Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UCModulo2.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCModulo2.Designer.cs",
+              "RelativeDocumentMoniker": "UCModulo2.Designer.cs",
+              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCModulo2.Designer.cs",
+              "RelativeToolTip": "UCModulo2.Designer.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAYwBwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T15:28:41.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UCModulo2.cs",
+              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCModulo2.cs",
+              "RelativeDocumentMoniker": "UCModulo2.cs",
+              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCModulo2.cs",
+              "RelativeToolTip": "UCModulo2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T15:28:38.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UCModulo2.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCModulo2.cs",
+              "RelativeDocumentMoniker": "UCModulo2.cs",
+              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCModulo2.cs [Dise\u00F1o]",
+              "RelativeToolTip": "UCModulo2.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T15:28:32.829Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UCOrdenLaboratorioform1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCOrdenLaboratorioform1.cs",
+              "RelativeDocumentMoniker": "UCOrdenLaboratorioform1.cs",
+              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCOrdenLaboratorioform1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "UCOrdenLaboratorioform1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T13:38:34.296Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "UCAdmisionHospitalariaForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCAdmisionHospitalariaForm.Designer.cs",
+              "RelativeDocumentMoniker": "UCAdmisionHospitalariaForm.Designer.cs",
+              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCAdmisionHospitalariaForm.Designer.cs",
+              "RelativeToolTip": "UCAdmisionHospitalariaForm.Designer.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAkwBwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T12:55:43.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UCAdmisionHospitalariaForm.cs",
+              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCAdmisionHospitalariaForm.cs",
+              "RelativeDocumentMoniker": "UCAdmisionHospitalariaForm.cs",
+              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCAdmisionHospitalariaForm.cs",
+              "RelativeToolTip": "UCAdmisionHospitalariaForm.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAuwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T01:21:07.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UCAdmisionHospitalariaForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCAdmisionHospitalariaForm.cs",
+              "RelativeDocumentMoniker": "UCAdmisionHospitalariaForm.cs",
+              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCAdmisionHospitalariaForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "UCAdmisionHospitalariaForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T01:20:21.738Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "UCFrmInventarioFarmacia.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCFrmInventarioFarmacia.Designer.cs",
+              "RelativeDocumentMoniker": "UCFrmInventarioFarmacia.Designer.cs",
+              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCFrmInventarioFarmacia.Designer.cs",
+              "RelativeToolTip": "UCFrmInventarioFarmacia.Designer.cs",
+              "ViewState": "AgIAAPgBAAAAAAAAAAAiwAYCAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T22:44:21.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UCFrmInventarioFarmacia.cs",
+              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCFrmInventarioFarmacia.cs",
+              "RelativeDocumentMoniker": "UCFrmInventarioFarmacia.cs",
+              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCFrmInventarioFarmacia.cs",
+              "RelativeToolTip": "UCFrmInventarioFarmacia.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAYwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T22:44:15.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "UCFrmInventarioFarmacia.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCFrmInventarioFarmacia.cs",
+              "RelativeDocumentMoniker": "UCFrmInventarioFarmacia.cs",
+              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCFrmInventarioFarmacia.cs [Dise\u00F1o]",
+              "RelativeToolTip": "UCFrmInventarioFarmacia.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T22:44:04.986Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UCInventarioFarmacia.cs",
+              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCInventarioFarmacia.cs",
+              "RelativeDocumentMoniker": "UCInventarioFarmacia.cs",
+              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCInventarioFarmacia.cs",
+              "RelativeToolTip": "UCInventarioFarmacia.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAQwLABAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T19:01:42.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "UCFacturacion.cs",
               "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCFacturacion.cs",
               "RelativeDocumentMoniker": "UCFacturacion.cs",
               "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCFacturacion.cs",
               "RelativeToolTip": "UCFacturacion.cs",
-              "ViewState": "AgIAACABAAAAAAAAAAAiwC4BAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4BAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T19:04:42.69Z"
+              "WhenOpened": "2025-11-24T19:04:42.69Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 19,
               "Title": "UCRegistroUrgencias.cs",
               "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCRegistroUrgencias.cs",
               "RelativeDocumentMoniker": "UCRegistroUrgencias.cs",
@@ -168,35 +496,37 @@
               "RelativeToolTip": "UCRegistroUrgencias.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T19:04:07.589Z"
+              "WhenOpened": "2025-11-24T19:04:07.589Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UCAdmisionHospitalaria.cs",
-              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCAdmisionHospitalaria.cs",
-              "RelativeDocumentMoniker": "UCAdmisionHospitalaria.cs",
-              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCAdmisionHospitalaria.cs",
-              "RelativeToolTip": "UCAdmisionHospitalaria.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA9AAAAAAAAAA==",
+              "DocumentIndex": 24,
+              "Title": "UCOrdenLaboratorioform1.cs",
+              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCOrdenLaboratorioform1.cs",
+              "RelativeDocumentMoniker": "UCOrdenLaboratorioform1.cs",
+              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCOrdenLaboratorioform1.cs",
+              "RelativeToolTip": "UCOrdenLaboratorioform1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T19:03:19.953Z"
+              "WhenOpened": "2025-11-24T19:03:19.953Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 29,
               "Title": "UCAgendaCirugias.cs",
               "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCAgendaCirugias.cs",
               "RelativeDocumentMoniker": "UCAgendaCirugias.cs",
               "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCAgendaCirugias.cs",
               "RelativeToolTip": "UCAgendaCirugias.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-24T19:02:45.939Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
               "Title": "UCEstudiosImagen.cs",
               "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCEstudiosImagen.cs",
               "RelativeDocumentMoniker": "UCEstudiosImagen.cs",
@@ -204,11 +534,12 @@
               "RelativeToolTip": "UCEstudiosImagen.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T19:00:18.112Z"
+              "WhenOpened": "2025-11-24T19:00:18.112Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 12,
               "Title": "UCHojaEnfermeria.cs",
               "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCHojaEnfermeria.cs",
               "RelativeDocumentMoniker": "UCHojaEnfermeria.cs",
@@ -216,11 +547,12 @@
               "RelativeToolTip": "UCHojaEnfermeria.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T18:59:36.171Z"
+              "WhenOpened": "2025-11-24T18:59:36.171Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 32,
               "Title": "UCConsultaMedica.cs",
               "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCConsultaMedica.cs",
               "RelativeDocumentMoniker": "UCConsultaMedica.cs",
@@ -232,7 +564,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 31,
               "Title": "UCAgendaCitasMedico.cs",
               "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCAgendaCitasMedico.cs",
               "RelativeDocumentMoniker": "UCAgendaCitasMedico.cs",
@@ -244,42 +576,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 18,
               "Title": "UCPacientesCRUD.cs",
               "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCPacientesCRUD.cs",
               "RelativeDocumentMoniker": "UCPacientesCRUD.cs",
               "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCPacientesCRUD.cs",
               "RelativeToolTip": "UCPacientesCRUD.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAuwAUAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T18:57:01.789Z"
+              "WhenOpened": "2025-11-24T18:57:01.789Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
               "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\MainForm.cs",
               "RelativeToolTip": "MainForm.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAwwF0AAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAA11BmSW40wD8AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T18:49:12.348Z"
+              "WhenOpened": "2025-11-24T18:49:12.348Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 22,
               "Title": "MainForm.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
               "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\MainForm.cs [Dise\u00F1o]",
               "RelativeToolTip": "MainForm.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T18:48:58.775Z"
+              "WhenOpened": "2025-11-24T18:48:58.775Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 33,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -291,19 +626,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 30,
               "Title": "MainForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\MainForm.Designer.cs",
               "RelativeDocumentMoniker": "MainForm.Designer.cs",
               "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\MainForm.Designer.cs",
               "RelativeToolTip": "MainForm.Designer.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAYwFkAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAPwAAAAAAAAAAAAAAFkAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T16:47:14.193Z"
+              "WhenOpened": "2025-11-23T16:47:14.193Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 34,
               "Title": "Borrador",
               "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Borrador.csproj",
               "RelativeDocumentMoniker": "Borrador.csproj",

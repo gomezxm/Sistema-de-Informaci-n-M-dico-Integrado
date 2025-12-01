@@ -21,3 +21,9 @@ C:\Users\dresq\OneDrive\Escritorio\Proyecto C#\Sistema-de-Informaci-n-M-dico-Int
 C:\Users\dresq\OneDrive\Escritorio\Proyecto C#\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.exe
 C:\Users\dresq\OneDrive\Escritorio\Proyecto C#\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.pdb
 C:\Users\dresq\OneDrive\Escritorio\Proyecto C#\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.UCOrdenLaboratorio.resources
+C:\Users\dresq\OneDrive\Escritorio\Proyecto C#\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.UCInventarioFarmacia.resources
+C:\Users\dresq\OneDrive\Escritorio\Proyecto C#\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.UCFrmInventarioFarmacia.resources
+C:\Users\dresq\OneDrive\Escritorio\Proyecto C#\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.UCAdmisionHospitalariaForm.resources
+C:\Users\dresq\OneDrive\Escritorio\Proyecto C#\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.UCOrdenLaboratorioform1.resources
+C:\Users\dresq\OneDrive\Escritorio\Proyecto C#\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.UCModulo2.resources
+C:\Users\dresq\OneDrive\Escritorio\Proyecto C#\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.Modulo5.resources

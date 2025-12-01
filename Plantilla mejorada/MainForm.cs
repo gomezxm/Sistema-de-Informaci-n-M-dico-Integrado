@@ -61,7 +61,7 @@ namespace Borrador
                             break;
                         case "btnAgenda":
                             //Modulo 2
-                            button.Tag = typeof(UCAgendaCitasMedico);
+                            button.Tag = typeof(Modulo2);
                            // button.Image = Properties.Resources.icon_agenda; // Asegúrate de tener este recurso
                             break;
 
@@ -79,7 +79,7 @@ namespace Borrador
 
                         case "btnLaboratorio":
                             //Modulo 5
-                            button.Tag = typeof(UCOrdenLaboratorio);
+                            button.Tag = typeof(Modulo5);
                             //button.Image = Properties.Resources.icon_laboratorio;
                             break;
 
@@ -91,7 +91,7 @@ namespace Borrador
 
                         case "btnFarmacia":
                             //Modulo 7
-                            button.Tag = typeof(UCInventarioFarmacia);
+                            button.Tag = typeof(UCFrmInventarioFarmacia);
                            // button.Image = Properties.Resources.icon_farmacia;
                             break;
 
@@ -102,8 +102,8 @@ namespace Borrador
                             break;
 
                         case "btnHospitalizacion":
-                            //Modulo 9
-                            button.Tag = typeof(UCAdmisionHospitalaria);
+                            //Modulo 9 UCOrdenLaboratorioForm
+                            button.Tag = typeof(UCAdmisionHospitalariaForm);
                             //button.Image = Properties.Resources.icon_hospitalizacion;
                             break;
 
@@ -304,5 +304,14 @@ namespace Borrador
             btnToggleMenu.Location = new Point(pnlLogo.Width - btnToggleMenu.Width - 10, btnToggleMenu.Location.Y); // Mueve el botón de hamburguesa
         }
 
+        private void btnToggleMenu_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAgenda_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
