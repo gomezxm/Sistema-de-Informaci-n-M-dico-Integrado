@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\ucmodulo2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:ucmodulo2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -33,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -73,14 +81,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\ucregistrourgencias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:ucregistrourgencias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\ucmodulo2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:ucmodulo2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\ucmodulo2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -203,7 +203,7 @@
         },
         {
           "DockedWidth": 129,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 32,
           "Children": [
             {
               "$type": "Bookmark",
@@ -215,7 +215,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Modulo10.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo10.cs",
               "RelativeDocumentMoniker": "Modulo10.cs",
@@ -227,7 +227,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Modulo9.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo9.cs",
               "RelativeDocumentMoniker": "Modulo9.cs",
@@ -239,7 +239,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Modulo8.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo8.cs",
               "RelativeDocumentMoniker": "Modulo8.cs",
@@ -251,7 +251,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Modulo7.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo7.cs",
               "RelativeDocumentMoniker": "Modulo7.cs",
@@ -263,7 +263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Mdulo6.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Mdulo6.cs",
               "RelativeDocumentMoniker": "Mdulo6.cs",
@@ -275,7 +275,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "Modulo3.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo3.cs",
               "RelativeDocumentMoniker": "Modulo3.cs",
@@ -287,7 +287,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "Modulo2.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo2.cs",
               "RelativeDocumentMoniker": "Modulo2.cs",
@@ -299,7 +299,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Modulo1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo1.cs",
               "RelativeDocumentMoniker": "Modulo1.cs",
@@ -311,7 +311,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Modulo5.cs",
               "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo5.cs",
               "RelativeDocumentMoniker": "Modulo5.cs",
@@ -324,7 +324,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Modulo5.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo5.cs",
               "RelativeDocumentMoniker": "Modulo5.cs",
@@ -362,7 +362,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 1,
               "Title": "UCModulo2.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCModulo2.cs",
               "RelativeDocumentMoniker": "UCModulo2.cs",
@@ -374,7 +374,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "UCOrdenLaboratorioform1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCOrdenLaboratorioform1.cs",
               "RelativeDocumentMoniker": "UCOrdenLaboratorioform1.cs",
@@ -437,7 +437,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "UCFrmInventarioFarmacia.cs",
               "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCFrmInventarioFarmacia.cs",
               "RelativeDocumentMoniker": "UCFrmInventarioFarmacia.cs",
@@ -462,7 +462,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "UCInventarioFarmacia.cs",
               "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCInventarioFarmacia.cs",
               "RelativeDocumentMoniker": "UCInventarioFarmacia.cs",
@@ -475,7 +475,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "UCFacturacion.cs",
               "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCFacturacion.cs",
               "RelativeDocumentMoniker": "UCFacturacion.cs",
@@ -488,7 +488,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "UCRegistroUrgencias.cs",
               "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCRegistroUrgencias.cs",
               "RelativeDocumentMoniker": "UCRegistroUrgencias.cs",
@@ -526,7 +526,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "UCEstudiosImagen.cs",
               "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCEstudiosImagen.cs",
               "RelativeDocumentMoniker": "UCEstudiosImagen.cs",
@@ -539,7 +539,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "UCHojaEnfermeria.cs",
               "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCHojaEnfermeria.cs",
               "RelativeDocumentMoniker": "UCHojaEnfermeria.cs",
@@ -576,7 +576,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "UCPacientesCRUD.cs",
               "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCPacientesCRUD.cs",
               "RelativeDocumentMoniker": "UCPacientesCRUD.cs",
@@ -589,13 +589,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 0,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
               "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\MainForm.cs",
               "RelativeToolTip": "MainForm.cs",
-              "ViewState": "AgIAADsAAAAAXEOZJbkVwFEAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAA11BmSW40wD8AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-24T18:49:12.348Z",
               "EditorCaption": ""

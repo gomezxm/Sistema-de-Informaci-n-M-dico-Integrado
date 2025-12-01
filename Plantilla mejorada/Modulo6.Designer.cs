@@ -1,6 +1,6 @@
 ﻿namespace Borrador
 {
-    partial class Mdulo6
+    partial class Modulo6
     {
         /// <summary> 
         /// Variable del diseñador necesaria.

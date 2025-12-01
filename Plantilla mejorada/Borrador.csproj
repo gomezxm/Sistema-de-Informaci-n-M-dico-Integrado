@@ -67,11 +67,11 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mdulo6.cs">
+    <Compile Include="Modulo6.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Mdulo6.Designer.cs">
-      <DependentUpon>Mdulo6.cs</DependentUpon>
+    <Compile Include="Modulo6.Designer.cs">
+      <DependentUpon>Modulo6.cs</DependentUpon>
     </Compile>
     <Compile Include="Modulo1.cs">
       <SubType>UserControl</SubType>
