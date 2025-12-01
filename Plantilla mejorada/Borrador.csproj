@@ -81,8 +81,11 @@
     <Compile Include="UCConsultaMedica.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCEstudiosImagen.cs">
+    <Compile Include="Modulo6.cs">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulo6.Designer.cs">
+      <DependentUpon>Modulo6.cs</DependentUpon>
     </Compile>
     <Compile Include="UCFacturacion.cs">
       <SubType>UserControl</SubType>
@@ -115,6 +118,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Modulo6.resx">
+      <DependentUpon>Modulo6.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UCOrdenLaboratorio.resx">
       <DependentUpon>UCOrdenLaboratorio.cs</DependentUpon>
     </EmbeddedResource>

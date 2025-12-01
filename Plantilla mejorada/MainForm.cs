@@ -85,7 +85,7 @@ namespace Borrador
 
                         case "btnImagenologia":
                             //Modulo 6
-                            button.Tag = typeof(UCEstudiosImagen);
+                            button.Tag = typeof(Modulo6);
                             //button.Image = Properties.Resources.icon_imagenologia;
                             break;
 
