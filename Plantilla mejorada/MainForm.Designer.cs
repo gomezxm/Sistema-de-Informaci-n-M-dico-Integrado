@@ -54,8 +54,7 @@
             // 
             // pnlSideMenu
             // 
-            this.pnlSideMenu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink; // Esto puede ser None también
-            this.pnlSideMenu.AutoSize = false; // Asegúrate de que AutoSize también sea false
+            this.pnlSideMenu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.pnlSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(36)))), ((int)(((byte)(47)))));
             this.pnlSideMenu.Controls.Add(this.btnAdministrativo);
             this.pnlSideMenu.Controls.Add(this.btnUrgencias);
@@ -86,7 +85,7 @@
             this.btnAdministrativo.Location = new System.Drawing.Point(0, 600);
             this.btnAdministrativo.Name = "btnAdministrativo";
             this.btnAdministrativo.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnAdministrativo.Size = new System.Drawing.Size(421, 50);
+            this.btnAdministrativo.Size = new System.Drawing.Size(230, 50);
             this.btnAdministrativo.TabIndex = 10;
             this.btnAdministrativo.Text = "  Administrativo y Financiero 11";
             this.btnAdministrativo.UseVisualStyleBackColor = false;
@@ -102,7 +101,7 @@
             this.btnUrgencias.Location = new System.Drawing.Point(0, 550);
             this.btnUrgencias.Name = "btnUrgencias";
             this.btnUrgencias.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnUrgencias.Size = new System.Drawing.Size(421, 50);
+            this.btnUrgencias.Size = new System.Drawing.Size(230, 50);
             this.btnUrgencias.TabIndex = 9;
             this.btnUrgencias.Text = "  Cirugías y Quirófano 10";
             this.btnUrgencias.UseVisualStyleBackColor = false;
@@ -118,7 +117,7 @@
             this.btnHospitalizacion.Location = new System.Drawing.Point(0, 500);
             this.btnHospitalizacion.Name = "btnHospitalizacion";
             this.btnHospitalizacion.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnHospitalizacion.Size = new System.Drawing.Size(421, 50);
+            this.btnHospitalizacion.Size = new System.Drawing.Size(230, 50);
             this.btnHospitalizacion.TabIndex = 8;
             this.btnHospitalizacion.Text = "  Urgencias 9";
             this.btnHospitalizacion.UseVisualStyleBackColor = false;
@@ -134,7 +133,7 @@
             this.btnCirugias.Location = new System.Drawing.Point(0, 450);
             this.btnCirugias.Name = "btnCirugias";
             this.btnCirugias.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnCirugias.Size = new System.Drawing.Size(421, 50);
+            this.btnCirugias.Size = new System.Drawing.Size(230, 50);
             this.btnCirugias.TabIndex = 7;
             this.btnCirugias.Text = "  Hospitalización 8";
             this.btnCirugias.UseVisualStyleBackColor = false;
@@ -150,7 +149,7 @@
             this.btnFarmacia.Location = new System.Drawing.Point(0, 400);
             this.btnFarmacia.Name = "btnFarmacia";
             this.btnFarmacia.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnFarmacia.Size = new System.Drawing.Size(421, 50);
+            this.btnFarmacia.Size = new System.Drawing.Size(230, 50);
             this.btnFarmacia.TabIndex = 6;
             this.btnFarmacia.Text = "  Farmacia 7";
             this.btnFarmacia.UseVisualStyleBackColor = false;
@@ -166,7 +165,7 @@
             this.btnImagenologia.Location = new System.Drawing.Point(0, 350);
             this.btnImagenologia.Name = "btnImagenologia";
             this.btnImagenologia.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnImagenologia.Size = new System.Drawing.Size(421, 50);
+            this.btnImagenologia.Size = new System.Drawing.Size(230, 50);
             this.btnImagenologia.TabIndex = 5;
             this.btnImagenologia.Text = "  Imagenología 6";
             this.btnImagenologia.UseVisualStyleBackColor = false;
@@ -182,7 +181,7 @@
             this.btnLaboratorio.Location = new System.Drawing.Point(0, 300);
             this.btnLaboratorio.Name = "btnLaboratorio";
             this.btnLaboratorio.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnLaboratorio.Size = new System.Drawing.Size(421, 50);
+            this.btnLaboratorio.Size = new System.Drawing.Size(230, 50);
             this.btnLaboratorio.TabIndex = 4;
             this.btnLaboratorio.Text = "  Laboratorio Clínico 5";
             this.btnLaboratorio.UseVisualStyleBackColor = false;
@@ -198,7 +197,7 @@
             this.btnEnfermeria.Location = new System.Drawing.Point(0, 250);
             this.btnEnfermeria.Name = "btnEnfermeria";
             this.btnEnfermeria.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnEnfermeria.Size = new System.Drawing.Size(421, 50);
+            this.btnEnfermeria.Size = new System.Drawing.Size(230, 50);
             this.btnEnfermeria.TabIndex = 3;
             this.btnEnfermeria.Text = "  Enfermería 4";
             this.btnEnfermeria.UseVisualStyleBackColor = false;
@@ -214,7 +213,7 @@
             this.btnConsultasMedicas.Location = new System.Drawing.Point(0, 200);
             this.btnConsultasMedicas.Name = "btnConsultasMedicas";
             this.btnConsultasMedicas.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnConsultasMedicas.Size = new System.Drawing.Size(421, 50);
+            this.btnConsultasMedicas.Size = new System.Drawing.Size(230, 50);
             this.btnConsultasMedicas.TabIndex = 2;
             this.btnConsultasMedicas.Text = "  Consultas Médicas 3";
             this.btnConsultasMedicas.UseVisualStyleBackColor = false;
@@ -230,7 +229,7 @@
             this.btnAgenda.Location = new System.Drawing.Point(0, 150);
             this.btnAgenda.Name = "btnAgenda";
             this.btnAgenda.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnAgenda.Size = new System.Drawing.Size(421, 50);
+            this.btnAgenda.Size = new System.Drawing.Size(230, 50);
             this.btnAgenda.TabIndex = 1;
             this.btnAgenda.Text = "  Agenda y Citas 2";
             this.btnAgenda.UseVisualStyleBackColor = false;
@@ -246,7 +245,7 @@
             this.btnPacientes.Location = new System.Drawing.Point(0, 100);
             this.btnPacientes.Name = "btnPacientes";
             this.btnPacientes.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnPacientes.Size = new System.Drawing.Size(421, 50);
+            this.btnPacientes.Size = new System.Drawing.Size(230, 50);
             this.btnPacientes.TabIndex = 0;
             this.btnPacientes.Text = "  Gestión de Pacientes 1";
             this.btnPacientes.UseVisualStyleBackColor = false;
@@ -259,7 +258,7 @@
             this.pnlLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlLogo.Location = new System.Drawing.Point(0, 0);
             this.pnlLogo.Name = "pnlLogo";
-            this.pnlLogo.Size = new System.Drawing.Size(421, 100);
+            this.pnlLogo.Size = new System.Drawing.Size(230, 100);
             this.pnlLogo.TabIndex = 11;
             // 
             // lblClinicManager
@@ -290,7 +289,7 @@
             this.btnToggleMenu.FlatAppearance.BorderSize = 0;
             this.btnToggleMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnToggleMenu.Image = global::Borrador.Properties.Resources.icon_hamburguesa;
-            this.btnToggleMenu.Location = new System.Drawing.Point(355, 28);
+            this.btnToggleMenu.Location = new System.Drawing.Point(164, 28);
             this.btnToggleMenu.Name = "btnToggleMenu";
             this.btnToggleMenu.Size = new System.Drawing.Size(59, 59);
             this.btnToggleMenu.TabIndex = 2;
@@ -300,10 +299,11 @@
             // 
             this.pnlContent.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContent.Location = new System.Drawing.Point(421, 0);
+            this.pnlContent.Location = new System.Drawing.Point(230, 0);
             this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(1168, 869);
+            this.pnlContent.Size = new System.Drawing.Size(1359, 869);
             this.pnlContent.TabIndex = 1;
+            this.pnlContent.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlContent_Paint);
             // 
             // tmrMenu
             // 
