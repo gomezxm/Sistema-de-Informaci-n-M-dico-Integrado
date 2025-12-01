@@ -1,0 +1,63 @@
+C:\Users\dresq\OneDrive\Escritorio\Borrador\bin\Debug\Borrador.exe.config
+C:\Users\dresq\OneDrive\Escritorio\Borrador\bin\Debug\Borrador.exe
+C:\Users\dresq\OneDrive\Escritorio\Borrador\bin\Debug\Borrador.pdb
+C:\Users\dresq\OneDrive\Escritorio\Borrador\obj\Debug\Borrador.csproj.AssemblyReference.cache
+C:\Users\dresq\OneDrive\Escritorio\Borrador\obj\Debug\Borrador.Properties.Resources.resources
+C:\Users\dresq\OneDrive\Escritorio\Borrador\obj\Debug\Borrador.csproj.GenerateResource.cache
+C:\Users\dresq\OneDrive\Escritorio\Borrador\obj\Debug\Borrador.csproj.CoreCompileInputs.cache
+C:\Users\dresq\OneDrive\Escritorio\Borrador\obj\Debug\Borrador.exe
+C:\Users\dresq\OneDrive\Escritorio\Borrador\obj\Debug\Borrador.pdb
+C:\Users\dresq\OneDrive\Escritorio\Borrador\obj\Debug\Borrador.exe.config
+C:\Users\dresq\OneDrive\Escritorio\Borrador\obj\Debug\Borrador.MainForm.resources
+C:\Users\dresq\OneDrive\Escritorio\Proyecto C#\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\bin\Debug\Borrador.exe.config
+C:\Users\dresq\OneDrive\Escritorio\Proyecto C#\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\bin\Debug\Borrador.exe
+C:\Users\dresq\OneDrive\Escritorio\Proyecto C#\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\bin\Debug\Borrador.pdb
+C:\Users\dresq\OneDrive\Escritorio\Proyecto C#\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.csproj.AssemblyReference.cache
+C:\Users\dresq\OneDrive\Escritorio\Proyecto C#\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.exe.config
+C:\Users\dresq\OneDrive\Escritorio\Proyecto C#\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.MainForm.resources
+C:\Users\dresq\OneDrive\Escritorio\Proyecto C#\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.Properties.Resources.resources
+C:\Users\dresq\OneDrive\Escritorio\Proyecto C#\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.csproj.GenerateResource.cache
+C:\Users\dresq\OneDrive\Escritorio\Proyecto C#\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.csproj.CoreCompileInputs.cache
+C:\Users\dresq\OneDrive\Escritorio\Proyecto C#\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.exe
+C:\Users\dresq\OneDrive\Escritorio\Proyecto C#\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.pdb
+C:\Users\dresq\OneDrive\Escritorio\Proyecto C#\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.UCOrdenLaboratorio.resources
+C:\Users\jeine\OneDrive\Documentos\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\bin\Debug\Borrador.exe.config
+C:\Users\jeine\OneDrive\Documentos\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\bin\Debug\Borrador.exe
+C:\Users\jeine\OneDrive\Documentos\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\bin\Debug\Borrador.pdb
+C:\Users\jeine\OneDrive\Documentos\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.csproj.AssemblyReference.cache
+C:\Users\jeine\OneDrive\Documentos\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.exe.config
+C:\Users\jeine\OneDrive\Documentos\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.MainForm.resources
+C:\Users\jeine\OneDrive\Documentos\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.Properties.Resources.resources
+C:\Users\jeine\OneDrive\Documentos\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.UCOrdenLaboratorio.resources
+C:\Users\jeine\OneDrive\Documentos\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.csproj.GenerateResource.cache
+C:\Users\jeine\OneDrive\Documentos\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.csproj.CoreCompileInputs.cache
+C:\Users\jeine\OneDrive\Documentos\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.exe
+C:\Users\jeine\OneDrive\Documentos\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.pdb
+C:\Users\Admin\Documents\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\bin\Debug\Borrador.exe.config
+C:\Users\Admin\Documents\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\bin\Debug\Borrador.exe
+C:\Users\Admin\Documents\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\bin\Debug\Borrador.pdb
+C:\Users\Admin\Documents\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.exe.config
+C:\Users\Admin\Documents\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.MainForm.resources
+C:\Users\Admin\Documents\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.Properties.Resources.resources
+C:\Users\Admin\Documents\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.UCAgendaCitasMedico.resources
+C:\Users\Admin\Documents\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.UCAgendaCitasMedico2.resources
+C:\Users\Admin\Documents\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.UCOrdenLaboratorio.resources
+C:\Users\Admin\Documents\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.csproj.GenerateResource.cache
+C:\Users\Admin\Documents\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.exe
+C:\Users\Admin\Documents\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.pdb
+C:\Users\jorte\OneDrive\Documentos\soft4\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\bin\Debug\Borrador.exe.config
+C:\Users\jorte\OneDrive\Documentos\soft4\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\bin\Debug\Borrador.exe
+C:\Users\jorte\OneDrive\Documentos\soft4\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\bin\Debug\Borrador.pdb
+C:\Users\jorte\OneDrive\Documentos\soft4\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.csproj.AssemblyReference.cache
+C:\Users\jorte\OneDrive\Documentos\soft4\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.exe.config
+C:\Users\jorte\OneDrive\Documentos\soft4\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.MainForm.resources
+C:\Users\jorte\OneDrive\Documentos\soft4\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.Properties.Resources.resources
+C:\Users\jorte\OneDrive\Documentos\soft4\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.UCAgendaCitasMedico.resources
+C:\Users\jorte\OneDrive\Documentos\soft4\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.UCOrdenLaboratorio.resources
+C:\Users\jorte\OneDrive\Documentos\soft4\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.csproj.GenerateResource.cache
+C:\Users\jorte\OneDrive\Documentos\soft4\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.csproj.CoreCompileInputs.cache
+C:\Users\jorte\OneDrive\Documentos\soft4\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.exe
+C:\Users\jorte\OneDrive\Documentos\soft4\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.pdb
+C:\Users\jorte\OneDrive\Documentos\soft4\soft4\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.Modulo2.resources
