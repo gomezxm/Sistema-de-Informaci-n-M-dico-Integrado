@@ -64,6 +64,11 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.cboxFiltradoC = new System.Windows.Forms.ComboBox();
+            this.idcamas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -76,7 +81,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(185, 163);
+            this.tabControl1.Location = new System.Drawing.Point(194, 164);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(933, 678);
@@ -364,6 +369,12 @@
             this.tableListaC.AllowUserToAddRows = false;
             this.tableListaC.AllowUserToDeleteRows = false;
             this.tableListaC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tableListaC.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idcamas,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5});
             this.tableListaC.Location = new System.Drawing.Point(17, 59);
             this.tableListaC.Name = "tableListaC";
             this.tableListaC.ReadOnly = true;
@@ -452,6 +463,46 @@
             this.cboxFiltradoC.Size = new System.Drawing.Size(311, 28);
             this.cboxFiltradoC.TabIndex = 3;
             // 
+            // idcamas
+            // 
+            this.idcamas.HeaderText = "ID ";
+            this.idcamas.MinimumWidth = 8;
+            this.idcamas.Name = "idcamas";
+            this.idcamas.ReadOnly = true;
+            this.idcamas.Width = 150;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Sala";
+            this.Column2.MinimumWidth = 8;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 150;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Estado";
+            this.Column3.MinimumWidth = 8;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 150;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Paciente";
+            this.Column4.MinimumWidth = 8;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 150;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Tiempo ocupado";
+            this.Column5.MinimumWidth = 8;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Width = 150;
+            // 
             // Modulo8
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -510,5 +561,10 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.ComboBox cboxFiltradoC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idcamas;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
     }
 }

@@ -15,7 +15,7 @@
       "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\alexi\\documents\\proy_c#\\s4\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\ucadmisionhospitalaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|C:\\Users\\alexi\\Documents\\PROY_C#\\S4\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\ucadmisionhospitalaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:ucadmisionhospitalaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -95,8 +95,7 @@
               "ToolTip": "C:\\Users\\alexi\\Documents\\PROY_C#\\S4\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\MainForm.cs [Dise\u00F1o]",
               "RelativeToolTip": "MainForm.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T18:48:58.775Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-11-24T18:48:58.775Z"
             },
             {
               "$type": "Document",
@@ -108,8 +107,7 @@
               "RelativeToolTip": "UCAdmisionHospitalaria.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAuwAkAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T19:03:19.953Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-24T19:03:19.953Z"
             },
             {
               "$type": "Document",
@@ -145,8 +143,7 @@
               "RelativeToolTip": "MainForm.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAGMAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-30T23:41:29.694Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-30T23:41:29.694Z"
             },
             {
               "$type": "Document",
@@ -157,8 +154,7 @@
               "ToolTip": "C:\\Users\\alexi\\Documents\\PROY_C#\\S4\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCAdmisionHospitalaria.cs [Dise\u00F1o]",
               "RelativeToolTip": "UCAdmisionHospitalaria.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-30T22:19:02.693Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-11-30T22:19:02.693Z"
             },
             {
               "$type": "Document",
@@ -169,8 +165,7 @@
               "ToolTip": "C:\\Users\\alexi\\Documents\\PROY_C#\\S4\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCAdmisionHospitalaria.resx",
               "RelativeToolTip": "UCAdmisionHospitalaria.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-12-01T15:40:57.221Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T15:40:57.221Z"
             },
             {
               "$type": "Document",
