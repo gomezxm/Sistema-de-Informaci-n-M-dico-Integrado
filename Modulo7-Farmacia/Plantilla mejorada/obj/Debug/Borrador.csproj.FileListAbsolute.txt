@@ -1,0 +1,37 @@
+C:\Users\dresq\OneDrive\Escritorio\Borrador\bin\Debug\Borrador.exe.config
+C:\Users\dresq\OneDrive\Escritorio\Borrador\bin\Debug\Borrador.exe
+C:\Users\dresq\OneDrive\Escritorio\Borrador\bin\Debug\Borrador.pdb
+C:\Users\dresq\OneDrive\Escritorio\Borrador\obj\Debug\Borrador.csproj.AssemblyReference.cache
+C:\Users\dresq\OneDrive\Escritorio\Borrador\obj\Debug\Borrador.Properties.Resources.resources
+C:\Users\dresq\OneDrive\Escritorio\Borrador\obj\Debug\Borrador.csproj.GenerateResource.cache
+C:\Users\dresq\OneDrive\Escritorio\Borrador\obj\Debug\Borrador.csproj.CoreCompileInputs.cache
+C:\Users\dresq\OneDrive\Escritorio\Borrador\obj\Debug\Borrador.exe
+C:\Users\dresq\OneDrive\Escritorio\Borrador\obj\Debug\Borrador.pdb
+C:\Users\dresq\OneDrive\Escritorio\Borrador\obj\Debug\Borrador.exe.config
+C:\Users\dresq\OneDrive\Escritorio\Borrador\obj\Debug\Borrador.MainForm.resources
+C:\Users\dresq\OneDrive\Escritorio\Proyecto C#\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\bin\Debug\Borrador.exe.config
+C:\Users\dresq\OneDrive\Escritorio\Proyecto C#\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\bin\Debug\Borrador.exe
+C:\Users\dresq\OneDrive\Escritorio\Proyecto C#\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\bin\Debug\Borrador.pdb
+C:\Users\dresq\OneDrive\Escritorio\Proyecto C#\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.csproj.AssemblyReference.cache
+C:\Users\dresq\OneDrive\Escritorio\Proyecto C#\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.exe.config
+C:\Users\dresq\OneDrive\Escritorio\Proyecto C#\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.MainForm.resources
+C:\Users\dresq\OneDrive\Escritorio\Proyecto C#\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.Properties.Resources.resources
+C:\Users\dresq\OneDrive\Escritorio\Proyecto C#\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.csproj.GenerateResource.cache
+C:\Users\dresq\OneDrive\Escritorio\Proyecto C#\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.csproj.CoreCompileInputs.cache
+C:\Users\dresq\OneDrive\Escritorio\Proyecto C#\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.exe
+C:\Users\dresq\OneDrive\Escritorio\Proyecto C#\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.pdb
+C:\Users\dresq\OneDrive\Escritorio\Proyecto C#\Sistema-de-Informaci-n-M-dico-Integrado\Plantilla mejorada\obj\Debug\Borrador.UCOrdenLaboratorio.resources
+C:\Users\FLIA PEREZ\Desktop\U.T.P\4° SEMESTRE 2025\DES. SOFT. IV\Proyecto Semestral git\Modulo7-Farmacia\Plantilla mejorada\bin\Debug\Borrador.exe.config
+C:\Users\FLIA PEREZ\Desktop\U.T.P\4° SEMESTRE 2025\DES. SOFT. IV\Proyecto Semestral git\Modulo7-Farmacia\Plantilla mejorada\bin\Debug\Borrador.exe
+C:\Users\FLIA PEREZ\Desktop\U.T.P\4° SEMESTRE 2025\DES. SOFT. IV\Proyecto Semestral git\Modulo7-Farmacia\Plantilla mejorada\bin\Debug\Borrador.pdb
+C:\Users\FLIA PEREZ\Desktop\U.T.P\4° SEMESTRE 2025\DES. SOFT. IV\Proyecto Semestral git\Modulo7-Farmacia\Plantilla mejorada\obj\Debug\Borrador.csproj.AssemblyReference.cache
+C:\Users\FLIA PEREZ\Desktop\U.T.P\4° SEMESTRE 2025\DES. SOFT. IV\Proyecto Semestral git\Modulo7-Farmacia\Plantilla mejorada\obj\Debug\Borrador.MainForm.resources
+C:\Users\FLIA PEREZ\Desktop\U.T.P\4° SEMESTRE 2025\DES. SOFT. IV\Proyecto Semestral git\Modulo7-Farmacia\Plantilla mejorada\obj\Debug\Borrador.Properties.Resources.resources
+C:\Users\FLIA PEREZ\Desktop\U.T.P\4° SEMESTRE 2025\DES. SOFT. IV\Proyecto Semestral git\Modulo7-Farmacia\Plantilla mejorada\obj\Debug\Borrador.UCFrmInventarioFarmacia.resources
+C:\Users\FLIA PEREZ\Desktop\U.T.P\4° SEMESTRE 2025\DES. SOFT. IV\Proyecto Semestral git\Modulo7-Farmacia\Plantilla mejorada\obj\Debug\Borrador.UCInventarioFarmacia.resources
+C:\Users\FLIA PEREZ\Desktop\U.T.P\4° SEMESTRE 2025\DES. SOFT. IV\Proyecto Semestral git\Modulo7-Farmacia\Plantilla mejorada\obj\Debug\Borrador.UCOrdenLaboratorio.resources
+C:\Users\FLIA PEREZ\Desktop\U.T.P\4° SEMESTRE 2025\DES. SOFT. IV\Proyecto Semestral git\Modulo7-Farmacia\Plantilla mejorada\obj\Debug\Borrador.csproj.GenerateResource.cache
+C:\Users\FLIA PEREZ\Desktop\U.T.P\4° SEMESTRE 2025\DES. SOFT. IV\Proyecto Semestral git\Modulo7-Farmacia\Plantilla mejorada\obj\Debug\Borrador.csproj.CoreCompileInputs.cache
+C:\Users\FLIA PEREZ\Desktop\U.T.P\4° SEMESTRE 2025\DES. SOFT. IV\Proyecto Semestral git\Modulo7-Farmacia\Plantilla mejorada\obj\Debug\Borrador.exe
+C:\Users\FLIA PEREZ\Desktop\U.T.P\4° SEMESTRE 2025\DES. SOFT. IV\Proyecto Semestral git\Modulo7-Farmacia\Plantilla mejorada\obj\Debug\Borrador.pdb
+C:\Users\FLIA PEREZ\Desktop\U.T.P\4° SEMESTRE 2025\DES. SOFT. IV\Proyecto Semestral git\Modulo7-Farmacia\Plantilla mejorada\obj\Debug\Borrador.Modulo7.resources
