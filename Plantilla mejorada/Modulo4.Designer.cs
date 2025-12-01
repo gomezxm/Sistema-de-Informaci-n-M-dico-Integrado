@@ -1,0 +1,805 @@
+﻿namespace Borrador
+{
+    partial class Modulo4
+    {
+        /// <summary> 
+        /// Variable del diseñador necesaria.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary> 
+        /// Limpiar los recursos que se estén usando.
+        /// </summary>
+        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Código generado por el Diseñador de componentes
+
+        /// <summary> 
+        /// Método necesario para admitir el Diseñador. No se puede modificar
+        /// el contenido de este método con el editor de código.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            // Definición de controles principales
+            this.tabControlPrincipal = new System.Windows.Forms.TabControl();
+            this.tabPageEnfermeria = new System.Windows.Forms.TabPage();
+            this.tabPageMedicamentos = new System.Windows.Forms.TabPage();
+
+            // --- CONTROLES ENFERMERÍA ---
+            this.panelHeader_Enf = new System.Windows.Forms.Panel();
+            this.lblTitulo_Enf = new System.Windows.Forms.Label();
+            this.panelMain_Enf = new System.Windows.Forms.Panel();
+            this.groupBoxObservaciones_Enf = new System.Windows.Forms.GroupBox();
+            this.txtObservaciones_Enf = new System.Windows.Forms.TextBox();
+            this.groupBoxSignos_Enf = new System.Windows.Forms.GroupBox();
+            this.btnAgregarSignos_Enf = new System.Windows.Forms.Button();
+            this.dgvSignosVitales_Enf = new System.Windows.Forms.DataGridView();
+            this.groupBoxIntervenciones_Enf = new System.Windows.Forms.GroupBox();
+            this.btnAgregarIntervencion_Enf = new System.Windows.Forms.Button();
+            this.dgvIntervenciones_Enf = new System.Windows.Forms.DataGridView();
+            this.groupBoxDatos_Enf = new System.Windows.Forms.GroupBox();
+            this.cmbTurno_Enf = new System.Windows.Forms.ComboBox();
+            this.lblTurno_Enf = new System.Windows.Forms.Label();
+            this.dtpFecha_Enf = new System.Windows.Forms.DateTimePicker();
+            this.lblFecha_Enf = new System.Windows.Forms.Label();
+            this.cmbEnfermero_Enf = new System.Windows.Forms.ComboBox();
+            this.lblEnfermero_Enf = new System.Windows.Forms.Label();
+            this.cmbPaciente_Enf = new System.Windows.Forms.ComboBox();
+            this.lblPaciente_Enf = new System.Windows.Forms.Label();
+            this.panelFooter_Enf = new System.Windows.Forms.Panel();
+            this.btnIrAMedicamentos = new System.Windows.Forms.Button(); // Renombrado para lógica de tabs
+            this.btnImprimir_Enf = new System.Windows.Forms.Button();
+            this.btnGuardar_Enf = new System.Windows.Forms.Button();
+
+            // --- CONTROLES MEDICAMENTOS ---
+            this.panelHeader_Med = new System.Windows.Forms.Panel();
+            this.lblTitulo_Med = new System.Windows.Forms.Label();
+            this.panelMain_Med = new System.Windows.Forms.Panel();
+            this.groupBoxAdministracion_Med = new System.Windows.Forms.GroupBox();
+            this.txtObservaciones_Med = new System.Windows.Forms.TextBox();
+            this.lblObservaciones_Med = new System.Windows.Forms.Label();
+            this.cmbResponsable_Med = new System.Windows.Forms.ComboBox();
+            this.lblResponsable_Med = new System.Windows.Forms.Label();
+            this.chkAdministrado_Med = new System.Windows.Forms.CheckBox();
+            this.dtpHoraAdministracion_Med = new System.Windows.Forms.DateTimePicker();
+            this.lblHoraAdministracion_Med = new System.Windows.Forms.Label();
+            this.groupBoxMedicamentos_Med = new System.Windows.Forms.GroupBox();
+            this.dgvMedicamentosPrescritos_Med = new System.Windows.Forms.DataGridView();
+            this.groupBoxDatos_Med = new System.Windows.Forms.GroupBox();
+            this.cmbPrescripcion_Med = new System.Windows.Forms.ComboBox();
+            this.lblPrescripcion_Med = new System.Windows.Forms.Label();
+            this.cmbPaciente_Med = new System.Windows.Forms.ComboBox();
+            this.lblPaciente_Med = new System.Windows.Forms.Label();
+            this.panelFooter_Med = new System.Windows.Forms.Panel();
+            this.btnHistorial_Med = new System.Windows.Forms.Button();
+            this.btnCancelar_Med = new System.Windows.Forms.Button();
+            this.btnConfirmar_Med = new System.Windows.Forms.Button();
+
+            // Inicialización de layouts
+            this.tabControlPrincipal.SuspendLayout();
+            this.tabPageEnfermeria.SuspendLayout();
+            this.panelHeader_Enf.SuspendLayout();
+            this.panelMain_Enf.SuspendLayout();
+            this.groupBoxObservaciones_Enf.SuspendLayout();
+            this.groupBoxSignos_Enf.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSignosVitales_Enf)).BeginInit();
+            this.groupBoxIntervenciones_Enf.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvIntervenciones_Enf)).BeginInit();
+            this.groupBoxDatos_Enf.SuspendLayout();
+            this.panelFooter_Enf.SuspendLayout();
+
+            this.tabPageMedicamentos.SuspendLayout();
+            this.panelHeader_Med.SuspendLayout();
+            this.panelMain_Med.SuspendLayout();
+            this.groupBoxAdministracion_Med.SuspendLayout();
+            this.groupBoxMedicamentos_Med.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMedicamentosPrescritos_Med)).BeginInit();
+            this.groupBoxDatos_Med.SuspendLayout();
+            this.panelFooter_Med.SuspendLayout();
+            this.SuspendLayout();
+
+            // 
+            // tabControlPrincipal
+            // 
+            this.tabControlPrincipal.Controls.Add(this.tabPageEnfermeria);
+            this.tabControlPrincipal.Controls.Add(this.tabPageMedicamentos);
+            this.tabControlPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControlPrincipal.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.tabControlPrincipal.Location = new System.Drawing.Point(0, 0);
+            this.tabControlPrincipal.Name = "tabControlPrincipal";
+            this.tabControlPrincipal.SelectedIndex = 0;
+            this.tabControlPrincipal.Size = new System.Drawing.Size(1100, 750);
+            this.tabControlPrincipal.TabIndex = 0;
+            // 
+            // tabPageEnfermeria
+            // 
+            this.tabPageEnfermeria.Controls.Add(this.panelMain_Enf);
+            this.tabPageEnfermeria.Controls.Add(this.panelFooter_Enf);
+            this.tabPageEnfermeria.Controls.Add(this.panelHeader_Enf);
+            this.tabPageEnfermeria.Location = new System.Drawing.Point(4, 24);
+            this.tabPageEnfermeria.Name = "tabPageEnfermeria";
+            this.tabPageEnfermeria.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageEnfermeria.Size = new System.Drawing.Size(1092, 722);
+            this.tabPageEnfermeria.TabIndex = 0;
+            this.tabPageEnfermeria.Text = "Hoja de Enfermería";
+            this.tabPageEnfermeria.UseVisualStyleBackColor = true;
+            // 
+            // tabPageMedicamentos
+            // 
+            this.tabPageMedicamentos.Controls.Add(this.panelMain_Med);
+            this.tabPageMedicamentos.Controls.Add(this.panelFooter_Med);
+            this.tabPageMedicamentos.Controls.Add(this.panelHeader_Med);
+            this.tabPageMedicamentos.Location = new System.Drawing.Point(4, 24);
+            this.tabPageMedicamentos.Name = "tabPageMedicamentos";
+            this.tabPageMedicamentos.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageMedicamentos.Size = new System.Drawing.Size(1092, 722);
+            this.tabPageMedicamentos.TabIndex = 1;
+            this.tabPageMedicamentos.Text = "Administración de Medicamentos";
+            this.tabPageMedicamentos.UseVisualStyleBackColor = true;
+            // 
+            // --- INICIO CODIGO ENFERMERIA (Variables renombradas con _Enf) ---
+            // 
+            // panelHeader_Enf
+            // 
+            this.panelHeader_Enf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(89)))));
+            this.panelHeader_Enf.Controls.Add(this.lblTitulo_Enf);
+            this.panelHeader_Enf.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelHeader_Enf.Location = new System.Drawing.Point(3, 3);
+            this.panelHeader_Enf.Name = "panelHeader_Enf";
+            this.panelHeader_Enf.Size = new System.Drawing.Size(1086, 70);
+            this.panelHeader_Enf.TabIndex = 0;
+            // 
+            // lblTitulo_Enf
+            // 
+            this.lblTitulo_Enf.AutoSize = true;
+            this.lblTitulo_Enf.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            this.lblTitulo_Enf.ForeColor = System.Drawing.Color.White;
+            this.lblTitulo_Enf.Location = new System.Drawing.Point(20, 18);
+            this.lblTitulo_Enf.Name = "lblTitulo_Enf";
+            this.lblTitulo_Enf.Size = new System.Drawing.Size(367, 32);
+            this.lblTitulo_Enf.TabIndex = 0;
+            this.lblTitulo_Enf.Text = "🧑‍⚕️ Hoja de Enfermería";
+            // 
+            // panelMain_Enf
+            // 
+            this.panelMain_Enf.AutoScroll = true;
+            this.panelMain_Enf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(200)))), ((int)(((byte)(242)))));
+            this.panelMain_Enf.Controls.Add(this.groupBoxObservaciones_Enf);
+            this.panelMain_Enf.Controls.Add(this.groupBoxSignos_Enf);
+            this.panelMain_Enf.Controls.Add(this.groupBoxIntervenciones_Enf);
+            this.panelMain_Enf.Controls.Add(this.groupBoxDatos_Enf);
+            this.panelMain_Enf.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain_Enf.Location = new System.Drawing.Point(3, 73);
+            this.panelMain_Enf.Name = "panelMain_Enf";
+            this.panelMain_Enf.Padding = new System.Windows.Forms.Padding(20);
+            this.panelMain_Enf.Size = new System.Drawing.Size(1086, 576);
+            this.panelMain_Enf.TabIndex = 1;
+            // 
+            // groupBoxDatos_Enf
+            // 
+            this.groupBoxDatos_Enf.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxDatos_Enf.Controls.Add(this.cmbTurno_Enf);
+            this.groupBoxDatos_Enf.Controls.Add(this.lblTurno_Enf);
+            this.groupBoxDatos_Enf.Controls.Add(this.dtpFecha_Enf);
+            this.groupBoxDatos_Enf.Controls.Add(this.lblFecha_Enf);
+            this.groupBoxDatos_Enf.Controls.Add(this.cmbEnfermero_Enf);
+            this.groupBoxDatos_Enf.Controls.Add(this.lblEnfermero_Enf);
+            this.groupBoxDatos_Enf.Controls.Add(this.cmbPaciente_Enf);
+            this.groupBoxDatos_Enf.Controls.Add(this.lblPaciente_Enf);
+            this.groupBoxDatos_Enf.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.groupBoxDatos_Enf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(89)))));
+            this.groupBoxDatos_Enf.Location = new System.Drawing.Point(23, 23);
+            this.groupBoxDatos_Enf.Name = "groupBoxDatos_Enf";
+            this.groupBoxDatos_Enf.Size = new System.Drawing.Size(1040, 241);
+            this.groupBoxDatos_Enf.TabIndex = 0;
+            this.groupBoxDatos_Enf.TabStop = false;
+            this.groupBoxDatos_Enf.Text = "Datos Generales";
+            // 
+            // cmbPaciente_Enf
+            // 
+            this.cmbPaciente_Enf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPaciente_Enf.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbPaciente_Enf.FormattingEnabled = true;
+            this.cmbPaciente_Enf.Location = new System.Drawing.Point(25, 120);
+            this.cmbPaciente_Enf.Name = "cmbPaciente_Enf";
+            this.cmbPaciente_Enf.Size = new System.Drawing.Size(470, 25);
+            this.cmbPaciente_Enf.TabIndex = 1;
+            // 
+            // lblPaciente_Enf
+            // 
+            this.lblPaciente_Enf.AutoSize = true;
+            this.lblPaciente_Enf.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblPaciente_Enf.Location = new System.Drawing.Point(22, 97);
+            this.lblPaciente_Enf.Name = "lblPaciente_Enf";
+            this.lblPaciente_Enf.Size = new System.Drawing.Size(63, 19);
+            this.lblPaciente_Enf.TabIndex = 0;
+            this.lblPaciente_Enf.Text = "Paciente:";
+            // 
+            // cmbEnfermero_Enf
+            // 
+            this.cmbEnfermero_Enf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEnfermero_Enf.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbEnfermero_Enf.FormattingEnabled = true;
+            this.cmbEnfermero_Enf.Location = new System.Drawing.Point(551, 120);
+            this.cmbEnfermero_Enf.Name = "cmbEnfermero_Enf";
+            this.cmbEnfermero_Enf.Size = new System.Drawing.Size(470, 25);
+            this.cmbEnfermero_Enf.TabIndex = 3;
+            // 
+            // lblEnfermero_Enf
+            // 
+            this.lblEnfermero_Enf.AutoSize = true;
+            this.lblEnfermero_Enf.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblEnfermero_Enf.Location = new System.Drawing.Point(548, 97);
+            this.lblEnfermero_Enf.Name = "lblEnfermero_Enf";
+            this.lblEnfermero_Enf.Size = new System.Drawing.Size(157, 19);
+            this.lblEnfermero_Enf.TabIndex = 2;
+            this.lblEnfermero_Enf.Text = "Enfermero/a Responsable:";
+            // 
+            // dtpFecha_Enf
+            // 
+            this.dtpFecha_Enf.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.dtpFecha_Enf.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFecha_Enf.Location = new System.Drawing.Point(551, 195);
+            this.dtpFecha_Enf.Name = "dtpFecha_Enf";
+            this.dtpFecha_Enf.Size = new System.Drawing.Size(300, 25);
+            this.dtpFecha_Enf.TabIndex = 5;
+            // 
+            // lblFecha_Enf
+            // 
+            this.lblFecha_Enf.AutoSize = true;
+            this.lblFecha_Enf.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblFecha_Enf.Location = new System.Drawing.Point(548, 172);
+            this.lblFecha_Enf.Name = "lblFecha_Enf";
+            this.lblFecha_Enf.Size = new System.Drawing.Size(48, 19);
+            this.lblFecha_Enf.TabIndex = 4;
+            this.lblFecha_Enf.Text = "Fecha:";
+            // 
+            // cmbTurno_Enf
+            // 
+            this.cmbTurno_Enf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTurno_Enf.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbTurno_Enf.FormattingEnabled = true;
+            this.cmbTurno_Enf.Location = new System.Drawing.Point(25, 195);
+            this.cmbTurno_Enf.Name = "cmbTurno_Enf";
+            this.cmbTurno_Enf.Size = new System.Drawing.Size(300, 25);
+            this.cmbTurno_Enf.TabIndex = 7;
+            // 
+            // lblTurno_Enf
+            // 
+            this.lblTurno_Enf.AutoSize = true;
+            this.lblTurno_Enf.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblTurno_Enf.Location = new System.Drawing.Point(22, 172);
+            this.lblTurno_Enf.Name = "lblTurno_Enf";
+            this.lblTurno_Enf.Size = new System.Drawing.Size(51, 19);
+            this.lblTurno_Enf.TabIndex = 6;
+            this.lblTurno_Enf.Text = "Turno:";
+            // 
+            // groupBoxIntervenciones_Enf
+            // 
+            this.groupBoxIntervenciones_Enf.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxIntervenciones_Enf.Controls.Add(this.btnAgregarIntervencion_Enf);
+            this.groupBoxIntervenciones_Enf.Controls.Add(this.dgvIntervenciones_Enf);
+            this.groupBoxIntervenciones_Enf.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.groupBoxIntervenciones_Enf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(89)))));
+            this.groupBoxIntervenciones_Enf.Location = new System.Drawing.Point(23, 280);
+            this.groupBoxIntervenciones_Enf.Name = "groupBoxIntervenciones_Enf";
+            this.groupBoxIntervenciones_Enf.Size = new System.Drawing.Size(1040, 184);
+            this.groupBoxIntervenciones_Enf.TabIndex = 1;
+            this.groupBoxIntervenciones_Enf.TabStop = false;
+            this.groupBoxIntervenciones_Enf.Text = "Lista de Intervenciones";
+            // 
+            // btnAgregarIntervencion_Enf
+            // 
+            this.btnAgregarIntervencion_Enf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(83)))), ((int)(((byte)(166)))));
+            this.btnAgregarIntervencion_Enf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarIntervencion_Enf.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnAgregarIntervencion_Enf.ForeColor = System.Drawing.Color.White;
+            this.btnAgregarIntervencion_Enf.Location = new System.Drawing.Point(15, 145);
+            this.btnAgregarIntervencion_Enf.Name = "btnAgregarIntervencion_Enf";
+            this.btnAgregarIntervencion_Enf.Size = new System.Drawing.Size(160, 30);
+            this.btnAgregarIntervencion_Enf.TabIndex = 1;
+            this.btnAgregarIntervencion_Enf.Text = "+ Agregar Intervención";
+            this.btnAgregarIntervencion_Enf.UseVisualStyleBackColor = false;
+            this.btnAgregarIntervencion_Enf.Click += new System.EventHandler(this.btnAgregarIntervencion_Enf_Click);
+            // 
+            // dgvIntervenciones_Enf
+            // 
+            this.dgvIntervenciones_Enf.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvIntervenciones_Enf.BackgroundColor = System.Drawing.Color.White;
+            this.dgvIntervenciones_Enf.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvIntervenciones_Enf.Location = new System.Drawing.Point(15, 28);
+            this.dgvIntervenciones_Enf.Name = "dgvIntervenciones_Enf";
+            this.dgvIntervenciones_Enf.Size = new System.Drawing.Size(1010, 108);
+            this.dgvIntervenciones_Enf.TabIndex = 0;
+            // 
+            // groupBoxSignos_Enf
+            // 
+            this.groupBoxSignos_Enf.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxSignos_Enf.Controls.Add(this.btnAgregarSignos_Enf);
+            this.groupBoxSignos_Enf.Controls.Add(this.dgvSignosVitales_Enf);
+            this.groupBoxSignos_Enf.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.groupBoxSignos_Enf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(89)))));
+            this.groupBoxSignos_Enf.Location = new System.Drawing.Point(23, 480);
+            this.groupBoxSignos_Enf.Name = "groupBoxSignos_Enf";
+            this.groupBoxSignos_Enf.Size = new System.Drawing.Size(1040, 184);
+            this.groupBoxSignos_Enf.TabIndex = 2;
+            this.groupBoxSignos_Enf.TabStop = false;
+            this.groupBoxSignos_Enf.Text = "Signos Vitales por Hora";
+            // 
+            // btnAgregarSignos_Enf
+            // 
+            this.btnAgregarSignos_Enf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(83)))), ((int)(((byte)(166)))));
+            this.btnAgregarSignos_Enf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarSignos_Enf.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnAgregarSignos_Enf.ForeColor = System.Drawing.Color.White;
+            this.btnAgregarSignos_Enf.Location = new System.Drawing.Point(15, 145);
+            this.btnAgregarSignos_Enf.Name = "btnAgregarSignos_Enf";
+            this.btnAgregarSignos_Enf.Size = new System.Drawing.Size(160, 30);
+            this.btnAgregarSignos_Enf.TabIndex = 1;
+            this.btnAgregarSignos_Enf.Text = "+ Agregar Registro";
+            this.btnAgregarSignos_Enf.UseVisualStyleBackColor = false;
+            this.btnAgregarSignos_Enf.Click += new System.EventHandler(this.btnAgregarSignos_Enf_Click);
+            // 
+            // dgvSignosVitales_Enf
+            // 
+            this.dgvSignosVitales_Enf.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvSignosVitales_Enf.BackgroundColor = System.Drawing.Color.White;
+            this.dgvSignosVitales_Enf.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSignosVitales_Enf.Location = new System.Drawing.Point(15, 28);
+            this.dgvSignosVitales_Enf.Name = "dgvSignosVitales_Enf";
+            this.dgvSignosVitales_Enf.Size = new System.Drawing.Size(1010, 108);
+            this.dgvSignosVitales_Enf.TabIndex = 0;
+            // 
+            // groupBoxObservaciones_Enf
+            // 
+            this.groupBoxObservaciones_Enf.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxObservaciones_Enf.Controls.Add(this.txtObservaciones_Enf);
+            this.groupBoxObservaciones_Enf.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.groupBoxObservaciones_Enf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(89)))));
+            this.groupBoxObservaciones_Enf.Location = new System.Drawing.Point(23, 680);
+            this.groupBoxObservaciones_Enf.Name = "groupBoxObservaciones_Enf";
+            this.groupBoxObservaciones_Enf.Size = new System.Drawing.Size(1040, 120);
+            this.groupBoxObservaciones_Enf.TabIndex = 3;
+            this.groupBoxObservaciones_Enf.TabStop = false;
+            this.groupBoxObservaciones_Enf.Text = "Observaciones de Turno";
+            // 
+            // txtObservaciones_Enf
+            // 
+            this.txtObservaciones_Enf.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtObservaciones_Enf.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtObservaciones_Enf.Location = new System.Drawing.Point(15, 28);
+            this.txtObservaciones_Enf.MaxLength = 400;
+            this.txtObservaciones_Enf.Multiline = true;
+            this.txtObservaciones_Enf.Name = "txtObservaciones_Enf";
+            this.txtObservaciones_Enf.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtObservaciones_Enf.Size = new System.Drawing.Size(1010, 76);
+            this.txtObservaciones_Enf.TabIndex = 0;
+            // 
+            // panelFooter_Enf
+            // 
+            this.panelFooter_Enf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(188)))), ((int)(((byte)(170)))));
+            this.panelFooter_Enf.Controls.Add(this.btnIrAMedicamentos);
+            this.panelFooter_Enf.Controls.Add(this.btnImprimir_Enf);
+            this.panelFooter_Enf.Controls.Add(this.btnGuardar_Enf);
+            this.panelFooter_Enf.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelFooter_Enf.Location = new System.Drawing.Point(3, 649);
+            this.panelFooter_Enf.Name = "panelFooter_Enf";
+            this.panelFooter_Enf.Size = new System.Drawing.Size(1086, 70);
+            this.panelFooter_Enf.TabIndex = 2;
+            // 
+            // btnIrAMedicamentos
+            // 
+            this.btnIrAMedicamentos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnIrAMedicamentos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(154)))), ((int)(((byte)(217)))));
+            this.btnIrAMedicamentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIrAMedicamentos.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btnIrAMedicamentos.ForeColor = System.Drawing.Color.White;
+            this.btnIrAMedicamentos.Location = new System.Drawing.Point(574, 15);
+            this.btnIrAMedicamentos.Name = "btnIrAMedicamentos";
+            this.btnIrAMedicamentos.Size = new System.Drawing.Size(250, 40);
+            this.btnIrAMedicamentos.TabIndex = 2;
+            this.btnIrAMedicamentos.Text = "💊 Administrar Medicamentos";
+            this.btnIrAMedicamentos.UseVisualStyleBackColor = false;
+            this.btnIrAMedicamentos.Click += new System.EventHandler(this.btnIrAMedicamentos_Click);
+            // 
+            // btnImprimir_Enf
+            // 
+            this.btnImprimir_Enf.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnImprimir_Enf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(83)))), ((int)(((byte)(166)))));
+            this.btnImprimir_Enf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnImprimir_Enf.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btnImprimir_Enf.ForeColor = System.Drawing.Color.White;
+            this.btnImprimir_Enf.Location = new System.Drawing.Point(836, 15);
+            this.btnImprimir_Enf.Name = "btnImprimir_Enf";
+            this.btnImprimir_Enf.Size = new System.Drawing.Size(110, 40);
+            this.btnImprimir_Enf.TabIndex = 1;
+            this.btnImprimir_Enf.Text = "🖨️ Imprimir";
+            this.btnImprimir_Enf.UseVisualStyleBackColor = false;
+            this.btnImprimir_Enf.Click += new System.EventHandler(this.btnImprimir_Enf_Click);
+            // 
+            // btnGuardar_Enf
+            // 
+            this.btnGuardar_Enf.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGuardar_Enf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(89)))));
+            this.btnGuardar_Enf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar_Enf.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btnGuardar_Enf.ForeColor = System.Drawing.Color.White;
+            this.btnGuardar_Enf.Location = new System.Drawing.Point(958, 15);
+            this.btnGuardar_Enf.Name = "btnGuardar_Enf";
+            this.btnGuardar_Enf.Size = new System.Drawing.Size(110, 40);
+            this.btnGuardar_Enf.TabIndex = 0;
+            this.btnGuardar_Enf.Text = "💾 Guardar";
+            this.btnGuardar_Enf.UseVisualStyleBackColor = false;
+            this.btnGuardar_Enf.Click += new System.EventHandler(this.btnGuardar_Enf_Click);
+            // 
+            // --- INICIO CODIGO MEDICAMENTOS (Variables renombradas con _Med) ---
+            // 
+            // panelHeader_Med
+            // 
+            this.panelHeader_Med.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(89)))));
+            this.panelHeader_Med.Controls.Add(this.lblTitulo_Med);
+            this.panelHeader_Med.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelHeader_Med.Location = new System.Drawing.Point(3, 3);
+            this.panelHeader_Med.Name = "panelHeader_Med";
+            this.panelHeader_Med.Size = new System.Drawing.Size(1086, 70);
+            this.panelHeader_Med.TabIndex = 0;
+            // 
+            // lblTitulo_Med
+            // 
+            this.lblTitulo_Med.AutoSize = true;
+            this.lblTitulo_Med.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            this.lblTitulo_Med.ForeColor = System.Drawing.Color.White;
+            this.lblTitulo_Med.Location = new System.Drawing.Point(20, 18);
+            this.lblTitulo_Med.Name = "lblTitulo_Med";
+            this.lblTitulo_Med.Size = new System.Drawing.Size(458, 32);
+            this.lblTitulo_Med.TabIndex = 0;
+            this.lblTitulo_Med.Text = "💊 Administración de Medicamentos";
+            // 
+            // panelMain_Med
+            // 
+            this.panelMain_Med.AutoScroll = true;
+            this.panelMain_Med.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(200)))), ((int)(((byte)(242)))));
+            this.panelMain_Med.Controls.Add(this.groupBoxAdministracion_Med);
+            this.panelMain_Med.Controls.Add(this.groupBoxMedicamentos_Med);
+            this.panelMain_Med.Controls.Add(this.groupBoxDatos_Med);
+            this.panelMain_Med.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain_Med.Location = new System.Drawing.Point(3, 73);
+            this.panelMain_Med.Name = "panelMain_Med";
+            this.panelMain_Med.Padding = new System.Windows.Forms.Padding(20);
+            this.panelMain_Med.Size = new System.Drawing.Size(1086, 576);
+            this.panelMain_Med.TabIndex = 1;
+            // 
+            // groupBoxDatos_Med
+            // 
+            this.groupBoxDatos_Med.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxDatos_Med.Controls.Add(this.cmbPrescripcion_Med);
+            this.groupBoxDatos_Med.Controls.Add(this.lblPrescripcion_Med);
+            this.groupBoxDatos_Med.Controls.Add(this.cmbPaciente_Med);
+            this.groupBoxDatos_Med.Controls.Add(this.lblPaciente_Med);
+            this.groupBoxDatos_Med.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.groupBoxDatos_Med.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(89)))));
+            this.groupBoxDatos_Med.Location = new System.Drawing.Point(23, 23);
+            this.groupBoxDatos_Med.Name = "groupBoxDatos_Med";
+            this.groupBoxDatos_Med.Size = new System.Drawing.Size(1040, 191);
+            this.groupBoxDatos_Med.TabIndex = 0;
+            this.groupBoxDatos_Med.TabStop = false;
+            this.groupBoxDatos_Med.Text = "Datos del Paciente";
+            // 
+            // cmbPaciente_Med
+            // 
+            this.cmbPaciente_Med.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPaciente_Med.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbPaciente_Med.FormattingEnabled = true;
+            this.cmbPaciente_Med.Location = new System.Drawing.Point(25, 70);
+            this.cmbPaciente_Med.Name = "cmbPaciente_Med";
+            this.cmbPaciente_Med.Size = new System.Drawing.Size(990, 25);
+            this.cmbPaciente_Med.TabIndex = 1;
+            // 
+            // lblPaciente_Med
+            // 
+            this.lblPaciente_Med.AutoSize = true;
+            this.lblPaciente_Med.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblPaciente_Med.Location = new System.Drawing.Point(22, 47);
+            this.lblPaciente_Med.Name = "lblPaciente_Med";
+            this.lblPaciente_Med.Size = new System.Drawing.Size(63, 19);
+            this.lblPaciente_Med.TabIndex = 0;
+            this.lblPaciente_Med.Text = "Paciente:";
+            // 
+            // cmbPrescripcion_Med
+            // 
+            this.cmbPrescripcion_Med.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPrescripcion_Med.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbPrescripcion_Med.FormattingEnabled = true;
+            this.cmbPrescripcion_Med.Location = new System.Drawing.Point(25, 140);
+            this.cmbPrescripcion_Med.Name = "cmbPrescripcion_Med";
+            this.cmbPrescripcion_Med.Size = new System.Drawing.Size(990, 25);
+            this.cmbPrescripcion_Med.TabIndex = 3;
+            this.cmbPrescripcion_Med.SelectedIndexChanged += new System.EventHandler(this.cmbPrescripcion_Med_SelectedIndexChanged);
+            // 
+            // lblPrescripcion_Med
+            // 
+            this.lblPrescripcion_Med.AutoSize = true;
+            this.lblPrescripcion_Med.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblPrescripcion_Med.Location = new System.Drawing.Point(22, 117);
+            this.lblPrescripcion_Med.Name = "lblPrescripcion_Med";
+            this.lblPrescripcion_Med.Size = new System.Drawing.Size(158, 19);
+            this.lblPrescripcion_Med.TabIndex = 2;
+            this.lblPrescripcion_Med.Text = "Orden Médica / Prescripción:";
+            // 
+            // groupBoxMedicamentos_Med
+            // 
+            this.groupBoxMedicamentos_Med.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxMedicamentos_Med.Controls.Add(this.dgvMedicamentosPrescritos_Med);
+            this.groupBoxMedicamentos_Med.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.groupBoxMedicamentos_Med.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(89)))));
+            this.groupBoxMedicamentos_Med.Location = new System.Drawing.Point(23, 230);
+            this.groupBoxMedicamentos_Med.Name = "groupBoxMedicamentos_Med";
+            this.groupBoxMedicamentos_Med.Size = new System.Drawing.Size(1040, 204);
+            this.groupBoxMedicamentos_Med.TabIndex = 1;
+            this.groupBoxMedicamentos_Med.TabStop = false;
+            this.groupBoxMedicamentos_Med.Text = "Medicamentos Prescritos";
+            // 
+            // dgvMedicamentosPrescritos_Med
+            // 
+            this.dgvMedicamentosPrescritos_Med.AllowUserToAddRows = false;
+            this.dgvMedicamentosPrescritos_Med.AllowUserToDeleteRows = false;
+            this.dgvMedicamentosPrescritos_Med.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvMedicamentosPrescritos_Med.BackgroundColor = System.Drawing.Color.White;
+            this.dgvMedicamentosPrescritos_Med.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMedicamentosPrescritos_Med.Location = new System.Drawing.Point(15, 28);
+            this.dgvMedicamentosPrescritos_Med.Name = "dgvMedicamentosPrescritos_Med";
+            this.dgvMedicamentosPrescritos_Med.ReadOnly = true;
+            this.dgvMedicamentosPrescritos_Med.Size = new System.Drawing.Size(1010, 160);
+            this.dgvMedicamentosPrescritos_Med.TabIndex = 0;
+            // 
+            // groupBoxAdministracion_Med
+            // 
+            this.groupBoxAdministracion_Med.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxAdministracion_Med.Controls.Add(this.txtObservaciones_Med);
+            this.groupBoxAdministracion_Med.Controls.Add(this.lblObservaciones_Med);
+            this.groupBoxAdministracion_Med.Controls.Add(this.cmbResponsable_Med);
+            this.groupBoxAdministracion_Med.Controls.Add(this.lblResponsable_Med);
+            this.groupBoxAdministracion_Med.Controls.Add(this.chkAdministrado_Med);
+            this.groupBoxAdministracion_Med.Controls.Add(this.dtpHoraAdministracion_Med);
+            this.groupBoxAdministracion_Med.Controls.Add(this.lblHoraAdministracion_Med);
+            this.groupBoxAdministracion_Med.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.groupBoxAdministracion_Med.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(89)))));
+            this.groupBoxAdministracion_Med.Location = new System.Drawing.Point(23, 450);
+            this.groupBoxAdministracion_Med.Name = "groupBoxAdministracion_Med";
+            this.groupBoxAdministracion_Med.Size = new System.Drawing.Size(1040, 280);
+            this.groupBoxAdministracion_Med.TabIndex = 2;
+            this.groupBoxAdministracion_Med.TabStop = false;
+            this.groupBoxAdministracion_Med.Text = "Registro de Administración";
+            // 
+            // lblHoraAdministracion_Med
+            // 
+            this.lblHoraAdministracion_Med.AutoSize = true;
+            this.lblHoraAdministracion_Med.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblHoraAdministracion_Med.Location = new System.Drawing.Point(22, 37);
+            this.lblHoraAdministracion_Med.Name = "lblHoraAdministracion_Med";
+            this.lblHoraAdministracion_Med.Size = new System.Drawing.Size(159, 19);
+            this.lblHoraAdministracion_Med.TabIndex = 0;
+            this.lblHoraAdministracion_Med.Text = "Hora de Administración:";
+            // 
+            // dtpHoraAdministracion_Med
+            // 
+            this.dtpHoraAdministracion_Med.CustomFormat = "dd/MM/yyyy HH:mm";
+            this.dtpHoraAdministracion_Med.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.dtpHoraAdministracion_Med.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpHoraAdministracion_Med.Location = new System.Drawing.Point(25, 60);
+            this.dtpHoraAdministracion_Med.Name = "dtpHoraAdministracion_Med";
+            this.dtpHoraAdministracion_Med.ShowUpDown = true;
+            this.dtpHoraAdministracion_Med.Size = new System.Drawing.Size(350, 25);
+            this.dtpHoraAdministracion_Med.TabIndex = 1;
+            // 
+            // chkAdministrado_Med
+            // 
+            this.chkAdministrado_Med.AutoSize = true;
+            this.chkAdministrado_Med.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.chkAdministrado_Med.Location = new System.Drawing.Point(25, 122);
+            this.chkAdministrado_Med.Name = "chkAdministrado_Med";
+            this.chkAdministrado_Med.Size = new System.Drawing.Size(201, 23);
+            this.chkAdministrado_Med.TabIndex = 2;
+            this.chkAdministrado_Med.Text = "✓ Medicamento Administrado";
+            this.chkAdministrado_Med.UseVisualStyleBackColor = true;
+            // 
+            // lblResponsable_Med
+            // 
+            this.lblResponsable_Med.AutoSize = true;
+            this.lblResponsable_Med.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblResponsable_Med.Location = new System.Drawing.Point(506, 97);
+            this.lblResponsable_Med.Name = "lblResponsable_Med";
+            this.lblResponsable_Med.Size = new System.Drawing.Size(180, 19);
+            this.lblResponsable_Med.TabIndex = 3;
+            this.lblResponsable_Med.Text = "Responsable (Enfermero/a):";
+            // 
+            // cmbResponsable_Med
+            // 
+            this.cmbResponsable_Med.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbResponsable_Med.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbResponsable_Med.FormattingEnabled = true;
+            this.cmbResponsable_Med.Location = new System.Drawing.Point(509, 120);
+            this.cmbResponsable_Med.Name = "cmbResponsable_Med";
+            this.cmbResponsable_Med.Size = new System.Drawing.Size(425, 25);
+            this.cmbResponsable_Med.TabIndex = 4;
+            // 
+            // lblObservaciones_Med
+            // 
+            this.lblObservaciones_Med.AutoSize = true;
+            this.lblObservaciones_Med.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblObservaciones_Med.Location = new System.Drawing.Point(22, 162);
+            this.lblObservaciones_Med.Name = "lblObservaciones_Med";
+            this.lblObservaciones_Med.Size = new System.Drawing.Size(104, 19);
+            this.lblObservaciones_Med.TabIndex = 5;
+            this.lblObservaciones_Med.Text = "Observaciones:";
+            // 
+            // txtObservaciones_Med
+            // 
+            this.txtObservaciones_Med.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtObservaciones_Med.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtObservaciones_Med.Location = new System.Drawing.Point(25, 185);
+            this.txtObservaciones_Med.MaxLength = 300;
+            this.txtObservaciones_Med.Multiline = true;
+            this.txtObservaciones_Med.Name = "txtObservaciones_Med";
+            this.txtObservaciones_Med.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtObservaciones_Med.Size = new System.Drawing.Size(990, 75);
+            this.txtObservaciones_Med.TabIndex = 6;
+            // 
+            // panelFooter_Med
+            // 
+            this.panelFooter_Med.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(188)))), ((int)(((byte)(170)))));
+            this.panelFooter_Med.Controls.Add(this.btnHistorial_Med);
+            this.panelFooter_Med.Controls.Add(this.btnCancelar_Med);
+            this.panelFooter_Med.Controls.Add(this.btnConfirmar_Med);
+            this.panelFooter_Med.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelFooter_Med.Location = new System.Drawing.Point(3, 649);
+            this.panelFooter_Med.Name = "panelFooter_Med";
+            this.panelFooter_Med.Size = new System.Drawing.Size(1086, 70);
+            this.panelFooter_Med.TabIndex = 2;
+            // 
+            // btnHistorial_Med
+            // 
+            this.btnHistorial_Med.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(154)))), ((int)(((byte)(217)))));
+            this.btnHistorial_Med.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHistorial_Med.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btnHistorial_Med.ForeColor = System.Drawing.Color.White;
+            this.btnHistorial_Med.Location = new System.Drawing.Point(23, 15);
+            this.btnHistorial_Med.Name = "btnHistorial_Med";
+            this.btnHistorial_Med.Size = new System.Drawing.Size(180, 40);
+            this.btnHistorial_Med.TabIndex = 2;
+            this.btnHistorial_Med.Text = "📋 Ver Historial";
+            this.btnHistorial_Med.UseVisualStyleBackColor = false;
+            this.btnHistorial_Med.Click += new System.EventHandler(this.btnHistorial_Med_Click);
+            // 
+            // btnCancelar_Med
+            // 
+            this.btnCancelar_Med.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCancelar_Med.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(83)))), ((int)(((byte)(166)))));
+            this.btnCancelar_Med.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar_Med.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btnCancelar_Med.ForeColor = System.Drawing.Color.White;
+            this.btnCancelar_Med.Location = new System.Drawing.Point(833, 15);
+            this.btnCancelar_Med.Name = "btnCancelar_Med";
+            this.btnCancelar_Med.Size = new System.Drawing.Size(110, 40);
+            this.btnCancelar_Med.TabIndex = 1;
+            this.btnCancelar_Med.Text = "✖ Cancelar";
+            this.btnCancelar_Med.UseVisualStyleBackColor = false;
+            this.btnCancelar_Med.Click += new System.EventHandler(this.btnCancelar_Med_Click);
+            // 
+            // btnConfirmar_Med
+            // 
+            this.btnConfirmar_Med.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnConfirmar_Med.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(89)))));
+            this.btnConfirmar_Med.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfirmar_Med.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btnConfirmar_Med.ForeColor = System.Drawing.Color.White;
+            this.btnConfirmar_Med.Location = new System.Drawing.Point(955, 15);
+            this.btnConfirmar_Med.Name = "btnConfirmar_Med";
+            this.btnConfirmar_Med.Size = new System.Drawing.Size(110, 40);
+            this.btnConfirmar_Med.TabIndex = 0;
+            this.btnConfirmar_Med.Text = "✓ Confirmar";
+            this.btnConfirmar_Med.UseVisualStyleBackColor = false;
+            this.btnConfirmar_Med.Click += new System.EventHandler(this.btnConfirmar_Med_Click);
+            // 
+            // UserControl1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.tabControlPrincipal);
+            this.Name = "UserControl1";
+            this.Size = new System.Drawing.Size(1100, 750);
+            this.tabControlPrincipal.ResumeLayout(false);
+            this.tabPageEnfermeria.ResumeLayout(false);
+            this.panelHeader_Enf.ResumeLayout(false);
+            this.panelHeader_Enf.PerformLayout();
+            this.panelMain_Enf.ResumeLayout(false);
+            this.groupBoxObservaciones_Enf.ResumeLayout(false);
+            this.groupBoxObservaciones_Enf.PerformLayout();
+            this.groupBoxSignos_Enf.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSignosVitales_Enf)).EndInit();
+            this.groupBoxIntervenciones_Enf.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvIntervenciones_Enf)).EndInit();
+            this.groupBoxDatos_Enf.ResumeLayout(false);
+            this.groupBoxDatos_Enf.PerformLayout();
+            this.panelFooter_Enf.ResumeLayout(false);
+
+            this.tabPageMedicamentos.ResumeLayout(false);
+            this.panelHeader_Med.ResumeLayout(false);
+            this.panelHeader_Med.PerformLayout();
+            this.panelMain_Med.ResumeLayout(false);
+            this.groupBoxAdministracion_Med.ResumeLayout(false);
+            this.groupBoxAdministracion_Med.PerformLayout();
+            this.groupBoxMedicamentos_Med.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMedicamentosPrescritos_Med)).EndInit();
+            this.groupBoxDatos_Med.ResumeLayout(false);
+            this.groupBoxDatos_Med.PerformLayout();
+            this.panelFooter_Med.ResumeLayout(false);
+            this.ResumeLayout(false);
+        }
+
+        #endregion
+
+        // Tabs
+        private System.Windows.Forms.TabControl tabControlPrincipal;
+        private System.Windows.Forms.TabPage tabPageEnfermeria;
+        private System.Windows.Forms.TabPage tabPageMedicamentos;
+
+        // --- Controles Enfermería ---
+        private System.Windows.Forms.Panel panelHeader_Enf;
+        private System.Windows.Forms.Label lblTitulo_Enf;
+        private System.Windows.Forms.Panel panelMain_Enf;
+        private System.Windows.Forms.GroupBox groupBoxDatos_Enf;
+        private System.Windows.Forms.ComboBox cmbPaciente_Enf;
+        private System.Windows.Forms.Label lblPaciente_Enf;
+        private System.Windows.Forms.ComboBox cmbEnfermero_Enf;
+        private System.Windows.Forms.Label lblEnfermero_Enf;
+        private System.Windows.Forms.DateTimePicker dtpFecha_Enf;
+        private System.Windows.Forms.Label lblFecha_Enf;
+        private System.Windows.Forms.ComboBox cmbTurno_Enf;
+        private System.Windows.Forms.Label lblTurno_Enf;
+        private System.Windows.Forms.GroupBox groupBoxIntervenciones_Enf;
+        private System.Windows.Forms.DataGridView dgvIntervenciones_Enf;
+        private System.Windows.Forms.Button btnAgregarIntervencion_Enf;
+        private System.Windows.Forms.GroupBox groupBoxSignos_Enf;
+        private System.Windows.Forms.DataGridView dgvSignosVitales_Enf;
+        private System.Windows.Forms.Button btnAgregarSignos_Enf;
+        private System.Windows.Forms.GroupBox groupBoxObservaciones_Enf;
+        private System.Windows.Forms.TextBox txtObservaciones_Enf;
+        private System.Windows.Forms.Panel panelFooter_Enf;
+        private System.Windows.Forms.Button btnGuardar_Enf;
+        private System.Windows.Forms.Button btnImprimir_Enf;
+        private System.Windows.Forms.Button btnIrAMedicamentos; // Anteriormente btnMedicamentos
+
+        // --- Controles Medicamentos ---
+        private System.Windows.Forms.Panel panelHeader_Med;
+        private System.Windows.Forms.Label lblTitulo_Med;
+        private System.Windows.Forms.Panel panelMain_Med;
+        private System.Windows.Forms.GroupBox groupBoxDatos_Med;
+        private System.Windows.Forms.ComboBox cmbPaciente_Med;
+        private System.Windows.Forms.Label lblPaciente_Med;
+        private System.Windows.Forms.ComboBox cmbPrescripcion_Med;
+        private System.Windows.Forms.Label lblPrescripcion_Med;
+        private System.Windows.Forms.GroupBox groupBoxMedicamentos_Med;
+        private System.Windows.Forms.DataGridView dgvMedicamentosPrescritos_Med;
+        private System.Windows.Forms.GroupBox groupBoxAdministracion_Med;
+        private System.Windows.Forms.DateTimePicker dtpHoraAdministracion_Med;
+        private System.Windows.Forms.Label lblHoraAdministracion_Med;
+        private System.Windows.Forms.CheckBox chkAdministrado_Med;
+        private System.Windows.Forms.ComboBox cmbResponsable_Med;
+        private System.Windows.Forms.Label lblResponsable_Med;
+        private System.Windows.Forms.TextBox txtObservaciones_Med;
+        private System.Windows.Forms.Label lblObservaciones_Med;
+        private System.Windows.Forms.Panel panelFooter_Med;
+        private System.Windows.Forms.Button btnConfirmar_Med;
+        private System.Windows.Forms.Button btnCancelar_Med;
+        private System.Windows.Forms.Button btnHistorial_Med;
+    }
+}
