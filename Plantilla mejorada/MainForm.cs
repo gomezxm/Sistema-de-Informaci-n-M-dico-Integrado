@@ -97,7 +97,7 @@ namespace Borrador
 
                         case "btnCirugias":
                             //Modulo 8
-                            button.Tag = typeof(UCAgendaCirugias);
+                            button.Tag = typeof(Modulo8);
                            // button.Image = Properties.Resources.icon_cirugias;
                             break;
 
@@ -302,6 +302,17 @@ namespace Borrador
                 pbLogo.Location = new Point(10, 28); // Mueve el icono del logo para centrarlo
             }
             btnToggleMenu.Location = new Point(pnlLogo.Width - btnToggleMenu.Width - 10, btnToggleMenu.Location.Y); // Mueve el botón de hamburguesa
+        }
+
+        private void btnCirugias_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLaboratorio_Click(object sender, EventArgs e)
+        {
+
+
         }
     }
 }

@@ -194,6 +194,7 @@ namespace Borrador
             // UCOrdenLaboratorio
             // 
             this.Name = "UCOrdenLaboratorio";
+            this.Size = new System.Drawing.Size(287, 166);
             this.ResumeLayout(false);
 
         }
