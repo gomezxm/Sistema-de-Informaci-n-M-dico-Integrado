@@ -3,98 +3,30 @@
   "WorkspaceRootPath": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo4.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo4.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo7.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo7.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo6.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo6.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo5.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo5.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 362,
+      "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
           "DockedWidth": 271,
-          "SelectedChildIndex": 22,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -146,266 +78,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Modulo9.cs",
-              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo9.cs",
-              "RelativeDocumentMoniker": "Modulo9.cs",
-              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo9.cs",
-              "RelativeToolTip": "Modulo9.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAvwCkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Modulo4.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo4.Designer.cs",
+              "RelativeDocumentMoniker": "Modulo4.Designer.cs",
+              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo4.Designer.cs",
+              "RelativeToolTip": "Modulo4.Designer.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAiwCUDAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T19:43:06.268Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Modulo7.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo7.Designer.cs",
-              "RelativeDocumentMoniker": "Modulo7.Designer.cs",
-              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo7.Designer.cs",
-              "RelativeToolTip": "Modulo7.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGkDAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T19:27:08.636Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Modulo7.cs",
-              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo7.cs",
-              "RelativeDocumentMoniker": "Modulo7.cs",
-              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo7.cs",
-              "RelativeToolTip": "Modulo7.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T19:27:00.13Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Modulo5.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo5.Designer.cs",
-              "RelativeDocumentMoniker": "Modulo5.Designer.cs",
-              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo5.Designer.cs",
-              "RelativeToolTip": "Modulo5.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T19:23:35.526Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Modulo5.cs",
-              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo5.cs",
-              "RelativeDocumentMoniker": "Modulo5.cs",
-              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo5.cs",
-              "RelativeToolTip": "Modulo5.cs",
-              "ViewState": "AgIAAJgAAAAAAAAAAAAAwBAAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T19:23:30.679Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Modulo2.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo2.Designer.cs",
-              "RelativeDocumentMoniker": "Modulo2.Designer.cs",
-              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo2.Designer.cs",
-              "RelativeToolTip": "Modulo2.Designer.cs",
-              "ViewState": "AgIAAB4BAAAAAAAAAAAiwEUBAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T18:50:07.619Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Modulo2.cs",
-              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo2.cs",
-              "RelativeDocumentMoniker": "Modulo2.cs",
-              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo2.cs",
-              "RelativeToolTip": "Modulo2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T18:49:30.31Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Modulo2.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo2.cs",
-              "RelativeDocumentMoniker": "Modulo2.cs",
-              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo2.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Modulo2.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T18:49:26.622Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Modulo1.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo1.Designer.cs",
-              "RelativeDocumentMoniker": "Modulo1.Designer.cs",
-              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo1.Designer.cs",
-              "RelativeToolTip": "Modulo1.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T18:45:15.228Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Modulo1.cs",
-              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo1.cs",
-              "RelativeDocumentMoniker": "Modulo1.cs",
-              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo1.cs",
-              "RelativeToolTip": "Modulo1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T18:43:31.025Z",
+              "WhenOpened": "2025-12-02T20:22:38.512Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Modulo4.cs",
+              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo4.cs",
+              "RelativeDocumentMoniker": "Modulo4.cs",
+              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo4.cs",
+              "RelativeToolTip": "Modulo4.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAADwvwkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T20:20:41.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Modulo4.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo4.cs",
               "RelativeDocumentMoniker": "Modulo4.cs",
               "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo4.cs [Dise\u00F1o]",
               "RelativeToolTip": "Modulo4.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T18:13:42.512Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MainForm.cs",
-              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\MainForm.cs",
-              "RelativeDocumentMoniker": "MainForm.cs",
-              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\MainForm.cs",
-              "RelativeToolTip": "MainForm.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAYwDoAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T18:12:47.624Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Modulo6.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo6.Designer.cs",
-              "RelativeDocumentMoniker": "Modulo6.Designer.cs",
-              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo6.Designer.cs",
-              "RelativeToolTip": "Modulo6.Designer.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAcwIUCAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T18:09:42.556Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Modulo6.cs",
-              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo6.cs",
-              "RelativeDocumentMoniker": "Modulo6.cs",
-              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo6.cs",
-              "RelativeToolTip": "Modulo6.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T18:09:38.116Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Modulo6.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo6.cs",
-              "RelativeDocumentMoniker": "Modulo6.cs",
-              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo6.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Modulo6.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T18:07:28.565Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Modulo5.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo5.cs",
-              "RelativeDocumentMoniker": "Modulo5.cs",
-              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo5.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Modulo5.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T18:07:26.229Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Modulo7.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo7.cs",
-              "RelativeDocumentMoniker": "Modulo7.cs",
-              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo7.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Modulo7.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T18:07:24.552Z",
+              "WhenOpened": "2025-12-02T20:20:38.417Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Modulo8.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo8.cs",
-              "RelativeDocumentMoniker": "Modulo8.cs",
-              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo8.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Modulo8.cs [Dise\u00F1o]",
+              "Title": "Modulo2.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo2.cs",
+              "RelativeDocumentMoniker": "Modulo2.cs",
+              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo2.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Modulo2.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T18:07:19.829Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Modulo9.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo9.cs",
-              "RelativeDocumentMoniker": "Modulo9.cs",
-              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo9.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Modulo9.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T18:05:51.337Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "MainForm.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\MainForm.cs",
-              "RelativeDocumentMoniker": "MainForm.cs",
-              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\MainForm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "MainForm.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T18:05:38.714Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Modulo1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo1.cs",
-              "RelativeDocumentMoniker": "Modulo1.cs",
-              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Modulo1.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T18:05:37.874Z",
+              "WhenOpened": "2025-12-02T20:20:32.138Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]
