@@ -67,6 +67,12 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modulo4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulo4.Designer.cs">
+      <DependentUpon>Modulo4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modulo6.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -123,62 +129,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UCModulo2.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UCModulo2.Designer.cs">
-      <DependentUpon>UCModulo2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UCOrdenLaboratorioform1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UCAgendaCirugias.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UCAgendaCitasMedico.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UCConsultaMedica.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UCEstudiosImagen.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UCFacturacion.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UCFrmInventarioFarmacia.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UCFrmInventarioFarmacia.Designer.cs">
-      <DependentUpon>UCFrmInventarioFarmacia.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UCHojaEnfermeria.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UCInventarioFarmacia.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UCOrdenLaboratorio.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UCAdmisionHospitalariaForm.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UCAdmisionHospitalariaForm.Designer.cs">
-      <DependentUpon>UCAdmisionHospitalariaForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UCPacientesCRUD.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UCRegistroUrgencias.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modulo1.resx">
+      <DependentUpon>Modulo1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulo2.resx">
+      <DependentUpon>Modulo2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulo4.resx">
+      <DependentUpon>Modulo4.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modulo5.resx">
       <DependentUpon>Modulo5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulo7.resx">
+      <DependentUpon>Modulo7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulo8.resx">
+      <DependentUpon>Modulo8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulo9.resx">
+      <DependentUpon>Modulo9.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -190,24 +163,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UCFrmInventarioFarmacia.resx">
-      <DependentUpon>UCFrmInventarioFarmacia.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UCInventarioFarmacia.resx">
-      <DependentUpon>UCInventarioFarmacia.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UCModulo2.resx">
-      <DependentUpon>UCModulo2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UCOrdenLaboratorio.resx">
-      <DependentUpon>UCOrdenLaboratorio.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UCAdmisionHospitalariaForm.resx">
-      <DependentUpon>UCAdmisionHospitalariaForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UCOrdenLaboratorioform1.resx">
-      <DependentUpon>UCOrdenLaboratorioform1.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

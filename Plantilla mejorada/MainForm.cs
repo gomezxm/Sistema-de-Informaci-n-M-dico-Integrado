@@ -56,7 +56,7 @@ namespace Borrador
                     {
                         case "btnPacientes":
                             //Modulo 1
-                            button.Tag = typeof(UCPacientesCRUD);
+                            button.Tag = typeof(Modulo1);
                            // button.Image = Properties.Resources.icon_pacientes; // Asegúrate de tener este recurso
                             break;
                         case "btnAgenda":
@@ -67,13 +67,13 @@ namespace Borrador
 
                         case "btnConsultasMedicas":
                             //Modulo 3
-                            button.Tag = typeof(UCConsultaMedica);
+                            button.Tag = typeof(Modulo3);
                             //button.Image = Properties.Resources.icon_consultas;
                             break;
 
                         case "btnEnfermeria":
                             //Modulo 4
-                            button.Tag = typeof(UCHojaEnfermeria);
+                            button.Tag = typeof(Modulo4);
                             //button.Image = Properties.Resources.icon_enfermeria;
                             break;
 
@@ -85,37 +85,37 @@ namespace Borrador
 
                         case "btnImagenologia":
                             //Modulo 6
-                            button.Tag = typeof(UCEstudiosImagen);
+                            button.Tag = typeof(Modulo6);
                             //button.Image = Properties.Resources.icon_imagenologia;
                             break;
 
                         case "btnFarmacia":
                             //Modulo 7
-                            button.Tag = typeof(UCFrmInventarioFarmacia);
+                            button.Tag = typeof(Modulo7);
                            // button.Image = Properties.Resources.icon_farmacia;
                             break;
 
                         case "btnCirugias":
                             //Modulo 8
-                            button.Tag = typeof(UCAgendaCirugias);
+                            button.Tag = typeof(Modulo8);
                            // button.Image = Properties.Resources.icon_cirugias;
                             break;
 
                         case "btnHospitalizacion":
                             //Modulo 9 UCOrdenLaboratorioForm
-                            button.Tag = typeof(UCAdmisionHospitalariaForm);
+                            button.Tag = typeof(Modulo9);
                             //button.Image = Properties.Resources.icon_hospitalizacion;
                             break;
 
                         case "btnUrgencias":
                             //Modulo 10
-                            button.Tag = typeof(UCRegistroUrgencias);
+                            button.Tag = typeof(Modulo10);
                             //button.Image = Properties.Resources.icon_urgencias;
                             break;
 
                         case "btnAdministrativo":
                             //Modulo 11
-                            button.Tag = typeof(UCFacturacion);
+                            button.Tag = typeof(Modulo10);
                             //button.Image = Properties.Resources.icon_administrativo;
                             break;
 

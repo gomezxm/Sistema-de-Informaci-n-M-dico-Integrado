@@ -16,5 +16,30 @@ namespace Borrador
         {
             InitializeComponent();
         }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Lbl_NombreTipoIdentificación_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Lbl_NombreModoLlegada_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Txt_Nombre_Acompañante_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

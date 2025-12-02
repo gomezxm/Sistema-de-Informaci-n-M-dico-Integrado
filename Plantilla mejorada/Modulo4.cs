@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Borrador
 {
-    public partial class UCModulo2 : UserControl
+    public partial class Modulo4 : UserControl
     {
-        public UCModulo2()
+        public Modulo4()
         {
             InitializeComponent();
         }
