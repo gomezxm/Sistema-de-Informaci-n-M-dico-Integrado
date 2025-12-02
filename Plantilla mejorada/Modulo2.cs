@@ -16,5 +16,45 @@ namespace Borrador
         {
             InitializeComponent();
         }
+
+        private void lblSubTituloSeleccion_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnGuardarCita_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCancelarRegistroCita_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label24_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
