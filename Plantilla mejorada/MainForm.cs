@@ -15,7 +15,7 @@ namespace Borrador
         {
             InitializeComponent();
             SetupSideMenuButtons();
-            SetupTopBar();
+            
 
             this.Text = "Sistema de Gestión Clínica";
             this.Size = new Size(1400, 900);
@@ -34,58 +34,6 @@ namespace Borrador
             }
         }
 
-        private void SetupTopBar()
-        {
-            // Crear panel superior si no existe
-            if (!this.Controls.ContainsKey("pnlTopBar"))
-            {
-                Panel pnlTopBar = new Panel();
-                pnlTopBar.Name = "pnlTopBar";
-                pnlTopBar.Dock = DockStyle.Top;
-                pnlTopBar.Height = 60;
-                pnlTopBar.BackColor = Color.White;
-
-                // Breadcrumb
-                Label lblBreadcrumb = new Label();
-                lblBreadcrumb.Name = "lblBreadcrumb";
-                lblBreadcrumb.Text = "Sistema Clínico / Gestión de Pacientes";
-                lblBreadcrumb.Font = new Font("Segoe UI", 9F, FontStyle.Regular);
-                lblBreadcrumb.ForeColor = Color.FromArgb(100, 116, 139);
-                lblBreadcrumb.Location = new Point(280, 20);
-                lblBreadcrumb.AutoSize = true;
-
-                // Botón de notificaciones
-                Button btnNotifications = new Button();
-                btnNotifications.FlatStyle = FlatStyle.Flat;
-                btnNotifications.FlatAppearance.BorderSize = 0;
-                btnNotifications.Text = "🔔";
-                btnNotifications.Font = new Font("Segoe UI", 16F);
-                btnNotifications.Size = new Size(40, 40);
-                btnNotifications.Location = new Point(this.Width - 100, 10);
-                btnNotifications.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-                btnNotifications.Cursor = Cursors.Hand;
-                btnNotifications.BackColor = Color.Transparent;
-
-                // Botón de tema
-                Button btnTheme = new Button();
-                btnTheme.FlatStyle = FlatStyle.Flat;
-                btnTheme.FlatAppearance.BorderSize = 0;
-                btnTheme.Text = "🌙";
-                btnTheme.Font = new Font("Segoe UI", 16F);
-                btnTheme.Size = new Size(40, 40);
-                btnTheme.Location = new Point(this.Width - 50, 10);
-                btnTheme.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-                btnTheme.Cursor = Cursors.Hand;
-                btnTheme.BackColor = Color.Transparent;
-
-                pnlTopBar.Controls.Add(lblBreadcrumb);
-                pnlTopBar.Controls.Add(btnNotifications);
-                pnlTopBar.Controls.Add(btnTheme);
-
-                this.Controls.Add(pnlTopBar);
-                pnlTopBar.BringToFront();
-            }
-        }
 
         private void SetupSideMenuButtons()
         {
