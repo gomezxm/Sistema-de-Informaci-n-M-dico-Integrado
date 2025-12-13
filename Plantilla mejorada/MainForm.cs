@@ -18,8 +18,8 @@ namespace Borrador
             //no se
 
             this.Text = "Sistema de Gestión Clínica";
-            this.Size = new Size(1400, 900);
-            this.MinimumSize = new Size(1200, 800);
+            this.Size = new Size(1200, 900);
+            this.MinimumSize = new Size(1250, 800);
             this.StartPosition = FormStartPosition.CenterScreen;
 
             pnlSideMenu.Width = menuExpandWidth;

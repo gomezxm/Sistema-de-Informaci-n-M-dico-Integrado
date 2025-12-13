@@ -268,7 +268,7 @@
             this.lblClinicManager.ForeColor = System.Drawing.Color.White;
             this.lblClinicManager.Location = new System.Drawing.Point(62, 38);
             this.lblClinicManager.Name = "lblClinicManager";
-            this.lblClinicManager.Size = new System.Drawing.Size(137, 32);
+            this.lblClinicManager.Size = new System.Drawing.Size(154, 32);
             this.lblClinicManager.TabIndex = 1;
             this.lblClinicManager.Text = "CLINIC MGR";
             // 
@@ -304,7 +304,7 @@
             this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContent.Location = new System.Drawing.Point(250, 0);
             this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(1150, 800);
+            this.pnlContent.Size = new System.Drawing.Size(950, 800);
             this.pnlContent.TabIndex = 1;
             // 
             // tmrMenu
@@ -316,7 +316,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1400, 800);
+            this.ClientSize = new System.Drawing.Size(1200, 800);
             this.Controls.Add(this.pnlContent);
             this.Controls.Add(this.pnlSideMenu);
             this.MinimumSize = new System.Drawing.Size(1200, 700);
@@ -328,6 +328,7 @@
             this.pnlLogo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.ResumeLayout(false);
+
         }
 
         #endregion
