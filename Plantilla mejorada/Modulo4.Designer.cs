@@ -444,7 +444,7 @@
             this.tabPageMedicamentos.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageMedicamentos.Name = "tabPageMedicamentos";
             this.tabPageMedicamentos.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPageMedicamentos.Size = new System.Drawing.Size(1420, 1035);
+            this.tabPageMedicamentos.Size = new System.Drawing.Size(1459, 1093);
             this.tabPageMedicamentos.TabIndex = 1;
             this.tabPageMedicamentos.Text = "Administración de Medicamentos";
             // 
@@ -465,7 +465,7 @@
             this.groupBoxAdministracion_Med.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxAdministracion_Med.Name = "groupBoxAdministracion_Med";
             this.groupBoxAdministracion_Med.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBoxAdministracion_Med.Size = new System.Drawing.Size(1347, 345);
+            this.groupBoxAdministracion_Med.Size = new System.Drawing.Size(1386, 345);
             this.groupBoxAdministracion_Med.TabIndex = 3;
             this.groupBoxAdministracion_Med.TabStop = false;
             this.groupBoxAdministracion_Med.Text = "Registro de Administración";
@@ -482,7 +482,7 @@
             this.txtObservaciones_Med.Multiline = true;
             this.txtObservaciones_Med.Name = "txtObservaciones_Med";
             this.txtObservaciones_Med.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtObservaciones_Med.Size = new System.Drawing.Size(1279, 91);
+            this.txtObservaciones_Med.Size = new System.Drawing.Size(1318, 91);
             this.txtObservaciones_Med.TabIndex = 6;
             // 
             // lblObservaciones_Med
@@ -564,7 +564,7 @@
             this.groupBoxMedicamentos_Med.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxMedicamentos_Med.Name = "groupBoxMedicamentos_Med";
             this.groupBoxMedicamentos_Med.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBoxMedicamentos_Med.Size = new System.Drawing.Size(1347, 280);
+            this.groupBoxMedicamentos_Med.Size = new System.Drawing.Size(1386, 280);
             this.groupBoxMedicamentos_Med.TabIndex = 2;
             this.groupBoxMedicamentos_Med.TabStop = false;
             this.groupBoxMedicamentos_Med.Text = "Medicamentos Prescritos";
@@ -583,7 +583,7 @@
             this.dgvMedicamentosPrescritos_Med.Name = "dgvMedicamentosPrescritos_Med";
             this.dgvMedicamentosPrescritos_Med.ReadOnly = true;
             this.dgvMedicamentosPrescritos_Med.RowHeadersWidth = 51;
-            this.dgvMedicamentosPrescritos_Med.Size = new System.Drawing.Size(1307, 226);
+            this.dgvMedicamentosPrescritos_Med.Size = new System.Drawing.Size(1346, 226);
             this.dgvMedicamentosPrescritos_Med.TabIndex = 0;
             // 
             // groupBoxDatos_Med
@@ -600,7 +600,7 @@
             this.groupBoxDatos_Med.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxDatos_Med.Name = "groupBoxDatos_Med";
             this.groupBoxDatos_Med.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBoxDatos_Med.Size = new System.Drawing.Size(1347, 250);
+            this.groupBoxDatos_Med.Size = new System.Drawing.Size(1386, 250);
             this.groupBoxDatos_Med.TabIndex = 1;
             this.groupBoxDatos_Med.TabStop = false;
             this.groupBoxDatos_Med.Text = "Datos del Paciente";
@@ -660,7 +660,7 @@
             this.panelFooter_Med.Location = new System.Drawing.Point(4, 1021);
             this.panelFooter_Med.Margin = new System.Windows.Forms.Padding(4);
             this.panelFooter_Med.Name = "panelFooter_Med";
-            this.panelFooter_Med.Size = new System.Drawing.Size(1391, 86);
+            this.panelFooter_Med.Size = new System.Drawing.Size(1430, 86);
             this.panelFooter_Med.TabIndex = 4;
             // 
             // btnHistorial_Med
@@ -685,7 +685,7 @@
             this.btnCancelar_Med.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar_Med.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnCancelar_Med.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar_Med.Location = new System.Drawing.Point(1093, 18);
+            this.btnCancelar_Med.Location = new System.Drawing.Point(1132, 18);
             this.btnCancelar_Med.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar_Med.Name = "btnCancelar_Med";
             this.btnCancelar_Med.Size = new System.Drawing.Size(147, 49);
@@ -701,7 +701,7 @@
             this.btnConfirmar_Med.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfirmar_Med.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnConfirmar_Med.ForeColor = System.Drawing.Color.White;
-            this.btnConfirmar_Med.Location = new System.Drawing.Point(1255, 18);
+            this.btnConfirmar_Med.Location = new System.Drawing.Point(1294, 18);
             this.btnConfirmar_Med.Margin = new System.Windows.Forms.Padding(4);
             this.btnConfirmar_Med.Name = "btnConfirmar_Med";
             this.btnConfirmar_Med.Size = new System.Drawing.Size(147, 49);
@@ -718,7 +718,7 @@
             this.panelHeader_Med.Location = new System.Drawing.Point(4, 4);
             this.panelHeader_Med.Margin = new System.Windows.Forms.Padding(4);
             this.panelHeader_Med.Name = "panelHeader_Med";
-            this.panelHeader_Med.Size = new System.Drawing.Size(1391, 86);
+            this.panelHeader_Med.Size = new System.Drawing.Size(1430, 86);
             this.panelHeader_Med.TabIndex = 0;
             // 
             // lblTitulo_Med
