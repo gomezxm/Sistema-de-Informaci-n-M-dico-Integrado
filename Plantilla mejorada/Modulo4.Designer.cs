@@ -30,14 +30,14 @@
         {
             this.tabControlPrincipal = new System.Windows.Forms.TabControl();
             this.tabPageEnfermeria = new System.Windows.Forms.TabPage();
+            this.btnGuardar_Enf = new System.Windows.Forms.Button();
             this.groupBoxObservaciones_Enf = new System.Windows.Forms.GroupBox();
             this.txtObservaciones_Enf = new System.Windows.Forms.TextBox();
-            this.groupBoxSignos_Enf = new System.Windows.Forms.GroupBox();
-            this.btnGuardar_Enf = new System.Windows.Forms.Button();
             this.btnImprimir_Enf = new System.Windows.Forms.Button();
-            this.btnIrAMedicamentos = new System.Windows.Forms.Button();
+            this.groupBoxSignos_Enf = new System.Windows.Forms.GroupBox();
             this.btnAgregarSignos_Enf = new System.Windows.Forms.Button();
             this.dgvSignosVitales_Enf = new System.Windows.Forms.DataGridView();
+            this.btnIrAMedicamentos = new System.Windows.Forms.Button();
             this.groupBoxIntervenciones_Enf = new System.Windows.Forms.GroupBox();
             this.btnAgregarIntervencion_Enf = new System.Windows.Forms.Button();
             this.dgvIntervenciones_Enf = new System.Windows.Forms.DataGridView();
@@ -74,6 +74,7 @@
             this.btnConfirmar_Med = new System.Windows.Forms.Button();
             this.panelHeader_Med = new System.Windows.Forms.Panel();
             this.lblTitulo_Med = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControlPrincipal.SuspendLayout();
             this.tabPageEnfermeria.SuspendLayout();
             this.groupBoxObservaciones_Enf.SuspendLayout();
@@ -127,18 +128,35 @@
             this.tabPageEnfermeria.Text = "Hoja de Enfermería";
             this.tabPageEnfermeria.Click += new System.EventHandler(this.tabPageEnfermeria_Click);
             // 
+            // btnGuardar_Enf
+            // 
+            this.btnGuardar_Enf.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGuardar_Enf.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnGuardar_Enf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar_Enf.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btnGuardar_Enf.ForeColor = System.Drawing.Color.White;
+            this.btnGuardar_Enf.Location = new System.Drawing.Point(1169, 964);
+            this.btnGuardar_Enf.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGuardar_Enf.Name = "btnGuardar_Enf";
+            this.btnGuardar_Enf.Size = new System.Drawing.Size(215, 49);
+            this.btnGuardar_Enf.TabIndex = 0;
+            this.btnGuardar_Enf.Text = "💾 Guardar";
+            this.btnGuardar_Enf.UseVisualStyleBackColor = false;
+            this.btnGuardar_Enf.Click += new System.EventHandler(this.btnGuardar_Enf_Click);
+            // 
             // groupBoxObservaciones_Enf
             // 
             this.groupBoxObservaciones_Enf.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxObservaciones_Enf.Controls.Add(this.button1);
             this.groupBoxObservaciones_Enf.Controls.Add(this.txtObservaciones_Enf);
             this.groupBoxObservaciones_Enf.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.groupBoxObservaciones_Enf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(89)))));
-            this.groupBoxObservaciones_Enf.Location = new System.Drawing.Point(49, 864);
+            this.groupBoxObservaciones_Enf.Location = new System.Drawing.Point(36, 748);
             this.groupBoxObservaciones_Enf.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxObservaciones_Enf.Name = "groupBoxObservaciones_Enf";
             this.groupBoxObservaciones_Enf.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBoxObservaciones_Enf.Size = new System.Drawing.Size(1347, 160);
+            this.groupBoxObservaciones_Enf.Size = new System.Drawing.Size(1347, 206);
             this.groupBoxObservaciones_Enf.TabIndex = 4;
             this.groupBoxObservaciones_Enf.TabStop = false;
             this.groupBoxObservaciones_Enf.Text = "Observaciones de Turno";
@@ -155,8 +173,24 @@
             this.txtObservaciones_Enf.Multiline = true;
             this.txtObservaciones_Enf.Name = "txtObservaciones_Enf";
             this.txtObservaciones_Enf.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtObservaciones_Enf.Size = new System.Drawing.Size(1326, 105);
+            this.txtObservaciones_Enf.Size = new System.Drawing.Size(1326, 106);
             this.txtObservaciones_Enf.TabIndex = 0;
+            // 
+            // btnImprimir_Enf
+            // 
+            this.btnImprimir_Enf.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnImprimir_Enf.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.btnImprimir_Enf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnImprimir_Enf.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btnImprimir_Enf.ForeColor = System.Drawing.Color.White;
+            this.btnImprimir_Enf.Location = new System.Drawing.Point(992, 964);
+            this.btnImprimir_Enf.Margin = new System.Windows.Forms.Padding(4);
+            this.btnImprimir_Enf.Name = "btnImprimir_Enf";
+            this.btnImprimir_Enf.Size = new System.Drawing.Size(147, 49);
+            this.btnImprimir_Enf.TabIndex = 1;
+            this.btnImprimir_Enf.Text = "🖨️ Imprimir";
+            this.btnImprimir_Enf.UseVisualStyleBackColor = false;
+            this.btnImprimir_Enf.Click += new System.EventHandler(this.btnImprimir_Enf_Click);
             // 
             // groupBoxSignos_Enf
             // 
@@ -166,62 +200,14 @@
             this.groupBoxSignos_Enf.Controls.Add(this.dgvSignosVitales_Enf);
             this.groupBoxSignos_Enf.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.groupBoxSignos_Enf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(89)))));
-            this.groupBoxSignos_Enf.Location = new System.Drawing.Point(35, 606);
+            this.groupBoxSignos_Enf.Location = new System.Drawing.Point(35, 522);
             this.groupBoxSignos_Enf.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxSignos_Enf.Name = "groupBoxSignos_Enf";
             this.groupBoxSignos_Enf.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBoxSignos_Enf.Size = new System.Drawing.Size(1347, 240);
+            this.groupBoxSignos_Enf.Size = new System.Drawing.Size(1347, 214);
             this.groupBoxSignos_Enf.TabIndex = 3;
             this.groupBoxSignos_Enf.TabStop = false;
             this.groupBoxSignos_Enf.Text = "Signos Vitales por Hora";
-            // 
-            // btnGuardar_Enf
-            // 
-            this.btnGuardar_Enf.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGuardar_Enf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(89)))));
-            this.btnGuardar_Enf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardar_Enf.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.btnGuardar_Enf.ForeColor = System.Drawing.Color.White;
-            this.btnGuardar_Enf.Location = new System.Drawing.Point(1217, 1032);
-            this.btnGuardar_Enf.Margin = new System.Windows.Forms.Padding(4);
-            this.btnGuardar_Enf.Name = "btnGuardar_Enf";
-            this.btnGuardar_Enf.Size = new System.Drawing.Size(215, 49);
-            this.btnGuardar_Enf.TabIndex = 0;
-            this.btnGuardar_Enf.Text = "💾 Guardar";
-            this.btnGuardar_Enf.UseVisualStyleBackColor = false;
-            this.btnGuardar_Enf.Click += new System.EventHandler(this.btnGuardar_Enf_Click);
-            // 
-            // btnImprimir_Enf
-            // 
-            this.btnImprimir_Enf.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnImprimir_Enf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(83)))), ((int)(((byte)(166)))));
-            this.btnImprimir_Enf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnImprimir_Enf.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.btnImprimir_Enf.ForeColor = System.Drawing.Color.White;
-            this.btnImprimir_Enf.Location = new System.Drawing.Point(1040, 1032);
-            this.btnImprimir_Enf.Margin = new System.Windows.Forms.Padding(4);
-            this.btnImprimir_Enf.Name = "btnImprimir_Enf";
-            this.btnImprimir_Enf.Size = new System.Drawing.Size(147, 49);
-            this.btnImprimir_Enf.TabIndex = 1;
-            this.btnImprimir_Enf.Text = "🖨️ Imprimir";
-            this.btnImprimir_Enf.UseVisualStyleBackColor = false;
-            this.btnImprimir_Enf.Click += new System.EventHandler(this.btnImprimir_Enf_Click);
-            // 
-            // btnIrAMedicamentos
-            // 
-            this.btnIrAMedicamentos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnIrAMedicamentos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(154)))), ((int)(((byte)(217)))));
-            this.btnIrAMedicamentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIrAMedicamentos.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.btnIrAMedicamentos.ForeColor = System.Drawing.Color.White;
-            this.btnIrAMedicamentos.Location = new System.Drawing.Point(676, 1032);
-            this.btnIrAMedicamentos.Margin = new System.Windows.Forms.Padding(4);
-            this.btnIrAMedicamentos.Name = "btnIrAMedicamentos";
-            this.btnIrAMedicamentos.Size = new System.Drawing.Size(333, 49);
-            this.btnIrAMedicamentos.TabIndex = 2;
-            this.btnIrAMedicamentos.Text = "💊 Administrar Medicamentos";
-            this.btnIrAMedicamentos.UseVisualStyleBackColor = false;
-            this.btnIrAMedicamentos.Click += new System.EventHandler(this.btnIrAMedicamentos_Click);
             // 
             // btnAgregarSignos_Enf
             // 
@@ -229,7 +215,7 @@
             this.btnAgregarSignos_Enf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregarSignos_Enf.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnAgregarSignos_Enf.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarSignos_Enf.Location = new System.Drawing.Point(20, 185);
+            this.btnAgregarSignos_Enf.Location = new System.Drawing.Point(20, 160);
             this.btnAgregarSignos_Enf.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregarSignos_Enf.Name = "btnAgregarSignos_Enf";
             this.btnAgregarSignos_Enf.Size = new System.Drawing.Size(213, 37);
@@ -249,8 +235,24 @@
             this.dgvSignosVitales_Enf.Margin = new System.Windows.Forms.Padding(4);
             this.dgvSignosVitales_Enf.Name = "dgvSignosVitales_Enf";
             this.dgvSignosVitales_Enf.RowHeadersWidth = 51;
-            this.dgvSignosVitales_Enf.Size = new System.Drawing.Size(1328, 140);
+            this.dgvSignosVitales_Enf.Size = new System.Drawing.Size(1319, 114);
             this.dgvSignosVitales_Enf.TabIndex = 0;
+            // 
+            // btnIrAMedicamentos
+            // 
+            this.btnIrAMedicamentos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnIrAMedicamentos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(154)))), ((int)(((byte)(217)))));
+            this.btnIrAMedicamentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIrAMedicamentos.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btnIrAMedicamentos.ForeColor = System.Drawing.Color.White;
+            this.btnIrAMedicamentos.Location = new System.Drawing.Point(628, 964);
+            this.btnIrAMedicamentos.Margin = new System.Windows.Forms.Padding(4);
+            this.btnIrAMedicamentos.Name = "btnIrAMedicamentos";
+            this.btnIrAMedicamentos.Size = new System.Drawing.Size(333, 49);
+            this.btnIrAMedicamentos.TabIndex = 2;
+            this.btnIrAMedicamentos.Text = "💊 Administrar Medicamentos";
+            this.btnIrAMedicamentos.UseVisualStyleBackColor = false;
+            this.btnIrAMedicamentos.Click += new System.EventHandler(this.btnIrAMedicamentos_Click);
             // 
             // groupBoxIntervenciones_Enf
             // 
@@ -260,11 +262,11 @@
             this.groupBoxIntervenciones_Enf.Controls.Add(this.dgvIntervenciones_Enf);
             this.groupBoxIntervenciones_Enf.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.groupBoxIntervenciones_Enf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(89)))));
-            this.groupBoxIntervenciones_Enf.Location = new System.Drawing.Point(35, 345);
+            this.groupBoxIntervenciones_Enf.Location = new System.Drawing.Point(35, 298);
             this.groupBoxIntervenciones_Enf.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxIntervenciones_Enf.Name = "groupBoxIntervenciones_Enf";
             this.groupBoxIntervenciones_Enf.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBoxIntervenciones_Enf.Size = new System.Drawing.Size(1347, 240);
+            this.groupBoxIntervenciones_Enf.Size = new System.Drawing.Size(1347, 214);
             this.groupBoxIntervenciones_Enf.TabIndex = 2;
             this.groupBoxIntervenciones_Enf.TabStop = false;
             this.groupBoxIntervenciones_Enf.Text = "Lista de Intervenciones";
@@ -275,7 +277,7 @@
             this.btnAgregarIntervencion_Enf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregarIntervencion_Enf.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnAgregarIntervencion_Enf.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarIntervencion_Enf.Location = new System.Drawing.Point(20, 185);
+            this.btnAgregarIntervencion_Enf.Location = new System.Drawing.Point(20, 161);
             this.btnAgregarIntervencion_Enf.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregarIntervencion_Enf.Name = "btnAgregarIntervencion_Enf";
             this.btnAgregarIntervencion_Enf.Size = new System.Drawing.Size(213, 37);
@@ -295,7 +297,7 @@
             this.dgvIntervenciones_Enf.Margin = new System.Windows.Forms.Padding(4);
             this.dgvIntervenciones_Enf.Name = "dgvIntervenciones_Enf";
             this.dgvIntervenciones_Enf.RowHeadersWidth = 51;
-            this.dgvIntervenciones_Enf.Size = new System.Drawing.Size(1328, 140);
+            this.dgvIntervenciones_Enf.Size = new System.Drawing.Size(1319, 119);
             this.dgvIntervenciones_Enf.TabIndex = 0;
             // 
             // groupBoxDatos_Enf
@@ -312,7 +314,7 @@
             this.groupBoxDatos_Enf.Controls.Add(this.lblPaciente_Enf);
             this.groupBoxDatos_Enf.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.groupBoxDatos_Enf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(89)))));
-            this.groupBoxDatos_Enf.Location = new System.Drawing.Point(35, 110);
+            this.groupBoxDatos_Enf.Location = new System.Drawing.Point(35, 74);
             this.groupBoxDatos_Enf.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxDatos_Enf.Name = "groupBoxDatos_Enf";
             this.groupBoxDatos_Enf.Padding = new System.Windows.Forms.Padding(4);
@@ -400,7 +402,7 @@
             // lblPaciente_Enf
             // 
             this.lblPaciente_Enf.AutoSize = true;
-            this.lblPaciente_Enf.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblPaciente_Enf.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPaciente_Enf.Location = new System.Drawing.Point(16, 34);
             this.lblPaciente_Enf.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPaciente_Enf.Name = "lblPaciente_Enf";
@@ -410,13 +412,14 @@
             // 
             // panelHeader_Enf
             // 
+            this.panelHeader_Enf.AutoScroll = true;
             this.panelHeader_Enf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(89)))));
             this.panelHeader_Enf.Controls.Add(this.lblTitulo_Enf);
             this.panelHeader_Enf.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHeader_Enf.Location = new System.Drawing.Point(4, 4);
             this.panelHeader_Enf.Margin = new System.Windows.Forms.Padding(4);
             this.panelHeader_Enf.Name = "panelHeader_Enf";
-            this.panelHeader_Enf.Size = new System.Drawing.Size(1451, 86);
+            this.panelHeader_Enf.Size = new System.Drawing.Size(1451, 56);
             this.panelHeader_Enf.TabIndex = 0;
             // 
             // lblTitulo_Enf
@@ -424,7 +427,7 @@
             this.lblTitulo_Enf.AutoSize = true;
             this.lblTitulo_Enf.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
             this.lblTitulo_Enf.ForeColor = System.Drawing.Color.White;
-            this.lblTitulo_Enf.Location = new System.Drawing.Point(27, 22);
+            this.lblTitulo_Enf.Location = new System.Drawing.Point(27, 7);
             this.lblTitulo_Enf.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitulo_Enf.Name = "lblTitulo_Enf";
             this.lblTitulo_Enf.Size = new System.Drawing.Size(339, 41);
@@ -444,7 +447,7 @@
             this.tabPageMedicamentos.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageMedicamentos.Name = "tabPageMedicamentos";
             this.tabPageMedicamentos.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPageMedicamentos.Size = new System.Drawing.Size(1420, 1035);
+            this.tabPageMedicamentos.Size = new System.Drawing.Size(1459, 1093);
             this.tabPageMedicamentos.TabIndex = 1;
             this.tabPageMedicamentos.Text = "Administración de Medicamentos";
             // 
@@ -465,7 +468,7 @@
             this.groupBoxAdministracion_Med.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxAdministracion_Med.Name = "groupBoxAdministracion_Med";
             this.groupBoxAdministracion_Med.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBoxAdministracion_Med.Size = new System.Drawing.Size(1347, 345);
+            this.groupBoxAdministracion_Med.Size = new System.Drawing.Size(1326, 345);
             this.groupBoxAdministracion_Med.TabIndex = 3;
             this.groupBoxAdministracion_Med.TabStop = false;
             this.groupBoxAdministracion_Med.Text = "Registro de Administración";
@@ -482,7 +485,7 @@
             this.txtObservaciones_Med.Multiline = true;
             this.txtObservaciones_Med.Name = "txtObservaciones_Med";
             this.txtObservaciones_Med.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtObservaciones_Med.Size = new System.Drawing.Size(1279, 91);
+            this.txtObservaciones_Med.Size = new System.Drawing.Size(1258, 91);
             this.txtObservaciones_Med.TabIndex = 6;
             // 
             // lblObservaciones_Med
@@ -564,7 +567,7 @@
             this.groupBoxMedicamentos_Med.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxMedicamentos_Med.Name = "groupBoxMedicamentos_Med";
             this.groupBoxMedicamentos_Med.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBoxMedicamentos_Med.Size = new System.Drawing.Size(1347, 280);
+            this.groupBoxMedicamentos_Med.Size = new System.Drawing.Size(1326, 280);
             this.groupBoxMedicamentos_Med.TabIndex = 2;
             this.groupBoxMedicamentos_Med.TabStop = false;
             this.groupBoxMedicamentos_Med.Text = "Medicamentos Prescritos";
@@ -583,7 +586,7 @@
             this.dgvMedicamentosPrescritos_Med.Name = "dgvMedicamentosPrescritos_Med";
             this.dgvMedicamentosPrescritos_Med.ReadOnly = true;
             this.dgvMedicamentosPrescritos_Med.RowHeadersWidth = 51;
-            this.dgvMedicamentosPrescritos_Med.Size = new System.Drawing.Size(1307, 226);
+            this.dgvMedicamentosPrescritos_Med.Size = new System.Drawing.Size(1286, 226);
             this.dgvMedicamentosPrescritos_Med.TabIndex = 0;
             // 
             // groupBoxDatos_Med
@@ -600,7 +603,7 @@
             this.groupBoxDatos_Med.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxDatos_Med.Name = "groupBoxDatos_Med";
             this.groupBoxDatos_Med.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBoxDatos_Med.Size = new System.Drawing.Size(1347, 250);
+            this.groupBoxDatos_Med.Size = new System.Drawing.Size(1326, 250);
             this.groupBoxDatos_Med.TabIndex = 1;
             this.groupBoxDatos_Med.TabStop = false;
             this.groupBoxDatos_Med.Text = "Datos del Paciente";
@@ -660,7 +663,7 @@
             this.panelFooter_Med.Location = new System.Drawing.Point(4, 1021);
             this.panelFooter_Med.Margin = new System.Windows.Forms.Padding(4);
             this.panelFooter_Med.Name = "panelFooter_Med";
-            this.panelFooter_Med.Size = new System.Drawing.Size(1391, 86);
+            this.panelFooter_Med.Size = new System.Drawing.Size(1430, 86);
             this.panelFooter_Med.TabIndex = 4;
             // 
             // btnHistorial_Med
@@ -685,7 +688,7 @@
             this.btnCancelar_Med.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar_Med.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnCancelar_Med.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar_Med.Location = new System.Drawing.Point(1093, 18);
+            this.btnCancelar_Med.Location = new System.Drawing.Point(1132, 18);
             this.btnCancelar_Med.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar_Med.Name = "btnCancelar_Med";
             this.btnCancelar_Med.Size = new System.Drawing.Size(147, 49);
@@ -701,7 +704,7 @@
             this.btnConfirmar_Med.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfirmar_Med.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnConfirmar_Med.ForeColor = System.Drawing.Color.White;
-            this.btnConfirmar_Med.Location = new System.Drawing.Point(1255, 18);
+            this.btnConfirmar_Med.Location = new System.Drawing.Point(1294, 18);
             this.btnConfirmar_Med.Margin = new System.Windows.Forms.Padding(4);
             this.btnConfirmar_Med.Name = "btnConfirmar_Med";
             this.btnConfirmar_Med.Size = new System.Drawing.Size(147, 49);
@@ -718,7 +721,7 @@
             this.panelHeader_Med.Location = new System.Drawing.Point(4, 4);
             this.panelHeader_Med.Margin = new System.Windows.Forms.Padding(4);
             this.panelHeader_Med.Name = "panelHeader_Med";
-            this.panelHeader_Med.Size = new System.Drawing.Size(1391, 86);
+            this.panelHeader_Med.Size = new System.Drawing.Size(1430, 86);
             this.panelHeader_Med.TabIndex = 0;
             // 
             // lblTitulo_Med
@@ -732,6 +735,20 @@
             this.lblTitulo_Med.Size = new System.Drawing.Size(541, 41);
             this.lblTitulo_Med.TabIndex = 0;
             this.lblTitulo_Med.Text = "💊 Administración de Medicamentos";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(83)))), ((int)(((byte)(166)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(20, 148);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(213, 37);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "+ Agregar Observación";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // Modulo4
             // 
@@ -822,5 +839,6 @@
         private System.Windows.Forms.Button btnConfirmar_Med;
         private System.Windows.Forms.Button btnCancelar_Med;
         private System.Windows.Forms.Button btnHistorial_Med;
+        private System.Windows.Forms.Button button1;
     }
 }
