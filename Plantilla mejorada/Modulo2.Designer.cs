@@ -372,7 +372,7 @@
             this.lblTituloAgendarCita.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblTituloAgendarCita.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTituloAgendarCita.ForeColor = System.Drawing.Color.Black;
-            this.lblTituloAgendarCita.Location = new System.Drawing.Point(23, 16);
+            this.lblTituloAgendarCita.Location = new System.Drawing.Point(10, 16);
             this.lblTituloAgendarCita.Name = "lblTituloAgendarCita";
             this.lblTituloAgendarCita.Size = new System.Drawing.Size(210, 50);
             this.lblTituloAgendarCita.TabIndex = 1;

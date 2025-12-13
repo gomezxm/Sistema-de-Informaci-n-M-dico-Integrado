@@ -263,6 +263,9 @@
     <EmbeddedResource Include="Modulo2.resx">
       <DependentUpon>Modulo2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modulo3.resx">
+      <DependentUpon>Modulo3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modulo4.resx">
       <DependentUpon>Modulo4.cs</DependentUpon>
     </EmbeddedResource>
