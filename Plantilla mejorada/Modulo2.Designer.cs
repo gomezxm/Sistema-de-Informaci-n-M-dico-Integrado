@@ -30,12 +30,13 @@
         {
             this.tbAgendaCita = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.cmbVista = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.btnDetallesCita = new System.Windows.Forms.Button();
             this.dgvCVistaCitas = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.cmbVista = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -44,9 +45,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.lblSubTituloSeleccion = new System.Windows.Forms.Label();
             this.lblTituloSeleccion = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panelNuevaCita = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
@@ -88,67 +89,103 @@
             this.tbAgendaCita.Location = new System.Drawing.Point(0, 18);
             this.tbAgendaCita.Name = "tbAgendaCita";
             this.tbAgendaCita.SelectedIndex = 0;
-            this.tbAgendaCita.Size = new System.Drawing.Size(1087, 930);
+            this.tbAgendaCita.Size = new System.Drawing.Size(1339, 930);
             this.tbAgendaCita.TabIndex = 0;
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.comboBox5);
             this.tabPage1.Controls.Add(this.button2);
+            this.tabPage1.Controls.Add(this.cmbVista);
+            this.tabPage1.Controls.Add(this.label7);
             this.tabPage1.Controls.Add(this.btnDetallesCita);
             this.tabPage1.Controls.Add(this.dgvCVistaCitas);
             this.tabPage1.Controls.Add(this.panel1);
             this.tabPage1.Controls.Add(this.lblSubTituloSeleccion);
             this.tabPage1.Controls.Add(this.lblTituloSeleccion);
+            this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1135, 901);
+            this.tabPage1.Size = new System.Drawing.Size(1331, 901);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Agenda";
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
+            // comboBox5
+            // 
+            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox5.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(664, 487);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(292, 31);
+            this.comboBox5.TabIndex = 12;
+            // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.BackColor = System.Drawing.Color.Green;
+            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(658, 822);
+            this.button2.Location = new System.Drawing.Point(372, 840);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(115, 46);
+            this.button2.Size = new System.Drawing.Size(346, 46);
             this.button2.TabIndex = 29;
             this.button2.Text = "Refrescar";
             this.button2.UseVisualStyleBackColor = false;
             // 
+            // cmbVista
+            // 
+            this.cmbVista.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbVista.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbVista.FormattingEnabled = true;
+            this.cmbVista.Items.AddRange(new object[] {
+            "Semana",
+            "Dia"});
+            this.cmbVista.Location = new System.Drawing.Point(193, 487);
+            this.cmbVista.Name = "cmbVista";
+            this.cmbVista.Size = new System.Drawing.Size(292, 31);
+            this.cmbVista.TabIndex = 10;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(32, 490);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(155, 23);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Vista (Semana/Dia)";
+            // 
             // btnDetallesCita
             // 
             this.btnDetallesCita.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnDetallesCita.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDetallesCita.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDetallesCita.ForeColor = System.Drawing.Color.White;
-            this.btnDetallesCita.Location = new System.Drawing.Point(805, 822);
+            this.btnDetallesCita.Location = new System.Drawing.Point(726, 840);
             this.btnDetallesCita.Margin = new System.Windows.Forms.Padding(4);
             this.btnDetallesCita.Name = "btnDetallesCita";
-            this.btnDetallesCita.Size = new System.Drawing.Size(156, 46);
+            this.btnDetallesCita.Size = new System.Drawing.Size(364, 46);
             this.btnDetallesCita.TabIndex = 28;
             this.btnDetallesCita.Text = "Ver detalles";
             this.btnDetallesCita.UseVisualStyleBackColor = false;
             // 
             // dgvCVistaCitas
             // 
+            this.dgvCVistaCitas.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvCVistaCitas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCVistaCitas.Location = new System.Drawing.Point(24, 470);
+            this.dgvCVistaCitas.Location = new System.Drawing.Point(31, 531);
             this.dgvCVistaCitas.Name = "dgvCVistaCitas";
             this.dgvCVistaCitas.RowHeadersWidth = 51;
             this.dgvCVistaCitas.RowTemplate.Height = 24;
-            this.dgvCVistaCitas.Size = new System.Drawing.Size(931, 345);
+            this.dgvCVistaCitas.Size = new System.Drawing.Size(1245, 289);
             this.dgvCVistaCitas.TabIndex = 13;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.cmbVista);
             this.panel1.Controls.Add(this.comboBox3);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
@@ -157,46 +194,26 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(24, 88);
+            this.panel1.Location = new System.Drawing.Point(31, 109);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(931, 376);
+            this.panel1.Size = new System.Drawing.Size(1245, 359);
             this.panel1.TabIndex = 12;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(13, 293);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(157, 23);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Vista (Semana/Dia)";
-            // 
-            // cmbVista
-            // 
-            this.cmbVista.FormattingEnabled = true;
-            this.cmbVista.Items.AddRange(new object[] {
-            "Semana",
-            "Dia"});
-            this.cmbVista.Location = new System.Drawing.Point(17, 332);
-            this.cmbVista.Name = "cmbVista";
-            this.cmbVista.Size = new System.Drawing.Size(121, 24);
-            this.cmbVista.TabIndex = 10;
             // 
             // comboBox3
             // 
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(16, 257);
+            this.comboBox3.Location = new System.Drawing.Point(24, 299);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(892, 24);
+            this.comboBox3.Size = new System.Drawing.Size(632, 31);
             this.comboBox3.TabIndex = 9;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(13, 220);
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(20, 273);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(61, 23);
             this.label5.TabIndex = 8;
@@ -205,33 +222,36 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 152);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(20, 195);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(111, 23);
+            this.label4.Size = new System.Drawing.Size(117, 23);
             this.label4.TabIndex = 7;
-            this.label4.Text = "Fecha de cita";
+            this.label4.Text = "Fecha de cita*";
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(16, 178);
+            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(24, 220);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(281, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(329, 30);
             this.dateTimePicker1.TabIndex = 6;
             // 
             // comboBox2
             // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(16, 125);
+            this.comboBox2.Location = new System.Drawing.Point(23, 141);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(892, 24);
+            this.comboBox2.Size = new System.Drawing.Size(633, 31);
             this.comboBox2.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 99);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(19, 115);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(103, 23);
             this.label3.TabIndex = 4;
@@ -239,38 +259,30 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(16, 72);
+            this.comboBox1.Location = new System.Drawing.Point(25, 60);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(892, 24);
+            this.comboBox1.Size = new System.Drawing.Size(631, 31);
             this.comboBox1.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 46);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(20, 33);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 23);
+            this.label2.Size = new System.Drawing.Size(73, 23);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Médico";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(47, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 25);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Filtros";
+            this.label2.Text = "Médico*";
             // 
             // lblSubTituloSeleccion
             // 
             this.lblSubTituloSeleccion.AutoSize = true;
             this.lblSubTituloSeleccion.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubTituloSeleccion.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblSubTituloSeleccion.Location = new System.Drawing.Point(78, 62);
+            this.lblSubTituloSeleccion.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblSubTituloSeleccion.Location = new System.Drawing.Point(26, 68);
             this.lblSubTituloSeleccion.Name = "lblSubTituloSeleccion";
             this.lblSubTituloSeleccion.Size = new System.Drawing.Size(444, 23);
             this.lblSubTituloSeleccion.TabIndex = 11;
@@ -280,12 +292,22 @@
             // lblTituloSeleccion
             // 
             this.lblTituloSeleccion.AutoSize = true;
-            this.lblTituloSeleccion.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTituloSeleccion.Location = new System.Drawing.Point(73, 12);
+            this.lblTituloSeleccion.Font = new System.Drawing.Font("Segoe UI", 22.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTituloSeleccion.Location = new System.Drawing.Point(18, 10);
             this.lblTituloSeleccion.Name = "lblTituloSeleccion";
-            this.lblTituloSeleccion.Size = new System.Drawing.Size(474, 50);
+            this.lblTituloSeleccion.Size = new System.Drawing.Size(487, 51);
             this.lblTituloSeleccion.TabIndex = 3;
             this.lblTituloSeleccion.Text = "Manejo de Citas y Agenda";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(603, 495);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(55, 23);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Filtros";
             // 
             // tabPage2
             // 
@@ -293,7 +315,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1079, 901);
+            this.tabPage2.Size = new System.Drawing.Size(1331, 901);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Agregar";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -323,7 +345,6 @@
             this.panelNuevaCita.Name = "panelNuevaCita";
             this.panelNuevaCita.Size = new System.Drawing.Size(664, 799);
             this.panelNuevaCita.TabIndex = 16;
-            this.panelNuevaCita.Visible = true;
             // 
             // label8
             // 
@@ -503,7 +524,7 @@
             this.tabPage3.Controls.Add(this.dgvEditarCitas);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1135, 901);
+            this.tabPage3.Size = new System.Drawing.Size(1331, 901);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Editar";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -551,7 +572,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tbAgendaCita);
             this.Name = "Modulo2";
-            this.Size = new System.Drawing.Size(1090, 951);
+            this.Size = new System.Drawing.Size(1359, 973);
             this.tbAgendaCita.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -612,5 +633,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox comboBox5;
     }
 }
