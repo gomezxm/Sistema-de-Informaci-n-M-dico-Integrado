@@ -251,5 +251,10 @@ namespace Borrador
             MessageBox.Show("Función de historial en desarrollo", "Información",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void tabPageEnfermeria_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
