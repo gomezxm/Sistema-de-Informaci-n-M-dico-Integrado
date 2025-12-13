@@ -32,6 +32,7 @@
             this.tabPageEnfermeria = new System.Windows.Forms.TabPage();
             this.btnGuardar_Enf = new System.Windows.Forms.Button();
             this.groupBoxObservaciones_Enf = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.txtObservaciones_Enf = new System.Windows.Forms.TextBox();
             this.btnImprimir_Enf = new System.Windows.Forms.Button();
             this.groupBoxSignos_Enf = new System.Windows.Forms.GroupBox();
@@ -68,13 +69,10 @@
             this.lblPrescripcion_Med = new System.Windows.Forms.Label();
             this.cmbPaciente_Med = new System.Windows.Forms.ComboBox();
             this.lblPaciente_Med = new System.Windows.Forms.Label();
-            this.panelFooter_Med = new System.Windows.Forms.Panel();
             this.btnHistorial_Med = new System.Windows.Forms.Button();
             this.btnCancelar_Med = new System.Windows.Forms.Button();
-            this.btnConfirmar_Med = new System.Windows.Forms.Button();
             this.panelHeader_Med = new System.Windows.Forms.Panel();
             this.lblTitulo_Med = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.tabControlPrincipal.SuspendLayout();
             this.tabPageEnfermeria.SuspendLayout();
             this.groupBoxObservaciones_Enf.SuspendLayout();
@@ -89,7 +87,6 @@
             this.groupBoxMedicamentos_Med.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMedicamentosPrescritos_Med)).BeginInit();
             this.groupBoxDatos_Med.SuspendLayout();
-            this.panelFooter_Med.SuspendLayout();
             this.panelHeader_Med.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -160,6 +157,20 @@
             this.groupBoxObservaciones_Enf.TabIndex = 4;
             this.groupBoxObservaciones_Enf.TabStop = false;
             this.groupBoxObservaciones_Enf.Text = "Observaciones de Turno";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(83)))), ((int)(((byte)(166)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(20, 148);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(213, 37);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "+ Agregar Observación";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // txtObservaciones_Enf
             // 
@@ -437,11 +448,12 @@
             // tabPageMedicamentos
             // 
             this.tabPageMedicamentos.AutoScroll = true;
-            this.tabPageMedicamentos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(200)))), ((int)(((byte)(242)))));
+            this.tabPageMedicamentos.BackColor = System.Drawing.Color.White;
+            this.tabPageMedicamentos.Controls.Add(this.btnCancelar_Med);
             this.tabPageMedicamentos.Controls.Add(this.groupBoxAdministracion_Med);
+            this.tabPageMedicamentos.Controls.Add(this.btnHistorial_Med);
             this.tabPageMedicamentos.Controls.Add(this.groupBoxMedicamentos_Med);
             this.tabPageMedicamentos.Controls.Add(this.groupBoxDatos_Med);
-            this.tabPageMedicamentos.Controls.Add(this.panelFooter_Med);
             this.tabPageMedicamentos.Controls.Add(this.panelHeader_Med);
             this.tabPageMedicamentos.Location = new System.Drawing.Point(4, 29);
             this.tabPageMedicamentos.Margin = new System.Windows.Forms.Padding(4);
@@ -464,7 +476,7 @@
             this.groupBoxAdministracion_Med.Controls.Add(this.lblHoraAdministracion_Med);
             this.groupBoxAdministracion_Med.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.groupBoxAdministracion_Med.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(89)))));
-            this.groupBoxAdministracion_Med.Location = new System.Drawing.Point(35, 680);
+            this.groupBoxAdministracion_Med.Location = new System.Drawing.Point(35, 632);
             this.groupBoxAdministracion_Med.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxAdministracion_Med.Name = "groupBoxAdministracion_Med";
             this.groupBoxAdministracion_Med.Padding = new System.Windows.Forms.Padding(4);
@@ -567,7 +579,7 @@
             this.groupBoxMedicamentos_Med.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxMedicamentos_Med.Name = "groupBoxMedicamentos_Med";
             this.groupBoxMedicamentos_Med.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBoxMedicamentos_Med.Size = new System.Drawing.Size(1347, 280);
+            this.groupBoxMedicamentos_Med.Size = new System.Drawing.Size(1347, 229);
             this.groupBoxMedicamentos_Med.TabIndex = 2;
             this.groupBoxMedicamentos_Med.TabStop = false;
             this.groupBoxMedicamentos_Med.Text = "Medicamentos Prescritos";
@@ -586,7 +598,7 @@
             this.dgvMedicamentosPrescritos_Med.Name = "dgvMedicamentosPrescritos_Med";
             this.dgvMedicamentosPrescritos_Med.ReadOnly = true;
             this.dgvMedicamentosPrescritos_Med.RowHeadersWidth = 51;
-            this.dgvMedicamentosPrescritos_Med.Size = new System.Drawing.Size(1307, 226);
+            this.dgvMedicamentosPrescritos_Med.Size = new System.Drawing.Size(1307, 176);
             this.dgvMedicamentosPrescritos_Med.TabIndex = 0;
             // 
             // groupBoxDatos_Med
@@ -653,26 +665,13 @@
             this.lblPaciente_Med.TabIndex = 0;
             this.lblPaciente_Med.Text = "Paciente:";
             // 
-            // panelFooter_Med
-            // 
-            this.panelFooter_Med.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(188)))), ((int)(((byte)(170)))));
-            this.panelFooter_Med.Controls.Add(this.btnHistorial_Med);
-            this.panelFooter_Med.Controls.Add(this.btnCancelar_Med);
-            this.panelFooter_Med.Controls.Add(this.btnConfirmar_Med);
-            this.panelFooter_Med.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelFooter_Med.Location = new System.Drawing.Point(4, 1021);
-            this.panelFooter_Med.Margin = new System.Windows.Forms.Padding(4);
-            this.panelFooter_Med.Name = "panelFooter_Med";
-            this.panelFooter_Med.Size = new System.Drawing.Size(1430, 86);
-            this.panelFooter_Med.TabIndex = 4;
-            // 
             // btnHistorial_Med
             // 
             this.btnHistorial_Med.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(154)))), ((int)(((byte)(217)))));
             this.btnHistorial_Med.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHistorial_Med.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnHistorial_Med.ForeColor = System.Drawing.Color.White;
-            this.btnHistorial_Med.Location = new System.Drawing.Point(31, 18);
+            this.btnHistorial_Med.Location = new System.Drawing.Point(33, 985);
             this.btnHistorial_Med.Margin = new System.Windows.Forms.Padding(4);
             this.btnHistorial_Med.Name = "btnHistorial_Med";
             this.btnHistorial_Med.Size = new System.Drawing.Size(240, 49);
@@ -688,30 +687,14 @@
             this.btnCancelar_Med.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar_Med.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnCancelar_Med.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar_Med.Location = new System.Drawing.Point(1132, 18);
+            this.btnCancelar_Med.Location = new System.Drawing.Point(293, 985);
             this.btnCancelar_Med.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar_Med.Name = "btnCancelar_Med";
-            this.btnCancelar_Med.Size = new System.Drawing.Size(147, 49);
+            this.btnCancelar_Med.Size = new System.Drawing.Size(240, 49);
             this.btnCancelar_Med.TabIndex = 1;
             this.btnCancelar_Med.Text = "✖ Cancelar";
             this.btnCancelar_Med.UseVisualStyleBackColor = false;
             this.btnCancelar_Med.Click += new System.EventHandler(this.btnCancelar_Med_Click);
-            // 
-            // btnConfirmar_Med
-            // 
-            this.btnConfirmar_Med.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnConfirmar_Med.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(89)))));
-            this.btnConfirmar_Med.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConfirmar_Med.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.btnConfirmar_Med.ForeColor = System.Drawing.Color.White;
-            this.btnConfirmar_Med.Location = new System.Drawing.Point(1294, 18);
-            this.btnConfirmar_Med.Margin = new System.Windows.Forms.Padding(4);
-            this.btnConfirmar_Med.Name = "btnConfirmar_Med";
-            this.btnConfirmar_Med.Size = new System.Drawing.Size(147, 49);
-            this.btnConfirmar_Med.TabIndex = 0;
-            this.btnConfirmar_Med.Text = "✓ Confirmar";
-            this.btnConfirmar_Med.UseVisualStyleBackColor = false;
-            this.btnConfirmar_Med.Click += new System.EventHandler(this.btnConfirmar_Med_Click);
             // 
             // panelHeader_Med
             // 
@@ -721,7 +704,7 @@
             this.panelHeader_Med.Location = new System.Drawing.Point(4, 4);
             this.panelHeader_Med.Margin = new System.Windows.Forms.Padding(4);
             this.panelHeader_Med.Name = "panelHeader_Med";
-            this.panelHeader_Med.Size = new System.Drawing.Size(1430, 86);
+            this.panelHeader_Med.Size = new System.Drawing.Size(1451, 86);
             this.panelHeader_Med.TabIndex = 0;
             // 
             // lblTitulo_Med
@@ -735,20 +718,6 @@
             this.lblTitulo_Med.Size = new System.Drawing.Size(541, 41);
             this.lblTitulo_Med.TabIndex = 0;
             this.lblTitulo_Med.Text = "💊 Administración de Medicamentos";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(83)))), ((int)(((byte)(166)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(20, 148);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(213, 37);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "+ Agregar Observación";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // Modulo4
             // 
@@ -777,7 +746,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvMedicamentosPrescritos_Med)).EndInit();
             this.groupBoxDatos_Med.ResumeLayout(false);
             this.groupBoxDatos_Med.PerformLayout();
-            this.panelFooter_Med.ResumeLayout(false);
             this.panelHeader_Med.ResumeLayout(false);
             this.panelHeader_Med.PerformLayout();
             this.ResumeLayout(false);
@@ -835,8 +803,6 @@
         private System.Windows.Forms.Label lblResponsable_Med;
         private System.Windows.Forms.TextBox txtObservaciones_Med;
         private System.Windows.Forms.Label lblObservaciones_Med;
-        private System.Windows.Forms.Panel panelFooter_Med;
-        private System.Windows.Forms.Button btnConfirmar_Med;
         private System.Windows.Forms.Button btnCancelar_Med;
         private System.Windows.Forms.Button btnHistorial_Med;
         private System.Windows.Forms.Button button1;
