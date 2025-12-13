@@ -15,7 +15,7 @@ namespace Borrador
         {
             InitializeComponent();
             SetupSideMenuButtons();
-            
+            //no se
 
             this.Text = "Sistema de Gestión Clínica";
             this.Size = new Size(1400, 900);
