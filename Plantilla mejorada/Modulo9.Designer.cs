@@ -267,7 +267,7 @@
             this.Txt_NmbNoIdentificado.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.Txt_NmbNoIdentificado.Location = new System.Drawing.Point(485, 211);
             this.Txt_NmbNoIdentificado.Name = "Txt_NmbNoIdentificado";
-            this.Txt_NmbNoIdentificado.Size = new System.Drawing.Size(79, 30);
+            this.Txt_NmbNoIdentificado.Size = new System.Drawing.Size(162, 30);
             this.Txt_NmbNoIdentificado.TabIndex = 41;
             // 
             // CBox_ModoLlegada
@@ -747,12 +747,16 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(200)))), ((int)(((byte)(242)))));
+            this.tabPage3.Controls.Add(this.button4);
             this.tabPage3.Controls.Add(this.label14);
+            this.tabPage3.Controls.Add(this.button3);
             this.tabPage3.Controls.Add(this.panel3);
+            this.tabPage3.Controls.Add(this.button2);
+            this.tabPage3.Controls.Add(this.button1);
             this.tabPage3.Location = new System.Drawing.Point(4, 32);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1254, 859);
+            this.tabPage3.Size = new System.Drawing.Size(1254, 877);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Cola de Urgencias";
             // 
@@ -770,10 +774,6 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(166)))), ((int)(((byte)(217)))));
-            this.panel3.Controls.Add(this.button4);
-            this.panel3.Controls.Add(this.button3);
-            this.panel3.Controls.Add(this.button2);
-            this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.dataGridView1);
             this.panel3.Controls.Add(this.comboBox5);
             this.panel3.Controls.Add(this.label16);
@@ -781,7 +781,7 @@
             this.panel3.Controls.Add(this.label15);
             this.panel3.Location = new System.Drawing.Point(19, 70);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1087, 607);
+            this.panel3.Size = new System.Drawing.Size(1201, 678);
             this.panel3.TabIndex = 0;
             // 
             // button4
@@ -790,9 +790,9 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(929, 467);
+            this.button4.Location = new System.Drawing.Point(887, 775);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(141, 73);
+            this.button4.Size = new System.Drawing.Size(272, 73);
             this.button4.TabIndex = 8;
             this.button4.Text = "Refrescar";
             this.button4.UseVisualStyleBackColor = false;
@@ -803,9 +803,9 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(657, 467);
+            this.button3.Location = new System.Drawing.Point(609, 775);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(141, 73);
+            this.button3.Size = new System.Drawing.Size(245, 73);
             this.button3.TabIndex = 7;
             this.button3.Text = "Reasignar Prioridad";
             this.button3.UseVisualStyleBackColor = false;
@@ -816,9 +816,9 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(366, 467);
+            this.button2.Location = new System.Drawing.Point(349, 775);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(141, 73);
+            this.button2.Size = new System.Drawing.Size(227, 73);
             this.button2.TabIndex = 6;
             this.button2.Text = "Marcar atendido";
             this.button2.UseVisualStyleBackColor = false;
@@ -829,15 +829,17 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(45, 467);
+            this.button1.Location = new System.Drawing.Point(90, 775);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(171, 73);
+            this.button1.Size = new System.Drawing.Size(220, 73);
             this.button1.TabIndex = 5;
             this.button1.Text = "Llamar paciente";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -849,48 +851,45 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1041, 197);
+            this.dataGridView1.Size = new System.Drawing.Size(1150, 481);
             this.dataGridView1.TabIndex = 4;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Column1
             // 
             this.Column1.HeaderText = "Paciente";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
-            this.Column1.Width = 190;
             // 
             // Column_HrIngr
             // 
             this.Column_HrIngr.HeaderText = "Hora de ingreso";
             this.Column_HrIngr.MinimumWidth = 6;
             this.Column_HrIngr.Name = "Column_HrIngr";
-            this.Column_HrIngr.Width = 190;
             // 
             // Column_NvTriaje
             // 
             this.Column_NvTriaje.HeaderText = "Nivel Triaje";
             this.Column_NvTriaje.MinimumWidth = 6;
             this.Column_NvTriaje.Name = "Column_NvTriaje";
-            this.Column_NvTriaje.Width = 195;
             // 
             // Column_Estado
             // 
             this.Column_Estado.HeaderText = "Estado";
             this.Column_Estado.MinimumWidth = 6;
             this.Column_Estado.Name = "Column_Estado";
-            this.Column_Estado.Width = 195;
             // 
             // Column_MedcAsignado
             // 
             this.Column_MedcAsignado.HeaderText = "Medico Asignado";
             this.Column_MedcAsignado.MinimumWidth = 6;
             this.Column_MedcAsignado.Name = "Column_MedcAsignado";
-            this.Column_MedcAsignado.Width = 195;
             // 
             // comboBox5
             // 
             this.comboBox5.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.comboBox5.Items.AddRange(new object[] {
             "En espera",
             "En atención",
@@ -914,6 +913,7 @@
             // 
             this.comboBox4.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.comboBox4.Location = new System.Drawing.Point(29, 64);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(187, 31);
