@@ -41,5 +41,10 @@ namespace Borrador
         {
 
         }
+
+        private void Txt_ObservacionesIniciales_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
