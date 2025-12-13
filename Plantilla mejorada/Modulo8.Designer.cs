@@ -145,7 +145,7 @@
             // 
             // bttTasladar
             // 
-            this.bttTasladar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(46)))), ((int)(((byte)(89)))));
+            this.bttTasladar.BackColor = System.Drawing.Color.Goldenrod;
             this.bttTasladar.FlatAppearance.BorderSize = 0;
             this.bttTasladar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttTasladar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
@@ -170,7 +170,7 @@
             // 
             // bttAlta
             // 
-            this.bttAlta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(46)))), ((int)(((byte)(89)))));
+            this.bttAlta.BackColor = System.Drawing.Color.Green;
             this.bttAlta.FlatAppearance.BorderSize = 0;
             this.bttAlta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttAlta.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
@@ -196,7 +196,7 @@
             // 
             // bttAdmitir
             // 
-            this.bttAdmitir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(46)))), ((int)(((byte)(89)))));
+            this.bttAdmitir.BackColor = System.Drawing.Color.RoyalBlue;
             this.bttAdmitir.FlatAppearance.BorderSize = 0;
             this.bttAdmitir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttAdmitir.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
