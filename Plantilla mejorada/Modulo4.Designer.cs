@@ -468,7 +468,7 @@
             this.groupBoxAdministracion_Med.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxAdministracion_Med.Name = "groupBoxAdministracion_Med";
             this.groupBoxAdministracion_Med.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBoxAdministracion_Med.Size = new System.Drawing.Size(1326, 345);
+            this.groupBoxAdministracion_Med.Size = new System.Drawing.Size(1347, 345);
             this.groupBoxAdministracion_Med.TabIndex = 3;
             this.groupBoxAdministracion_Med.TabStop = false;
             this.groupBoxAdministracion_Med.Text = "Registro de Administración";
@@ -485,7 +485,7 @@
             this.txtObservaciones_Med.Multiline = true;
             this.txtObservaciones_Med.Name = "txtObservaciones_Med";
             this.txtObservaciones_Med.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtObservaciones_Med.Size = new System.Drawing.Size(1258, 91);
+            this.txtObservaciones_Med.Size = new System.Drawing.Size(1279, 91);
             this.txtObservaciones_Med.TabIndex = 6;
             // 
             // lblObservaciones_Med
@@ -567,7 +567,7 @@
             this.groupBoxMedicamentos_Med.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxMedicamentos_Med.Name = "groupBoxMedicamentos_Med";
             this.groupBoxMedicamentos_Med.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBoxMedicamentos_Med.Size = new System.Drawing.Size(1326, 280);
+            this.groupBoxMedicamentos_Med.Size = new System.Drawing.Size(1347, 280);
             this.groupBoxMedicamentos_Med.TabIndex = 2;
             this.groupBoxMedicamentos_Med.TabStop = false;
             this.groupBoxMedicamentos_Med.Text = "Medicamentos Prescritos";
@@ -586,7 +586,7 @@
             this.dgvMedicamentosPrescritos_Med.Name = "dgvMedicamentosPrescritos_Med";
             this.dgvMedicamentosPrescritos_Med.ReadOnly = true;
             this.dgvMedicamentosPrescritos_Med.RowHeadersWidth = 51;
-            this.dgvMedicamentosPrescritos_Med.Size = new System.Drawing.Size(1286, 226);
+            this.dgvMedicamentosPrescritos_Med.Size = new System.Drawing.Size(1307, 226);
             this.dgvMedicamentosPrescritos_Med.TabIndex = 0;
             // 
             // groupBoxDatos_Med
@@ -603,7 +603,7 @@
             this.groupBoxDatos_Med.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxDatos_Med.Name = "groupBoxDatos_Med";
             this.groupBoxDatos_Med.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBoxDatos_Med.Size = new System.Drawing.Size(1326, 250);
+            this.groupBoxDatos_Med.Size = new System.Drawing.Size(1347, 250);
             this.groupBoxDatos_Med.TabIndex = 1;
             this.groupBoxDatos_Med.TabStop = false;
             this.groupBoxDatos_Med.Text = "Datos del Paciente";
