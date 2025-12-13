@@ -1,26 +1,38 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Borrador
 {
     public partial class Modulo1 : UserControl
     {
-        // Datos en memoria (reemplazar por DB en producción)
+        // Colores del tema
+        private readonly Color PrimaryBlue = Color.FromArgb(41, 68, 123);
+        private readonly Color SecondaryBlue = Color.FromArgb(56, 97, 181);
+        private readonly Color AccentBlue = Color.FromArgb(66, 117, 206);
+        private readonly Color LightBlue = Color.FromArgb(100, 149, 237);
+        private readonly Color BackgroundGray = Color.FromArgb(248, 249, 251);
+        private readonly Color CardWhite = Color.White;
+        private readonly Color BorderGray = Color.FromArgb(226, 232, 240);
+        private readonly Color TextDark = Color.FromArgb(30, 41, 59);
+        private readonly Color TextGray = Color.FromArgb(100, 116, 139);
+
+        // Datos en memoria
         private readonly List<Dictionary<string, object>> listaPacientes = new List<Dictionary<string, object>>();
         private BindingSource bsPacientes;
 
         // Controles para "Ver pacientes"
+        private Panel pnlHeader;
+        private Label lblTitle;
+        private Label lblSubtitle;
+        private TextBox txtSearch;
         private DataGridView dgvPacientes;
         private Button btnAgregar;
         private Button btnVerHistoria;
+        private Button btnFiltros;
+        private Panel pnlStats;
 
         // Controles para "Añadir/Editar paciente"
         private TextBox txtNombre;
@@ -53,52 +65,165 @@ namespace Borrador
         public Modulo1()
         {
             InitializeComponent();
+            this.BackColor = BackgroundGray;
             InicializarPacientesTabs();
             CargarDatosPrueba();
             RefrescarGrilla();
-            // Mostrar por defecto la lista de pacientes
             tabControl1.SelectedTab = tabPage3;
         }
 
         private void InicializarPacientesTabs()
         {
+            // Estilo del TabControl
+            tabControl1.Appearance = TabAppearance.FlatButtons;
+            tabControl1.SizeMode = TabSizeMode.Fixed;
+            tabControl1.ItemSize = new Size(150, 40);
+            tabControl1.Font = new Font("Segoe UI", 10F, FontStyle.Regular);
+
             // Tab "Ver pacientes"
-            var topPanel = new Panel
+            ConstruirVistaListaPacientes(tabPage3);
+
+            // Tab "Añadir paciente"
+            ConstruirFormularioPaciente(tabPage1);
+
+            // Tab "Historia"
+            ConstruirHistoriaPaciente(tabPage2);
+        }
+
+        private void ConstruirVistaListaPacientes(TabPage tab)
+        {
+            tab.Controls.Clear();
+            tab.BackColor = BackgroundGray;
+
+            // Panel principal con padding
+            var mainContainer = new Panel
+            {
+                Dock = DockStyle.Fill,
+                Padding = new Padding(24),
+                BackColor = BackgroundGray
+            };
+
+            // Header con título y subtítulo
+            pnlHeader = new Panel
             {
                 Dock = DockStyle.Top,
-                Height = 48,
-                Padding = new Padding(6),
-                BackColor = Color.FromArgb(240, 240, 240)
+                Height = 100,
+                BackColor = BackgroundGray
             };
 
-            btnAgregar = new Button
+            lblTitle = new Label
             {
-                Text = "Añadir Paciente",
-                AutoSize = false,
-                Size = new Size(150, 32),
-                Location = new Point(6, 8),
-                BackColor = Color.FromArgb(41, 83, 130),
-                ForeColor = Color.White,
-                FlatStyle = FlatStyle.Flat
+                Text = "Patient Management",
+                Font = new Font("Segoe UI", 22F, FontStyle.Bold),
+                ForeColor = TextDark,
+                AutoSize = true,
+                Location = new Point(0, 0)
             };
-            btnAgregar.FlatAppearance.BorderSize = 0;
+
+            lblSubtitle = new Label
+            {
+                Text = "Manage patient records, admissions, and medical history efficiently.",
+                Font = new Font("Segoe UI", 10F),
+                ForeColor = TextGray,
+                AutoSize = true,
+                Location = new Point(0, 40)
+            };
+
+            pnlHeader.Controls.Add(lblTitle);
+            pnlHeader.Controls.Add(lblSubtitle);
+
+            // Panel de estadísticas (cards superiores)
+            pnlStats = new Panel
+            {
+                Dock = DockStyle.Top,
+                Height = 100,
+                BackColor = BackgroundGray,
+                Padding = new Padding(0, 12, 0, 12)
+            };
+
+            var statCard1 = CrearStatCard("TOTAL PATIENTS", listaPacientes.Count.ToString(), "+12% since last month");
+            var statCard2 = CrearStatCard("ADMITTED", "42", "Current admissions");
+
+            statCard1.Location = new Point(0, 12);
+            statCard1.Width = 280;
+            statCard2.Location = new Point(300, 12);
+            statCard2.Width = 280;
+
+            pnlStats.Controls.Add(statCard1);
+            pnlStats.Controls.Add(statCard2);
+
+            // Barra de acciones (búsqueda y botones)
+            var actionBar = new Panel
+            {
+                Dock = DockStyle.Top,
+                Height = 70,
+                BackColor = BackgroundGray,
+                Padding = new Padding(0, 8, 0, 8)
+            };
+
+            // Búsqueda
+            txtSearch = new TextBox
+            {
+                Width = 350,
+                Height = 38,
+                Location = new Point(0, 16),
+                Font = new Font("Segoe UI", 10F),
+                ForeColor = TextGray,
+                Text = "Search by name, ID or phone...",
+                BorderStyle = BorderStyle.FixedSingle
+            };
+            txtSearch.GotFocus += (s, e) =>
+            {
+                if (txtSearch.Text == "Search by name, ID or phone...")
+                {
+                    txtSearch.Text = "";
+                    txtSearch.ForeColor = TextDark;
+                }
+            };
+            txtSearch.LostFocus += (s, e) =>
+            {
+                if (string.IsNullOrWhiteSpace(txtSearch.Text))
+                {
+                    txtSearch.Text = "Search by name, ID or phone...";
+                    txtSearch.ForeColor = TextGray;
+                }
+            };
+
+            // Botones de acción
+            btnAgregar = CrearBotonModerno("+ Añadir Paciente", SecondaryBlue);
+            btnAgregar.Location = new Point(actionBar.Width - 380, 16);
+            btnAgregar.Size = new Size(160, 38);
             btnAgregar.Click += (s, e) => IrATabAgregarNuevo();
 
-            btnVerHistoria = new Button
-            {
-                Text = "Ver Historia (seleccionado)",
-                AutoSize = false,
-                Size = new Size(200, 32),
-                Location = new Point(166, 8),
-                BackColor = Color.FromArgb(96, 146, 211),
-                ForeColor = Color.White,
-                FlatStyle = FlatStyle.Flat
-            };
-            btnVerHistoria.FlatAppearance.BorderSize = 0;
+            btnFiltros = CrearBotonModerno("⚙ Filtros", Color.FromArgb(226, 232, 240));
+            btnFiltros.ForeColor = TextDark;
+            btnFiltros.Location = new Point(actionBar.Width - 210, 16);
+            btnFiltros.Size = new Size(100, 38);
+
+            btnVerHistoria = CrearBotonModerno("📋 Ver Historia", LightBlue);
+            btnVerHistoria.Location = new Point(actionBar.Width - 100, 16);
+            btnVerHistoria.Size = new Size(100, 38);
             btnVerHistoria.Click += (s, e) => IrATabHistoriaDesdeSeleccion();
 
-            topPanel.Controls.Add(btnAgregar);
-            topPanel.Controls.Add(btnVerHistoria);
+            actionBar.Controls.Add(txtSearch);
+            actionBar.Controls.Add(btnAgregar);
+            actionBar.Controls.Add(btnFiltros);
+            actionBar.Controls.Add(btnVerHistoria);
+
+            actionBar.Resize += (s, e) =>
+            {
+                btnAgregar.Location = new Point(actionBar.Width - 380, 16);
+                btnFiltros.Location = new Point(actionBar.Width - 210, 16);
+                btnVerHistoria.Location = new Point(actionBar.Width - 100, 16);
+            };
+
+            // DataGridView con estilo moderno
+            var dgvContainer = new Panel
+            {
+                Dock = DockStyle.Fill,
+                BackColor = CardWhite,
+                Padding = new Padding(1)
+            };
 
             dgvPacientes = new DataGridView
             {
@@ -107,18 +232,83 @@ namespace Borrador
                 ReadOnly = true,
                 SelectionMode = DataGridViewSelectionMode.FullRowSelect,
                 AutoGenerateColumns = false,
-                BackgroundColor = Color.White,
-                BorderStyle = BorderStyle.None
+                BackgroundColor = CardWhite,
+                BorderStyle = BorderStyle.None,
+                CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal,
+                ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None,
+                EnableHeadersVisualStyles = false,
+                GridColor = BorderGray,
+                RowHeadersVisible = false,
+                Font = new Font("Segoe UI", 9.5F),
+                RowTemplate = { Height = 50 }
             };
 
-            dgvPacientes.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "ID", DataPropertyName = "Id", Width = 60 });
-            dgvPacientes.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Nombre", DataPropertyName = "NombreCompleto", Width = 220 });
-            dgvPacientes.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Cédula", DataPropertyName = "Cedula", Width = 120 });
-            dgvPacientes.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Nacimiento", DataPropertyName = "FechaNacimiento", Width = 110 });
-            dgvPacientes.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Teléfono", DataPropertyName = "Telefono", Width = 120 });
+            // Estilo del header
+            dgvPacientes.ColumnHeadersDefaultCellStyle.BackColor = BackgroundGray;
+            dgvPacientes.ColumnHeadersDefaultCellStyle.ForeColor = TextGray;
+            dgvPacientes.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            dgvPacientes.ColumnHeadersDefaultCellStyle.Padding = new Padding(8);
+            dgvPacientes.ColumnHeadersHeight = 45;
 
-            var colEditar = new DataGridViewButtonColumn { HeaderText = "Editar", Text = "Editar", UseColumnTextForButtonValue = true, Width = 80 };
-            var colEliminar = new DataGridViewButtonColumn { HeaderText = "Eliminar", Text = "Eliminar", UseColumnTextForButtonValue = true, Width = 80 };
+            // Estilo de las celdas
+            dgvPacientes.DefaultCellStyle.SelectionBackColor = Color.FromArgb(219, 234, 254);
+            dgvPacientes.DefaultCellStyle.SelectionForeColor = TextDark;
+            dgvPacientes.DefaultCellStyle.Padding = new Padding(8, 5, 8, 5);
+            dgvPacientes.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(249, 250, 251);
+
+            // Columnas
+            dgvPacientes.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                HeaderText = "ID",
+                DataPropertyName = "Id",
+                Width = 80
+            });
+
+            dgvPacientes.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                HeaderText = "NAME",
+                DataPropertyName = "NombreCompleto",
+                Width = 200
+            });
+
+            dgvPacientes.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                HeaderText = "ID NUMBER (CÉDULA)",
+                DataPropertyName = "Cedula",
+                Width = 150
+            });
+
+            dgvPacientes.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                HeaderText = "BIRTH DATE",
+                DataPropertyName = "FechaNacimiento",
+                Width = 120
+            });
+
+            dgvPacientes.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                HeaderText = "PHONE",
+                DataPropertyName = "Telefono",
+                Width = 130
+            });
+
+            var colEditar = new DataGridViewButtonColumn
+            {
+                HeaderText = "ACTIONS",
+                Text = "✏️",
+                UseColumnTextForButtonValue = true,
+                Width = 80,
+                FlatStyle = FlatStyle.Flat
+            };
+
+            var colEliminar = new DataGridViewButtonColumn
+            {
+                Text = "🗑️",
+                UseColumnTextForButtonValue = true,
+                Width = 80,
+                FlatStyle = FlatStyle.Flat
+            };
+
             dgvPacientes.Columns.Add(colEditar);
             dgvPacientes.Columns.Add(colEliminar);
 
@@ -127,52 +317,133 @@ namespace Borrador
             bsPacientes = new BindingSource();
             dgvPacientes.DataSource = bsPacientes;
 
-            tabPage3.Controls.Clear();
-            tabPage3.Controls.Add(dgvPacientes);
-            tabPage3.Controls.Add(topPanel);
+            dgvContainer.Controls.Add(dgvPacientes);
 
-            // Tab "Añadir paciente" (formulario)
-            ConstruirFormularioPaciente(tabPage1);
+            mainContainer.Controls.Add(dgvContainer);
+            mainContainer.Controls.Add(actionBar);
+            mainContainer.Controls.Add(pnlStats);
+            mainContainer.Controls.Add(pnlHeader);
 
-            // Tab "Historia" (solo lectura)
-            ConstruirHistoriaPaciente(tabPage2);
+            tab.Controls.Add(mainContainer);
+        }
+
+        private Panel CrearStatCard(string titulo, string valor, string detalle)
+        {
+            var card = new Panel
+            {
+                Height = 76,
+                BackColor = CardWhite,
+                BorderStyle = BorderStyle.FixedSingle,
+                Padding = new Padding(16)
+            };
+
+            var lblTitulo = new Label
+            {
+                Text = titulo,
+                Font = new Font("Segoe UI", 8F, FontStyle.Bold),
+                ForeColor = TextGray,
+                AutoSize = true,
+                Location = new Point(16, 12)
+            };
+
+            var lblValor = new Label
+            {
+                Text = valor,
+                Font = new Font("Segoe UI", 20F, FontStyle.Bold),
+                ForeColor = PrimaryBlue,
+                AutoSize = true,
+                Location = new Point(16, 30)
+            };
+
+            card.Controls.Add(lblTitulo);
+            card.Controls.Add(lblValor);
+
+            return card;
+        }
+
+        private Button CrearBotonModerno(string texto, Color colorFondo)
+        {
+            var btn = new Button
+            {
+                Text = texto,
+                BackColor = colorFondo,
+                ForeColor = Color.White,
+                FlatStyle = FlatStyle.Flat,
+                Font = new Font("Segoe UI", 9.5F, FontStyle.Bold),
+                Cursor = Cursors.Hand
+            };
+            btn.FlatAppearance.BorderSize = 0;
+            btn.FlatAppearance.MouseOverBackColor = AjustarBrillo(colorFondo, -20);
+            return btn;
+        }
+
+        private Color AjustarBrillo(Color color, int ajuste)
+        {
+            return Color.FromArgb(
+                Math.Max(0, Math.Min(255, color.R + ajuste)),
+                Math.Max(0, Math.Min(255, color.G + ajuste)),
+                Math.Max(0, Math.Min(255, color.B + ajuste))
+            );
         }
 
         private void ConstruirFormularioPaciente(TabPage tab)
         {
             tab.Controls.Clear();
+            tab.BackColor = BackgroundGray;
+
+            var mainContainer = new Panel
+            {
+                Dock = DockStyle.Fill,
+                Padding = new Padding(24),
+                BackColor = BackgroundGray,
+                AutoScroll = true
+            };
+
+            // Card principal con el formulario
+            var formCard = new Panel
+            {
+                Dock = DockStyle.Top,
+                Height = 700,
+                BackColor = CardWhite,
+                Padding = new Padding(24)
+            };
 
             var main = new TableLayoutPanel
             {
                 Dock = DockStyle.Fill,
                 ColumnCount = 2,
-                RowCount = 10,
-                Padding = new Padding(12),
+                RowCount = 12,
                 AutoScroll = true
             };
             main.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50));
             main.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50));
 
-            txtNombre = new TextBox();
-            txtApellido = new TextBox();
-            txtCedula = new TextBox();
-            dtpFechaNacimiento = new DateTimePicker { Format = DateTimePickerFormat.Short };
-            cbSexo = new ComboBox { DropDownStyle = ComboBoxStyle.DropDownList };
-            cbEstadoCivil = new ComboBox { DropDownStyle = ComboBoxStyle.DropDownList };
-            txtTelefono = new TextBox();
-            txtContactoEmergencia = new TextBox();
-            txtAlergias = new TextBox { Multiline = true, Height = 60, ScrollBars = ScrollBars.Vertical };
-            txtAntecedentes = new TextBox { Multiline = true, Height = 80, ScrollBars = ScrollBars.Vertical };
-            txtSeguro = new TextBox();
-            txtPoliza = new TextBox();
+            txtNombre = CrearTextBoxModerno();
+            txtApellido = CrearTextBoxModerno();
+            txtCedula = CrearTextBoxModerno();
+            dtpFechaNacimiento = new DateTimePicker { Format = DateTimePickerFormat.Short, Font = new Font("Segoe UI", 10F) };
+            cbSexo = CrearComboBoxModerno();
+            cbEstadoCivil = CrearComboBoxModerno();
+            txtTelefono = CrearTextBoxModerno();
+            txtContactoEmergencia = CrearTextBoxModerno();
+            txtAlergias = new TextBox { Multiline = true, Height = 80, ScrollBars = ScrollBars.Vertical, Font = new Font("Segoe UI", 10F), BorderStyle = BorderStyle.FixedSingle };
+            txtAntecedentes = new TextBox { Multiline = true, Height = 80, ScrollBars = ScrollBars.Vertical, Font = new Font("Segoe UI", 10F), BorderStyle = BorderStyle.FixedSingle };
+            txtSeguro = CrearTextBoxModerno();
+            txtPoliza = CrearTextBoxModerno();
 
             cbSexo.Items.AddRange(new object[] { "Masculino", "Femenino", "Otro" });
             cbEstadoCivil.Items.AddRange(new object[] { "Soltero/a", "Casado/a", "Divorciado/a", "Viudo/a" });
 
             void AddRow(string labelText, Control control, int row)
             {
-                var lbl = new Label { Text = labelText, AutoSize = true };
-                var panel = new Panel { Dock = DockStyle.Fill };
+                var lbl = new Label
+                {
+                    Text = labelText,
+                    AutoSize = true,
+                    Font = new Font("Segoe UI", 9.5F, FontStyle.Bold),
+                    ForeColor = TextDark
+                };
+                var panel = new Panel { Dock = DockStyle.Fill, Padding = new Padding(0, 5, 10, 5) };
                 control.Dock = DockStyle.Top;
                 panel.Controls.Add(control);
                 main.Controls.Add(lbl, 0, row);
@@ -189,65 +460,82 @@ namespace Borrador
             AddRow("Contacto emergencia:", txtContactoEmergencia, 7);
             AddRow("Alergias:", txtAlergias, 8);
             AddRow("Antecedentes:", txtAntecedentes, 9);
+            AddRow("Seguro:", txtSeguro, 10);
+            AddRow("Póliza:", txtPoliza, 11);
 
-            var rightPanel = new Panel { Dock = DockStyle.Fill };
-            var rightLayout = new TableLayoutPanel { Dock = DockStyle.Fill, RowCount = 4, ColumnCount = 1, Padding = new Padding(6) };
-            rightLayout.RowStyles.Add(new RowStyle(SizeType.AutoSize));
-            rightLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 50));
-            rightLayout.RowStyles.Add(new RowStyle(SizeType.AutoSize));
-            rightLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 50));
-            rightLayout.Controls.Add(new Label { Text = "Seguro:", AutoSize = true });
-            rightLayout.Controls.Add(txtSeguro);
-            rightLayout.Controls.Add(new Label { Text = "Póliza:", AutoSize = true });
-            rightLayout.Controls.Add(txtPoliza);
-            rightPanel.Controls.Add(rightLayout);
+            formCard.Controls.Add(main);
 
-            var outer = new TableLayoutPanel { Dock = DockStyle.Fill, ColumnCount = 2 };
-            outer.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 60));
-            outer.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 40));
-            outer.Controls.Add(main, 0, 0);
-            outer.Controls.Add(rightPanel, 1, 0);
-
-            var buttonsPanel = new Panel { Dock = DockStyle.Bottom, Height = 56, Padding = new Padding(12) };
-            btnGuardar = new Button
+            // Panel de botones
+            var buttonsPanel = new Panel
             {
-                Text = "Guardar",
-                Size = new Size(100, 36),
-                Location = new Point(12, 10),
-                BackColor = Color.FromArgb(41, 83, 130),
-                ForeColor = Color.White,
-                FlatStyle = FlatStyle.Flat
+                Dock = DockStyle.Bottom,
+                Height = 70,
+                BackColor = CardWhite,
+                Padding = new Padding(24, 12, 24, 12)
             };
-            btnGuardar.FlatAppearance.BorderSize = 0;
+
+            btnGuardar = CrearBotonModerno("Guardar", SecondaryBlue);
+            btnGuardar.Size = new Size(130, 42);
+            btnGuardar.Location = new Point(24, 14);
             btnGuardar.Click += BtnGuardar_Click;
 
-            btnCancelar = new Button
-            {
-                Text = "Cancelar",
-                Size = new Size(100, 36),
-                Location = new Point(122, 10),
-                BackColor = Color.Gray,
-                ForeColor = Color.White,
-                FlatStyle = FlatStyle.Flat
-            };
-            btnCancelar.FlatAppearance.BorderSize = 0;
+            btnCancelar = CrearBotonModerno("Cancelar", Color.Gray);
+            btnCancelar.Size = new Size(130, 42);
+            btnCancelar.Location = new Point(164, 14);
             btnCancelar.Click += (s, e) =>
             {
                 LimpiarFormulario();
                 editingId = null;
-                tabControl1.SelectedTab = tabPage3; // volver a lista
+                tabControl1.SelectedTab = tabPage3;
             };
 
             buttonsPanel.Controls.Add(btnGuardar);
             buttonsPanel.Controls.Add(btnCancelar);
 
-            tab.Controls.Add(outer);
-            tab.Controls.Add(buttonsPanel);
+            formCard.Controls.Add(buttonsPanel);
+
+            mainContainer.Controls.Add(formCard);
+            tab.Controls.Add(mainContainer);
+        }
+
+        private TextBox CrearTextBoxModerno()
+        {
+            return new TextBox
+            {
+                Font = new Font("Segoe UI", 10F),
+                BorderStyle = BorderStyle.FixedSingle,
+                Height = 32
+            };
+        }
+
+        private ComboBox CrearComboBoxModerno()
+        {
+            return new ComboBox
+            {
+                DropDownStyle = ComboBoxStyle.DropDownList,
+                Font = new Font("Segoe UI", 10F),
+                FlatStyle = FlatStyle.Flat
+            };
         }
 
         private void ConstruirHistoriaPaciente(TabPage tab)
         {
             tab.Controls.Clear();
+            tab.BackColor = BackgroundGray;
+
+            var mainContainer = new Panel
+            {
+                Dock = DockStyle.Fill,
+                Padding = new Padding(24),
+                BackColor = BackgroundGray
+            };
+
+            var historyCard = new Panel
+            {
+                Dock = DockStyle.Fill,
+                BackColor = CardWhite,
+                Padding = new Padding(24)
+            };
 
             var main = new TableLayoutPanel { Dock = DockStyle.Fill, ColumnCount = 1, RowCount = 6, Padding = new Padding(10) };
             main.RowStyles.Add(new RowStyle(SizeType.AutoSize));
@@ -257,17 +545,21 @@ namespace Borrador
             main.RowStyles.Add(new RowStyle(SizeType.AutoSize));
             main.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
 
-            txtHistAntecedentes = new TextBox { Dock = DockStyle.Fill, Multiline = true, ReadOnly = true, ScrollBars = ScrollBars.Vertical };
-            txtHistAlergias = new TextBox { Dock = DockStyle.Fill, Multiline = true, ReadOnly = true, ScrollBars = ScrollBars.Vertical };
-            txtHistCirugias = new TextBox { Dock = DockStyle.Fill, Multiline = true, ReadOnly = true, ScrollBars = ScrollBars.Vertical };
-            txtHistMedicacion = new TextBox { Dock = DockStyle.Fill, Multiline = true, ReadOnly = true, ScrollBars = ScrollBars.Vertical };
-            txtHistObservaciones = new TextBox { Dock = DockStyle.Fill, Multiline = true, ReadOnly = true, ScrollBars = ScrollBars.Vertical };
+            txtHistAntecedentes = new TextBox { Dock = DockStyle.Fill, Multiline = true, ReadOnly = true, ScrollBars = ScrollBars.Vertical, Font = new Font("Segoe UI", 10F), BorderStyle = BorderStyle.FixedSingle, BackColor = BackgroundGray };
+            txtHistAlergias = new TextBox { Dock = DockStyle.Fill, Multiline = true, ReadOnly = true, ScrollBars = ScrollBars.Vertical, Font = new Font("Segoe UI", 10F), BorderStyle = BorderStyle.FixedSingle, BackColor = BackgroundGray };
+            txtHistCirugias = new TextBox { Dock = DockStyle.Fill, Multiline = true, ReadOnly = true, ScrollBars = ScrollBars.Vertical, Font = new Font("Segoe UI", 10F), BorderStyle = BorderStyle.FixedSingle, BackColor = BackgroundGray };
+            txtHistMedicacion = new TextBox { Dock = DockStyle.Fill, Multiline = true, ReadOnly = true, ScrollBars = ScrollBars.Vertical, Font = new Font("Segoe UI", 10F), BorderStyle = BorderStyle.FixedSingle, BackColor = BackgroundGray };
+            txtHistObservaciones = new TextBox { Dock = DockStyle.Fill, Multiline = true, ReadOnly = true, ScrollBars = ScrollBars.Vertical, Font = new Font("Segoe UI", 10F), BorderStyle = BorderStyle.FixedSingle, BackColor = BackgroundGray };
 
-            main.Controls.Add(new Label { Text = "Resumen de antecedentes", AutoSize = true }, 0, 0);
+            var lblAntecedentes = new Label { Text = "Resumen de antecedentes", AutoSize = true, Font = new Font("Segoe UI", 10F, FontStyle.Bold), ForeColor = TextDark };
+            var lblAlergias = new Label { Text = "Alergias", AutoSize = true, Font = new Font("Segoe UI", 10F, FontStyle.Bold), ForeColor = TextDark };
+            var lblOtros = new Label { Text = "Cirugías / Medicación / Observaciones", AutoSize = true, Font = new Font("Segoe UI", 10F, FontStyle.Bold), ForeColor = TextDark };
+
+            main.Controls.Add(lblAntecedentes, 0, 0);
             main.Controls.Add(txtHistAntecedentes, 0, 1);
-            main.Controls.Add(new Label { Text = "Alergias", AutoSize = true }, 0, 2);
+            main.Controls.Add(lblAlergias, 0, 2);
             main.Controls.Add(txtHistAlergias, 0, 3);
-            main.Controls.Add(new Label { Text = "Cirugías / Medicación / Observaciones", AutoSize = true }, 0, 4);
+            main.Controls.Add(lblOtros, 0, 4);
 
             var lowerLayout = new TableLayoutPanel { Dock = DockStyle.Fill, ColumnCount = 3 };
             lowerLayout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33));
@@ -278,19 +570,26 @@ namespace Borrador
             lowerLayout.Controls.Add(txtHistObservaciones, 2, 0);
             main.Controls.Add(lowerLayout, 0, 5);
 
-            var btnPanel = new Panel { Dock = DockStyle.Bottom, Height = 48, Padding = new Padding(8) };
-            btnExportarHistoria = new Button { Text = "Exportar (TXT)", Size = new Size(110, 32), Location = new Point(8, 8), BackColor = Color.FromArgb(96, 146, 211), ForeColor = Color.White, FlatStyle = FlatStyle.Flat };
-            btnImprimirHistoria = new Button { Text = "Imprimir", Size = new Size(110, 32), Location = new Point(128, 8), BackColor = Color.FromArgb(41, 83, 130), ForeColor = Color.White, FlatStyle = FlatStyle.Flat };
-            btnExportarHistoria.FlatAppearance.BorderSize = 0;
-            btnImprimirHistoria.FlatAppearance.BorderSize = 0;
+            var btnPanel = new Panel { Dock = DockStyle.Bottom, Height = 70, Padding = new Padding(24, 12, 24, 12), BackColor = CardWhite };
+
+            btnExportarHistoria = CrearBotonModerno("📄 Exportar (TXT)", SecondaryBlue);
+            btnExportarHistoria.Size = new Size(150, 42);
+            btnExportarHistoria.Location = new Point(24, 14);
             btnExportarHistoria.Click += BtnExportarHistoria_Click;
+
+            btnImprimirHistoria = CrearBotonModerno("🖨️ Imprimir", AccentBlue);
+            btnImprimirHistoria.Size = new Size(130, 42);
+            btnImprimirHistoria.Location = new Point(184, 14);
             btnImprimirHistoria.Click += BtnImprimirHistoria_Click;
 
             btnPanel.Controls.Add(btnExportarHistoria);
             btnPanel.Controls.Add(btnImprimirHistoria);
 
-            tab.Controls.Add(main);
-            tab.Controls.Add(btnPanel);
+            historyCard.Controls.Add(main);
+            historyCard.Controls.Add(btnPanel);
+
+            mainContainer.Controls.Add(historyCard);
+            tab.Controls.Add(mainContainer);
         }
 
         private void CargarDatosPrueba()
@@ -340,14 +639,28 @@ namespace Borrador
             {
                 listaAnonima.Add(new
                 {
-                    Id = d["Id"],
+                    Id = $"#{d["Id"]}",
                     NombreCompleto = $"{d["Nombre"]} {d["Apellido"]}",
                     Cedula = d["Cedula"],
                     FechaNacimiento = d["FechaNacimiento"],
-                    Telefono = d["Telefono"]
+                    Telefono = $"📞 {d["Telefono"]}"
                 });
             }
             bsPacientes.DataSource = listaAnonima;
+
+            // Actualizar estadísticas
+            if (pnlStats != null && pnlStats.Controls.Count > 0)
+            {
+                var card = pnlStats.Controls[0] as Panel;
+                if (card != null && card.Controls.Count > 1)
+                {
+                    var lblValor = card.Controls[1] as Label;
+                    if (lblValor != null)
+                    {
+                        lblValor.Text = listaPacientes.Count.ToString();
+                    }
+                }
+            }
         }
 
         private void IrATabAgregarNuevo()
@@ -373,17 +686,19 @@ namespace Borrador
         private Dictionary<string, object> ObtenerPacienteSeleccionado()
         {
             if (dgvPacientes?.CurrentRow == null) return null;
-            int id = Convert.ToInt32(dgvPacientes.CurrentRow.Cells[0].Value);
+            string idStr = dgvPacientes.CurrentRow.Cells[0].Value.ToString().Replace("#", "");
+            int id = Convert.ToInt32(idStr);
             return listaPacientes.Find(p => Convert.ToInt32(p["Id"]) == id);
         }
 
         private void DgvPacientes_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0) return;
-            // 0..4 datos, 5 Editar, 6 Eliminar
-            if (e.ColumnIndex == 5)
+
+            if (e.ColumnIndex == 5) // Editar
             {
-                int id = Convert.ToInt32(dgvPacientes.Rows[e.RowIndex].Cells[0].Value);
+                string idStr = dgvPacientes.Rows[e.RowIndex].Cells[0].Value.ToString().Replace("#", "");
+                int id = Convert.ToInt32(idStr);
                 var pac = listaPacientes.Find(p => Convert.ToInt32(p["Id"]) == id);
                 if (pac != null)
                 {
@@ -392,16 +707,17 @@ namespace Borrador
                     tabControl1.SelectedTab = tabPage1;
                 }
             }
-            else if (e.ColumnIndex == 6)
+            else if (e.ColumnIndex == 6) // Eliminar
             {
-                int id = Convert.ToInt32(dgvPacientes.Rows[e.RowIndex].Cells[0].Value);
+                string idStr = dgvPacientes.Rows[e.RowIndex].Cells[0].Value.ToString().Replace("#", "");
+                int id = Convert.ToInt32(idStr);
                 var pac = listaPacientes.Find(p => Convert.ToInt32(p["Id"]) == id);
                 if (pac != null)
                 {
                     string nombre = pac.ContainsKey("NombreCompleto") && pac["NombreCompleto"] != null
                         ? pac["NombreCompleto"].ToString()
                         : ($"{pac["Nombre"]} {pac["Apellido"]}");
-                    var respuesta = MessageBox.Show($"¿Eliminar al paciente {nombre} ?", "Confirmar eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    var respuesta = MessageBox.Show($"¿Eliminar al paciente {nombre}?", "Confirmar eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                     if (respuesta == DialogResult.Yes)
                     {
                         listaPacientes.RemoveAll(x => Convert.ToInt32(x["Id"]) == id);
@@ -477,7 +793,6 @@ namespace Borrador
             var datos = ObtenerDatosFormulario();
             if (editingId.HasValue)
             {
-                // actualizar
                 var idx = listaPacientes.FindIndex(p => Convert.ToInt32(p["Id"]) == editingId.Value);
                 if (idx >= 0)
                 {
@@ -487,7 +802,6 @@ namespace Borrador
             }
             else
             {
-                // crear nuevo
                 int nuevoId = listaPacientes.Count > 0 ? Convert.ToInt32(listaPacientes[listaPacientes.Count - 1]["Id"]) + 1 : 1;
                 datos["Id"] = nuevoId;
                 listaPacientes.Add(datos);
@@ -496,7 +810,7 @@ namespace Borrador
             editingId = null;
             RefrescarGrilla();
             LimpiarFormulario();
-            tabControl1.SelectedTab = tabPage3; // volver a lista
+            tabControl1.SelectedTab = tabPage3;
         }
 
         private void CargarHistoriaDesdePaciente(Dictionary<string, object> pac)

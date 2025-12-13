@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Borrador
@@ -13,27 +7,25 @@ namespace Borrador
     public partial class MainForm : Form
     {
         private Button currentActiveButton;
-        private bool menuExpanded = true; // Estado inicial: menú expandido
-        private int menuExpandWidth = 230; // Ancho cuando el menú está expandido
-        private int menuCollapseWidth = 60; // Ancho cuando el menú está colapsado (solo iconos)
+        private bool menuExpanded = true;
+        private int menuExpandWidth = 250;
+        private int menuCollapseWidth = 60;
 
         public MainForm()
         {
             InitializeComponent();
             SetupSideMenuButtons();
+            SetupTopBar();
 
-            this.Text = "Clinic Manager System";
-            this.Size = new Size(1200, 800);
-            this.MinimumSize = new Size(1000, 700);
+            this.Text = "Sistema de Gestión Clínica";
+            this.Size = new Size(1400, 900);
+            this.MinimumSize = new Size(1200, 800);
             this.StartPosition = FormStartPosition.CenterScreen;
 
-            // Ajustar el ancho inicial del pnlSideMenu
             pnlSideMenu.Width = menuExpandWidth;
-
-            // Asignar el evento Click al botón de hamburguesa
             btnToggleMenu.Click += BtnToggleMenu_Click;
 
-            // Opcional: Cargar un UserControl por defecto al inicio (ej. Pacientes)
+            // Cargar módulo por defecto
             if (pnlSideMenu.Controls.ContainsKey("btnPacientes"))
             {
                 Button defaultButton = (Button)pnlSideMenu.Controls["btnPacientes"];
@@ -42,98 +34,163 @@ namespace Borrador
             }
         }
 
+        private void SetupTopBar()
+        {
+            // Crear panel superior si no existe
+            if (!this.Controls.ContainsKey("pnlTopBar"))
+            {
+                Panel pnlTopBar = new Panel();
+                pnlTopBar.Name = "pnlTopBar";
+                pnlTopBar.Dock = DockStyle.Top;
+                pnlTopBar.Height = 60;
+                pnlTopBar.BackColor = Color.White;
+
+                // Breadcrumb
+                Label lblBreadcrumb = new Label();
+                lblBreadcrumb.Name = "lblBreadcrumb";
+                lblBreadcrumb.Text = "Sistema Clínico / Gestión de Pacientes";
+                lblBreadcrumb.Font = new Font("Segoe UI", 9F, FontStyle.Regular);
+                lblBreadcrumb.ForeColor = Color.FromArgb(100, 116, 139);
+                lblBreadcrumb.Location = new Point(280, 20);
+                lblBreadcrumb.AutoSize = true;
+
+                // Botón de notificaciones
+                Button btnNotifications = new Button();
+                btnNotifications.FlatStyle = FlatStyle.Flat;
+                btnNotifications.FlatAppearance.BorderSize = 0;
+                btnNotifications.Text = "🔔";
+                btnNotifications.Font = new Font("Segoe UI", 16F);
+                btnNotifications.Size = new Size(40, 40);
+                btnNotifications.Location = new Point(this.Width - 100, 10);
+                btnNotifications.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+                btnNotifications.Cursor = Cursors.Hand;
+                btnNotifications.BackColor = Color.Transparent;
+
+                // Botón de tema
+                Button btnTheme = new Button();
+                btnTheme.FlatStyle = FlatStyle.Flat;
+                btnTheme.FlatAppearance.BorderSize = 0;
+                btnTheme.Text = "🌙";
+                btnTheme.Font = new Font("Segoe UI", 16F);
+                btnTheme.Size = new Size(40, 40);
+                btnTheme.Location = new Point(this.Width - 50, 10);
+                btnTheme.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+                btnTheme.Cursor = Cursors.Hand;
+                btnTheme.BackColor = Color.Transparent;
+
+                pnlTopBar.Controls.Add(lblBreadcrumb);
+                pnlTopBar.Controls.Add(btnNotifications);
+                pnlTopBar.Controls.Add(btnTheme);
+
+                this.Controls.Add(pnlTopBar);
+                pnlTopBar.BringToFront();
+            }
+        }
+
         private void SetupSideMenuButtons()
         {
+            // Configurar colores del menú lateral
+            pnlSideMenu.BackColor = Color.FromArgb(30, 41, 59);
+
             foreach (Control control in pnlSideMenu.Controls)
             {
-                // Solo configuramos los botones de navegación, no el pnlLogo
                 if (control is Button button && button.Name != "btnToggleMenu")
                 {
                     button.Click += SideMenuButton_Click;
 
-                    // Asigna el tipo de UserControl a la propiedad Tag de cada botón
+                    // Estilo moderno para los botones
+                    button.FlatStyle = FlatStyle.Flat;
+                    button.FlatAppearance.BorderSize = 0;
+                    button.BackColor = Color.Transparent;
+                    button.ForeColor = Color.FromArgb(203, 213, 225);
+                    button.Font = new Font("Segoe UI", 10F, FontStyle.Regular);
+                    button.TextAlign = ContentAlignment.MiddleLeft;
+                    button.ImageAlign = ContentAlignment.MiddleLeft;
+                    button.Padding = new Padding(20, 0, 0, 0);
+                    button.Cursor = Cursors.Hand;
+
+                    // Agregar efecto hover
+                    button.MouseEnter += (s, e) =>
+                    {
+                        if (button != currentActiveButton)
+                            button.BackColor = Color.FromArgb(51, 65, 85);
+                    };
+                    button.MouseLeave += (s, e) =>
+                    {
+                        if (button != currentActiveButton)
+                            button.BackColor = Color.Transparent;
+                    };
+
+                    // Asignar módulos
                     switch (button.Name)
                     {
                         case "btnPacientes":
-                            //Modulo 1
                             button.Tag = typeof(Modulo1);
-                           // button.Image = Properties.Resources.icon_pacientes; // Asegúrate de tener este recurso
+                            button.Text = "  👥 Gestión de Pacientes";
                             break;
                         case "btnAgenda":
-                            //Modulo 2
                             button.Tag = typeof(Modulo2);
-                           // button.Image = Properties.Resources.icon_agenda; // Asegúrate de tener este recurso
+                            button.Text = "  📅 Agenda de Citas";
                             break;
-
                         case "btnConsultasMedicas":
-                            //Modulo 3
                             button.Tag = typeof(Modulo3);
-                            //button.Image = Properties.Resources.icon_consultas;
+                            button.Text = "  🩺 Consultas Médicas";
                             break;
-
                         case "btnEnfermeria":
-                            //Modulo 4
                             button.Tag = typeof(Modulo4);
-                            //button.Image = Properties.Resources.icon_enfermeria;
+                            button.Text = "  💉 Enfermería";
                             break;
-
                         case "btnLaboratorio":
-                            //Modulo 5
                             button.Tag = typeof(Modulo5);
-                            //button.Image = Properties.Resources.icon_laboratorio;
+                            button.Text = "  🔬 Laboratorio Clínico";
                             break;
-
                         case "btnImagenologia":
-                            //Modulo 6
                             button.Tag = typeof(Modulo6);
-                            //button.Image = Properties.Resources.icon_imagenologia;
+                            button.Text = "  🏥 Imagenología";
                             break;
-
                         case "btnFarmacia":
-                            //Modulo 7
                             button.Tag = typeof(Modulo7);
-                           // button.Image = Properties.Resources.icon_farmacia;
+                            button.Text = "  💊 Farmacia";
                             break;
-
                         case "btnCirugias":
-                            //Modulo 8
                             button.Tag = typeof(Modulo8);
-                           // button.Image = Properties.Resources.icon_cirugias;
+                            button.Text = "  🏥 Hospitalización";
                             break;
-
                         case "btnHospitalizacion":
-                            //Modulo 9 UCOrdenLaboratorioForm
                             button.Tag = typeof(Modulo9);
-                            //button.Image = Properties.Resources.icon_hospitalizacion;
+                            button.Text = "  🚑 Urgencias";
                             break;
-
                         case "btnUrgencias":
-                            //Modulo 10
                             button.Tag = typeof(Modulo10);
-                            //button.Image = Properties.Resources.icon_urgencias;
+                            button.Text = "  ✂️ Cirugías";
                             break;
-
                         case "btnAdministrativo":
-                            //Modulo 11
                             button.Tag = typeof(Modulo10);
-                            //button.Image = Properties.Resources.icon_administrativo;
+                            button.Text = "  🏛️ Administrativo";
                             break;
-
                         default:
                             button.Tag = null;
                             break;
                     }
-
-                    // Configura el padding para que el icono se vea bien cuando el menú esté colapsado
-                    button.Padding = new Padding(15, 0, 0, 0); // Padding a la izquierda para el icono
-                    button.TextAlign = ContentAlignment.MiddleLeft;
-                    button.ImageAlign = ContentAlignment.MiddleLeft;
-                    button.Text = "  " + button.Text.Trim(); // Asegura un espacio inicial si el texto no lo tiene
                 }
             }
-            // También configurar el logo y el label dentro del pnlLogo
-            lblClinicManager.Text = "CLINIC MGR"; // Texto por defecto
-            pbLogo.Image = Properties.Resources.logo_farm; // Asegúrate de tener este recurso
+
+            // Configurar logo
+            lblClinicManager.Text = "CLINIC MGR";
+            lblClinicManager.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            lblClinicManager.ForeColor = Color.White;
+
+            if (pbLogo != null)
+            {
+                try
+                {
+                    pbLogo.Image = Properties.Resources.logo_farm;
+                }
+                catch
+                {
+                    // Si no hay logo, simplemente no mostrarlo
+                }
+            }
         }
 
         private void SideMenuButton_Click(object sender, EventArgs e)
@@ -143,6 +200,21 @@ namespace Borrador
             {
                 ActivateButton(clickedButton);
                 LoadUserControl(userControlType);
+                UpdateBreadcrumb(clickedButton.Text);
+            }
+        }
+
+        private void UpdateBreadcrumb(string moduleName)
+        {
+            // Actualizar breadcrumb en el top bar
+            if (this.Controls.ContainsKey("pnlTopBar"))
+            {
+                Panel pnlTopBar = (Panel)this.Controls["pnlTopBar"];
+                if (pnlTopBar.Controls.ContainsKey("lblBreadcrumb"))
+                {
+                    Label lblBreadcrumb = (Label)pnlTopBar.Controls["lblBreadcrumb"];
+                    lblBreadcrumb.Text = $"Sistema Clínico / {moduleName.Trim()}";
+                }
             }
         }
 
@@ -156,9 +228,9 @@ namespace Borrador
                 }
 
                 currentActiveButton = senderButton;
-                currentActiveButton.BackColor = Color.FromArgb(0, 123, 255); // Color de resaltado
+                currentActiveButton.BackColor = Color.FromArgb(59, 130, 246);
                 currentActiveButton.ForeColor = Color.White;
-                currentActiveButton.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
+                currentActiveButton.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             }
         }
 
@@ -166,9 +238,9 @@ namespace Borrador
         {
             if (buttonToDisable != null)
             {
-                buttonToDisable.BackColor = Color.FromArgb(41, 53, 65);
-                buttonToDisable.ForeColor = Color.Gainsboro;
-                buttonToDisable.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(0)));
+                buttonToDisable.BackColor = Color.Transparent;
+                buttonToDisable.ForeColor = Color.FromArgb(203, 213, 225);
+                buttonToDisable.Font = new Font("Segoe UI", 10F, FontStyle.Regular);
             }
         }
 
@@ -176,45 +248,47 @@ namespace Borrador
         {
             if (userControlType == null) return;
 
-            pnlContent.Controls.Clear();
-            UserControl newUserControl = (UserControl)Activator.CreateInstance(userControlType);
-            newUserControl.Dock = DockStyle.Fill;
-            pnlContent.Controls.Add(newUserControl);
-            newUserControl.BringToFront();
+            try
+            {
+                pnlContent.Controls.Clear();
+                UserControl newUserControl = (UserControl)Activator.CreateInstance(userControlType);
+                newUserControl.Dock = DockStyle.Fill;
+                pnlContent.Controls.Add(newUserControl);
+                newUserControl.BringToFront();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al cargar el módulo: {ex.Message}",
+                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
-
-        // --- Lógica para el colapso/expansión del menú lateral ---
 
         private void BtnToggleMenu_Click(object sender, EventArgs e)
         {
-            tmrMenu.Start(); // Inicia el timer para la animación
+            tmrMenu.Start();
         }
 
         private void tmrMenu_Tick(object sender, EventArgs e)
         {
             if (menuExpanded)
             {
-                // Colapsar el menú
-                pnlSideMenu.Width -= 10; // Reduce el ancho gradualmente
+                pnlSideMenu.Width -= 10;
                 if (pnlSideMenu.Width <= menuCollapseWidth)
                 {
                     pnlSideMenu.Width = menuCollapseWidth;
                     tmrMenu.Stop();
                     menuExpanded = false;
-                    // Oculta el texto y mueve el label del logo
                     ToggleMenuText(false);
                 }
             }
             else
             {
-                // Expandir el menú
-                pnlSideMenu.Width += 10; // Aumenta el ancho gradualmente
+                pnlSideMenu.Width += 10;
                 if (pnlSideMenu.Width >= menuExpandWidth)
                 {
                     pnlSideMenu.Width = menuExpandWidth;
                     tmrMenu.Stop();
                     menuExpanded = true;
-                    // Muestra el texto y ajusta el label del logo
                     ToggleMenuText(true);
                 }
             }
@@ -224,94 +298,90 @@ namespace Borrador
         {
             if (pnlLogo != null)
             {
-                if (showText) // Menú Expandido
+                if (showText)
                 {
                     lblClinicManager.Text = "CLINIC MGR";
-                    lblClinicManager.Visible = true; // Muestra el label
-                    pbLogo.Visible = true;           // <--- ¡AÑADIDO! Muestra el PictureBox
-
-                    // Posición original para el texto del logo y el PictureBox
+                    lblClinicManager.Visible = true;
+                    pbLogo.Visible = true;
                     lblClinicManager.Location = new Point(62, 38);
                     pbLogo.Location = new Point(12, 28);
-
-                    // Reposiciona el botón de hamburguesa en el pnlLogo
                     btnToggleMenu.Location = new Point(pnlLogo.Width - btnToggleMenu.Width - 10, btnToggleMenu.Location.Y);
                 }
-                else // Menú Colapsado
+                else
                 {
-                    lblClinicManager.Visible = false; // Oculta el label del título
-                    pbLogo.Visible = false;           // <--- ¡AÑADIDO! Oculta el PictureBox
-
-                    // Si el logo está oculto, su posición no es tan crítica, pero podrías ajustarla
-                    // pbLogo.Location = new Point((pnlLogo.Width - pbLogo.Width) / 2, pbLogo.Location.Y); // Ya no es necesario si está oculto
-
-                    // Reposiciona el botón de hamburguesa en el pnlLogo
-                    btnToggleMenu.Location = new Point(pnlLogo.Width - btnToggleMenu.Width - 10, btnToggleMenu.Location.Y); // Mantiene margen derecho
+                    lblClinicManager.Visible = false;
+                    pbLogo.Visible = false;
+                    btnToggleMenu.Location = new Point(pnlLogo.Width - btnToggleMenu.Width - 10, btnToggleMenu.Location.Y);
                 }
             }
-            // Muestra u oculta el texto de los botones de navegación
+
             foreach (Control control in pnlSideMenu.Controls)
             {
-                // Asegúrate de que solo procesas botones de menú que tienen asignado un UserControl (Type)
                 if (control is Button button && button.Tag is Type)
                 {
-                    if (showText) // Menú Expandido
+                    if (showText)
                     {
-                        // ELIMINA O COMENTA ESTA LÍNEA: 
-                        // string originalText = (string)button.Tag; 
-
-                        // USA ESTA LÍNEA PARA RECONSTRUIR EL TEXTO COMPLETO:
-                        // button.Name.Replace("btn", "") tomará "Pacientes" de "btnPacientes"
-                        button.Text = "  " + button.Name.Replace("btn", "");
-
-                        // El texto del botón original ya está definido en MainForm.Designer.cs, 
-                        // pero si quieres ser más específico, puedes crear un nuevo método.
-
-                        // MEJOR OPCIÓN: Asigna el texto predefinido que ya tenías en Designer.cs
-                        // Si quieres usar el texto de Designer.cs (ej: "  Gestión de Pacientes 1"), 
-                        // necesitarías guardarlo en una propiedad separada. 
-                        // Por ahora, usaremos la reconstrucción simple.
-
+                        // Restaurar texto según el botón
+                        switch (button.Name)
+                        {
+                            case "btnPacientes":
+                                button.Text = "  👥 Gestión de Pacientes";
+                                break;
+                            case "btnAgenda":
+                                button.Text = "  📅 Agenda de Citas";
+                                break;
+                            case "btnConsultasMedicas":
+                                button.Text = "  🩺 Consultas Médicas";
+                                break;
+                            case "btnEnfermeria":
+                                button.Text = "  💉 Enfermería";
+                                break;
+                            case "btnLaboratorio":
+                                button.Text = "  🔬 Laboratorio Clínico";
+                                break;
+                            case "btnImagenologia":
+                                button.Text = "  🏥 Imagenología";
+                                break;
+                            case "btnFarmacia":
+                                button.Text = "  💊 Farmacia";
+                                break;
+                            case "btnCirugias":
+                                button.Text = "  🏥 Hospitalización";
+                                break;
+                            case "btnHospitalizacion":
+                                button.Text = "  🚑 Urgencias";
+                                break;
+                            case "btnUrgencias":
+                                button.Text = "  ✂️ Cirugías";
+                                break;
+                            case "btnAdministrativo":
+                                button.Text = "  🏛️ Administrativo";
+                                break;
+                        }
                         button.TextAlign = ContentAlignment.MiddleLeft;
-                        button.Padding = new Padding(15, 0, 0, 0);
+                        button.Padding = new Padding(20, 0, 0, 0);
                     }
-                    else // Menú Colapsado
+                    else
                     {
                         button.Text = "";
                         button.TextAlign = ContentAlignment.MiddleCenter;
                         button.Padding = new Padding(0);
                     }
 
-                    // Forzar redibujado
                     button.Invalidate();
                     button.Update();
                 }
             }
-
-            // También ajusta el label del logo
-            if (showText)
-            {
-                lblClinicManager.Text = "CLINIC MGR";
-                lblClinicManager.Location = new Point(62, 38); // Posición original
-                pbLogo.Location = new Point(12, 28);
-            }
-            else
-            {
-                lblClinicManager.Text = ""; // Oculta el texto del logo
-                lblClinicManager.Location = new Point(0, 0); // Mueve el label fuera de vista
-                pbLogo.Location = new Point(10, 28); // Mueve el icono del logo para centrarlo
-            }
-            btnToggleMenu.Location = new Point(pnlLogo.Width - btnToggleMenu.Width - 10, btnToggleMenu.Location.Y); // Mueve el botón de hamburguesa
         }
 
         private void btnToggleMenu_Click_1(object sender, EventArgs e)
         {
-
+            // Este método lo llama el designer
         }
 
         private void btnAgenda_Click(object sender, EventArgs e)
         {
-
+            // Este método lo llama el designer
         }
     }
 }
