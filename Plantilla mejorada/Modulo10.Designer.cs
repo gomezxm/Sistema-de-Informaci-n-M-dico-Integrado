@@ -99,7 +99,6 @@ namespace Borrador
 
         private void InitializeComponent()
         {
-
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabFacturacion = new System.Windows.Forms.TabPage();
             this.lblNumFacturaF = new System.Windows.Forms.Label();
@@ -167,15 +166,15 @@ namespace Borrador
             // 
             // tabControl
             // 
-            this.tabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.tabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl.Controls.Add(this.tabFacturacion);
             this.tabControl.Controls.Add(this.tabCaja);
             this.tabControl.Location = new System.Drawing.Point(10, 10);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(836, 589);
+            this.tabControl.Size = new System.Drawing.Size(1339, 953);
             this.tabControl.TabIndex = 0;
             // 
             // tabFacturacion
@@ -206,10 +205,10 @@ namespace Borrador
             this.tabFacturacion.Controls.Add(this.txtObservacionesF);
             this.tabFacturacion.Controls.Add(this.btnCalcularF);
             this.tabFacturacion.Controls.Add(this.btnGuardarImprimirF);
-            this.tabFacturacion.Location = new System.Drawing.Point(4, 22);
+            this.tabFacturacion.Location = new System.Drawing.Point(4, 25);
             this.tabFacturacion.Name = "tabFacturacion";
             this.tabFacturacion.Padding = new System.Windows.Forms.Padding(5);
-            this.tabFacturacion.Size = new System.Drawing.Size(828, 563);
+            this.tabFacturacion.Size = new System.Drawing.Size(1331, 924);
             this.tabFacturacion.TabIndex = 0;
             this.tabFacturacion.Text = "Facturación";
             // 
@@ -225,7 +224,7 @@ namespace Borrador
             // 
             this.txtNumFacturaF.Location = new System.Drawing.Point(150, 17);
             this.txtNumFacturaF.Name = "txtNumFacturaF";
-            this.txtNumFacturaF.Size = new System.Drawing.Size(160, 20);
+            this.txtNumFacturaF.Size = new System.Drawing.Size(160, 22);
             this.txtNumFacturaF.TabIndex = 1;
             // 
             // lblPacienteF
@@ -241,7 +240,7 @@ namespace Borrador
             this.cmbPacienteF.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPacienteF.Location = new System.Drawing.Point(150, 57);
             this.cmbPacienteF.Name = "cmbPacienteF";
-            this.cmbPacienteF.Size = new System.Drawing.Size(300, 21);
+            this.cmbPacienteF.Size = new System.Drawing.Size(300, 24);
             this.cmbPacienteF.TabIndex = 3;
             // 
             // lblAseguradoraF
@@ -257,7 +256,7 @@ namespace Borrador
             this.cmbAseguradoraF.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbAseguradoraF.Location = new System.Drawing.Point(150, 97);
             this.cmbAseguradoraF.Name = "cmbAseguradoraF";
-            this.cmbAseguradoraF.Size = new System.Drawing.Size(300, 21);
+            this.cmbAseguradoraF.Size = new System.Drawing.Size(300, 24);
             this.cmbAseguradoraF.TabIndex = 5;
             // 
             // lblPolizaF
@@ -272,7 +271,7 @@ namespace Borrador
             // 
             this.txtPolizaF.Location = new System.Drawing.Point(150, 137);
             this.txtPolizaF.Name = "txtPolizaF";
-            this.txtPolizaF.Size = new System.Drawing.Size(220, 20);
+            this.txtPolizaF.Size = new System.Drawing.Size(220, 22);
             this.txtPolizaF.TabIndex = 7;
             // 
             // lblFechaFacturaF
@@ -289,7 +288,7 @@ namespace Borrador
             this.dtpFechaFacturaF.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpFechaFacturaF.Location = new System.Drawing.Point(150, 177);
             this.dtpFechaFacturaF.Name = "dtpFechaFacturaF";
-            this.dtpFechaFacturaF.Size = new System.Drawing.Size(220, 20);
+            this.dtpFechaFacturaF.Size = new System.Drawing.Size(220, 22);
             this.dtpFechaFacturaF.TabIndex = 9;
             // 
             // grpServiciosF
@@ -307,43 +306,49 @@ namespace Borrador
             this.dgvServiciosF.AllowUserToAddRows = false;
             this.dgvServiciosF.AllowUserToDeleteRows = false;
             this.dgvServiciosF.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvServiciosF.ColumnHeadersHeight = 29;
             this.dgvServiciosF.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
             this.dgvServiciosF.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvServiciosF.Location = new System.Drawing.Point(3, 16);
+            this.dgvServiciosF.Location = new System.Drawing.Point(3, 18);
             this.dgvServiciosF.MultiSelect = false;
             this.dgvServiciosF.Name = "dgvServiciosF";
             this.dgvServiciosF.ReadOnly = true;
             this.dgvServiciosF.RowHeadersVisible = false;
+            this.dgvServiciosF.RowHeadersWidth = 51;
             this.dgvServiciosF.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvServiciosF.Size = new System.Drawing.Size(754, 201);
+            this.dgvServiciosF.Size = new System.Drawing.Size(754, 199);
             this.dgvServiciosF.TabIndex = 0;
             this.dgvServiciosF.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvServiciosF_CellContentClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.HeaderText = "Servicio";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.HeaderText = "Cantidad";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.HeaderText = "Precio Unit.";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.HeaderText = "Subtotal";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
@@ -360,7 +365,7 @@ namespace Borrador
             this.txtSubtotalF.Location = new System.Drawing.Point(150, 457);
             this.txtSubtotalF.Name = "txtSubtotalF";
             this.txtSubtotalF.ReadOnly = true;
-            this.txtSubtotalF.Size = new System.Drawing.Size(120, 20);
+            this.txtSubtotalF.Size = new System.Drawing.Size(120, 22);
             this.txtSubtotalF.TabIndex = 12;
             // 
             // lblDescuentoF
@@ -375,7 +380,7 @@ namespace Borrador
             // 
             this.nudDescuentoF.Location = new System.Drawing.Point(150, 497);
             this.nudDescuentoF.Name = "nudDescuentoF";
-            this.nudDescuentoF.Size = new System.Drawing.Size(90, 20);
+            this.nudDescuentoF.Size = new System.Drawing.Size(90, 22);
             this.nudDescuentoF.TabIndex = 14;
             // 
             // lblImpuestoF
@@ -390,7 +395,7 @@ namespace Borrador
             // 
             this.nudImpuestoF.Location = new System.Drawing.Point(150, 537);
             this.nudImpuestoF.Name = "nudImpuestoF";
-            this.nudImpuestoF.Size = new System.Drawing.Size(90, 20);
+            this.nudImpuestoF.Size = new System.Drawing.Size(90, 22);
             this.nudImpuestoF.TabIndex = 16;
             // 
             // lblTotalF
@@ -406,7 +411,7 @@ namespace Borrador
             this.txtTotalF.Location = new System.Drawing.Point(150, 577);
             this.txtTotalF.Name = "txtTotalF";
             this.txtTotalF.ReadOnly = true;
-            this.txtTotalF.Size = new System.Drawing.Size(120, 20);
+            this.txtTotalF.Size = new System.Drawing.Size(120, 22);
             this.txtTotalF.TabIndex = 18;
             // 
             // lblEstadoFacturaF
@@ -422,7 +427,7 @@ namespace Borrador
             this.cmbEstadoFacturaF.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEstadoFacturaF.Location = new System.Drawing.Point(150, 617);
             this.cmbEstadoFacturaF.Name = "cmbEstadoFacturaF";
-            this.cmbEstadoFacturaF.Size = new System.Drawing.Size(150, 21);
+            this.cmbEstadoFacturaF.Size = new System.Drawing.Size(150, 24);
             this.cmbEstadoFacturaF.TabIndex = 20;
             // 
             // lblObservacionesF
@@ -482,30 +487,33 @@ namespace Borrador
             this.tabCaja.Controls.Add(this.cmbEstadoPagoC);
             this.tabCaja.Controls.Add(this.btnRegistrarPagoC);
             this.tabCaja.Controls.Add(this.btnImprimirReciboC);
-            this.tabCaja.Location = new System.Drawing.Point(4, 22);
+            this.tabCaja.Location = new System.Drawing.Point(4, 25);
             this.tabCaja.Name = "tabCaja";
             this.tabCaja.Padding = new System.Windows.Forms.Padding(5);
-            this.tabCaja.Size = new System.Drawing.Size(828, 563);
+            this.tabCaja.Size = new System.Drawing.Size(1331, 924);
             this.tabCaja.TabIndex = 1;
             this.tabCaja.Text = "Caja Pagos";
             // 
             // lblNumFacturaC
             // 
+            this.lblNumFacturaC.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNumFacturaC.Location = new System.Drawing.Point(30, 20);
             this.lblNumFacturaC.Name = "lblNumFacturaC";
-            this.lblNumFacturaC.Size = new System.Drawing.Size(100, 23);
+            this.lblNumFacturaC.Size = new System.Drawing.Size(134, 23);
             this.lblNumFacturaC.TabIndex = 0;
             this.lblNumFacturaC.Text = "N° Factura (*):";
             // 
             // cmbNumFacturaC
             // 
+            this.cmbNumFacturaC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbNumFacturaC.Location = new System.Drawing.Point(170, 17);
             this.cmbNumFacturaC.Name = "cmbNumFacturaC";
-            this.cmbNumFacturaC.Size = new System.Drawing.Size(200, 21);
+            this.cmbNumFacturaC.Size = new System.Drawing.Size(200, 24);
             this.cmbNumFacturaC.TabIndex = 1;
             // 
             // lblPacienteC
             // 
+            this.lblPacienteC.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPacienteC.Location = new System.Drawing.Point(30, 60);
             this.lblPacienteC.Name = "lblPacienteC";
             this.lblPacienteC.Size = new System.Drawing.Size(100, 23);
@@ -514,81 +522,86 @@ namespace Borrador
             // 
             // txtPacienteC
             // 
-            this.txtPacienteC.Location = new System.Drawing.Point(170, 57);
+            this.txtPacienteC.Location = new System.Drawing.Point(384, 51);
             this.txtPacienteC.Name = "txtPacienteC";
             this.txtPacienteC.ReadOnly = true;
-            this.txtPacienteC.Size = new System.Drawing.Size(300, 20);
+            this.txtPacienteC.Size = new System.Drawing.Size(300, 22);
             this.txtPacienteC.TabIndex = 3;
             // 
             // lblTotalFacturaC
             // 
+            this.lblTotalFacturaC.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalFacturaC.Location = new System.Drawing.Point(30, 100);
             this.lblTotalFacturaC.Name = "lblTotalFacturaC";
-            this.lblTotalFacturaC.Size = new System.Drawing.Size(100, 23);
+            this.lblTotalFacturaC.Size = new System.Drawing.Size(168, 23);
             this.lblTotalFacturaC.TabIndex = 4;
             this.lblTotalFacturaC.Text = "Monto total factura:";
             // 
             // txtTotalFacturaC
             // 
-            this.txtTotalFacturaC.Location = new System.Drawing.Point(170, 97);
+            this.txtTotalFacturaC.Location = new System.Drawing.Point(384, 100);
             this.txtTotalFacturaC.Name = "txtTotalFacturaC";
             this.txtTotalFacturaC.ReadOnly = true;
-            this.txtTotalFacturaC.Size = new System.Drawing.Size(140, 20);
+            this.txtTotalFacturaC.Size = new System.Drawing.Size(140, 22);
             this.txtTotalFacturaC.TabIndex = 5;
             // 
             // lblMontoPagadoC
             // 
+            this.lblMontoPagadoC.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMontoPagadoC.Location = new System.Drawing.Point(30, 140);
             this.lblMontoPagadoC.Name = "lblMontoPagadoC";
-            this.lblMontoPagadoC.Size = new System.Drawing.Size(100, 23);
+            this.lblMontoPagadoC.Size = new System.Drawing.Size(154, 23);
             this.lblMontoPagadoC.TabIndex = 6;
             this.lblMontoPagadoC.Text = "Monto ya pagado:";
             // 
             // txtMontoPagadoC
             // 
-            this.txtMontoPagadoC.Location = new System.Drawing.Point(170, 137);
+            this.txtMontoPagadoC.Location = new System.Drawing.Point(384, 140);
             this.txtMontoPagadoC.Name = "txtMontoPagadoC";
             this.txtMontoPagadoC.ReadOnly = true;
-            this.txtMontoPagadoC.Size = new System.Drawing.Size(140, 20);
+            this.txtMontoPagadoC.Size = new System.Drawing.Size(140, 22);
             this.txtMontoPagadoC.TabIndex = 7;
             // 
             // lblMontoPagarC
             // 
+            this.lblMontoPagarC.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMontoPagarC.Location = new System.Drawing.Point(30, 180);
             this.lblMontoPagarC.Name = "lblMontoPagarC";
-            this.lblMontoPagarC.Size = new System.Drawing.Size(100, 23);
+            this.lblMontoPagarC.Size = new System.Drawing.Size(168, 23);
             this.lblMontoPagarC.TabIndex = 8;
             this.lblMontoPagarC.Text = "Monto a pagar (*):";
             // 
             // nudMontoPagarC
             // 
             this.nudMontoPagarC.DecimalPlaces = 2;
-            this.nudMontoPagarC.Location = new System.Drawing.Point(170, 177);
+            this.nudMontoPagarC.Location = new System.Drawing.Point(384, 180);
             this.nudMontoPagarC.Name = "nudMontoPagarC";
-            this.nudMontoPagarC.Size = new System.Drawing.Size(140, 20);
+            this.nudMontoPagarC.Size = new System.Drawing.Size(140, 22);
             this.nudMontoPagarC.TabIndex = 9;
             // 
             // lblFormaPagoC
             // 
+            this.lblFormaPagoC.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFormaPagoC.Location = new System.Drawing.Point(30, 220);
             this.lblFormaPagoC.Name = "lblFormaPagoC";
-            this.lblFormaPagoC.Size = new System.Drawing.Size(100, 23);
+            this.lblFormaPagoC.Size = new System.Drawing.Size(168, 23);
             this.lblFormaPagoC.TabIndex = 10;
             this.lblFormaPagoC.Text = "Forma de pago (*):";
             // 
             // cmbFormaPagoC
             // 
             this.cmbFormaPagoC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbFormaPagoC.Location = new System.Drawing.Point(170, 217);
+            this.cmbFormaPagoC.Location = new System.Drawing.Point(384, 219);
             this.cmbFormaPagoC.Name = "cmbFormaPagoC";
-            this.cmbFormaPagoC.Size = new System.Drawing.Size(200, 21);
+            this.cmbFormaPagoC.Size = new System.Drawing.Size(200, 24);
             this.cmbFormaPagoC.TabIndex = 11;
             // 
             // lblFechaPagoC
             // 
+            this.lblFechaPagoC.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFechaPagoC.Location = new System.Drawing.Point(30, 260);
             this.lblFechaPagoC.Name = "lblFechaPagoC";
-            this.lblFechaPagoC.Size = new System.Drawing.Size(100, 23);
+            this.lblFechaPagoC.Size = new System.Drawing.Size(134, 23);
             this.lblFechaPagoC.TabIndex = 12;
             this.lblFechaPagoC.Text = "Fecha pago (*):";
             // 
@@ -596,37 +609,39 @@ namespace Borrador
             // 
             this.dtpFechaPagoC.CustomFormat = "yyyy-MM-dd HH:mm";
             this.dtpFechaPagoC.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpFechaPagoC.Location = new System.Drawing.Point(170, 257);
+            this.dtpFechaPagoC.Location = new System.Drawing.Point(384, 260);
             this.dtpFechaPagoC.Name = "dtpFechaPagoC";
-            this.dtpFechaPagoC.Size = new System.Drawing.Size(200, 20);
+            this.dtpFechaPagoC.Size = new System.Drawing.Size(200, 22);
             this.dtpFechaPagoC.TabIndex = 13;
             // 
             // lblReferenciaC
             // 
+            this.lblReferenciaC.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblReferenciaC.Location = new System.Drawing.Point(30, 300);
             this.lblReferenciaC.Name = "lblReferenciaC";
-            this.lblReferenciaC.Size = new System.Drawing.Size(100, 23);
+            this.lblReferenciaC.Size = new System.Drawing.Size(108, 23);
             this.lblReferenciaC.TabIndex = 14;
             this.lblReferenciaC.Text = "Referencia:";
             // 
             // txtReferenciaC
             // 
-            this.txtReferenciaC.Location = new System.Drawing.Point(170, 297);
+            this.txtReferenciaC.Location = new System.Drawing.Point(397, 300);
             this.txtReferenciaC.Name = "txtReferenciaC";
-            this.txtReferenciaC.Size = new System.Drawing.Size(240, 20);
+            this.txtReferenciaC.Size = new System.Drawing.Size(240, 22);
             this.txtReferenciaC.TabIndex = 15;
             // 
             // lblObservacionesC
             // 
+            this.lblObservacionesC.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblObservacionesC.Location = new System.Drawing.Point(30, 340);
             this.lblObservacionesC.Name = "lblObservacionesC";
-            this.lblObservacionesC.Size = new System.Drawing.Size(100, 23);
+            this.lblObservacionesC.Size = new System.Drawing.Size(134, 23);
             this.lblObservacionesC.TabIndex = 16;
             this.lblObservacionesC.Text = "Observaciones:";
             // 
             // txtObservacionesC
             // 
-            this.txtObservacionesC.Location = new System.Drawing.Point(170, 337);
+            this.txtObservacionesC.Location = new System.Drawing.Point(397, 340);
             this.txtObservacionesC.Multiline = true;
             this.txtObservacionesC.Name = "txtObservacionesC";
             this.txtObservacionesC.Size = new System.Drawing.Size(480, 70);
@@ -634,6 +649,7 @@ namespace Borrador
             // 
             // lblEstadoPagoC
             // 
+            this.lblEstadoPagoC.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEstadoPagoC.Location = new System.Drawing.Point(30, 420);
             this.lblEstadoPagoC.Name = "lblEstadoPagoC";
             this.lblEstadoPagoC.Size = new System.Drawing.Size(100, 23);
@@ -642,34 +658,43 @@ namespace Borrador
             // 
             // cmbEstadoPagoC
             // 
-            this.cmbEstadoPagoC.Location = new System.Drawing.Point(170, 417);
+            this.cmbEstadoPagoC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEstadoPagoC.Location = new System.Drawing.Point(397, 422);
             this.cmbEstadoPagoC.Name = "cmbEstadoPagoC";
-            this.cmbEstadoPagoC.Size = new System.Drawing.Size(150, 21);
+            this.cmbEstadoPagoC.Size = new System.Drawing.Size(150, 24);
             this.cmbEstadoPagoC.TabIndex = 19;
             // 
             // btnRegistrarPagoC
             // 
-            this.btnRegistrarPagoC.Location = new System.Drawing.Point(30, 460);
+            this.btnRegistrarPagoC.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnRegistrarPagoC.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarPagoC.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnRegistrarPagoC.Location = new System.Drawing.Point(662, 650);
             this.btnRegistrarPagoC.Name = "btnRegistrarPagoC";
-            this.btnRegistrarPagoC.Size = new System.Drawing.Size(140, 30);
+            this.btnRegistrarPagoC.Size = new System.Drawing.Size(145, 48);
             this.btnRegistrarPagoC.TabIndex = 20;
             this.btnRegistrarPagoC.Text = "Registrar Pago";
+            this.btnRegistrarPagoC.UseVisualStyleBackColor = false;
             // 
             // btnImprimirReciboC
             // 
-            this.btnImprimirReciboC.Location = new System.Drawing.Point(180, 460);
+            this.btnImprimirReciboC.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.btnImprimirReciboC.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImprimirReciboC.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnImprimirReciboC.Location = new System.Drawing.Point(808, 650);
             this.btnImprimirReciboC.Name = "btnImprimirReciboC";
-            this.btnImprimirReciboC.Size = new System.Drawing.Size(140, 30);
+            this.btnImprimirReciboC.Size = new System.Drawing.Size(145, 48);
             this.btnImprimirReciboC.TabIndex = 21;
             this.btnImprimirReciboC.Text = "Imprimir Recibo";
+            this.btnImprimirReciboC.UseVisualStyleBackColor = false;
             // 
-            // Modulo11
+            // Modulo10
             // 
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.tabControl);
-            this.Name = "Modulo11";
+            this.Name = "Modulo10";
             this.Padding = new System.Windows.Forms.Padding(10);
-            this.Size = new System.Drawing.Size(856, 609);
+            this.Size = new System.Drawing.Size(1359, 973);
             this.tabControl.ResumeLayout(false);
             this.tabFacturacion.ResumeLayout(false);
             this.tabFacturacion.PerformLayout();
