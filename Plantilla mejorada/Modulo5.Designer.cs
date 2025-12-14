@@ -153,7 +153,7 @@
             this.label6.Font = new System.Drawing.Font("Segoe UI", 22.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(12, 16);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(366, 52);
+            this.label6.Size = new System.Drawing.Size(356, 51);
             this.label6.TabIndex = 8;
             this.label6.Text = "Solicitar exámenes";
             // 
@@ -474,6 +474,7 @@
             // 
             // comboBox4
             // 
+            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Location = new System.Drawing.Point(490, 227);
             this.comboBox4.Name = "comboBox4";
@@ -492,6 +493,7 @@
             // 
             // comboBox5
             // 
+            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Location = new System.Drawing.Point(35, 229);
             this.comboBox5.Name = "comboBox5";
@@ -528,6 +530,7 @@
             // 
             // comboBox6
             // 
+            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Location = new System.Drawing.Point(35, 130);
             this.comboBox6.Name = "comboBox6";
@@ -590,7 +593,7 @@
             this.label12.Font = new System.Drawing.Font("Segoe UI", 22.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(12, 16);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(572, 52);
+            this.label12.Size = new System.Drawing.Size(560, 51);
             this.label12.TabIndex = 8;
             this.label12.Text = "Registrar resultados validados";
             // 
