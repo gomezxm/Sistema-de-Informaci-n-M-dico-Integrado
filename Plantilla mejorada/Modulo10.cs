@@ -13,7 +13,7 @@ namespace Borrador
     public partial class Modulo10 : UserControl
     {
         private readonly CirugiaRepository _repository;
-        private int _idEventoActual = 0;
+        private int _idCirugiaActual = 0;
 
         public Modulo10()
         {
@@ -46,16 +46,19 @@ namespace Borrador
                 CargarSalasQuirurgicas();
 
                 // Cargar estados
-                cmbEstado.Items.AddRange(new[] { "Programada", "En Curso", "Finalizada", "Cancelada" });
+                cmbEstado.Items.Clear();
+                cmbEstado.Items.AddRange(new[] { "Programada", "Reprogramada", "Cancelada" });
                 cmbEstado.SelectedIndex = 0;
 
-                cmbPrioridad.Items.AddRange(new[] { "Electiva", "Urgente", "Emergencia" });
+                cmbPrioridad.Items.Clear();
+                cmbPrioridad.Items.AddRange(new[] { "Electiva", "Urgente" });
                 cmbPrioridad.SelectedIndex = 0;
 
                 // Cargar combos Tab Nota
                 CargarCirugiasParaNota();
                 CargarProfesionales();
 
+                cmbEstadoNota.Items.Clear();
                 cmbEstadoNota.Items.AddRange(new[] { "Borrador", "Final" });
                 cmbEstadoNota.SelectedIndex = 0;
 
@@ -78,11 +81,17 @@ namespace Borrador
         {
             try
             {
+                // Desconectar evento temporalmente
+                cmbPaciente.SelectedIndexChanged -= CmbPaciente_SelectedIndexChanged;
+
                 var dt = _repository.ObtenerPacientes();
                 cmbPaciente.DataSource = dt;
                 cmbPaciente.DisplayMember = "Display";
-                cmbPaciente.ValueMember = "IdPersona";
+                cmbPaciente.ValueMember = "IdPaciente";
                 cmbPaciente.SelectedIndex = -1;
+
+                // Reconectar evento
+                cmbPaciente.SelectedIndexChanged += CmbPaciente_SelectedIndexChanged;
             }
             catch (Exception ex)
             {
@@ -97,7 +106,7 @@ namespace Borrador
                 var dt = _repository.ObtenerCirujanos();
                 cmbCirujano.DataSource = dt;
                 cmbCirujano.DisplayMember = "Display";
-                cmbCirujano.ValueMember = "IdPersona";
+                cmbCirujano.ValueMember = "IdMedico";
                 cmbCirujano.SelectedIndex = -1;
             }
             catch (Exception ex)
@@ -112,8 +121,8 @@ namespace Borrador
             {
                 var dt = _repository.ObtenerTiposCirugia();
                 cmbTipoCirugia.DataSource = dt;
-                cmbTipoCirugia.DisplayMember = "Nombre";
-                cmbTipoCirugia.ValueMember = "Codigo";
+                cmbTipoCirugia.DisplayMember = "TipoCirugia";
+                cmbTipoCirugia.ValueMember = "TipoCirugia";
                 cmbTipoCirugia.SelectedIndex = -1;
             }
             catch (Exception ex)
@@ -128,8 +137,8 @@ namespace Borrador
             {
                 var dt = _repository.ObtenerSalasQuirurgicas();
                 cmbSala.DataSource = dt;
-                cmbSala.DisplayMember = "Nombre";
-                cmbSala.ValueMember = "IdLugar";
+                cmbSala.DisplayMember = "NombreSala";
+                cmbSala.ValueMember = "IdSalaQuirofano";
                 cmbSala.SelectedIndex = -1;
             }
             catch (Exception ex)
@@ -140,7 +149,9 @@ namespace Borrador
 
         private void GenerarIdCirugia()
         {
-            txtIdCirugia.Text = $"CIR-{DateTime.Now:yyyyMMddHHmmss}";
+            txtIdCirugia.Text = _idCirugiaActual == 0 ?
+                $"CIR-{DateTime.Now:yyyyMMddHHmmss}" :
+                $"CIR-{_idCirugiaActual}";
         }
 
         private void CmbPaciente_SelectedIndexChanged(object sender, EventArgs e)
@@ -155,39 +166,48 @@ namespace Borrador
                 if (!ValidarDatosAgenda())
                     return;
 
+                if (cmbPaciente.SelectedValue == null || cmbCirujano.SelectedValue == null)
+                {
+                    MessageBox.Show("Debe seleccionar un paciente y un cirujano", "Validación");
+                    return;
+                }
+
                 var cirugia = new CirugiaDTO
                 {
-                    IdEvento = _idEventoActual,
+                    // ⚠️ CORRECCIÓN CRÍTICA: Ahora sí se usa el ID actual
+                    IdCirugia = _idCirugiaActual,
                     IdPaciente = Convert.ToInt32(cmbPaciente.SelectedValue),
                     IdCirujano = Convert.ToInt32(cmbCirujano.SelectedValue),
-                    EquipoQuirurgico = txtEquipo.Text.Trim(),
                     TipoCirugia = cmbTipoCirugia.Text,
                     DiagnosticoPreoperatorio = txtDiagPre.Text.Trim(),
-                    IdSala = cmbSala.SelectedValue != null ? Convert.ToInt32(cmbSala.SelectedValue) : (int?)null,
-                    FechaInicio = dtpFechaInicio.Value,
-                    DuracionMinutos = Convert.ToInt32(numDuracion.Value),
-                    Prioridad = cmbPrioridad.Text == "Electiva" ? "ELEC" :
-                                cmbPrioridad.Text == "Urgente" ? "URG" : "EMER",
-                    Estado = cmbEstado.Text == "Programada" ? "PROGRAMADO" :
-                             cmbEstado.Text == "En Curso" ? "EN_CURSO" :
-                             cmbEstado.Text == "Finalizada" ? "FINALIZADO" : "CANCELADO",
+                    IdSalaQuirofano = cmbSala.SelectedValue != null ? Convert.ToInt32(cmbSala.SelectedValue) : (int?)null,
+                    FechaHoraInicio = dtpFechaInicio.Value,
+                    DuracionEstimada = Convert.ToInt32(numDuracion.Value),
+                    Prioridad = cmbPrioridad.Text,
+                    EstadoProgramacion = cmbEstado.Text,
                     Observaciones = txtObservaciones.Text.Trim()
                 };
 
-                // Calcular fecha fin estimada
-                if (numDuracion.Value > 0)
+                int idGuardado = _repository.GuardarCirugia(cirugia);
+
+                if (idGuardado > 0)
                 {
-                    cirugia.FechaFin = cirugia.FechaInicio.AddMinutes((double)numDuracion.Value);
+                    string mensaje = _idCirugiaActual == 0 ?
+                        "Cirugía programada exitosamente" :
+                        "Cirugía actualizada exitosamente";
+
+                    MessageBox.Show(mensaje, "Éxito",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    LimpiarFormularioAgenda();
+                    GenerarIdCirugia();
+                    CargarCirugiasParaNota(); // Actualizar lista en tab Nota
                 }
-
-                _idEventoActual = _repository.GuardarCirugia(cirugia);
-
-                MessageBox.Show("Cirugía guardada exitosamente", "Éxito",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                LimpiarFormularioAgenda();
-                GenerarIdCirugia();
-                CargarCirugiasParaNota(); // Actualizar lista en tab Nota
+                else
+                {
+                    MessageBox.Show("No se pudo guardar la cirugía", "Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             catch (Exception ex)
             {
@@ -231,7 +251,7 @@ namespace Borrador
 
         private void LimpiarFormularioAgenda()
         {
-            _idEventoActual = 0;
+            _idCirugiaActual = 0;
             cmbPaciente.SelectedIndex = -1;
             cmbCirujano.SelectedIndex = -1;
             cmbTipoCirugia.SelectedIndex = -1;
@@ -253,11 +273,17 @@ namespace Borrador
         {
             try
             {
+                // Desconectar evento temporalmente
+                cmbCirugiaSel.SelectedIndexChanged -= CmbCirugiaSel_SelectedIndexChanged;
+
                 var dt = _repository.ObtenerCirugiasParaNota();
                 cmbCirugiaSel.DataSource = dt;
                 cmbCirugiaSel.DisplayMember = "Display";
-                cmbCirugiaSel.ValueMember = "IdEvento";
+                cmbCirugiaSel.ValueMember = "IdCirugia";
                 cmbCirugiaSel.SelectedIndex = -1;
+
+                // Reconectar evento
+                cmbCirugiaSel.SelectedIndexChanged += CmbCirugiaSel_SelectedIndexChanged;
             }
             catch (Exception ex)
             {
@@ -272,7 +298,7 @@ namespace Borrador
                 var dt = _repository.ObtenerProfesionalesMedicos();
                 cmbProfesional.DataSource = dt;
                 cmbProfesional.DisplayMember = "Display";
-                cmbProfesional.ValueMember = "IdPersona";
+                cmbProfesional.ValueMember = "IdEmpleado";
                 cmbProfesional.SelectedIndex = -1;
             }
             catch (Exception ex)
@@ -283,38 +309,88 @@ namespace Borrador
 
         private void ConfigurarGridMateriales()
         {
+            dgvMateriales.Columns.Clear();
+            dgvMateriales.Columns.Add("Material", "Material");
+            dgvMateriales.Columns.Add("Cantidad", "Cantidad");
+            dgvMateriales.Columns.Add("Observacion", "Observación");
+
             dgvMateriales.AllowUserToAddRows = true;
             dgvMateriales.AllowUserToDeleteRows = true;
         }
 
         private void CmbCirugiaSel_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbCirugiaSel.SelectedValue == null)
+            if (cmbCirugiaSel.SelectedValue == null || cmbCirugiaSel.SelectedIndex == -1)
                 return;
 
             try
             {
-                int idEvento = Convert.ToInt32(cmbCirugiaSel.SelectedValue);
-                var detalle = _repository.ObtenerDetalleCirugia(idEvento);
+                int idCirugia = Convert.ToInt32(cmbCirugiaSel.SelectedValue);
+                var detalle = _repository.ObtenerDetalleCirugia(idCirugia);
 
                 if (detalle != null)
                 {
-                    // Cargar datos básicos
-                    dtpInicioReal.Value = detalle.FechaInicio;
-                    if (detalle.FechaFin.HasValue)
-                        dtpFinReal.Value = detalle.FechaFin.Value;
+                    // Cargar datos básicos de la cirugía
+                    dtpInicioReal.Value = detalle.FechaHoraInicio;
+                    dtpFinReal.Value = detalle.FechaHoraInicio.AddHours(1); // Default: 1 hora después
 
-                    // Si hay datos JSON, parsearlos (simplificado)
-                    if (!string.IsNullOrEmpty(detalle.DatosClinicosJson))
+                    // Cargar nota operatoria si existe
+                    var nota = _repository.ObtenerNotaOperatoria(idCirugia);
+                    if (nota != null)
                     {
-                        // Aquí podrías usar un parser JSON para extraer los datos
-                        // Por ahora, dejamos que el usuario complete la información
+                        dtpInicioReal.Value = nota.FechaHoraRealInicio;
+                        dtpFinReal.Value = nota.FechaHoraRealFin;
+                        txtDiagPost.Text = nota.DiagnosticoPostoperatorio;
+                        rtbTecnica.Text = nota.TecnicaOperatoria;
+                        rtbHallazgos.Text = nota.Hallazgos;
+                        txtComplicaciones.Text = nota.Complicaciones ?? "";
+
+                        if (nota.IdEmpleadoRegistra > 0)
+                            cmbProfesional.SelectedValue = nota.IdEmpleadoRegistra;
+
+                        cmbEstadoNota.Text = nota.EstadoNota;
+
+                        // Cargar materiales
+                        CargarMaterialesNota(nota.IdNotaOperatoria);
+                    }
+                    else
+                    {
+                        // Limpiar si no hay nota
+                        txtDiagPost.Clear();
+                        rtbTecnica.Clear();
+                        rtbHallazgos.Clear();
+                        txtComplicaciones.Clear();
+                        dgvMateriales.Rows.Clear();
+                        cmbProfesional.SelectedIndex = -1;
+                        cmbEstadoNota.SelectedIndex = 0;
                     }
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Error al cargar detalle: {ex.Message}", "Error");
+            }
+        }
+
+        private void CargarMaterialesNota(int idNotaOperatoria)
+        {
+            try
+            {
+                dgvMateriales.Rows.Clear();
+                var materiales = _repository.ObtenerMaterialesCirugia(idNotaOperatoria);
+
+                foreach (DataRow row in materiales.Rows)
+                {
+                    dgvMateriales.Rows.Add(
+                        row["Material"].ToString(),
+                        row["Cantidad"].ToString(),
+                        row["Observacion"].ToString()
+                    );
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al cargar materiales: {ex.Message}", "Error");
             }
         }
 
@@ -325,20 +401,44 @@ namespace Borrador
                 if (!ValidarDatosNota())
                     return;
 
+                if (cmbCirugiaSel.SelectedValue == null)
+                {
+                    MessageBox.Show("Debe seleccionar una cirugía", "Validación");
+                    return;
+                }
+
                 var nota = new NotaOperatoriaDTO
                 {
-                    IdEvento = Convert.ToInt32(cmbCirugiaSel.SelectedValue),
-                    InicioReal = dtpInicioReal.Value,
-                    FinReal = dtpFinReal.Value,
+                    IdCirugia = Convert.ToInt32(cmbCirugiaSel.SelectedValue),
+                    FechaHoraRealInicio = dtpInicioReal.Value,
+                    FechaHoraRealFin = dtpFinReal.Value,
                     DiagnosticoPostoperatorio = txtDiagPost.Text.Trim(),
                     TecnicaOperatoria = rtbTecnica.Text.Trim(),
                     Hallazgos = rtbHallazgos.Text.Trim(),
-                    Complicaciones = txtComplicaciones.Text.Trim(),
-                    MaterialesJson = GenerarJsonMateriales(),
-                    IdProfesionalRegistra = cmbProfesional.SelectedValue != null ?
+                    Complicaciones = string.IsNullOrWhiteSpace(txtComplicaciones.Text) ?
+                        null : txtComplicaciones.Text.Trim(),
+                    IdEmpleadoRegistra = cmbProfesional.SelectedValue != null ?
                         Convert.ToInt32(cmbProfesional.SelectedValue) : 0,
                     EstadoNota = cmbEstadoNota.Text
                 };
+
+                // Obtener materiales del grid
+                nota.Materiales = new List<MaterialCirugiaDTO>();
+                foreach (DataGridViewRow row in dgvMateriales.Rows)
+                {
+                    if (row.IsNewRow) continue;
+
+                    var material = row.Cells[0].Value?.ToString() ?? "";
+                    if (!string.IsNullOrEmpty(material))
+                    {
+                        nota.Materiales.Add(new MaterialCirugiaDTO
+                        {
+                            Material = material,
+                            Cantidad = Convert.ToInt32(row.Cells[1].Value ?? 1),
+                            Observacion = row.Cells[2].Value?.ToString() ?? ""
+                        });
+                    }
+                }
 
                 bool resultado = _repository.GuardarNotaOperatoria(nota);
 
@@ -346,7 +446,7 @@ namespace Borrador
                 {
                     MessageBox.Show("Nota operatoria guardada exitosamente", "Éxito",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    LimpiarFormularioNota();
+                    // No limpiar el formulario para permitir seguir editando
                 }
             }
             catch (Exception ex)
@@ -378,28 +478,14 @@ namespace Borrador
                 return false;
             }
 
-            return true;
-        }
-
-        private string GenerarJsonMateriales()
-        {
-            var materiales = new List<string>();
-
-            foreach (DataGridViewRow row in dgvMateriales.Rows)
+            if (dtpFinReal.Value <= dtpInicioReal.Value)
             {
-                if (row.IsNewRow) continue;
-
-                var material = row.Cells[0].Value?.ToString() ?? "";
-                var cantidad = row.Cells[1].Value?.ToString() ?? "0";
-                var observacion = row.Cells[2].Value?.ToString() ?? "";
-
-                if (!string.IsNullOrEmpty(material))
-                {
-                    materiales.Add($"{{\"Material\":\"{material}\",\"Cantidad\":\"{cantidad}\",\"Observacion\":\"{observacion}\"}}");
-                }
+                MessageBox.Show("La fecha de fin debe ser posterior a la fecha de inicio", "Validación");
+                dtpFinReal.Focus();
+                return false;
             }
 
-            return $"[{string.Join(",", materiales)}]";
+            return true;
         }
 
         private void LimpiarFormularioNota()
@@ -412,6 +498,8 @@ namespace Borrador
             dgvMateriales.Rows.Clear();
             cmbProfesional.SelectedIndex = -1;
             cmbEstadoNota.SelectedIndex = 0;
+            dtpInicioReal.Value = DateTime.Now;
+            dtpFinReal.Value = DateTime.Now;
         }
 
         private void BtnImprimir_Click(object sender, EventArgs e)

@@ -72,7 +72,7 @@ namespace Borrador
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder
             {
                 DataSource = "DESKTOP-QN52C2T\\MIPRO",  // Equivalente a localhost o (local)
-                InitialCatalog = "ClinicaPro",
+                InitialCatalog = "ClinicaPro2",
                 UserID = "clinica_user",
                 Password = "sm@123DS4UTP",
                 IntegratedSecurity = false,  // IMPORTANTE: false para usar SQL Authentication
@@ -443,7 +443,7 @@ namespace Borrador
         {
             try
             {
-                string query = "SELECT COUNT(*) FROM sys.databases WHERE name = 'ClinicaPro'";
+                string query = "SELECT COUNT(*) FROM sys.databases WHERE name = 'ClinicaPro2'";
                 object resultado = EjecutarEscalar(query);
                 return Convert.ToInt32(resultado) > 0;
             }

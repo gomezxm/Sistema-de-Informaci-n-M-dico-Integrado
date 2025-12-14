@@ -2,131 +2,110 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Configuration;
 
 namespace Borrador
 {
-    /// <summary>
-    /// Repositorio para gestión de cirugías (Módulo 10)
-    /// </summary>
     public class CirugiaRepository
     {
-        // Ya no necesitamos _connectionString porque usamos ConexionDB.Instancia directamente
-
         public CirugiaRepository()
         {
-            // Constructor vacío - usaremos ConexionDB.Instancia en cada método
         }
 
         #region Métodos para Agenda de Cirugías
 
-        /// <summary>
-        /// Obtiene todas las cirugías programadas
-        /// </summary>
         public DataTable ObtenerCirugiasAgenda()
         {
             string query = @"
                 SELECT 
-                    e.IdEvento,
-                    e.IdPaciente,
+                    c.IdCirugia,
+                    c.IdPaciente,
                     CONCAT(p.Nombre, ' ', p.Apellido) AS NombrePaciente,
-                    e.IdResponsable,
-                    CONCAT(m.Nombre, ' ', m.Apellido) AS NombreCirujano,
-                    e.FechaInicio,
-                    e.FechaFin,
-                    e.Estado,
-                    JSON_VALUE(e.DatosClinicosJson, '$.TipoCirugia') AS TipoCirugia,
-                    JSON_VALUE(e.DatosClinicosJson, '$.DiagnosticoPreoperatorio') AS DiagnosticoPreoperatorio,
-                    JSON_VALUE(e.DatosClinicosJson, '$.Prioridad') AS Prioridad,
-                    i.Nombre AS Sala
-                FROM App.EventoMedico e
-                INNER JOIN App.Persona p ON e.IdPaciente = p.IdPersona
-                LEFT JOIN App.Persona m ON e.IdResponsable = m.IdPersona
-                LEFT JOIN App.Infraestructura i ON e.IdUbicacion = i.IdLugar
-                WHERE e.TipoEvento = 'CIRUGIA'
-                ORDER BY e.FechaInicio DESC";
+                    c.IdCirujano,
+                    CONCAT(e.Nombre, ' ', e.Apellido) AS NombreCirujano,
+                    c.FechaHoraInicio,
+                    c.TipoCirugia,
+                    c.DiagnosticoPreoperatorio,
+                    c.Prioridad,
+                    c.EstadoProgramacion,
+                    s.NombreSala
+                FROM CIRUGIAS c
+                INNER JOIN PACIENTES p ON c.IdPaciente = p.IdPaciente
+                INNER JOIN MEDICOS m ON c.IdCirujano = m.IdMedico
+                INNER JOIN EMPLEADOS e ON m.IdEmpleado = e.IdEmpleado
+                LEFT JOIN CAT_SALAS_QUIROFANO s ON c.IdSalaQuirofano = s.IdSalaQuirofano
+                ORDER BY c.FechaHoraInicio DESC";
 
             return ConexionDB.Instancia.EjecutarConsulta(query);
         }
 
-        /// <summary>
-        /// Obtiene lista de pacientes para programar cirugía
-        /// </summary>
         public DataTable ObtenerPacientes()
         {
             string query = @"
                 SELECT 
-                    IdPersona,
-                    CONCAT(Identificacion, ' - ', Nombre, ' ', Apellido) AS Display
-                FROM App.Persona
-                WHERE TipoPersona = 'PACIENTE' AND Estado = 'ACTIVO'
+                    IdPaciente,
+                    CONCAT(Cedula, ' - ', Nombre, ' ', Apellido) AS Display,
+                    Cedula,
+                    Nombre,
+                    Apellido
+                FROM PACIENTES
+                WHERE EstadoPaciente = 'Activo'
                 ORDER BY Apellido, Nombre";
 
             return ConexionDB.Instancia.EjecutarConsulta(query);
         }
 
-        /// <summary>
-        /// Obtiene lista de cirujanos
-        /// </summary>
         public DataTable ObtenerCirujanos()
         {
             string query = @"
                 SELECT 
-                    IdPersona,
-                    CONCAT(Nombre, ' ', Apellido, ' - ', JSON_VALUE(DatosExtendidosJson, '$.Especialidad')) AS Display
-                FROM App.Persona
-                WHERE TipoPersona = 'MEDICO' 
-                    AND Estado = 'ACTIVO'
-                    AND (JSON_VALUE(DatosExtendidosJson, '$.Especialidad') = 'CIR' 
-                         OR JSON_VALUE(DatosExtendidosJson, '$.Especialidad') LIKE '%CIR%')
-                ORDER BY Apellido, Nombre";
+                    m.IdMedico,
+                    CONCAT(e.Nombre, ' ', e.Apellido, ' - ', esp.NombreEspecialidad) AS Display,
+                    e.Nombre,
+                    e.Apellido
+                FROM MEDICOS m
+                INNER JOIN EMPLEADOS e ON m.IdEmpleado = e.IdEmpleado
+                LEFT JOIN CAT_ESPECIALIDADES esp ON m.IdEspecialidad = esp.IdEspecialidad
+                WHERE e.TipoEmpleado = 'Médico'
+                ORDER BY e.Apellido, e.Nombre";
 
             return ConexionDB.Instancia.EjecutarConsulta(query);
         }
 
-        /// <summary>
-        /// Obtiene tipos de cirugía del catálogo
-        /// </summary>
         public DataTable ObtenerTiposCirugia()
         {
             string query = @"
-                SELECT Codigo, Nombre
-                FROM App.Configuracion
-                WHERE Categoria = 'TIPO_CIRUGIA' AND IsActive = 1
-                ORDER BY Nombre";
+                SELECT DISTINCT TipoCirugia
+                FROM CIRUGIAS
+                WHERE TipoCirugia IS NOT NULL
+                UNION
+                SELECT 'Apendicectomía' AS TipoCirugia
+                UNION SELECT 'Colecistectomía laparoscópica'
+                UNION SELECT 'Hernioplastia inguinal'
+                UNION SELECT 'Cesárea'
+                UNION SELECT 'Amigdalectomía'
+                UNION SELECT 'Colecistectomía'
+                UNION SELECT 'Laparotomía exploratoria'
+                ORDER BY TipoCirugia";
 
-            DataTable dt = ConexionDB.Instancia.EjecutarConsulta(query);
-
-            // Si no hay tipos configurados, agregar algunos por defecto
-            if (dt.Rows.Count == 0)
-            {
-                dt.Columns.Add("Codigo");
-                dt.Columns.Add("Nombre");
-                dt.Rows.Add("APEN", "Apendicectomía");
-                dt.Rows.Add("COLEC", "Colecistectomía");
-                dt.Rows.Add("HERN", "Hernioplastia");
-                dt.Rows.Add("CESAR", "Cesárea");
-                dt.Rows.Add("OTRA", "Otra");
-            }
-            return dt;
+            return ConexionDB.Instancia.EjecutarConsulta(query);
         }
 
-        /// <summary>
-        /// Obtiene salas quirúrgicas disponibles
-        /// </summary>
         public DataTable ObtenerSalasQuirurgicas()
         {
             string query = @"
-                SELECT IdLugar, Nombre, Estado
-                FROM App.Infraestructura
-                WHERE Tipo = 'QUIROFANO'
-                ORDER BY Nombre";
+                SELECT 
+                    IdSalaQuirofano, 
+                    NombreSala, 
+                    Estado
+                FROM CAT_SALAS_QUIROFANO
+                WHERE Estado IN ('Disponible', 'En uso')
+                ORDER BY NombreSala";
 
             return ConexionDB.Instancia.EjecutarConsulta(query);
         }
 
         /// <summary>
-        /// Inserta o actualiza una cirugía programada
+        /// ⚠️ CORREGIDO: Ahora maneja correctamente INSERT y UPDATE
         /// </summary>
         public int GuardarCirugia(CirugiaDTO cirugia)
         {
@@ -136,48 +115,62 @@ namespace Borrador
             bool exito = ConexionDB.Instancia.EjecutarTransaccion((conn, trans) =>
             {
                 string query;
-                if (cirugia.IdEvento == 0)
+
+                if (cirugia.IdCirugia == 0)
                 {
-                    // INSERT
+                    // ✅ INSERT - Nueva cirugía
                     query = @"
-                        INSERT INTO App.EventoMedico 
-                        (TipoEvento, IdPaciente, IdResponsable, IdUbicacion, FechaInicio, FechaFin, Motivo, Estado, DatosClinicosJson)
+                        INSERT INTO CIRUGIAS 
+                        (IdPaciente, IdCirujano, TipoCirugia, DiagnosticoPreoperatorio, 
+                         IdSalaQuirofano, FechaHoraInicio, DuracionEstimada, Prioridad, 
+                         EstadoProgramacion, Observaciones)
                         VALUES 
-                        ('CIRUGIA', @IdPaciente, @IdResponsable, @IdUbicacion, @FechaInicio, @FechaFin, @Motivo, @Estado, @DatosJson);
+                        (@IdPaciente, @IdCirujano, @TipoCirugia, @DiagnosticoPreoperatorio,
+                         @IdSalaQuirofano, @FechaHoraInicio, @DuracionEstimada, @Prioridad,
+                         @EstadoProgramacion, @Observaciones);
                         SELECT CAST(SCOPE_IDENTITY() AS INT);";
                 }
                 else
                 {
-                    // UPDATE
+                    // ✅ UPDATE - Actualizar cirugía existente
                     query = @"
-                        UPDATE App.EventoMedico
+                        UPDATE CIRUGIAS
                         SET IdPaciente = @IdPaciente,
-                            IdResponsable = @IdResponsable,
-                            IdUbicacion = @IdUbicacion,
-                            FechaInicio = @FechaInicio,
-                            FechaFin = @FechaFin,
-                            Motivo = @Motivo,
-                            Estado = @Estado,
-                            DatosClinicosJson = @DatosJson
-                        WHERE IdEvento = @IdEvento;
-                        SELECT @IdEvento;";
+                            IdCirujano = @IdCirujano,
+                            TipoCirugia = @TipoCirugia,
+                            DiagnosticoPreoperatorio = @DiagnosticoPreoperatorio,
+                            IdSalaQuirofano = @IdSalaQuirofano,
+                            FechaHoraInicio = @FechaHoraInicio,
+                            DuracionEstimada = @DuracionEstimada,
+                            Prioridad = @Prioridad,
+                            EstadoProgramacion = @EstadoProgramacion,
+                            Observaciones = @Observaciones
+                        WHERE IdCirugia = @IdCirugia;
+                        SELECT @IdCirugia;";
                 }
 
                 using (var cmd = new SqlCommand(query, conn, trans))
                 {
-                    if (cirugia.IdEvento > 0)
-                        cmd.Parameters.AddWithValue("@IdEvento", cirugia.IdEvento);
+                    // Agregar parámetro IdCirugia solo para UPDATE
+                    if (cirugia.IdCirugia > 0)
+                        cmd.Parameters.AddWithValue("@IdCirugia", cirugia.IdCirugia);
 
                     cmd.Parameters.AddWithValue("@IdPaciente", cirugia.IdPaciente);
-                    cmd.Parameters.AddWithValue("@IdResponsable", cirugia.IdCirujano);
-                    cmd.Parameters.AddWithValue("@IdUbicacion", (object)cirugia.IdSala ?? DBNull.Value);
-                    cmd.Parameters.AddWithValue("@FechaInicio", cirugia.FechaInicio);
-                    cmd.Parameters.AddWithValue("@FechaFin", (object)cirugia.FechaFin ?? DBNull.Value);
-                    cmd.Parameters.AddWithValue("@Motivo", cirugia.TipoCirugia ?? "");
-                    cmd.Parameters.AddWithValue("@Estado", cirugia.Estado);
-                    cmd.Parameters.AddWithValue("@DatosJson", cirugia.GenerarJsonDatos());
+                    cmd.Parameters.AddWithValue("@IdCirujano", cirugia.IdCirujano);
+                    cmd.Parameters.AddWithValue("@TipoCirugia", cirugia.TipoCirugia ?? "");
+                    cmd.Parameters.AddWithValue("@DiagnosticoPreoperatorio", cirugia.DiagnosticoPreoperatorio ?? "");
+                    cmd.Parameters.AddWithValue("@IdSalaQuirofano", (object)cirugia.IdSalaQuirofano ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@FechaHoraInicio", cirugia.FechaHoraInicio);
+                    cmd.Parameters.AddWithValue("@DuracionEstimada", cirugia.DuracionEstimada);
+                    cmd.Parameters.AddWithValue("@Prioridad", cirugia.Prioridad ?? "Electiva");
+                    cmd.Parameters.AddWithValue("@EstadoProgramacion", cirugia.EstadoProgramacion ?? "Programada");
+                    cmd.Parameters.AddWithValue("@Observaciones", (object)cirugia.Observaciones ?? DBNull.Value);
 
-                    resultado = Convert.ToInt32(cmd.ExecuteScalar());
+                    var resultObj = cmd.ExecuteScalar();
+                    if (resultObj != null && resultObj != DBNull.Value)
+                    {
+                        resultado = Convert.ToInt32(resultObj);
+                    }
                 }
             }, out mensajeError);
 
@@ -189,51 +182,79 @@ namespace Borrador
             return resultado;
         }
 
+        /// <summary>
+        /// ✅ NUEVO: Método para eliminar cirugía
+        /// </summary>
+        public bool EliminarCirugia(int idCirugia)
+        {
+            string mensajeError;
+
+            bool exito = ConexionDB.Instancia.EjecutarTransaccion((conn, trans) =>
+            {
+                // Primero eliminar la nota operatoria si existe
+                string queryNota = "DELETE FROM NOTAS_OPERATORIAS WHERE IdCirugia = @IdCirugia";
+                using (var cmdNota = new SqlCommand(queryNota, conn, trans))
+                {
+                    cmdNota.Parameters.AddWithValue("@IdCirugia", idCirugia);
+                    cmdNota.ExecuteNonQuery();
+                }
+
+                // Luego eliminar la cirugía
+                string queryCirugia = "DELETE FROM CIRUGIAS WHERE IdCirugia = @IdCirugia";
+                using (var cmdCirugia = new SqlCommand(queryCirugia, conn, trans))
+                {
+                    cmdCirugia.Parameters.AddWithValue("@IdCirugia", idCirugia);
+                    cmdCirugia.ExecuteNonQuery();
+                }
+            }, out mensajeError);
+
+            if (!exito)
+            {
+                throw new Exception($"Error al eliminar cirugía: {mensajeError}");
+            }
+
+            return exito;
+        }
+
         #endregion
 
         #region Métodos para Nota Operatoria
 
-        /// <summary>
-        /// Obtiene cirugías para seleccionar en nota operatoria
-        /// </summary>
         public DataTable ObtenerCirugiasParaNota()
         {
             string query = @"
                 SELECT 
-                    e.IdEvento,
+                    c.IdCirugia,
                     CONCAT(p.Nombre, ' ', p.Apellido, ' - ', 
-                           FORMAT(e.FechaInicio, 'dd/MM/yyyy HH:mm'), ' - ',
-                           JSON_VALUE(e.DatosClinicosJson, '$.TipoCirugia')) AS Display,
-                    e.Estado
-                FROM App.EventoMedico e
-                INNER JOIN App.Persona p ON e.IdPaciente = p.IdPersona
-                WHERE e.TipoEvento = 'CIRUGIA'
-                    AND e.Estado IN ('PROGRAMADO', 'EN_CURSO', 'FINALIZADO')
-                ORDER BY e.FechaInicio DESC";
+                           CONVERT(VARCHAR, c.FechaHoraInicio, 103), ' ', 
+                           CONVERT(VARCHAR, c.FechaHoraInicio, 108), ' - ',
+                           c.TipoCirugia) AS Display,
+                    c.EstadoProgramacion
+                FROM CIRUGIAS c
+                INNER JOIN PACIENTES p ON c.IdPaciente = p.IdPaciente
+                WHERE c.EstadoProgramacion IN ('Programada', 'Reprogramada')
+                ORDER BY c.FechaHoraInicio DESC";
 
             return ConexionDB.Instancia.EjecutarConsulta(query);
         }
 
-        /// <summary>
-        /// Obtiene datos completos de una cirugía para la nota operatoria
-        /// </summary>
-        public CirugiaDetalleDTO ObtenerDetalleCirugia(int idEvento)
+        public CirugiaDetalleDTO ObtenerDetalleCirugia(int idCirugia)
         {
             string query = @"
                 SELECT 
-                    e.IdEvento,
-                    e.IdPaciente,
+                    c.IdCirugia,
+                    c.IdPaciente,
                     CONCAT(p.Nombre, ' ', p.Apellido) AS NombrePaciente,
-                    e.IdResponsable,
-                    e.FechaInicio,
-                    e.FechaFin,
-                    e.Estado,
-                    e.DatosClinicosJson
-                FROM App.EventoMedico e
-                INNER JOIN App.Persona p ON e.IdPaciente = p.IdPersona
-                WHERE e.IdEvento = @IdEvento AND e.TipoEvento = 'CIRUGIA'";
+                    c.IdCirujano,
+                    c.FechaHoraInicio,
+                    c.TipoCirugia,
+                    c.DiagnosticoPreoperatorio,
+                    c.EstadoProgramacion
+                FROM CIRUGIAS c
+                INNER JOIN PACIENTES p ON c.IdPaciente = p.IdPaciente
+                WHERE c.IdCirugia = @IdCirugia";
 
-            SqlParameter[] parametros = { ConexionDB.Instancia.CrearParametro("@IdEvento", idEvento) };
+            SqlParameter[] parametros = { ConexionDB.Instancia.CrearParametro("@IdCirugia", idCirugia) };
             DataTable dt = ConexionDB.Instancia.EjecutarConsulta(query, parametros);
 
             if (dt.Rows.Count > 0)
@@ -241,38 +262,91 @@ namespace Borrador
                 DataRow row = dt.Rows[0];
                 return new CirugiaDetalleDTO
                 {
-                    IdEvento = Convert.ToInt32(row["IdEvento"]),
+                    IdCirugia = Convert.ToInt32(row["IdCirugia"]),
                     IdPaciente = Convert.ToInt32(row["IdPaciente"]),
                     NombrePaciente = row["NombrePaciente"].ToString(),
-                    IdResponsable = row["IdResponsable"] == DBNull.Value ? 0 : Convert.ToInt32(row["IdResponsable"]),
-                    FechaInicio = Convert.ToDateTime(row["FechaInicio"]),
-                    FechaFin = row["FechaFin"] == DBNull.Value ? (DateTime?)null : Convert.ToDateTime(row["FechaFin"]),
-                    Estado = row["Estado"].ToString(),
-                    DatosClinicosJson = row["DatosClinicosJson"] == DBNull.Value ? null : row["DatosClinicosJson"].ToString()
+                    IdCirujano = Convert.ToInt32(row["IdCirujano"]),
+                    FechaHoraInicio = Convert.ToDateTime(row["FechaHoraInicio"]),
+                    TipoCirugia = row["TipoCirugia"].ToString(),
+                    DiagnosticoPreoperatorio = row["DiagnosticoPreoperatorio"].ToString(),
+                    EstadoProgramacion = row["EstadoProgramacion"].ToString()
                 };
             }
             return null;
         }
 
-        /// <summary>
-        /// Obtiene profesionales para la nota operatoria
-        /// </summary>
+        public NotaOperatoriaDTO ObtenerNotaOperatoria(int idCirugia)
+        {
+            string query = @"
+                SELECT 
+                    IdNotaOperatoria,
+                    IdCirugia,
+                    FechaHoraRealInicio,
+                    FechaHoraRealFin,
+                    DiagnosticoPostoperatorio,
+                    TecnicaOperatoria,
+                    Hallazgos,
+                    Complicaciones,
+                    IdEmpleadoRegistra,
+                    EstadoNota
+                FROM NOTAS_OPERATORIAS
+                WHERE IdCirugia = @IdCirugia";
+
+            SqlParameter[] parametros = { ConexionDB.Instancia.CrearParametro("@IdCirugia", idCirugia) };
+            DataTable dt = ConexionDB.Instancia.EjecutarConsulta(query, parametros);
+
+            if (dt.Rows.Count > 0)
+            {
+                DataRow row = dt.Rows[0];
+                return new NotaOperatoriaDTO
+                {
+                    IdNotaOperatoria = Convert.ToInt32(row["IdNotaOperatoria"]),
+                    IdCirugia = Convert.ToInt32(row["IdCirugia"]),
+                    FechaHoraRealInicio = Convert.ToDateTime(row["FechaHoraRealInicio"]),
+                    FechaHoraRealFin = Convert.ToDateTime(row["FechaHoraRealFin"]),
+                    DiagnosticoPostoperatorio = row["DiagnosticoPostoperatorio"].ToString(),
+                    TecnicaOperatoria = row["TecnicaOperatoria"].ToString(),
+                    Hallazgos = row["Hallazgos"].ToString(),
+                    Complicaciones = row["Complicaciones"] == DBNull.Value ? null : row["Complicaciones"].ToString(),
+                    IdEmpleadoRegistra = Convert.ToInt32(row["IdEmpleadoRegistra"]),
+                    EstadoNota = row["EstadoNota"].ToString()
+                };
+            }
+            return null;
+        }
+
+        public DataTable ObtenerMaterialesCirugia(int idNotaOperatoria)
+        {
+            string query = @"
+                SELECT 
+                    IdMaterialCx,
+                    Material,
+                    Cantidad,
+                    Observacion
+                FROM MATERIALES_CIRUGIA
+                WHERE IdNotaOperatoria = @IdNotaOperatoria
+                ORDER BY IdMaterialCx";
+
+            SqlParameter[] parametros = { ConexionDB.Instancia.CrearParametro("@IdNotaOperatoria", idNotaOperatoria) };
+            return ConexionDB.Instancia.EjecutarConsulta(query, parametros);
+        }
+
         public DataTable ObtenerProfesionalesMedicos()
         {
             string query = @"
                 SELECT 
-                    IdPersona,
-                    CONCAT(Nombre, ' ', Apellido, ' - ', TipoPersona) AS Display
-                FROM App.Persona
-                WHERE TipoPersona IN ('MEDICO', 'ENFERMERO') 
-                    AND Estado = 'ACTIVO'
-                ORDER BY TipoPersona, Apellido, Nombre";
+                    IdEmpleado,
+                    CONCAT(Nombre, ' ', Apellido, ' - ', TipoEmpleado) AS Display,
+                    TipoEmpleado
+                FROM EMPLEADOS
+                WHERE TipoEmpleado IN ('Médico', 'Enfermero')
+                ORDER BY TipoEmpleado, Apellido, Nombre";
 
             return ConexionDB.Instancia.EjecutarConsulta(query);
         }
 
         /// <summary>
-        /// Guarda o actualiza la nota operatoria
+        /// ⚠️ CORREGIDO: Mejor manejo de transacciones
         /// </summary>
         public bool GuardarNotaOperatoria(NotaOperatoriaDTO nota)
         {
@@ -280,47 +354,96 @@ namespace Borrador
 
             bool exito = ConexionDB.Instancia.EjecutarTransaccion((conn, trans) =>
             {
-                // Actualizar el evento de cirugía con los datos de la nota
-                string query = @"
-                    UPDATE App.EventoMedico
-                    SET FechaInicio = @InicioReal,
-                        FechaFin = @FinReal,
-                        Estado = @Estado,
-                        DatosClinicosJson = JSON_MODIFY(
-                            ISNULL(DatosClinicosJson, '{}'),
-                            '$.DiagnosticoPostoperatorio', @DiagPost
-                        ),
-                        DatosClinicosJson = JSON_MODIFY(
-                            DatosClinicosJson,
-                            '$.TecnicaOperatoria', @Tecnica
-                        ),
-                        DatosClinicosJson = JSON_MODIFY(
-                            DatosClinicosJson,
-                            '$.Hallazgos', @Hallazgos
-                        ),
-                        DatosClinicosJson = JSON_MODIFY(
-                            DatosClinicosJson,
-                            '$.Complicaciones', @Complicaciones
-                        ),
-                        DatosClinicosJson = JSON_MODIFY(
-                            DatosClinicosJson,
-                            '$.MaterialesUtilizados', @Materiales
-                        )
-                    WHERE IdEvento = @IdEvento";
+                int idNotaOperatoria = 0;
+
+                // Verificar si ya existe una nota operatoria
+                string queryExiste = "SELECT IdNotaOperatoria FROM NOTAS_OPERATORIAS WHERE IdCirugia = @IdCirugia";
+                using (var cmdExiste = new SqlCommand(queryExiste, conn, trans))
+                {
+                    cmdExiste.Parameters.AddWithValue("@IdCirugia", nota.IdCirugia);
+                    var resultado = cmdExiste.ExecuteScalar();
+                    if (resultado != null && resultado != DBNull.Value)
+                        idNotaOperatoria = Convert.ToInt32(resultado);
+                }
+
+                string query;
+                if (idNotaOperatoria == 0)
+                {
+                    // ✅ INSERT
+                    query = @"
+                        INSERT INTO NOTAS_OPERATORIAS 
+                        (IdCirugia, FechaHoraRealInicio, FechaHoraRealFin, DiagnosticoPostoperatorio,
+                         TecnicaOperatoria, Hallazgos, Complicaciones, IdEmpleadoRegistra, EstadoNota)
+                        VALUES 
+                        (@IdCirugia, @FechaHoraRealInicio, @FechaHoraRealFin, @DiagnosticoPostoperatorio,
+                         @TecnicaOperatoria, @Hallazgos, @Complicaciones, @IdEmpleadoRegistra, @EstadoNota);
+                        SELECT CAST(SCOPE_IDENTITY() AS INT);";
+                }
+                else
+                {
+                    // ✅ UPDATE
+                    query = @"
+                        UPDATE NOTAS_OPERATORIAS
+                        SET FechaHoraRealInicio = @FechaHoraRealInicio,
+                            FechaHoraRealFin = @FechaHoraRealFin,
+                            DiagnosticoPostoperatorio = @DiagnosticoPostoperatorio,
+                            TecnicaOperatoria = @TecnicaOperatoria,
+                            Hallazgos = @Hallazgos,
+                            Complicaciones = @Complicaciones,
+                            IdEmpleadoRegistra = @IdEmpleadoRegistra,
+                            EstadoNota = @EstadoNota
+                        WHERE IdNotaOperatoria = @IdNotaOperatoria;
+                        SELECT @IdNotaOperatoria;";
+                }
 
                 using (var cmd = new SqlCommand(query, conn, trans))
                 {
-                    cmd.Parameters.AddWithValue("@IdEvento", nota.IdEvento);
-                    cmd.Parameters.AddWithValue("@InicioReal", nota.InicioReal);
-                    cmd.Parameters.AddWithValue("@FinReal", (object)nota.FinReal ?? DBNull.Value);
-                    cmd.Parameters.AddWithValue("@Estado", nota.EstadoNota == "Final" ? "FINALIZADO" : "EN_CURSO");
-                    cmd.Parameters.AddWithValue("@DiagPost", nota.DiagnosticoPostoperatorio ?? "");
-                    cmd.Parameters.AddWithValue("@Tecnica", nota.TecnicaOperatoria ?? "");
-                    cmd.Parameters.AddWithValue("@Hallazgos", nota.Hallazgos ?? "");
-                    cmd.Parameters.AddWithValue("@Complicaciones", nota.Complicaciones ?? "");
-                    cmd.Parameters.AddWithValue("@Materiales", nota.MaterialesJson ?? "[]");
+                    if (idNotaOperatoria > 0)
+                        cmd.Parameters.AddWithValue("@IdNotaOperatoria", idNotaOperatoria);
 
-                    cmd.ExecuteNonQuery();
+                    cmd.Parameters.AddWithValue("@IdCirugia", nota.IdCirugia);
+                    cmd.Parameters.AddWithValue("@FechaHoraRealInicio", nota.FechaHoraRealInicio);
+                    cmd.Parameters.AddWithValue("@FechaHoraRealFin", nota.FechaHoraRealFin);
+                    cmd.Parameters.AddWithValue("@DiagnosticoPostoperatorio", nota.DiagnosticoPostoperatorio ?? "");
+                    cmd.Parameters.AddWithValue("@TecnicaOperatoria", nota.TecnicaOperatoria ?? "");
+                    cmd.Parameters.AddWithValue("@Hallazgos", nota.Hallazgos ?? "");
+                    cmd.Parameters.AddWithValue("@Complicaciones", (object)nota.Complicaciones ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@IdEmpleadoRegistra", nota.IdEmpleadoRegistra);
+                    cmd.Parameters.AddWithValue("@EstadoNota", nota.EstadoNota ?? "Borrador");
+
+                    var resultObj = cmd.ExecuteScalar();
+                    if (resultObj != null && resultObj != DBNull.Value)
+                    {
+                        idNotaOperatoria = Convert.ToInt32(resultObj);
+                    }
+                }
+
+                // Guardar materiales - primero eliminar los existentes
+                string queryDeleteMateriales = "DELETE FROM MATERIALES_CIRUGIA WHERE IdNotaOperatoria = @IdNotaOperatoria";
+                using (var cmdDelete = new SqlCommand(queryDeleteMateriales, conn, trans))
+                {
+                    cmdDelete.Parameters.AddWithValue("@IdNotaOperatoria", idNotaOperatoria);
+                    cmdDelete.ExecuteNonQuery();
+                }
+
+                // Insertar materiales nuevos
+                if (nota.Materiales != null && nota.Materiales.Count > 0)
+                {
+                    string queryMateriales = @"
+                        INSERT INTO MATERIALES_CIRUGIA (IdNotaOperatoria, Material, Cantidad, Observacion)
+                        VALUES (@IdNotaOperatoria, @Material, @Cantidad, @Observacion)";
+
+                    foreach (var material in nota.Materiales)
+                    {
+                        using (var cmdMat = new SqlCommand(queryMateriales, conn, trans))
+                        {
+                            cmdMat.Parameters.AddWithValue("@IdNotaOperatoria", idNotaOperatoria);
+                            cmdMat.Parameters.AddWithValue("@Material", material.Material);
+                            cmdMat.Parameters.AddWithValue("@Cantidad", material.Cantidad);
+                            cmdMat.Parameters.AddWithValue("@Observacion", (object)material.Observacion ?? DBNull.Value);
+                            cmdMat.ExecuteNonQuery();
+                        }
+                    }
                 }
             }, out mensajeError);
 
@@ -339,57 +462,52 @@ namespace Borrador
 
     public class CirugiaDTO
     {
-        public int IdEvento { get; set; }
+        public int IdCirugia { get; set; }
         public int IdPaciente { get; set; }
         public int IdCirujano { get; set; }
-        public string EquipoQuirurgico { get; set; }
         public string TipoCirugia { get; set; }
         public string DiagnosticoPreoperatorio { get; set; }
-        public int? IdSala { get; set; }
-        public DateTime FechaInicio { get; set; }
-        public DateTime? FechaFin { get; set; }
-        public int DuracionMinutos { get; set; }
+        public int? IdSalaQuirofano { get; set; }
+        public DateTime FechaHoraInicio { get; set; }
+        public int DuracionEstimada { get; set; }
         public string Prioridad { get; set; }
-        public string Estado { get; set; }
+        public string EstadoProgramacion { get; set; }
         public string Observaciones { get; set; }
-
-        public string GenerarJsonDatos()
-        {
-            return $@"{{
-                ""TipoCirugia"": ""{TipoCirugia ?? ""}"",
-                ""DiagnosticoPreoperatorio"": ""{DiagnosticoPreoperatorio ?? ""}"",
-                ""Prioridad"": ""{Prioridad ?? "ELEC"}"",
-                ""EquipoQuirurgico"": ""{EquipoQuirurgico ?? ""}"",
-                ""DuracionEstimada"": {DuracionMinutos},
-                ""Observaciones"": ""{Observaciones ?? ""}""
-            }}";
-        }
     }
 
     public class CirugiaDetalleDTO
     {
-        public int IdEvento { get; set; }
+        public int IdCirugia { get; set; }
         public int IdPaciente { get; set; }
         public string NombrePaciente { get; set; }
-        public int IdResponsable { get; set; }
-        public DateTime FechaInicio { get; set; }
-        public DateTime? FechaFin { get; set; }
-        public string Estado { get; set; }
-        public string DatosClinicosJson { get; set; }
+        public int IdCirujano { get; set; }
+        public DateTime FechaHoraInicio { get; set; }
+        public string TipoCirugia { get; set; }
+        public string DiagnosticoPreoperatorio { get; set; }
+        public string EstadoProgramacion { get; set; }
     }
 
     public class NotaOperatoriaDTO
     {
-        public int IdEvento { get; set; }
-        public DateTime InicioReal { get; set; }
-        public DateTime? FinReal { get; set; }
+        public int IdNotaOperatoria { get; set; }
+        public int IdCirugia { get; set; }
+        public DateTime FechaHoraRealInicio { get; set; }
+        public DateTime FechaHoraRealFin { get; set; }
         public string DiagnosticoPostoperatorio { get; set; }
         public string TecnicaOperatoria { get; set; }
         public string Hallazgos { get; set; }
         public string Complicaciones { get; set; }
-        public string MaterialesJson { get; set; }
-        public int IdProfesionalRegistra { get; set; }
+        public int IdEmpleadoRegistra { get; set; }
         public string EstadoNota { get; set; }
+        public List<MaterialCirugiaDTO> Materiales { get; set; }
+    }
+
+    public class MaterialCirugiaDTO
+    {
+        public int IdMaterialCx { get; set; }
+        public string Material { get; set; }
+        public int Cantidad { get; set; }
+        public string Observacion { get; set; }
     }
 
     #endregion
