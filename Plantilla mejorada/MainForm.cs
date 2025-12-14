@@ -109,7 +109,7 @@ namespace Borrador
                             button.Text = "  🚑 Urgencias";
                             break;
                         case "btnUrgencias":
-                            button.Tag = typeof(Modulo11);
+                            button.Tag = typeof(Modulo10);
                             button.Text = "  ✂️ Cirugías";
                             break;
                         case "btnAdministrativo":

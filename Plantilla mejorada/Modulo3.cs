@@ -44,5 +44,10 @@ namespace Borrador
         {
 
         }
+
+        private void Grpbxform1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

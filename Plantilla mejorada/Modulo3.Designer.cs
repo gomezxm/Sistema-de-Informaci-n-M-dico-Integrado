@@ -147,6 +147,7 @@
             this.Grpbxform1.TabIndex = 2;
             this.Grpbxform1.TabStop = false;
             this.Grpbxform1.Text = "ConsultaMedica";
+            this.Grpbxform1.Enter += new System.EventHandler(this.Grpbxform1_Enter);
             // 
             // Btnhist
             // 
