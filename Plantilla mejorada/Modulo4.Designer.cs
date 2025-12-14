@@ -538,7 +538,7 @@
             this.cmbResponsable_Med.Location = new System.Drawing.Point(679, 148);
             this.cmbResponsable_Med.Margin = new System.Windows.Forms.Padding(4);
             this.cmbResponsable_Med.Name = "cmbResponsable_Med";
-            this.cmbResponsable_Med.Size = new System.Drawing.Size(565, 31);
+            this.cmbResponsable_Med.Size = new System.Drawing.Size(394, 31);
             this.cmbResponsable_Med.TabIndex = 4;
             // 
             // lblResponsable_Med
@@ -662,7 +662,7 @@
             this.cmbPrescripcion_Med.Location = new System.Drawing.Point(33, 172);
             this.cmbPrescripcion_Med.Margin = new System.Windows.Forms.Padding(4);
             this.cmbPrescripcion_Med.Name = "cmbPrescripcion_Med";
-            this.cmbPrescripcion_Med.Size = new System.Drawing.Size(1236, 31);
+            this.cmbPrescripcion_Med.Size = new System.Drawing.Size(1063, 31);
             this.cmbPrescripcion_Med.TabIndex = 3;
             this.cmbPrescripcion_Med.SelectedIndexChanged += new System.EventHandler(this.cmbPrescripcion_Med_SelectedIndexChanged);
             // 
@@ -685,7 +685,7 @@
             this.cmbPaciente_Med.Location = new System.Drawing.Point(33, 86);
             this.cmbPaciente_Med.Margin = new System.Windows.Forms.Padding(4);
             this.cmbPaciente_Med.Name = "cmbPaciente_Med";
-            this.cmbPaciente_Med.Size = new System.Drawing.Size(1236, 31);
+            this.cmbPaciente_Med.Size = new System.Drawing.Size(1063, 31);
             this.cmbPaciente_Med.TabIndex = 1;
             // 
             // lblPaciente_Med
