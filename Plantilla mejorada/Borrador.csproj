@@ -207,11 +207,11 @@
     <Compile Include="Modulo1.Designer.cs">
       <DependentUpon>Modulo1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modulo10.cs">
+    <Compile Include="Modulo11.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Modulo10.Designer.cs">
-      <DependentUpon>Modulo10.cs</DependentUpon>
+    <Compile Include="Modulo11.Designer.cs">
+      <DependentUpon>Modulo11.cs</DependentUpon>
     </Compile>
     <Compile Include="Modulo2.cs">
       <SubType>UserControl</SubType>
@@ -257,8 +257,8 @@
     <EmbeddedResource Include="Modulo1.resx">
       <DependentUpon>Modulo1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modulo10.resx">
-      <DependentUpon>Modulo10.cs</DependentUpon>
+    <EmbeddedResource Include="Modulo11.resx">
+      <DependentUpon>Modulo11.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulo2.resx">
       <DependentUpon>Modulo2.cs</DependentUpon>

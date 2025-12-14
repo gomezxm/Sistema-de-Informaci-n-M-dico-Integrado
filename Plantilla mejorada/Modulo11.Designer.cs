@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace Borrador
 {
-    partial class Modulo10
+    partial class Modulo11
     {
         private IContainer components = null;
 

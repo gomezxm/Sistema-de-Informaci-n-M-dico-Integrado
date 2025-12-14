@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace Borrador
 {
-    public partial class Modulo10 : UserControl
+    public partial class Modulo11 : UserControl
     {
-        public Modulo10()
+        public Modulo11()
         {
             InitializeComponent();
             ConfigurarEventos();
