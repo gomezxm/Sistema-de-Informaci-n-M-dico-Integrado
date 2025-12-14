@@ -115,6 +115,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(4, 4);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
@@ -129,11 +130,11 @@
             this.tabPage1.Controls.Add(this.PanelPago);
             this.tabPage1.Controls.Add(this.pnlContenedorTitulo);
             this.tabPage1.Controls.Add(this.PanelDetalles);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Location = new System.Drawing.Point(4, 32);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage1.Size = new System.Drawing.Size(1286, 910);
+            this.tabPage1.Size = new System.Drawing.Size(1286, 903);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Inventario";
             // 
@@ -276,6 +277,7 @@
             // 
             // cmbMetodoPago
             // 
+            this.cmbMetodoPago.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbMetodoPago.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbMetodoPago.FormattingEnabled = true;
             this.cmbMetodoPago.Location = new System.Drawing.Point(27, 79);
@@ -360,7 +362,6 @@
             // txtFechas
             // 
             this.txtFechas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtFechas.Enabled = false;
             this.txtFechas.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFechas.Location = new System.Drawing.Point(26, 348);
             this.txtFechas.Margin = new System.Windows.Forms.Padding(4);
@@ -371,7 +372,6 @@
             // txtMedicos
             // 
             this.txtMedicos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtMedicos.Enabled = false;
             this.txtMedicos.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMedicos.Location = new System.Drawing.Point(26, 168);
             this.txtMedicos.Margin = new System.Windows.Forms.Padding(4);
@@ -452,11 +452,11 @@
             this.tabPage2.Controls.Add(this.panel3);
             this.tabPage2.Controls.Add(this.panel2);
             this.tabPage2.Controls.Add(this.panel1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Location = new System.Drawing.Point(4, 32);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(1286, 910);
+            this.tabPage2.Size = new System.Drawing.Size(1286, 903);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Dispensación";
             // 

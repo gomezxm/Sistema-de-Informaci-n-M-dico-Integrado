@@ -50,11 +50,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panelNuevaCita = new System.Windows.Forms.Panel();
+            this.btnGuardarCita = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.lblTituloAgendarCita = new System.Windows.Forms.Label();
             this.btnCancelarRegistroCita = new System.Windows.Forms.Button();
-            this.btnGuardarCita = new System.Windows.Forms.Button();
             this.dtpFechaDelRegisgtro = new System.Windows.Forms.DateTimePicker();
             this.label25 = new System.Windows.Forms.Label();
             this.txtMotivo = new System.Windows.Forms.TextBox();
@@ -347,6 +347,20 @@
             this.panelNuevaCita.Size = new System.Drawing.Size(1283, 883);
             this.panelNuevaCita.TabIndex = 16;
             // 
+            // btnGuardarCita
+            // 
+            this.btnGuardarCita.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnGuardarCita.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardarCita.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnGuardarCita.Location = new System.Drawing.Point(631, 799);
+            this.btnGuardarCita.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGuardarCita.Name = "btnGuardarCita";
+            this.btnGuardarCita.Size = new System.Drawing.Size(584, 46);
+            this.btnGuardarCita.TabIndex = 26;
+            this.btnGuardarCita.Text = "Guardar Cita";
+            this.btnGuardarCita.UseVisualStyleBackColor = false;
+            this.btnGuardarCita.Click += new System.EventHandler(this.btnGuardarCita_Click);
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -359,6 +373,7 @@
             // 
             // comboBox4
             // 
+            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Location = new System.Drawing.Point(20, 393);
@@ -391,20 +406,6 @@
             this.btnCancelarRegistroCita.Text = "Limpiar ";
             this.btnCancelarRegistroCita.UseVisualStyleBackColor = false;
             this.btnCancelarRegistroCita.Click += new System.EventHandler(this.btnCancelarRegistroCita_Click);
-            // 
-            // btnGuardarCita
-            // 
-            this.btnGuardarCita.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnGuardarCita.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarCita.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnGuardarCita.Location = new System.Drawing.Point(631, 799);
-            this.btnGuardarCita.Margin = new System.Windows.Forms.Padding(4);
-            this.btnGuardarCita.Name = "btnGuardarCita";
-            this.btnGuardarCita.Size = new System.Drawing.Size(584, 46);
-            this.btnGuardarCita.TabIndex = 26;
-            this.btnGuardarCita.Text = "Guardar Cita";
-            this.btnGuardarCita.UseVisualStyleBackColor = false;
-            this.btnGuardarCita.Click += new System.EventHandler(this.btnGuardarCita_Click);
             // 
             // dtpFechaDelRegisgtro
             // 
@@ -561,7 +562,7 @@
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(14, 10);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(229, 52);
+            this.label6.Size = new System.Drawing.Size(224, 51);
             this.label6.TabIndex = 2;
             this.label6.Text = "Editar Citas";
             // 
