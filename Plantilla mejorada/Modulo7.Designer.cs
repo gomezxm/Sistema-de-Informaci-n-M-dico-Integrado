@@ -95,8 +95,6 @@
             this.nudExitenciaActual = new System.Windows.Forms.NumericUpDown();
             this.nudExistenciaMinima = new System.Windows.Forms.NumericUpDown();
             this.dtpFechaVencimiento = new System.Windows.Forms.DateTimePicker();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.PanelTabla.SuspendLayout();
@@ -448,7 +446,6 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(200)))), ((int)(((byte)(242)))));
-            this.tabPage2.Controls.Add(this.panel5);
             this.tabPage2.Controls.Add(this.btnActualizar);
             this.tabPage2.Controls.Add(this.btnEliminar);
             this.tabPage2.Controls.Add(this.panel3);
@@ -608,7 +605,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.btnLimpiar);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label1);
@@ -860,20 +856,6 @@
             this.dtpFechaVencimiento.Size = new System.Drawing.Size(372, 30);
             this.dtpFechaVencimiento.TabIndex = 18;
             // 
-            // panel4
-            // 
-            this.panel4.Location = new System.Drawing.Point(25, 564);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(151, 37);
-            this.panel4.TabIndex = 24;
-            // 
-            // panel5
-            // 
-            this.panel5.Location = new System.Drawing.Point(9, 149);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(29, 623);
-            this.panel5.TabIndex = 25;
-            // 
             // Modulo7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -976,7 +958,5 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnActualizar;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel5;
     }
 }
