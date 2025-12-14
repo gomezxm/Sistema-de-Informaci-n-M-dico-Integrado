@@ -66,5 +66,55 @@ namespace Borrador
         {
 
         }
+
+        private void cmbNumFacturaC_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPacienteC_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTotalFacturaC_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtMontoPagadoC_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nudMontoPagarC_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbFormaPagoC_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtpFechaPagoC_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtReferenciaC_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtObservacionesC_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbEstadoPagoC_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
