@@ -113,7 +113,7 @@ namespace Borrador
 
             lblTitle = new Label
             {
-                Text = "Patient Management",
+                Text = "Sistema de Gestión de Pacientes",
                 Font = new Font("Segoe UI", 22F, FontStyle.Bold),
                 ForeColor = TextDark,
                 AutoSize = true,
@@ -122,7 +122,7 @@ namespace Borrador
 
             lblSubtitle = new Label
             {
-                Text = "Manage patient records, admissions, and medical history efficiently.",
+                Text = "Gestione los registros de los pacientes, las admisiones y el historial médico de manera eficiente",
                 Font = new Font("Segoe UI", 10F),
                 ForeColor = TextGray,
                 AutoSize = true,
@@ -141,8 +141,8 @@ namespace Borrador
                 Padding = new Padding(0, 12, 0, 12)
             };
 
-            var statCard1 = CrearStatCard("TOTAL PATIENTS", listaPacientes.Count.ToString(), "+12% since last month");
-            var statCard2 = CrearStatCard("ADMITTED", "42", "Current admissions");
+            var statCard1 = CrearStatCard("TOTAL DE PACIENTES", listaPacientes.Count.ToString(), "+12% since last month");
+            var statCard2 = CrearStatCard("INGRESADOS", "42", "Current admissions");
 
             statCard1.Location = new Point(0, 12);
             statCard1.Width = 280;
@@ -169,12 +169,12 @@ namespace Borrador
                 Location = new Point(0, 16),
                 Font = new Font("Segoe UI", 10F),
                 ForeColor = TextGray,
-                Text = "Search by name, ID or phone...",
+                Text = "Buscar por nombre, ID o teléfono...",
                 BorderStyle = BorderStyle.FixedSingle
             };
             txtSearch.GotFocus += (s, e) =>
             {
-                if (txtSearch.Text == "Search by name, ID or phone...")
+                if (txtSearch.Text == "Buscar por nombre, ID o teléfono...")
                 {
                     txtSearch.Text = "";
                     txtSearch.ForeColor = TextDark;
@@ -184,7 +184,7 @@ namespace Borrador
             {
                 if (string.IsNullOrWhiteSpace(txtSearch.Text))
                 {
-                    txtSearch.Text = "Search by name, ID or phone...";
+                    txtSearch.Text = "Buscar por nombre, ID o teléfono...";
                     txtSearch.ForeColor = TextGray;
                 }
             };
@@ -266,35 +266,35 @@ namespace Borrador
 
             dgvPacientes.Columns.Add(new DataGridViewTextBoxColumn
             {
-                HeaderText = "NAME",
+                HeaderText = "NOMBRE",
                 DataPropertyName = "NombreCompleto",
                 Width = 200
             });
 
             dgvPacientes.Columns.Add(new DataGridViewTextBoxColumn
             {
-                HeaderText = "ID NUMBER (CÉDULA)",
+                HeaderText = "CÉDULA)",
                 DataPropertyName = "Cedula",
                 Width = 150
             });
 
             dgvPacientes.Columns.Add(new DataGridViewTextBoxColumn
             {
-                HeaderText = "BIRTH DATE",
+                HeaderText = "FECHA DE NACIMIENTO",
                 DataPropertyName = "FechaNacimiento",
                 Width = 120
             });
 
             dgvPacientes.Columns.Add(new DataGridViewTextBoxColumn
             {
-                HeaderText = "PHONE",
+                HeaderText = "TELÉFONO",
                 DataPropertyName = "Telefono",
                 Width = 130
             });
 
             var colEditar = new DataGridViewButtonColumn
             {
-                HeaderText = "ACTIONS",
+                HeaderText = "ACCIONES",
                 Text = "✏️",
                 UseColumnTextForButtonValue = true,
                 Width = 80,
