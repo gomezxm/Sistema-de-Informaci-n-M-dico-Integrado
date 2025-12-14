@@ -54,6 +54,7 @@
             this.panelHeader_Enf = new System.Windows.Forms.Panel();
             this.lblTitulo_Enf = new System.Windows.Forms.Label();
             this.tabPageMedicamentos = new System.Windows.Forms.TabPage();
+            this.btnCancelar_Med = new System.Windows.Forms.Button();
             this.groupBoxAdministracion_Med = new System.Windows.Forms.GroupBox();
             this.txtObservaciones_Med = new System.Windows.Forms.TextBox();
             this.lblObservaciones_Med = new System.Windows.Forms.Label();
@@ -62,6 +63,7 @@
             this.chkAdministrado_Med = new System.Windows.Forms.CheckBox();
             this.dtpHoraAdministracion_Med = new System.Windows.Forms.DateTimePicker();
             this.lblHoraAdministracion_Med = new System.Windows.Forms.Label();
+            this.btnHistorial_Med = new System.Windows.Forms.Button();
             this.groupBoxMedicamentos_Med = new System.Windows.Forms.GroupBox();
             this.dgvMedicamentosPrescritos_Med = new System.Windows.Forms.DataGridView();
             this.groupBoxDatos_Med = new System.Windows.Forms.GroupBox();
@@ -69,8 +71,6 @@
             this.lblPrescripcion_Med = new System.Windows.Forms.Label();
             this.cmbPaciente_Med = new System.Windows.Forms.ComboBox();
             this.lblPaciente_Med = new System.Windows.Forms.Label();
-            this.btnHistorial_Med = new System.Windows.Forms.Button();
-            this.btnCancelar_Med = new System.Windows.Forms.Button();
             this.panelHeader_Med = new System.Windows.Forms.Panel();
             this.lblTitulo_Med = new System.Windows.Forms.Label();
             this.tabControlPrincipal.SuspendLayout();
@@ -107,6 +107,8 @@
             // tabPageEnfermeria
             // 
             this.tabPageEnfermeria.AutoScroll = true;
+            this.tabPageEnfermeria.AutoScrollMargin = new System.Drawing.Size(0, 10);
+            this.tabPageEnfermeria.AutoScrollMinSize = new System.Drawing.Size(0, 50);
             this.tabPageEnfermeria.BackColor = System.Drawing.Color.White;
             this.tabPageEnfermeria.Controls.Add(this.btnGuardar_Enf);
             this.tabPageEnfermeria.Controls.Add(this.groupBoxObservaciones_Enf);
@@ -124,6 +126,8 @@
             this.tabPageEnfermeria.TabIndex = 0;
             this.tabPageEnfermeria.Text = "Hoja de Enfermería";
             this.tabPageEnfermeria.Click += new System.EventHandler(this.tabPageEnfermeria_Click);
+            this.tabPageEnfermeria.AutoScroll = true;
+            this.tabPageEnfermeria.AutoScrollMinSize = new System.Drawing.Size(0, 950); // <-- AÑADIR ESTA LÍNEA
             // 
             // btnGuardar_Enf
             // 
@@ -459,9 +463,27 @@
             this.tabPageMedicamentos.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageMedicamentos.Name = "tabPageMedicamentos";
             this.tabPageMedicamentos.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPageMedicamentos.Size = new System.Drawing.Size(1459, 1093);
+            this.tabPageMedicamentos.Size = new System.Drawing.Size(1416, 1039);
             this.tabPageMedicamentos.TabIndex = 1;
             this.tabPageMedicamentos.Text = "Administración de Medicamentos";
+            this.tabPageMedicamentos.AutoScroll = true;
+            this.tabPageMedicamentos.AutoScrollMinSize = new System.Drawing.Size(0, 1000); // <-- AÑADIR ESTA LÍNEA
+            // 
+            // btnCancelar_Med
+            // 
+            this.btnCancelar_Med.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCancelar_Med.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(83)))), ((int)(((byte)(166)))));
+            this.btnCancelar_Med.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar_Med.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btnCancelar_Med.ForeColor = System.Drawing.Color.White;
+            this.btnCancelar_Med.Location = new System.Drawing.Point(250, 985);
+            this.btnCancelar_Med.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCancelar_Med.Name = "btnCancelar_Med";
+            this.btnCancelar_Med.Size = new System.Drawing.Size(240, 49);
+            this.btnCancelar_Med.TabIndex = 1;
+            this.btnCancelar_Med.Text = "✖ Cancelar";
+            this.btnCancelar_Med.UseVisualStyleBackColor = false;
+            this.btnCancelar_Med.Click += new System.EventHandler(this.btnCancelar_Med_Click);
             // 
             // groupBoxAdministracion_Med
             // 
@@ -480,7 +502,7 @@
             this.groupBoxAdministracion_Med.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxAdministracion_Med.Name = "groupBoxAdministracion_Med";
             this.groupBoxAdministracion_Med.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBoxAdministracion_Med.Size = new System.Drawing.Size(1347, 345);
+            this.groupBoxAdministracion_Med.Size = new System.Drawing.Size(1304, 345);
             this.groupBoxAdministracion_Med.TabIndex = 3;
             this.groupBoxAdministracion_Med.TabStop = false;
             this.groupBoxAdministracion_Med.Text = "Registro de Administración";
@@ -497,7 +519,7 @@
             this.txtObservaciones_Med.Multiline = true;
             this.txtObservaciones_Med.Name = "txtObservaciones_Med";
             this.txtObservaciones_Med.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtObservaciones_Med.Size = new System.Drawing.Size(1279, 91);
+            this.txtObservaciones_Med.Size = new System.Drawing.Size(1236, 91);
             this.txtObservaciones_Med.TabIndex = 6;
             // 
             // lblObservaciones_Med
@@ -568,6 +590,21 @@
             this.lblHoraAdministracion_Med.TabIndex = 0;
             this.lblHoraAdministracion_Med.Text = "Hora de Administración:";
             // 
+            // btnHistorial_Med
+            // 
+            this.btnHistorial_Med.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(154)))), ((int)(((byte)(217)))));
+            this.btnHistorial_Med.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHistorial_Med.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btnHistorial_Med.ForeColor = System.Drawing.Color.White;
+            this.btnHistorial_Med.Location = new System.Drawing.Point(33, 985);
+            this.btnHistorial_Med.Margin = new System.Windows.Forms.Padding(4);
+            this.btnHistorial_Med.Name = "btnHistorial_Med";
+            this.btnHistorial_Med.Size = new System.Drawing.Size(240, 49);
+            this.btnHistorial_Med.TabIndex = 2;
+            this.btnHistorial_Med.Text = "📋 Ver Historial";
+            this.btnHistorial_Med.UseVisualStyleBackColor = false;
+            this.btnHistorial_Med.Click += new System.EventHandler(this.btnHistorial_Med_Click);
+            // 
             // groupBoxMedicamentos_Med
             // 
             this.groupBoxMedicamentos_Med.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -579,7 +616,7 @@
             this.groupBoxMedicamentos_Med.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxMedicamentos_Med.Name = "groupBoxMedicamentos_Med";
             this.groupBoxMedicamentos_Med.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBoxMedicamentos_Med.Size = new System.Drawing.Size(1347, 229);
+            this.groupBoxMedicamentos_Med.Size = new System.Drawing.Size(1304, 229);
             this.groupBoxMedicamentos_Med.TabIndex = 2;
             this.groupBoxMedicamentos_Med.TabStop = false;
             this.groupBoxMedicamentos_Med.Text = "Medicamentos Prescritos";
@@ -598,7 +635,7 @@
             this.dgvMedicamentosPrescritos_Med.Name = "dgvMedicamentosPrescritos_Med";
             this.dgvMedicamentosPrescritos_Med.ReadOnly = true;
             this.dgvMedicamentosPrescritos_Med.RowHeadersWidth = 51;
-            this.dgvMedicamentosPrescritos_Med.Size = new System.Drawing.Size(1307, 176);
+            this.dgvMedicamentosPrescritos_Med.Size = new System.Drawing.Size(1264, 176);
             this.dgvMedicamentosPrescritos_Med.TabIndex = 0;
             // 
             // groupBoxDatos_Med
@@ -615,7 +652,7 @@
             this.groupBoxDatos_Med.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxDatos_Med.Name = "groupBoxDatos_Med";
             this.groupBoxDatos_Med.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBoxDatos_Med.Size = new System.Drawing.Size(1347, 250);
+            this.groupBoxDatos_Med.Size = new System.Drawing.Size(1304, 250);
             this.groupBoxDatos_Med.TabIndex = 1;
             this.groupBoxDatos_Med.TabStop = false;
             this.groupBoxDatos_Med.Text = "Datos del Paciente";
@@ -665,37 +702,6 @@
             this.lblPaciente_Med.TabIndex = 0;
             this.lblPaciente_Med.Text = "Paciente:";
             // 
-            // btnHistorial_Med
-            // 
-            this.btnHistorial_Med.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(154)))), ((int)(((byte)(217)))));
-            this.btnHistorial_Med.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHistorial_Med.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.btnHistorial_Med.ForeColor = System.Drawing.Color.White;
-            this.btnHistorial_Med.Location = new System.Drawing.Point(33, 985);
-            this.btnHistorial_Med.Margin = new System.Windows.Forms.Padding(4);
-            this.btnHistorial_Med.Name = "btnHistorial_Med";
-            this.btnHistorial_Med.Size = new System.Drawing.Size(240, 49);
-            this.btnHistorial_Med.TabIndex = 2;
-            this.btnHistorial_Med.Text = "📋 Ver Historial";
-            this.btnHistorial_Med.UseVisualStyleBackColor = false;
-            this.btnHistorial_Med.Click += new System.EventHandler(this.btnHistorial_Med_Click);
-            // 
-            // btnCancelar_Med
-            // 
-            this.btnCancelar_Med.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancelar_Med.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(83)))), ((int)(((byte)(166)))));
-            this.btnCancelar_Med.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar_Med.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.btnCancelar_Med.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar_Med.Location = new System.Drawing.Point(293, 985);
-            this.btnCancelar_Med.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCancelar_Med.Name = "btnCancelar_Med";
-            this.btnCancelar_Med.Size = new System.Drawing.Size(240, 49);
-            this.btnCancelar_Med.TabIndex = 1;
-            this.btnCancelar_Med.Text = "✖ Cancelar";
-            this.btnCancelar_Med.UseVisualStyleBackColor = false;
-            this.btnCancelar_Med.Click += new System.EventHandler(this.btnCancelar_Med_Click);
-            // 
             // panelHeader_Med
             // 
             this.panelHeader_Med.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(89)))));
@@ -704,7 +710,7 @@
             this.panelHeader_Med.Location = new System.Drawing.Point(4, 4);
             this.panelHeader_Med.Margin = new System.Windows.Forms.Padding(4);
             this.panelHeader_Med.Name = "panelHeader_Med";
-            this.panelHeader_Med.Size = new System.Drawing.Size(1451, 86);
+            this.panelHeader_Med.Size = new System.Drawing.Size(1408, 86);
             this.panelHeader_Med.TabIndex = 0;
             // 
             // lblTitulo_Med

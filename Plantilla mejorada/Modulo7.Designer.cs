@@ -119,12 +119,12 @@
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1231, 750);
+            this.tabControl1.Size = new System.Drawing.Size(1137, 750);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(154)))), ((int)(((byte)(217)))));
+            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(200)))), ((int)(((byte)(242)))));
             this.tabPage1.Controls.Add(this.PanelTabla);
             this.tabPage1.Controls.Add(this.PanelPago);
             this.tabPage1.Controls.Add(this.pnlContenedorTitulo);
@@ -133,13 +133,13 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage1.Size = new System.Drawing.Size(1223, 721);
+            this.tabPage1.Size = new System.Drawing.Size(1129, 721);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Inventario";
             // 
             // PanelTabla
             // 
-            this.PanelTabla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(200)))), ((int)(((byte)(242)))));
+            this.PanelTabla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(154)))), ((int)(((byte)(217)))));
             this.PanelTabla.Controls.Add(this.ListaMedicamentos);
             this.PanelTabla.Controls.Add(this.label10);
             this.PanelTabla.Location = new System.Drawing.Point(21, 476);
@@ -213,7 +213,7 @@
             // 
             // PanelPago
             // 
-            this.PanelPago.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(200)))), ((int)(((byte)(242)))));
+            this.PanelPago.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(154)))), ((int)(((byte)(217)))));
             this.PanelPago.Controls.Add(this.button2);
             this.PanelPago.Controls.Add(this.button1);
             this.PanelPago.Controls.Add(this.lblObservacion);
@@ -329,7 +329,7 @@
             // 
             // PanelDetalles
             // 
-            this.PanelDetalles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(200)))), ((int)(((byte)(242)))));
+            this.PanelDetalles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(154)))), ((int)(((byte)(217)))));
             this.PanelDetalles.Controls.Add(this.lblFechasEntrega);
             this.PanelDetalles.Controls.Add(this.txtFechas);
             this.PanelDetalles.Controls.Add(this.txtMedicos);
@@ -440,7 +440,7 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(154)))), ((int)(((byte)(217)))));
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(200)))), ((int)(((byte)(242)))));
             this.tabPage2.Controls.Add(this.btnActualizar);
             this.tabPage2.Controls.Add(this.btnEliminar);
             this.tabPage2.Controls.Add(this.panel3);
@@ -450,7 +450,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage2.Size = new System.Drawing.Size(1133, 721);
+            this.tabPage2.Size = new System.Drawing.Size(1129, 721);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Dispensación";
             // 
@@ -483,10 +483,10 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(89)))));
             this.panel3.Controls.Add(this.label13);
-            this.panel3.Location = new System.Drawing.Point(4, 7);
+            this.panel3.Location = new System.Drawing.Point(-4, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1141, 74);
+            this.panel3.Size = new System.Drawing.Size(1133, 81);
             this.panel3.TabIndex = 34;
             // 
             // label13
@@ -503,7 +503,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(200)))), ((int)(((byte)(242)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(154)))), ((int)(((byte)(217)))));
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.dgwListaActual);
             this.panel2.Controls.Add(this.btnVerStock);
@@ -598,7 +598,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(200)))), ((int)(((byte)(242)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(154)))), ((int)(((byte)(217)))));
             this.panel1.Controls.Add(this.btnLimpiar);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label1);
