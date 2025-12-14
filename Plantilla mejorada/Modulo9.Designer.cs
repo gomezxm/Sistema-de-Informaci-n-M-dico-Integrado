@@ -254,13 +254,13 @@
             // 
             // CBox_llegada
             // 
+            this.CBox_llegada.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CBox_llegada.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.CBox_llegada.FormattingEnabled = true;
             this.CBox_llegada.Location = new System.Drawing.Point(256, 338);
             this.CBox_llegada.Name = "CBox_llegada";
             this.CBox_llegada.Size = new System.Drawing.Size(128, 31);
             this.CBox_llegada.TabIndex = 42;
-            this.CBox_llegada.Text = "Ambulancia";
             // 
             // Txt_NmbNoIdentificado
             // 
@@ -272,13 +272,13 @@
             // 
             // CBox_ModoLlegada
             // 
+            this.CBox_ModoLlegada.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CBox_ModoLlegada.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.CBox_ModoLlegada.FormattingEnabled = true;
             this.CBox_ModoLlegada.Location = new System.Drawing.Point(365, 210);
             this.CBox_ModoLlegada.Name = "CBox_ModoLlegada";
             this.CBox_ModoLlegada.Size = new System.Drawing.Size(103, 31);
             this.CBox_ModoLlegada.TabIndex = 40;
-            this.CBox_ModoLlegada.Text = "Mario";
             // 
             // Lbl_NombreModoLlegada
             // 
@@ -329,13 +329,13 @@
             // 
             // CBox_Opciones
             // 
+            this.CBox_Opciones.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CBox_Opciones.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.CBox_Opciones.FormattingEnabled = true;
             this.CBox_Opciones.Location = new System.Drawing.Point(256, 256);
             this.CBox_Opciones.Name = "CBox_Opciones";
             this.CBox_Opciones.Size = new System.Drawing.Size(175, 31);
             this.CBox_Opciones.TabIndex = 34;
-            this.CBox_Opciones.Text = "Cédula";
             // 
             // Lbl_NombreTipoIdentificación
             // 
@@ -350,13 +350,13 @@
             // 
             // CBox_NombresPacientes
             // 
+            this.CBox_NombresPacientes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CBox_NombresPacientes.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.CBox_NombresPacientes.FormattingEnabled = true;
             this.CBox_NombresPacientes.Location = new System.Drawing.Point(256, 211);
             this.CBox_NombresPacientes.Name = "CBox_NombresPacientes";
             this.CBox_NombresPacientes.Size = new System.Drawing.Size(98, 31);
             this.CBox_NombresPacientes.TabIndex = 32;
-            this.CBox_NombresPacientes.Text = "Paciente";
             // 
             // label17
             // 
@@ -503,6 +503,7 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(34, 65);
@@ -571,6 +572,7 @@
             // 
             // comboBox3
             // 
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
@@ -721,6 +723,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
@@ -887,6 +890,7 @@
             // 
             // comboBox5
             // 
+            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox5.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.ImeMode = System.Windows.Forms.ImeMode.Off;
@@ -911,6 +915,7 @@
             // 
             // comboBox4
             // 
+            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox4.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.ImeMode = System.Windows.Forms.ImeMode.Off;

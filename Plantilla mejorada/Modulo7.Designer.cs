@@ -250,7 +250,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(211, 39);
             this.button1.TabIndex = 11;
-            this.button1.Text = "ImprimirComprobante";
+            this.button1.Text = "Imprimir Comprobante";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // lblObservacion
@@ -324,7 +324,7 @@
             this.lblTitulo.Location = new System.Drawing.Point(32, 9);
             this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(393, 52);
+            this.lblTitulo.Size = new System.Drawing.Size(382, 51);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "Gestión de Farmacia";
             // 
@@ -413,6 +413,7 @@
             // 
             // cmbPacientes
             // 
+            this.cmbPacientes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPacientes.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPacientes.FormattingEnabled = true;
             this.cmbPacientes.Location = new System.Drawing.Point(27, 79);
@@ -703,6 +704,7 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(23, 272);
@@ -770,6 +772,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(24, 98);
@@ -780,6 +783,7 @@
             // 
             // cmbEstado
             // 
+            this.cmbEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEstado.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbEstado.FormattingEnabled = true;
             this.cmbEstado.Location = new System.Drawing.Point(225, 623);
@@ -801,6 +805,7 @@
             // 
             // cmbProveedor
             // 
+            this.cmbProveedor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbProveedor.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbProveedor.FormattingEnabled = true;
             this.cmbProveedor.Location = new System.Drawing.Point(24, 623);
