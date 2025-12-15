@@ -414,6 +414,7 @@
             // cmbPaciente
             // 
             this.cmbPaciente.BackColor = System.Drawing.Color.White;
+            this.cmbPaciente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPaciente.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.cmbPaciente.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbPaciente.FormattingEnabled = true;
@@ -421,6 +422,7 @@
             this.cmbPaciente.Name = "cmbPaciente";
             this.cmbPaciente.Size = new System.Drawing.Size(350, 31);
             this.cmbPaciente.TabIndex = 4;
+            this.cmbPaciente.SelectedIndexChanged += new System.EventHandler(this.cmbPaciente_SelectedIndexChanged_1);
             // 
             // lblPaciente
             // 

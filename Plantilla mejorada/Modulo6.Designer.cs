@@ -176,7 +176,6 @@ namespace Borrador
             this.Guardar1Butt.TabIndex = 20;
             this.Guardar1Butt.Text = "Guardar Estudio";
             this.Guardar1Butt.UseVisualStyleBackColor = false;
-            this.Guardar1Butt.Click += new System.EventHandler(this.Guardar1Butt_Click);
             // 
             // listBox1
             // 
@@ -599,10 +598,7 @@ namespace Borrador
 
         }
 
-        private void Guardar1Butt_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
+       
 
         #endregion
 

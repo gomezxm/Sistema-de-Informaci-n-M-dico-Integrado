@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 
 namespace Borrador
 {
@@ -85,7 +83,7 @@ namespace Borrador
         }
 
         // READ - Obtener informe por ID
-        public RadioRepository ObtenerPorId(int idInforme)
+        public InformeRadiologico ObtenerPorId(int idInforme)
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -119,7 +117,7 @@ namespace Borrador
         }
 
         // READ - Obtener informe por estudio
-        public RadioRepository ObtenerPorEstudio(int idEstudio)
+        public InformeRadiologico ObtenerPorEstudio(int idEstudio)
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -368,7 +366,7 @@ namespace Borrador
         }
 
         // Método auxiliar para mapear desde SqlDataReader
-        private RadioRepository MapearDesdeReader(SqlDataReader reader)
+        private InformeRadiologico MapearDesdeReader(SqlDataReader reader)
         {
             return new InformeRadiologico
             {
@@ -392,7 +390,7 @@ namespace Borrador
     }
 
     // Clase modelo para Informe Radiológico
-    public class RadioRepository
+    public class InformeRadiologico
     {
         public int IdInforme { get; set; }
         public int IdEstudio { get; set; }
@@ -410,5 +408,4 @@ namespace Borrador
         public string TipoEstudio { get; set; }
         public DateTime FechaHoraEstudio { get; set; }
     }
-}
 }

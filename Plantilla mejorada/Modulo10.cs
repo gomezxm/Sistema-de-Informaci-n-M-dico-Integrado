@@ -509,5 +509,10 @@ namespace Borrador
         }
 
         #endregion
+
+        private void cmbPaciente_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
