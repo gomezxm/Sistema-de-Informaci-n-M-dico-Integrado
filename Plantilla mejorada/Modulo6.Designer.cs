@@ -1,4 +1,6 @@
-﻿namespace Borrador
+﻿using System;
+
+namespace Borrador
 {
     partial class Modulo6
     {
@@ -32,28 +34,28 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabControl2 = new System.Windows.Forms.TabControl();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.GuardarEstButton = new System.Windows.Forms.TabPage();
             this.label20 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Guardar1Butt = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.ObsBox = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.buttAdjuntar = new System.Windows.Forms.Button();
+            this.RutaArcText = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.SalEqBox = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.TipoEstudioBox = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.MedSolBox = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.PacienteBox = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.IDEstBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.label19 = new System.Windows.Forms.Label();
@@ -75,7 +77,7 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.tabControl2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
+            this.GuardarEstButton.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -111,7 +113,7 @@
             // 
             // tabControl2
             // 
-            this.tabControl2.Controls.Add(this.tabPage3);
+            this.tabControl2.Controls.Add(this.GuardarEstButton);
             this.tabControl2.Controls.Add(this.tabPage4);
             this.tabControl2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl2.Location = new System.Drawing.Point(47, 162);
@@ -120,38 +122,38 @@
             this.tabControl2.Size = new System.Drawing.Size(1256, 796);
             this.tabControl2.TabIndex = 4;
             // 
-            // tabPage3
+            // GuardarEstButton
             // 
-            this.tabPage3.Controls.Add(this.label20);
-            this.tabPage3.Controls.Add(this.button2);
-            this.tabPage3.Controls.Add(this.listBox1);
-            this.tabPage3.Controls.Add(this.comboBox5);
-            this.tabPage3.Controls.Add(this.label11);
-            this.tabPage3.Controls.Add(this.textBox3);
-            this.tabPage3.Controls.Add(this.label10);
-            this.tabPage3.Controls.Add(this.button1);
-            this.tabPage3.Controls.Add(this.textBox2);
-            this.tabPage3.Controls.Add(this.label9);
-            this.tabPage3.Controls.Add(this.comboBox4);
-            this.tabPage3.Controls.Add(this.label8);
-            this.tabPage3.Controls.Add(this.dateTimePicker1);
-            this.tabPage3.Controls.Add(this.label7);
-            this.tabPage3.Controls.Add(this.comboBox3);
-            this.tabPage3.Controls.Add(this.label6);
-            this.tabPage3.Controls.Add(this.comboBox2);
-            this.tabPage3.Controls.Add(this.label5);
-            this.tabPage3.Controls.Add(this.comboBox1);
-            this.tabPage3.Controls.Add(this.label4);
-            this.tabPage3.Controls.Add(this.textBox1);
-            this.tabPage3.Controls.Add(this.label3);
-            this.tabPage3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage3.Location = new System.Drawing.Point(4, 34);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1248, 758);
-            this.tabPage3.TabIndex = 0;
-            this.tabPage3.Text = "EstudiosImagen";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.GuardarEstButton.Controls.Add(this.label20);
+            this.GuardarEstButton.Controls.Add(this.Guardar1Butt);
+            this.GuardarEstButton.Controls.Add(this.listBox1);
+            this.GuardarEstButton.Controls.Add(this.comboBox5);
+            this.GuardarEstButton.Controls.Add(this.label11);
+            this.GuardarEstButton.Controls.Add(this.ObsBox);
+            this.GuardarEstButton.Controls.Add(this.label10);
+            this.GuardarEstButton.Controls.Add(this.buttAdjuntar);
+            this.GuardarEstButton.Controls.Add(this.RutaArcText);
+            this.GuardarEstButton.Controls.Add(this.label9);
+            this.GuardarEstButton.Controls.Add(this.SalEqBox);
+            this.GuardarEstButton.Controls.Add(this.label8);
+            this.GuardarEstButton.Controls.Add(this.dateTimePicker1);
+            this.GuardarEstButton.Controls.Add(this.label7);
+            this.GuardarEstButton.Controls.Add(this.TipoEstudioBox);
+            this.GuardarEstButton.Controls.Add(this.label6);
+            this.GuardarEstButton.Controls.Add(this.MedSolBox);
+            this.GuardarEstButton.Controls.Add(this.label5);
+            this.GuardarEstButton.Controls.Add(this.PacienteBox);
+            this.GuardarEstButton.Controls.Add(this.label4);
+            this.GuardarEstButton.Controls.Add(this.IDEstBox);
+            this.GuardarEstButton.Controls.Add(this.label3);
+            this.GuardarEstButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GuardarEstButton.Location = new System.Drawing.Point(4, 34);
+            this.GuardarEstButton.Name = "GuardarEstButton";
+            this.GuardarEstButton.Padding = new System.Windows.Forms.Padding(3);
+            this.GuardarEstButton.Size = new System.Drawing.Size(1248, 758);
+            this.GuardarEstButton.TabIndex = 0;
+            this.GuardarEstButton.Text = "EstudiosImagen";
+            this.GuardarEstButton.UseVisualStyleBackColor = true;
             // 
             // label20
             // 
@@ -163,17 +165,18 @@
             this.label20.TabIndex = 29;
             this.label20.Text = "Estudios Registrados";
             // 
-            // button2
+            // Guardar1Butt
             // 
-            this.button2.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(33, 462);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(1130, 48);
-            this.button2.TabIndex = 20;
-            this.button2.Text = "Guardar Estudio";
-            this.button2.UseVisualStyleBackColor = false;
+            this.Guardar1Butt.BackColor = System.Drawing.Color.RoyalBlue;
+            this.Guardar1Butt.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Guardar1Butt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Guardar1Butt.Location = new System.Drawing.Point(33, 462);
+            this.Guardar1Butt.Name = "Guardar1Butt";
+            this.Guardar1Butt.Size = new System.Drawing.Size(1130, 48);
+            this.Guardar1Butt.TabIndex = 20;
+            this.Guardar1Butt.Text = "Guardar Estudio";
+            this.Guardar1Butt.UseVisualStyleBackColor = false;
+            this.Guardar1Butt.Click += new System.EventHandler(this.Guardar1Butt_Click);
             // 
             // listBox1
             // 
@@ -209,13 +212,13 @@
             this.label11.TabIndex = 17;
             this.label11.Text = "Estado del Estudio*";
             // 
-            // textBox3
+            // ObsBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(33, 377);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(715, 48);
-            this.textBox3.TabIndex = 16;
+            this.ObsBox.Location = new System.Drawing.Point(33, 377);
+            this.ObsBox.Multiline = true;
+            this.ObsBox.Name = "ObsBox";
+            this.ObsBox.Size = new System.Drawing.Size(715, 48);
+            this.ObsBox.TabIndex = 16;
             // 
             // label10
             // 
@@ -227,25 +230,26 @@
             this.label10.TabIndex = 15;
             this.label10.Text = "Observaciones";
             // 
-            // button1
+            // buttAdjuntar
             // 
-            this.button1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(803, 258);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(145, 48);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Adjuntar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttAdjuntar.BackColor = System.Drawing.Color.RoyalBlue;
+            this.buttAdjuntar.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttAdjuntar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttAdjuntar.Location = new System.Drawing.Point(803, 258);
+            this.buttAdjuntar.Name = "buttAdjuntar";
+            this.buttAdjuntar.Size = new System.Drawing.Size(145, 48);
+            this.buttAdjuntar.TabIndex = 14;
+            this.buttAdjuntar.Text = "Adjuntar";
+            this.buttAdjuntar.UseVisualStyleBackColor = false;
+            this.buttAdjuntar.Click += new System.EventHandler(this.buttAdjuntar_Click);
             // 
-            // textBox2
+            // RutaArcText
             // 
-            this.textBox2.Location = new System.Drawing.Point(33, 258);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(715, 48);
-            this.textBox2.TabIndex = 13;
+            this.RutaArcText.Location = new System.Drawing.Point(33, 258);
+            this.RutaArcText.Multiline = true;
+            this.RutaArcText.Name = "RutaArcText";
+            this.RutaArcText.Size = new System.Drawing.Size(715, 48);
+            this.RutaArcText.TabIndex = 13;
             // 
             // label9
             // 
@@ -257,14 +261,14 @@
             this.label9.TabIndex = 12;
             this.label9.Text = "Ruta Archivo Imagen";
             // 
-            // comboBox4
+            // SalEqBox
             // 
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(851, 160);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(312, 31);
-            this.comboBox4.TabIndex = 11;
+            this.SalEqBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.SalEqBox.FormattingEnabled = true;
+            this.SalEqBox.Location = new System.Drawing.Point(851, 160);
+            this.SalEqBox.Name = "SalEqBox";
+            this.SalEqBox.Size = new System.Drawing.Size(312, 31);
+            this.SalEqBox.TabIndex = 11;
             // 
             // label8
             // 
@@ -294,14 +298,14 @@
             this.label7.TabIndex = 8;
             this.label7.Text = "Fecha y Hora del Estudio*";
             // 
-            // comboBox3
+            // TipoEstudioBox
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(33, 160);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(312, 31);
-            this.comboBox3.TabIndex = 7;
+            this.TipoEstudioBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.TipoEstudioBox.FormattingEnabled = true;
+            this.TipoEstudioBox.Location = new System.Drawing.Point(33, 160);
+            this.TipoEstudioBox.Name = "TipoEstudioBox";
+            this.TipoEstudioBox.Size = new System.Drawing.Size(312, 31);
+            this.TipoEstudioBox.TabIndex = 7;
             // 
             // label6
             // 
@@ -313,14 +317,14 @@
             this.label6.TabIndex = 6;
             this.label6.Text = "Tipo de Estudio*";
             // 
-            // comboBox2
+            // MedSolBox
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(851, 63);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(312, 31);
-            this.comboBox2.TabIndex = 5;
+            this.MedSolBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.MedSolBox.FormattingEnabled = true;
+            this.MedSolBox.Location = new System.Drawing.Point(851, 63);
+            this.MedSolBox.Name = "MedSolBox";
+            this.MedSolBox.Size = new System.Drawing.Size(312, 31);
+            this.MedSolBox.TabIndex = 5;
             // 
             // label5
             // 
@@ -332,14 +336,14 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Médico Solicitante*";
             // 
-            // comboBox1
+            // PacienteBox
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(436, 63);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(312, 31);
-            this.comboBox1.TabIndex = 3;
+            this.PacienteBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.PacienteBox.FormattingEnabled = true;
+            this.PacienteBox.Location = new System.Drawing.Point(436, 63);
+            this.PacienteBox.Name = "PacienteBox";
+            this.PacienteBox.Size = new System.Drawing.Size(312, 31);
+            this.PacienteBox.TabIndex = 3;
             // 
             // label4
             // 
@@ -351,13 +355,13 @@
             this.label4.TabIndex = 2;
             this.label4.Text = "Paciente*";
             // 
-            // textBox1
+            // IDEstBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(33, 63);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(312, 30);
-            this.textBox1.TabIndex = 1;
+            this.IDEstBox.Location = new System.Drawing.Point(33, 63);
+            this.IDEstBox.Name = "IDEstBox";
+            this.IDEstBox.ReadOnly = true;
+            this.IDEstBox.Size = new System.Drawing.Size(312, 30);
+            this.IDEstBox.TabIndex = 1;
             // 
             // label3
             // 
@@ -390,10 +394,10 @@
             this.tabPage4.Controls.Add(this.textBox4);
             this.tabPage4.Controls.Add(this.label13);
             this.tabPage4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage4.Location = new System.Drawing.Point(4, 31);
+            this.tabPage4.Location = new System.Drawing.Point(4, 34);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1248, 761);
+            this.tabPage4.Size = new System.Drawing.Size(1248, 758);
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "InformeRadiologico";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -586,13 +590,18 @@
             this.Name = "Modulo6";
             this.Size = new System.Drawing.Size(1359, 973);
             this.tabControl2.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
+            this.GuardarEstButton.ResumeLayout(false);
+            this.GuardarEstButton.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void Guardar1Butt_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
@@ -601,27 +610,27 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TabControl tabControl2;
-        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage GuardarEstButton;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox MedSolBox;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox PacienteBox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.TextBox IDEstBox;
+        private System.Windows.Forms.ComboBox SalEqBox;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox TipoEstudioBox;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox RutaArcText;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttAdjuntar;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox ObsBox;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.ComboBox comboBox6;
         private System.Windows.Forms.Label label12;
@@ -635,7 +644,7 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Guardar1Butt;
         private System.Windows.Forms.ComboBox comboBox8;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Button button4;
