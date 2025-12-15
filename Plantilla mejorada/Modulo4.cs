@@ -8,7 +8,16 @@ namespace Borrador
 {
     public partial class Modulo4 : UserControl
     {
-        private readonly string connectionString = "Data Source=DESKTOP-QN52C2T\\MIPRO;Initial Catalog=ClinicaPro2;User ID=clinica_user;Password=sm@123DS4UTP;Integrated Security=False;MultipleActiveResultSets=True;TrustServerCertificate=True;Connect Timeout=30";
+        private readonly string connectionString =
+                    "Data Source=hospitalserver.database.windows.net;" +
+                    "Initial Catalog=BD-Hospital;" +
+                    "User ID=SuperAdmin;" +
+                    "Password=Hospital.123;" +
+                    "Integrated Security=False;" +
+                    "MultipleActiveResultSets=True;" +
+                    "Connect Timeout=30;" +
+                    "Encrypt=True;" +
+                    "TrustServerCertificate=False;";
         private readonly EnfermeriaRepository repository;
 
         public Modulo4()
@@ -251,8 +260,28 @@ namespace Borrador
 
         private void btnImprimir_Enf_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Funcionalidad de impresión en desarrollo", "Información",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (cmbPaciente_Enf.SelectedIndex == -1)
+            {
+                MessageBox.Show("Seleccione un paciente antes de imprimir",
+                    "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (cmbTurno_Enf.SelectedIndex == -1)
+            {
+                MessageBox.Show("Seleccione el turno antes de imprimir",
+                    "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            PdfEnfermeria.Generar(
+                cmbPaciente_Enf.Text,          // Nombre del paciente
+                dtpFecha_Enf.Value,            // Fecha
+                cmbTurno_Enf.Text,             // Turno
+                dgvIntervenciones_Enf,         // Intervenciones
+                dgvSignosVitales_Enf,          // Signos vitales
+                txtObservaciones_Enf.Text      // Observaciones
+            );
         }
 
         // ======================================================
