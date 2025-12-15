@@ -189,6 +189,7 @@
   <ItemGroup>
     <Compile Include="DBRepository\CirugiaRepository.cs" />
     <Compile Include="ClinicaPro.Data.cs" />
+    <Compile Include="DBRepository\EnfermeriaRepository.cs" />
     <Compile Include="DBRepository\ImagenRepository.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
