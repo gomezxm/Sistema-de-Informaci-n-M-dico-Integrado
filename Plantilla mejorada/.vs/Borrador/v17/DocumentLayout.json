@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\alexi\\documents\\proy_c#\\s4\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|C:\\Users\\alexi\\Documents\\PROY_C#\\S4\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -72,8 +76,21 @@
         },
         {
           "DockedWidth": 129,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Modulo8.cs",
+              "DocumentMoniker": "C:\\Users\\alexi\\Documents\\PROY_C#\\S4\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo8.cs",
+              "RelativeDocumentMoniker": "Modulo8.cs",
+              "ToolTip": "C:\\Users\\alexi\\Documents\\PROY_C#\\S4\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo8.cs",
+              "RelativeToolTip": "Modulo8.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T17:01:18.639Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -88,18 +105,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainForm.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\alexi\\Documents\\PROY_C#\\S4\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
               "ToolTip": "C:\\Users\\alexi\\Documents\\PROY_C#\\S4\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\MainForm.cs [Dise\u00F1o]",
               "RelativeToolTip": "MainForm.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T18:48:58.775Z"
+              "WhenOpened": "2025-11-24T18:48:58.775Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "UCAdmisionHospitalaria.cs",
               "DocumentMoniker": "C:\\Users\\alexi\\Documents\\PROY_C#\\S4\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCAdmisionHospitalaria.cs",
               "RelativeDocumentMoniker": "UCAdmisionHospitalaria.cs",
@@ -111,7 +129,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "UCOrdenLaboratorio.cs",
               "DocumentMoniker": "C:\\Users\\alexi\\Documents\\PROY_C#\\S4\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCOrdenLaboratorio.cs",
               "RelativeDocumentMoniker": "UCOrdenLaboratorio.cs",
@@ -123,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\alexi\\Documents\\PROY_C#\\S4\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -135,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\alexi\\Documents\\PROY_C#\\S4\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
@@ -143,11 +161,12 @@
               "RelativeToolTip": "MainForm.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAGMAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-30T23:41:29.694Z"
+              "WhenOpened": "2025-11-30T23:41:29.694Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "UCAdmisionHospitalaria.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\alexi\\Documents\\PROY_C#\\S4\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCAdmisionHospitalaria.cs",
               "RelativeDocumentMoniker": "UCAdmisionHospitalaria.cs",
@@ -158,7 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "UCAdmisionHospitalaria.resx",
               "DocumentMoniker": "C:\\Users\\alexi\\Documents\\PROY_C#\\S4\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCAdmisionHospitalaria.resx",
               "RelativeDocumentMoniker": "UCAdmisionHospitalaria.resx",
@@ -169,7 +188,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "UCOrdenLaboratorio.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\alexi\\Documents\\PROY_C#\\S4\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\UCOrdenLaboratorio.cs",
               "RelativeDocumentMoniker": "UCOrdenLaboratorio.cs",
