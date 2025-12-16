@@ -24,7 +24,7 @@ namespace Borrador
             InitializeComponent();
 
             // IMPORTANTE: Reemplaza esta cadena de conexión con la tuya
-            connectionString = "Data Source=DESKTOP-QN52C2T\\MIPRO;Initial Catalog=ClinicaPro2;User ID=clinica_user;Password=sm@123DS4UTP;Integrated Security=False;MultipleActiveResultSets=True;TrustServerCertificate=True;Connect Timeout=30";
+            connectionString = "Data Source=JOSAEL\\SQLEXPRESS;Initial Catalog=ClinicaPro2;User ID=sa;Password=Locura060425;Integrated Security=False;MultipleActiveResultSets=True;TrustServerCertificate=True;Connect Timeout=30";
 
             // Inicializar repositorios
             imagenRepo = new ImagenRepository(connectionString);
