@@ -93,7 +93,7 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.tabPage1.BackColor = System.Drawing.Color.White;
             this.tabPage1.Controls.Add(this.comboBoxFiltro);
             this.tabPage1.Controls.Add(this.comboBoxVista);
             this.tabPage1.Controls.Add(this.label7);
@@ -290,7 +290,7 @@
             // panelNuevaCita
             // 
             this.panelNuevaCita.AutoScroll = true;
-            this.panelNuevaCita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panelNuevaCita.BackColor = System.Drawing.Color.White;
             this.panelNuevaCita.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelNuevaCita.Controls.Add(this.label9);
             this.panelNuevaCita.Controls.Add(this.comboBoxEstadoCitaAgregar);
@@ -509,7 +509,7 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.tabPage3.BackColor = System.Drawing.Color.White;
             this.tabPage3.Controls.Add(this.button1);
             this.tabPage3.Controls.Add(this.label6);
             this.tabPage3.Controls.Add(this.dgvEditarCitas);
