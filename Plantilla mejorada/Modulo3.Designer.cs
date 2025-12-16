@@ -35,10 +35,10 @@
             this.Btnimp = new System.Windows.Forms.Button();
             this.Btnfin = new System.Windows.Forms.Button();
             this.Btnguar = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chckbximg = new System.Windows.Forms.CheckBox();
             this.Chckbxord = new System.Windows.Forms.CheckBox();
             this.DtaGriewprees = new System.Windows.Forms.DataGridView();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtEvo = new System.Windows.Forms.TextBox();
             this.Lblprees = new System.Windows.Forms.Label();
             this.Lblevo = new System.Windows.Forms.Label();
             this.dtaGriewsec = new System.Windows.Forms.DataGridView();
@@ -47,38 +47,39 @@
             this.LblFc = new System.Windows.Forms.Label();
             this.FR = new System.Windows.Forms.Label();
             this.Lbltemp = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtTemperatura = new System.Windows.Forms.TextBox();
+            this.TxtTA = new System.Windows.Forms.TextBox();
+            this.txtFR = new System.Windows.Forms.TextBox();
+            this.txtFC = new System.Windows.Forms.TextBox();
             this.CmboxDiagprinc = new System.Windows.Forms.ComboBox();
             this.LblDiag2 = new System.Windows.Forms.Label();
             this.LblDiag = new System.Windows.Forms.Label();
             this.TxtBoxConsul = new System.Windows.Forms.TextBox();
             this.LblMotiv = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.Fechaconsult = new System.Windows.Forms.DateTimePicker();
             this.LblFecha = new System.Windows.Forms.Label();
             this.CmboxMed = new System.Windows.Forms.ComboBox();
             this.Lblmed = new System.Windows.Forms.Label();
             this.Comboxpac = new System.Windows.Forms.ComboBox();
             this.Lblpac = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtIdconsulta = new System.Windows.Forms.TextBox();
             this.LblId = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.Gpoboxhistorial = new System.Windows.Forms.GroupBox();
             this.BtnConsul = new System.Windows.Forms.Button();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cmboxmedichist = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtagriwlistaconsulta = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtpickhasta = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.dtpickdesde = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmboxpachist = new System.Windows.Forms.ComboBox();
             this.idconculta = new System.Windows.Forms.Label();
+            this.Reestablecer = new System.Windows.Forms.Button();
             this.tabforms.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.Grpbxform1.SuspendLayout();
@@ -87,7 +88,7 @@
             this.grboxSignos.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.Gpoboxhistorial.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtagriwlistaconsulta)).BeginInit();
             this.SuspendLayout();
             // 
             // tabforms
@@ -98,7 +99,7 @@
             this.tabforms.Location = new System.Drawing.Point(24, 22);
             this.tabforms.Name = "tabforms";
             this.tabforms.SelectedIndex = 0;
-            this.tabforms.Size = new System.Drawing.Size(1283, 933);
+            this.tabforms.Size = new System.Drawing.Size(1276, 980);
             this.tabforms.TabIndex = 0;
             // 
             // tabPage1
@@ -107,7 +108,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 37);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1275, 892);
+            this.tabPage1.Size = new System.Drawing.Size(1268, 939);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Consultas";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -119,10 +120,10 @@
             this.Grpbxform1.Controls.Add(this.Btnimp);
             this.Grpbxform1.Controls.Add(this.Btnfin);
             this.Grpbxform1.Controls.Add(this.Btnguar);
-            this.Grpbxform1.Controls.Add(this.checkBox1);
+            this.Grpbxform1.Controls.Add(this.chckbximg);
             this.Grpbxform1.Controls.Add(this.Chckbxord);
             this.Grpbxform1.Controls.Add(this.DtaGriewprees);
-            this.Grpbxform1.Controls.Add(this.textBox6);
+            this.Grpbxform1.Controls.Add(this.txtEvo);
             this.Grpbxform1.Controls.Add(this.Lblprees);
             this.Grpbxform1.Controls.Add(this.Lblevo);
             this.Grpbxform1.Controls.Add(this.dtaGriewsec);
@@ -132,18 +133,18 @@
             this.Grpbxform1.Controls.Add(this.LblDiag);
             this.Grpbxform1.Controls.Add(this.TxtBoxConsul);
             this.Grpbxform1.Controls.Add(this.LblMotiv);
-            this.Grpbxform1.Controls.Add(this.dateTimePicker1);
+            this.Grpbxform1.Controls.Add(this.Fechaconsult);
             this.Grpbxform1.Controls.Add(this.LblFecha);
             this.Grpbxform1.Controls.Add(this.CmboxMed);
             this.Grpbxform1.Controls.Add(this.Lblmed);
             this.Grpbxform1.Controls.Add(this.Comboxpac);
             this.Grpbxform1.Controls.Add(this.Lblpac);
-            this.Grpbxform1.Controls.Add(this.textBox1);
+            this.Grpbxform1.Controls.Add(this.txtIdconsulta);
             this.Grpbxform1.Controls.Add(this.LblId);
             this.Grpbxform1.Font = new System.Drawing.Font("Segoe UI", 22.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Grpbxform1.Location = new System.Drawing.Point(6, 9);
+            this.Grpbxform1.Location = new System.Drawing.Point(-4, 9);
             this.Grpbxform1.Name = "Grpbxform1";
-            this.Grpbxform1.Size = new System.Drawing.Size(1285, 888);
+            this.Grpbxform1.Size = new System.Drawing.Size(1268, 928);
             this.Grpbxform1.TabIndex = 2;
             this.Grpbxform1.TabStop = false;
             this.Grpbxform1.Text = "ConsultaMedica";
@@ -154,7 +155,7 @@
             this.Btnhist.BackColor = System.Drawing.Color.Goldenrod;
             this.Btnhist.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btnhist.ForeColor = System.Drawing.Color.AliceBlue;
-            this.Btnhist.Location = new System.Drawing.Point(668, 806);
+            this.Btnhist.Location = new System.Drawing.Point(673, 867);
             this.Btnhist.Name = "Btnhist";
             this.Btnhist.Size = new System.Drawing.Size(214, 48);
             this.Btnhist.TabIndex = 35;
@@ -167,48 +168,51 @@
             this.Btnimp.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.Btnimp.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btnimp.ForeColor = System.Drawing.Color.AliceBlue;
-            this.Btnimp.Location = new System.Drawing.Point(414, 806);
+            this.Btnimp.Location = new System.Drawing.Point(410, 867);
             this.Btnimp.Name = "Btnimp";
             this.Btnimp.Size = new System.Drawing.Size(214, 48);
             this.Btnimp.TabIndex = 34;
             this.Btnimp.Text = "Imprimir";
             this.Btnimp.UseVisualStyleBackColor = false;
+            this.Btnimp.Click += new System.EventHandler(this.Btnimp_Click);
             // 
             // Btnfin
             // 
             this.Btnfin.BackColor = System.Drawing.Color.Crimson;
             this.Btnfin.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btnfin.ForeColor = System.Drawing.Color.White;
-            this.Btnfin.Location = new System.Drawing.Point(167, 806);
+            this.Btnfin.Location = new System.Drawing.Point(170, 867);
             this.Btnfin.Name = "Btnfin";
             this.Btnfin.Size = new System.Drawing.Size(214, 48);
             this.Btnfin.TabIndex = 33;
             this.Btnfin.Text = "Finalizar";
             this.Btnfin.UseVisualStyleBackColor = false;
+            this.Btnfin.Click += new System.EventHandler(this.Btnfin_Click);
             // 
             // Btnguar
             // 
             this.Btnguar.BackColor = System.Drawing.Color.RoyalBlue;
             this.Btnguar.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btnguar.ForeColor = System.Drawing.Color.AliceBlue;
-            this.Btnguar.Location = new System.Drawing.Point(916, 806);
+            this.Btnguar.Location = new System.Drawing.Point(921, 867);
             this.Btnguar.Name = "Btnguar";
             this.Btnguar.Size = new System.Drawing.Size(214, 48);
             this.Btnguar.TabIndex = 32;
             this.Btnguar.Text = "Guardar";
             this.Btnguar.UseVisualStyleBackColor = false;
+            this.Btnguar.Click += new System.EventHandler(this.Btnguar_Click);
             // 
-            // checkBox1
+            // chckbximg
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(282, 717);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(185, 27);
-            this.checkBox1.TabIndex = 30;
-            this.checkBox1.Text = "Órdenes De Imagen";
-            this.checkBox1.UseVisualStyleBackColor = false;
+            this.chckbximg.AutoSize = true;
+            this.chckbximg.BackColor = System.Drawing.Color.Transparent;
+            this.chckbximg.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chckbximg.Location = new System.Drawing.Point(282, 717);
+            this.chckbximg.Name = "chckbximg";
+            this.chckbximg.Size = new System.Drawing.Size(185, 27);
+            this.chckbximg.TabIndex = 30;
+            this.chckbximg.Text = "Órdenes De Imagen";
+            this.chckbximg.UseVisualStyleBackColor = false;
             // 
             // Chckbxord
             // 
@@ -226,7 +230,7 @@
             // 
             this.DtaGriewprees.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.DtaGriewprees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DtaGriewprees.Location = new System.Drawing.Point(795, 607);
+            this.DtaGriewprees.Location = new System.Drawing.Point(795, 688);
             this.DtaGriewprees.Name = "DtaGriewprees";
             this.DtaGriewprees.RowHeadersWidth = 51;
             this.DtaGriewprees.RowTemplate.Height = 24;
@@ -234,21 +238,21 @@
             this.DtaGriewprees.TabIndex = 27;
             this.DtaGriewprees.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DtaGriewprees_CellContentClick);
             // 
-            // textBox6
+            // txtEvo
             // 
-            this.textBox6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(28, 577);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(691, 116);
-            this.textBox6.TabIndex = 26;
+            this.txtEvo.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEvo.Location = new System.Drawing.Point(28, 577);
+            this.txtEvo.Multiline = true;
+            this.txtEvo.Name = "txtEvo";
+            this.txtEvo.Size = new System.Drawing.Size(691, 116);
+            this.txtEvo.TabIndex = 26;
             // 
             // Lblprees
             // 
             this.Lblprees.AutoSize = true;
             this.Lblprees.BackColor = System.Drawing.Color.Transparent;
             this.Lblprees.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lblprees.Location = new System.Drawing.Point(791, 584);
+            this.Lblprees.Location = new System.Drawing.Point(791, 662);
             this.Lblprees.Name = "Lblprees";
             this.Lblprees.Size = new System.Drawing.Size(127, 23);
             this.Lblprees.TabIndex = 25;
@@ -273,7 +277,7 @@
             this.dtaGriewsec.Name = "dtaGriewsec";
             this.dtaGriewsec.RowHeadersWidth = 51;
             this.dtaGriewsec.RowTemplate.Height = 24;
-            this.dtaGriewsec.Size = new System.Drawing.Size(448, 81);
+            this.dtaGriewsec.Size = new System.Drawing.Size(448, 113);
             this.dtaGriewsec.TabIndex = 23;
             // 
             // grboxSignos
@@ -282,10 +286,10 @@
             this.grboxSignos.Controls.Add(this.LblFc);
             this.grboxSignos.Controls.Add(this.FR);
             this.grboxSignos.Controls.Add(this.Lbltemp);
-            this.grboxSignos.Controls.Add(this.textBox5);
-            this.grboxSignos.Controls.Add(this.textBox2);
-            this.grboxSignos.Controls.Add(this.textBox4);
-            this.grboxSignos.Controls.Add(this.textBox3);
+            this.grboxSignos.Controls.Add(this.txtTemperatura);
+            this.grboxSignos.Controls.Add(this.TxtTA);
+            this.grboxSignos.Controls.Add(this.txtFR);
+            this.grboxSignos.Controls.Add(this.txtFC);
             this.grboxSignos.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grboxSignos.Location = new System.Drawing.Point(787, 246);
             this.grboxSignos.Name = "grboxSignos";
@@ -338,37 +342,37 @@
             this.Lbltemp.TabIndex = 14;
             this.Lbltemp.Text = "Temperatura";
             // 
-            // textBox5
+            // txtTemperatura
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(168, 131);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(111, 27);
-            this.textBox5.TabIndex = 18;
+            this.txtTemperatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTemperatura.Location = new System.Drawing.Point(168, 131);
+            this.txtTemperatura.Name = "txtTemperatura";
+            this.txtTemperatura.Size = new System.Drawing.Size(111, 27);
+            this.txtTemperatura.TabIndex = 18;
             // 
-            // textBox2
+            // TxtTA
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(19, 56);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 27);
-            this.textBox2.TabIndex = 15;
+            this.TxtTA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtTA.Location = new System.Drawing.Point(19, 56);
+            this.TxtTA.Name = "TxtTA";
+            this.TxtTA.Size = new System.Drawing.Size(100, 27);
+            this.TxtTA.TabIndex = 15;
             // 
-            // textBox4
+            // txtFR
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(19, 125);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 27);
-            this.textBox4.TabIndex = 17;
+            this.txtFR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFR.Location = new System.Drawing.Point(19, 125);
+            this.txtFR.Name = "txtFR";
+            this.txtFR.Size = new System.Drawing.Size(100, 27);
+            this.txtFR.TabIndex = 17;
             // 
-            // textBox3
+            // txtFC
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(168, 56);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(110, 27);
-            this.textBox3.TabIndex = 16;
+            this.txtFC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFC.Location = new System.Drawing.Point(168, 56);
+            this.txtFC.Name = "txtFC";
+            this.txtFC.Size = new System.Drawing.Size(110, 27);
+            this.txtFC.TabIndex = 16;
             // 
             // CmboxDiagprinc
             // 
@@ -422,13 +426,13 @@
             this.LblMotiv.TabIndex = 8;
             this.LblMotiv.Text = "Motivo De La Consulta";
             // 
-            // dateTimePicker1
+            // Fechaconsult
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(682, 176);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(328, 30);
-            this.dateTimePicker1.TabIndex = 7;
+            this.Fechaconsult.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Fechaconsult.Location = new System.Drawing.Point(682, 176);
+            this.Fechaconsult.Name = "Fechaconsult";
+            this.Fechaconsult.Size = new System.Drawing.Size(328, 30);
+            this.Fechaconsult.TabIndex = 7;
             // 
             // LblFecha
             // 
@@ -484,13 +488,14 @@
             this.Lblpac.TabIndex = 2;
             this.Lblpac.Text = "Paciente";
             // 
-            // textBox1
+            // txtIdconsulta
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(30, 87);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(405, 27);
-            this.textBox1.TabIndex = 1;
+            this.txtIdconsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdconsulta.Location = new System.Drawing.Point(30, 87);
+            this.txtIdconsulta.Name = "txtIdconsulta";
+            this.txtIdconsulta.Size = new System.Drawing.Size(405, 27);
+            this.txtIdconsulta.TabIndex = 1;
+            this.txtIdconsulta.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // LblId
             // 
@@ -509,7 +514,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 37);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1275, 892);
+            this.tabPage2.Size = new System.Drawing.Size(1268, 939);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Historial";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -517,18 +522,19 @@
             // Gpoboxhistorial
             // 
             this.Gpoboxhistorial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(200)))), ((int)(((byte)(242)))));
+            this.Gpoboxhistorial.Controls.Add(this.Reestablecer);
             this.Gpoboxhistorial.Controls.Add(this.BtnConsul);
-            this.Gpoboxhistorial.Controls.Add(this.comboBox3);
+            this.Gpoboxhistorial.Controls.Add(this.cmboxmedichist);
             this.Gpoboxhistorial.Controls.Add(this.button2);
             this.Gpoboxhistorial.Controls.Add(this.button1);
-            this.Gpoboxhistorial.Controls.Add(this.dataGridView1);
+            this.Gpoboxhistorial.Controls.Add(this.dtagriwlistaconsulta);
             this.Gpoboxhistorial.Controls.Add(this.label4);
-            this.Gpoboxhistorial.Controls.Add(this.dateTimePicker2);
+            this.Gpoboxhistorial.Controls.Add(this.dtpickhasta);
             this.Gpoboxhistorial.Controls.Add(this.label3);
-            this.Gpoboxhistorial.Controls.Add(this.dateTimePicker3);
+            this.Gpoboxhistorial.Controls.Add(this.dtpickdesde);
             this.Gpoboxhistorial.Controls.Add(this.label2);
             this.Gpoboxhistorial.Controls.Add(this.label1);
-            this.Gpoboxhistorial.Controls.Add(this.comboBox1);
+            this.Gpoboxhistorial.Controls.Add(this.cmboxpachist);
             this.Gpoboxhistorial.Controls.Add(this.idconculta);
             this.Gpoboxhistorial.Font = new System.Drawing.Font("Segoe UI", 22.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Gpoboxhistorial.Location = new System.Drawing.Point(6, 6);
@@ -544,63 +550,66 @@
             this.BtnConsul.BackColor = System.Drawing.Color.RoyalBlue;
             this.BtnConsul.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnConsul.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnConsul.Location = new System.Drawing.Point(837, 806);
+            this.BtnConsul.Location = new System.Drawing.Point(950, 806);
             this.BtnConsul.Margin = new System.Windows.Forms.Padding(4);
             this.BtnConsul.Name = "BtnConsul";
-            this.BtnConsul.Size = new System.Drawing.Size(349, 43);
+            this.BtnConsul.Size = new System.Drawing.Size(236, 43);
             this.BtnConsul.TabIndex = 46;
             this.BtnConsul.Text = "Consulta";
             this.BtnConsul.UseVisualStyleBackColor = false;
             this.BtnConsul.Click += new System.EventHandler(this.BtnConsul_Click_1);
             // 
-            // comboBox3
+            // cmboxmedichist
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(262, 144);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(425, 31);
-            this.comboBox3.TabIndex = 45;
+            this.cmboxmedichist.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmboxmedichist.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmboxmedichist.FormattingEnabled = true;
+            this.cmboxmedichist.Location = new System.Drawing.Point(262, 144);
+            this.cmboxmedichist.Margin = new System.Windows.Forms.Padding(4);
+            this.cmboxmedichist.Name = "cmboxmedichist";
+            this.cmboxmedichist.Size = new System.Drawing.Size(425, 31);
+            this.cmboxmedichist.TabIndex = 45;
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(59, 806);
+            this.button2.Location = new System.Drawing.Point(350, 806);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(348, 43);
+            this.button2.Size = new System.Drawing.Size(244, 43);
             this.button2.TabIndex = 44;
             this.button2.Text = "Exportar listado";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Goldenrod;
             this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button1.Location = new System.Drawing.Point(447, 806);
+            this.button1.Location = new System.Drawing.Point(643, 806);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(349, 43);
+            this.button1.Size = new System.Drawing.Size(256, 43);
             this.button1.TabIndex = 43;
             this.button1.Text = "Ver detalle";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // dataGridView1
+            // dtagriwlistaconsulta
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.GridColor = System.Drawing.Color.GhostWhite;
-            this.dataGridView1.Location = new System.Drawing.Point(57, 410);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(1129, 332);
-            this.dataGridView1.TabIndex = 42;
+            this.dtagriwlistaconsulta.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dtagriwlistaconsulta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtagriwlistaconsulta.GridColor = System.Drawing.Color.GhostWhite;
+            this.dtagriwlistaconsulta.Location = new System.Drawing.Point(57, 410);
+            this.dtagriwlistaconsulta.Margin = new System.Windows.Forms.Padding(4);
+            this.dtagriwlistaconsulta.Name = "dtagriwlistaconsulta";
+            this.dtagriwlistaconsulta.RowHeadersWidth = 51;
+            this.dtagriwlistaconsulta.Size = new System.Drawing.Size(1129, 332);
+            this.dtagriwlistaconsulta.TabIndex = 42;
+            this.dtagriwlistaconsulta.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label4
             // 
@@ -614,14 +623,14 @@
             this.label4.TabIndex = 41;
             this.label4.Text = "Lista de consultas";
             // 
-            // dateTimePicker2
+            // dtpickhasta
             // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(262, 265);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(425, 30);
-            this.dateTimePicker2.TabIndex = 40;
+            this.dtpickhasta.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpickhasta.Location = new System.Drawing.Point(262, 265);
+            this.dtpickhasta.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpickhasta.Name = "dtpickhasta";
+            this.dtpickhasta.Size = new System.Drawing.Size(425, 30);
+            this.dtpickhasta.TabIndex = 40;
             // 
             // label3
             // 
@@ -635,14 +644,14 @@
             this.label3.TabIndex = 39;
             this.label3.Text = "Rango de fecha (hasta)";
             // 
-            // dateTimePicker3
+            // dtpickdesde
             // 
-            this.dateTimePicker3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker3.Location = new System.Drawing.Point(262, 206);
-            this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(425, 30);
-            this.dateTimePicker3.TabIndex = 38;
+            this.dtpickdesde.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpickdesde.Location = new System.Drawing.Point(262, 206);
+            this.dtpickdesde.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpickdesde.Name = "dtpickdesde";
+            this.dtpickdesde.Size = new System.Drawing.Size(425, 30);
+            this.dtpickdesde.TabIndex = 38;
             // 
             // label2
             // 
@@ -668,18 +677,18 @@
             this.label1.TabIndex = 36;
             this.label1.Text = "Busqueda por medico";
             // 
-            // comboBox1
+            // cmboxpachist
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmboxpachist.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmboxpachist.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmboxpachist.FormattingEnabled = true;
+            this.cmboxpachist.Items.AddRange(new object[] {
             "TexBox"});
-            this.comboBox1.Location = new System.Drawing.Point(262, 85);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(425, 31);
-            this.comboBox1.TabIndex = 35;
+            this.cmboxpachist.Location = new System.Drawing.Point(262, 85);
+            this.cmboxpachist.Margin = new System.Windows.Forms.Padding(4);
+            this.cmboxpachist.Name = "cmboxpachist";
+            this.cmboxpachist.Size = new System.Drawing.Size(425, 31);
+            this.cmboxpachist.TabIndex = 35;
             // 
             // idconculta
             // 
@@ -693,13 +702,27 @@
             this.idconculta.TabIndex = 34;
             this.idconculta.Text = "Busqueda por paciente";
             // 
+            // Reestablecer
+            // 
+            this.Reestablecer.BackColor = System.Drawing.Color.Navy;
+            this.Reestablecer.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Reestablecer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Reestablecer.Location = new System.Drawing.Point(57, 806);
+            this.Reestablecer.Margin = new System.Windows.Forms.Padding(4);
+            this.Reestablecer.Name = "Reestablecer";
+            this.Reestablecer.Size = new System.Drawing.Size(242, 43);
+            this.Reestablecer.TabIndex = 47;
+            this.Reestablecer.Text = "Reestablecer";
+            this.Reestablecer.UseVisualStyleBackColor = false;
+            this.Reestablecer.Click += new System.EventHandler(this.Reestablecer_Click);
+            // 
             // Modulo3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tabforms);
             this.Name = "Modulo3";
-            this.Size = new System.Drawing.Size(1359, 973);
+            this.Size = new System.Drawing.Size(1329, 1023);
             this.tabforms.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.Grpbxform1.ResumeLayout(false);
@@ -711,7 +734,7 @@
             this.tabPage2.ResumeLayout(false);
             this.Gpoboxhistorial.ResumeLayout(false);
             this.Gpoboxhistorial.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtagriwlistaconsulta)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -726,10 +749,10 @@
         private System.Windows.Forms.Button Btnimp;
         private System.Windows.Forms.Button Btnfin;
         private System.Windows.Forms.Button Btnguar;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chckbximg;
         private System.Windows.Forms.CheckBox Chckbxord;
         private System.Windows.Forms.DataGridView DtaGriewprees;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtEvo;
         private System.Windows.Forms.Label Lblprees;
         private System.Windows.Forms.Label Lblevo;
         private System.Windows.Forms.DataGridView dtaGriewsec;
@@ -738,36 +761,37 @@
         private System.Windows.Forms.Label LblFc;
         private System.Windows.Forms.Label FR;
         private System.Windows.Forms.Label Lbltemp;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtTemperatura;
+        private System.Windows.Forms.TextBox TxtTA;
+        private System.Windows.Forms.TextBox txtFR;
+        private System.Windows.Forms.TextBox txtFC;
         private System.Windows.Forms.ComboBox CmboxDiagprinc;
         private System.Windows.Forms.Label LblDiag2;
         private System.Windows.Forms.Label LblDiag;
         private System.Windows.Forms.TextBox TxtBoxConsul;
         private System.Windows.Forms.Label LblMotiv;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker Fechaconsult;
         private System.Windows.Forms.Label LblFecha;
         private System.Windows.Forms.ComboBox CmboxMed;
         private System.Windows.Forms.Label Lblmed;
         private System.Windows.Forms.ComboBox Comboxpac;
         private System.Windows.Forms.Label Lblpac;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtIdconsulta;
         private System.Windows.Forms.Label LblId;
         private System.Windows.Forms.GroupBox Gpoboxhistorial;
         private System.Windows.Forms.Button BtnConsul;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cmboxmedichist;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtagriwlistaconsulta;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtpickhasta;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.DateTimePicker dtpickdesde;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmboxpachist;
         private System.Windows.Forms.Label idconculta;
+        private System.Windows.Forms.Button Reestablecer;
     }
 }
