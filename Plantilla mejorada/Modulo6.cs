@@ -378,82 +378,9 @@ namespace Borrador
 
         #region EVENTOS TAB ESTUDIOS DE IMAGEN
 
-        private void Guardar1Butt_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                // Validar campos obligatorios
-                if (PacienteBox.SelectedItem == null)
-                {
-                    MessageBox.Show("Debe seleccionar un paciente", "Validación",
-                                  MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    PacienteBox.Focus();
-                    return;
-                }
+      
 
-                if (MedSolBox.SelectedItem == null)
-                {
-                    MessageBox.Show("Debe seleccionar un médico solicitante", "Validación",
-                                  MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    MedSolBox.Focus();
-                    return;
-                }
-
-                if (TipoEstudioBox.SelectedItem == null)
-                {
-                    MessageBox.Show("Debe seleccionar un tipo de estudio", "Validación",
-                                  MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    TipoEstudioBox.Focus();
-                    return;
-                }
-
-                if (comboBox5.SelectedItem == null)
-                {
-                    MessageBox.Show("Debe seleccionar un estado", "Validación",
-                                  MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    comboBox5.Focus();
-                    return;
-                }
-
-                // Crear objeto EstudioImagen
-                EstudioImagen nuevoEstudio = new EstudioImagen
-                {
-                    IdPaciente = ((ComboBoxItem)PacienteBox.SelectedItem).Value,
-                    IdMedico = ((ComboBoxItem)MedSolBox.SelectedItem).Value,
-                    IdTipoEstudio = ((ComboBoxItem)TipoEstudioBox.SelectedItem).Value,
-                    FechaHoraEstudio = dateTimePicker1.Value,
-                    SalaEquipo = SalEqBox.SelectedItem?.ToString(),
-                    RutaArchivoImagen = string.IsNullOrWhiteSpace(RutaArcText.Text) ? null : RutaArcText.Text.Trim(),
-                    Observaciones = string.IsNullOrWhiteSpace(ObsBox.Text) ? null : ObsBox.Text.Trim(),
-                    EstadoEstudio = comboBox5.SelectedItem.ToString(),
-                    IdConsultaOrden = null
-                };
-
-                // Guardar en la base de datos
-                int idGenerado = imagenRepo.Insertar(nuevoEstudio);
-
-                MessageBox.Show($"Estudio guardado exitosamente con ID: {idGenerado}",
-                              "Éxito",
-                              MessageBoxButtons.OK,
-                              MessageBoxIcon.Information);
-
-                // Limpiar formulario
-                LimpiarFormularioEstudio();
-
-                // Recargar lista
-                CargarEstudios();
-                CargarEstudiosParaInforme();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error al guardar el estudio: {ex.Message}\n\nDetalles: {ex.ToString()}",
-                              "Error",
-                              MessageBoxButtons.OK,
-                              MessageBoxIcon.Error);
-            }
-        }
-
-        private void buttAdjuntar_Click(object sender, EventArgs e)
+        private void ButtAdjuntar_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
@@ -635,5 +562,141 @@ namespace Borrador
         }
 
         #endregion
+
+
+        #region GUARDAR DATOS DE IMAGEN E INFORMES DE RADIOLOGÍA
+        // ----------------------------------------------------------------------
+        // BOTÓN 1: buttAdjuntar (Seleccionar Archivo)
+        // Solo obtiene la ruta, no guarda en BD todavía para evitar registros incompletos.
+        // ----------------------------------------------------------------------
+        private void buttAdjuntar_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                // Configuración para buscar imágenes o archivos DICOM
+                openFileDialog.Filter = "Imágenes Médicas|*.jpg;*.jpeg;*.png;*.bmp;*.dicom;*.dcm|Todos los archivos|*.*";
+                openFileDialog.Title = "Seleccionar Imagen del Estudio";
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    // Simplemente mostramos la ruta en el TextBox
+                    RutaArcText.Text = openFileDialog.FileName;
+                }
+            }
+        }
+
+        // ----------------------------------------------------------------------
+        // BOTÓN 2: Guardar1Butt (Guardar Estudio en BD)
+        // Aquí es donde se insertan los datos en la tabla ESTUDIOS_IMAGEN
+        // ----------------------------------------------------------------------
+
+
+        #endregion
+
+        private void Guardar1Butt_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // 1. Validaciones básicas (Campos obligatorios marcados con *)
+                if (PacienteBox.SelectedItem == null || MedSolBox.SelectedItem == null || TipoEstudioBox.SelectedItem == null)
+                {
+                    MessageBox.Show("Por favor complete los campos obligatorios: Paciente, Médico y Tipo de Estudio.", "Faltan Datos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                // 2. Obtener los IDs desde los SelectedItem de tipo ComboBoxItem de forma segura
+                if (!(PacienteBox.SelectedItem is ComboBoxItem pacienteItem)
+                    || !(MedSolBox.SelectedItem is ComboBoxItem medicoItem)
+                    || !(TipoEstudioBox.SelectedItem is ComboBoxItem tipoItem))
+                {
+                    MessageBox.Show("Seleccione Paciente, Médico y Tipo de Estudio correctamente.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                // 3. Crear el objeto con los datos del formulario usando los valores obtenidos
+                EstudioImagen nuevoEstudio = new EstudioImagen
+                {
+                    IdPaciente = pacienteItem.Value,
+                    IdMedico = medicoItem.Value,
+                    IdTipoEstudio = tipoItem.Value,
+
+                    FechaHoraEstudio = dateTimePicker1.Value,
+                    SalaEquipo = SalEqBox.Text,
+
+                    // Aquí usamos la ruta que se obtuvo con buttAdjuntar
+                    RutaArchivoImagen = RutaArcText.Text,
+
+                    Observaciones = ObsBox.Text,
+                    EstadoEstudio = comboBox5.Text // Pendiente, Realizado, etc.
+                };
+
+                // 4. Llamar al repositorio para guardar en SQL
+                int idGenerado = imagenRepo.Insertar(nuevoEstudio);
+
+                if (idGenerado > 0)
+                {
+                    MessageBox.Show($"Estudio guardado correctamente con ID: {idGenerado}", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LimpiarFormularioEstudio();
+                    CargarEstudios();            // Recargar la lista de abajo (listBox1)
+                    CargarEstudiosParaInforme(); // Actualizar la lista en la pestaña de informes
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al guardar el estudio: " + ex.Message);
+            }
+        }
+
+        private void ButtGuaInforme_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // 1. Validaciones
+                if (comboBox6.SelectedItem == null) // Estudio seleccionado
+                {
+                    MessageBox.Show("Debe seleccionar un Estudio realizado para crear el informe.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                if (comboBox7.SelectedItem == null) // Radiólogo
+                {
+                    MessageBox.Show("Debe seleccionar el Radiólogo responsable.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                // 2. Crear el objeto Informe
+                InformeRadiologico nuevoInforme = new InformeRadiologico
+                {
+                    IdEstudio = (int)comboBox6.SelectedValue,       // ID del estudio seleccionado
+                    IdEmpleadoRadiologo = (int)comboBox7.SelectedValue, // ID del Radiólogo
+                    FechaInforme = dateTimePicker2.Value,
+                    DescripcionHallazgos = textBox5.Text,           // Hallazgos
+                    ConclusionDiagnostica = textBox6.Text,          // Conclusión
+                    EstadoInforme = comboBox8.Text                  // Borrador / Final
+                };
+
+                // 3. Guardar en Base de Datos
+                int idInforme = radioRepo.Insertar(nuevoInforme);
+
+                if (idInforme > 0)
+                {
+                    MessageBox.Show("Informe guardado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Opcional: Cambiar el estado del estudio original a "Informado" visualmente
+                    // (El repositorio ya hace el UPDATE en SQL, aquí solo actualizamos listas)
+                    CargarInformes();       // Recargar listBox2
+                    CargarEstudios();       // Recargar lista de estudios para ver el cambio de estado
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al guardar informe: " + ex.Message);
+            }
+        }
+
+        private void ButtImprimir_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

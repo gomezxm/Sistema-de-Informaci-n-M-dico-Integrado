@@ -60,8 +60,8 @@ namespace Borrador
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.label19 = new System.Windows.Forms.Label();
             this.listBox2 = new System.Windows.Forms.ListBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.ButtGuaInforme = new System.Windows.Forms.Button();
+            this.ButtImprimir = new System.Windows.Forms.Button();
             this.comboBox8 = new System.Windows.Forms.ComboBox();
             this.label18 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -176,6 +176,7 @@ namespace Borrador
             this.Guardar1Butt.TabIndex = 20;
             this.Guardar1Butt.Text = "Guardar Estudio";
             this.Guardar1Butt.UseVisualStyleBackColor = false;
+            this.Guardar1Butt.Click += new System.EventHandler(this.Guardar1Butt_Click);
             // 
             // listBox1
             // 
@@ -240,7 +241,7 @@ namespace Borrador
             this.buttAdjuntar.TabIndex = 14;
             this.buttAdjuntar.Text = "Adjuntar";
             this.buttAdjuntar.UseVisualStyleBackColor = false;
-            this.buttAdjuntar.Click += new System.EventHandler(this.buttAdjuntar_Click);
+            this.buttAdjuntar.Click += new System.EventHandler(this.ButtAdjuntar_Click);
             // 
             // RutaArcText
             // 
@@ -376,8 +377,8 @@ namespace Borrador
             // 
             this.tabPage4.Controls.Add(this.label19);
             this.tabPage4.Controls.Add(this.listBox2);
-            this.tabPage4.Controls.Add(this.button4);
-            this.tabPage4.Controls.Add(this.button3);
+            this.tabPage4.Controls.Add(this.ButtGuaInforme);
+            this.tabPage4.Controls.Add(this.ButtImprimir);
             this.tabPage4.Controls.Add(this.comboBox8);
             this.tabPage4.Controls.Add(this.label18);
             this.tabPage4.Controls.Add(this.textBox6);
@@ -421,29 +422,31 @@ namespace Borrador
             this.listBox2.Size = new System.Drawing.Size(1201, 165);
             this.listBox2.TabIndex = 27;
             // 
-            // button4
+            // ButtGuaInforme
             // 
-            this.button4.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(634, 479);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(590, 48);
-            this.button4.TabIndex = 26;
-            this.button4.Text = "Guardar Informe\r\n";
-            this.button4.UseVisualStyleBackColor = false;
+            this.ButtGuaInforme.BackColor = System.Drawing.Color.RoyalBlue;
+            this.ButtGuaInforme.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtGuaInforme.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ButtGuaInforme.Location = new System.Drawing.Point(634, 479);
+            this.ButtGuaInforme.Name = "ButtGuaInforme";
+            this.ButtGuaInforme.Size = new System.Drawing.Size(590, 48);
+            this.ButtGuaInforme.TabIndex = 26;
+            this.ButtGuaInforme.Text = "Guardar Informe\r\n";
+            this.ButtGuaInforme.UseVisualStyleBackColor = false;
+            this.ButtGuaInforme.Click += new System.EventHandler(this.ButtGuaInforme_Click);
             // 
-            // button3
+            // ButtImprimir
             // 
-            this.button3.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(23, 479);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(590, 48);
-            this.button3.TabIndex = 23;
-            this.button3.Text = "Imprimir";
-            this.button3.UseVisualStyleBackColor = false;
+            this.ButtImprimir.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.ButtImprimir.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtImprimir.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ButtImprimir.Location = new System.Drawing.Point(23, 479);
+            this.ButtImprimir.Name = "ButtImprimir";
+            this.ButtImprimir.Size = new System.Drawing.Size(590, 48);
+            this.ButtImprimir.TabIndex = 23;
+            this.ButtImprimir.Text = "Imprimir";
+            this.ButtImprimir.UseVisualStyleBackColor = false;
+            this.ButtImprimir.Click += new System.EventHandler(this.ButtImprimir_Click);
             // 
             // comboBox8
             // 
@@ -643,8 +646,8 @@ namespace Borrador
         private System.Windows.Forms.Button Guardar1Butt;
         private System.Windows.Forms.ComboBox comboBox8;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button ButtGuaInforme;
+        private System.Windows.Forms.Button ButtImprimir;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.ListBox listBox2;
