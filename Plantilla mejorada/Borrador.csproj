@@ -200,6 +200,7 @@
     <Compile Include="ClinicaPro.Data.cs" />
     <Compile Include="DBRepository\EnfermeriaRepository.cs" />
     <Compile Include="DBRepository\ImagenRepository.cs" />
+    <Compile Include="DBRepository\RecetaPacienteDTO.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
