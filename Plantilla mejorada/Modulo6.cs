@@ -14,8 +14,8 @@ namespace Borrador
     public partial class Modulo6 : UserControl
     {
         // Instancias de los repositorios
-        private  ImagenRepository imagenRepo;
-        private  RadioRepository radioRepo;
+        private ImagenRepository imagenRepo;
+        private RadioRepository radioRepo;
         private string connectionString;
 
 
@@ -322,7 +322,7 @@ namespace Borrador
                 {
                     string query = @"SELECT IdEmpleado, Nombre + ' ' + Apellido AS NombreCompleto 
                                     FROM EMPLEADOS
-                                    WHERE Puesto LIKE '%Radiólogo%' OR Puesto LIKE '%Radiolog%'
+                                    WHERE TipoEmpleado LIKE '%Radiólogo%' OR TipoEmpleado LIKE '%Radiolog%'
                                     ORDER BY Nombre";
 
                     SqlCommand cmd = new SqlCommand(query, conn);
@@ -378,7 +378,7 @@ namespace Borrador
 
         #region EVENTOS TAB ESTUDIOS DE IMAGEN
 
-      
+
 
         private void ButtAdjuntar_Click(object sender, EventArgs e)
         {
@@ -560,7 +560,31 @@ namespace Borrador
                 return Text;
             }
         }
+        private string ObtenerNombreMedico(int idMedico)
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    string query = @"SELECT e.Nombre + ' ' + e.Apellido AS NombreCompleto 
+                            FROM MEDICOS m
+                            INNER JOIN EMPLEADOS e ON m.IdEmpleado = e.IdEmpleado
+                            WHERE m.IdMedico = @IdMedico";
 
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@IdMedico", idMedico);
+
+                    conn.Open();
+                    object resultado = cmd.ExecuteScalar();
+
+                    return resultado != null ? resultado.ToString() : "No especificado";
+                }
+            }
+            catch (Exception)
+            {
+                return "No especificado";
+            }
+        }
         #endregion
 
 
@@ -696,7 +720,82 @@ namespace Borrador
 
         private void ButtImprimir_Click(object sender, EventArgs e)
         {
+            try
+            {
+                // Validar que hay un informe seleccionado en el ListBox
+                if (listBox2.SelectedIndex < 0)
+                {
+                    MessageBox.Show("Por favor seleccione un informe de la lista para imprimir.",
+                        "Selección requerida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
 
+                // Extraer el ID del informe desde el texto seleccionado
+                string itemSeleccionado = listBox2.SelectedItem.ToString();
+                string[] partes = itemSeleccionado.Split('|');
+
+                if (partes.Length < 2)
+                {
+                    MessageBox.Show("No se pudo identificar el informe seleccionado.",
+                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Obtener el ID del informe
+                string idParte = partes[0].Replace("ID:", "").Trim();
+                if (!int.TryParse(idParte, out int idInforme))
+                {
+                    MessageBox.Show("ID de informe inválido.",
+                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Obtener el informe completo desde la base de datos
+                InformeRadiologico informe = radioRepo.ObtenerPorId(idInforme);
+
+                if (informe == null)
+                {
+                    MessageBox.Show("No se encontró el informe en la base de datos.",
+                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Obtener información adicional del estudio relacionado
+                EstudioImagen estudio = imagenRepo.ObtenerPorId(informe.IdEstudio);
+
+                string medicoSolicitante = "";
+                string salaEquipo = "";
+                DateTime fechaEstudio = DateTime.Now;
+
+                if (estudio != null)
+                {
+                    // Obtener el nombre del médico desde la base de datos
+                    medicoSolicitante = ObtenerNombreMedico(estudio.IdMedico);
+                    salaEquipo = estudio.SalaEquipo ?? "";
+                    fechaEstudio = estudio.FechaHoraEstudio;
+                }
+
+                // Generar el PDF
+                PdfInformeRadiologico.Generar(
+                    idInforme: informe.IdInforme,
+                    paciente: informe.NombrePaciente,
+                    tipoEstudio: informe.TipoEstudio,
+                    fechaEstudio: fechaEstudio,
+                    fechaInforme: informe.FechaInforme,
+                    radiologo: informe.NombreRadiologo,
+                    descripcionHallazgos: informe.DescripcionHallazgos ?? "",
+                    conclusionDiagnostica: informe.ConclusionDiagnostica ?? "",
+                    estadoInforme: informe.EstadoInforme,
+                    medicoSolicitante: medicoSolicitante,
+                    salaEquipo: salaEquipo,
+                    observaciones: informe.Recomendaciones ?? ""
+                );
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al generar el PDF:\n{ex.Message}\n\nDetalles: {ex.ToString()}",
+                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
