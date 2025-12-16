@@ -17,6 +17,8 @@ namespace Borrador
         {
             InitializeComponent();
             CargarCombos();
+            cBPaciente.SelectedIndexChanged += cBPaciente_SelectedIndexChanged;
+
 
             // Suscribir eventos adicionales
             cboxSala.SelectedIndexChanged += cboxSala_SelectedIndexChanged;
@@ -548,6 +550,85 @@ namespace Borrador
                     cboxFiltradoC.SelectedIndex = 0;
                 CargarDataGridCamas();
             }
+        }
+        private void CargarInfoPaciente(int idPaciente)
+        {
+            try
+            {
+                using (SqlConnection cn = ConexionDB.Instancia.AbrirConexion())
+                {
+                    string query = @"
+                SELECT TOP 1
+                    H.IdHospitalizacion,
+                    H.DiagnosticoIngreso,
+                    H.MotivoHospitalizacion,
+                    H.FechaHoraIngreso,
+                    H.Estado,
+                    H.IdCama,
+                    H.IdMedicoResponsable,
+                    C.IdSala
+                FROM HOSPITALIZACION H
+                INNER JOIN CAMAS C ON H.IdCama = C.IdCama
+                WHERE H.IdPaciente = @Paciente
+                ORDER BY H.FechaHoraIngreso DESC";
+
+                    SqlCommand cmd = new SqlCommand(query, cn);
+                    cmd.Parameters.AddWithValue("@Paciente", idPaciente);
+
+                    SqlDataReader dr = cmd.ExecuteReader();
+
+                    if (dr.Read())
+                    {
+                        // Hospitalización
+                        txtBIdHospitalizacion.Text = dr["IdHospitalizacion"].ToString();
+                        txtbDiagnostico.Text = dr["DiagnosticoIngreso"].ToString();
+                        txtBMotivo.Text = dr["MotivoHospitalizacion"].ToString();
+                        dateTimer.Value = Convert.ToDateTime(dr["FechaHoraIngreso"]);
+                        comboBox3.Text = dr["Estado"].ToString();
+
+                        // Médico
+                        cBMedicoR.SelectedValue = dr["IdMedicoResponsable"];
+
+                        // Sala y camas
+                        int idSala = Convert.ToInt32(dr["IdSala"]);
+                        cBSala.SelectedValue = idSala;
+
+                        CargarCamas(idSala);
+                        cBCama.SelectedValue = dr["IdCama"];
+                    }
+                    else
+                    {
+                        // No hospitalizado → limpiar
+                        LimpiarDatosHospitalizacion();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar información del paciente: " + ex.Message,
+                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void LimpiarDatosHospitalizacion()
+        {
+            txtBIdHospitalizacion.Clear();
+            txtbDiagnostico.Clear();
+            txtBMotivo.Clear();
+            cBCama.DataSource = null;
+        }
+
+        private void cBPaciente_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cBPaciente.SelectedValue == null || cBPaciente.SelectedValue is DataRowView)
+                return;
+
+            int idPaciente = Convert.ToInt32(cBPaciente.SelectedValue);
+            CargarInfoPaciente(idPaciente);
+        }
+
+        private void cBCama_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -28,88 +28,87 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Modulo9));
             this.Pesta2 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.textBoxIDAtencionUsuario = new System.Windows.Forms.TextBox();
+            this.textBoxPacienteNoIdentificado = new System.Windows.Forms.TextBox();
             this.Btn_Registrar = new System.Windows.Forms.Button();
             this.Txt_ObservacionesIniciales = new System.Windows.Forms.TextBox();
-            this.Txt_NumeroTelefono = new System.Windows.Forms.TextBox();
+            this.Txt_NumeroAcompañante = new System.Windows.Forms.TextBox();
             this.Txt_Nombre_Acompañante = new System.Windows.Forms.TextBox();
-            this.Txt_MotivoConsulta = new System.Windows.Forms.TextBox();
+            this.Txt_MotivoPrincipalConsulta = new System.Windows.Forms.TextBox();
             this.Lbl_NombreMotivosIniciales = new System.Windows.Forms.Label();
             this.Lbl_NombreDeNumeroTelefono = new System.Windows.Forms.Label();
             this.Lbl_NombredeAcompañante = new System.Windows.Forms.Label();
             this.LbL_NombreMotivoConsulta = new System.Windows.Forms.Label();
-            this.CBox_llegada = new System.Windows.Forms.ComboBox();
-            this.Txt_NmbNoIdentificado = new System.Windows.Forms.TextBox();
-            this.CBox_ModoLlegada = new System.Windows.Forms.ComboBox();
+            this.CBox_Modollegada = new System.Windows.Forms.ComboBox();
+            this.comboBoxPacientes = new System.Windows.Forms.ComboBox();
             this.Lbl_NombreModoLlegada = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerHoraIngreso = new System.Windows.Forms.DateTimePicker();
             this.Lbl_NombrHoraIngreso = new System.Windows.Forms.Label();
-            this.Lbl_N = new System.Windows.Forms.Label();
-            this.Txt_Cedula = new System.Windows.Forms.TextBox();
-            this.CBox_Opciones = new System.Windows.Forms.ComboBox();
+            this.CBox_TipoIdentificacion = new System.Windows.Forms.ComboBox();
             this.Lbl_NombreTipoIdentificación = new System.Windows.Forms.Label();
-            this.CBox_NombresPacientes = new System.Windows.Forms.ComboBox();
+            this.comboBoxPacientoNoIdentificado = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
             this.Lbl_NombreDatosClinicos = new System.Windows.Forms.Label();
             this.Lbl_NombreRegistroPaciente = new System.Windows.Forms.Label();
             this.Lbl_Titulo = new System.Windows.Forms.Label();
-            this.TxtIDAU = new System.Windows.Forms.TextBox();
             this.Lbl_NombreID = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btn_guardartriaje = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBoxObservaciones = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerFechaTriaje = new System.Windows.Forms.DateTimePicker();
             this.label11 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxMedico = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.lb_TituloPanel1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBoxPacientePage2 = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownEsclDolor = new System.Windows.Forms.NumericUpDown();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBoxTemperatura = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBoxSaturacion = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxPresionArtDiastolica = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxPresionRespiratoria = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxPresionArtSitolica = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxFrecuenciaCaridaca = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxNivelTriaje = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.buttonRefrescar = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
+            this.buttonReasignarPrioridad = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_HrIngr = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_NvTriaje = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_MedcAsignado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.comboBoxFiltro = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.comboBoxPrioridad = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
+            this.buttonMarcarAtendido = new System.Windows.Forms.Button();
+            this.buttonLlamarPaciente = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.Pesta2.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEsclDolor)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -130,31 +129,29 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(200)))), ((int)(((byte)(242)))));
+            this.tabPage1.Controls.Add(this.textBoxIDAtencionUsuario);
+            this.tabPage1.Controls.Add(this.textBoxPacienteNoIdentificado);
             this.tabPage1.Controls.Add(this.Btn_Registrar);
             this.tabPage1.Controls.Add(this.Txt_ObservacionesIniciales);
-            this.tabPage1.Controls.Add(this.Txt_NumeroTelefono);
+            this.tabPage1.Controls.Add(this.Txt_NumeroAcompañante);
             this.tabPage1.Controls.Add(this.Txt_Nombre_Acompañante);
-            this.tabPage1.Controls.Add(this.Txt_MotivoConsulta);
+            this.tabPage1.Controls.Add(this.Txt_MotivoPrincipalConsulta);
             this.tabPage1.Controls.Add(this.Lbl_NombreMotivosIniciales);
             this.tabPage1.Controls.Add(this.Lbl_NombreDeNumeroTelefono);
             this.tabPage1.Controls.Add(this.Lbl_NombredeAcompañante);
             this.tabPage1.Controls.Add(this.LbL_NombreMotivoConsulta);
-            this.tabPage1.Controls.Add(this.CBox_llegada);
-            this.tabPage1.Controls.Add(this.Txt_NmbNoIdentificado);
-            this.tabPage1.Controls.Add(this.CBox_ModoLlegada);
+            this.tabPage1.Controls.Add(this.CBox_Modollegada);
+            this.tabPage1.Controls.Add(this.comboBoxPacientes);
             this.tabPage1.Controls.Add(this.Lbl_NombreModoLlegada);
-            this.tabPage1.Controls.Add(this.dateTimePicker2);
+            this.tabPage1.Controls.Add(this.dateTimePickerHoraIngreso);
             this.tabPage1.Controls.Add(this.Lbl_NombrHoraIngreso);
-            this.tabPage1.Controls.Add(this.Lbl_N);
-            this.tabPage1.Controls.Add(this.Txt_Cedula);
-            this.tabPage1.Controls.Add(this.CBox_Opciones);
+            this.tabPage1.Controls.Add(this.CBox_TipoIdentificacion);
             this.tabPage1.Controls.Add(this.Lbl_NombreTipoIdentificación);
-            this.tabPage1.Controls.Add(this.CBox_NombresPacientes);
+            this.tabPage1.Controls.Add(this.comboBoxPacientoNoIdentificado);
             this.tabPage1.Controls.Add(this.label17);
             this.tabPage1.Controls.Add(this.Lbl_NombreDatosClinicos);
             this.tabPage1.Controls.Add(this.Lbl_NombreRegistroPaciente);
             this.tabPage1.Controls.Add(this.Lbl_Titulo);
-            this.tabPage1.Controls.Add(this.TxtIDAU);
             this.tabPage1.Controls.Add(this.Lbl_NombreID);
             this.tabPage1.Location = new System.Drawing.Point(4, 32);
             this.tabPage1.Name = "tabPage1";
@@ -163,9 +160,23 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Reg. Urg";
             // 
+            // textBoxIDAtencionUsuario
+            // 
+            this.textBoxIDAtencionUsuario.Location = new System.Drawing.Point(256, 169);
+            this.textBoxIDAtencionUsuario.Name = "textBoxIDAtencionUsuario";
+            this.textBoxIDAtencionUsuario.Size = new System.Drawing.Size(162, 30);
+            this.textBoxIDAtencionUsuario.TabIndex = 54;
+            // 
+            // textBoxPacienteNoIdentificado
+            // 
+            this.textBoxPacienteNoIdentificado.Location = new System.Drawing.Point(595, 212);
+            this.textBoxPacienteNoIdentificado.Name = "textBoxPacienteNoIdentificado";
+            this.textBoxPacienteNoIdentificado.Size = new System.Drawing.Size(162, 30);
+            this.textBoxPacienteNoIdentificado.TabIndex = 53;
+            // 
             // Btn_Registrar
             // 
-            this.Btn_Registrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(95)))), ((int)(((byte)(166)))));
+            this.Btn_Registrar.BackColor = System.Drawing.Color.Green;
             this.Btn_Registrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Registrar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Registrar.ForeColor = System.Drawing.Color.White;
@@ -175,6 +186,7 @@
             this.Btn_Registrar.TabIndex = 51;
             this.Btn_Registrar.Text = "Registrar";
             this.Btn_Registrar.UseVisualStyleBackColor = false;
+            this.Btn_Registrar.Click += new System.EventHandler(this.Btn_Registrar_Click);
             // 
             // Txt_ObservacionesIniciales
             // 
@@ -184,15 +196,14 @@
             this.Txt_ObservacionesIniciales.Name = "Txt_ObservacionesIniciales";
             this.Txt_ObservacionesIniciales.Size = new System.Drawing.Size(968, 181);
             this.Txt_ObservacionesIniciales.TabIndex = 50;
-            this.Txt_ObservacionesIniciales.TextChanged += new System.EventHandler(this.Txt_ObservacionesIniciales_TextChanged);
             // 
-            // Txt_NumeroTelefono
+            // Txt_NumeroAcompañante
             // 
-            this.Txt_NumeroTelefono.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.Txt_NumeroTelefono.Location = new System.Drawing.Point(256, 559);
-            this.Txt_NumeroTelefono.Name = "Txt_NumeroTelefono";
-            this.Txt_NumeroTelefono.Size = new System.Drawing.Size(241, 30);
-            this.Txt_NumeroTelefono.TabIndex = 49;
+            this.Txt_NumeroAcompañante.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.Txt_NumeroAcompañante.Location = new System.Drawing.Point(256, 559);
+            this.Txt_NumeroAcompañante.Name = "Txt_NumeroAcompañante";
+            this.Txt_NumeroAcompañante.Size = new System.Drawing.Size(241, 30);
+            this.Txt_NumeroAcompañante.TabIndex = 49;
             // 
             // Txt_Nombre_Acompañante
             // 
@@ -201,16 +212,15 @@
             this.Txt_Nombre_Acompañante.Name = "Txt_Nombre_Acompañante";
             this.Txt_Nombre_Acompañante.Size = new System.Drawing.Size(241, 30);
             this.Txt_Nombre_Acompañante.TabIndex = 48;
-            this.Txt_Nombre_Acompañante.TextChanged += new System.EventHandler(this.Txt_Nombre_Acompañante_TextChanged);
             // 
-            // Txt_MotivoConsulta
+            // Txt_MotivoPrincipalConsulta
             // 
-            this.Txt_MotivoConsulta.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.Txt_MotivoConsulta.Location = new System.Drawing.Point(256, 382);
-            this.Txt_MotivoConsulta.Multiline = true;
-            this.Txt_MotivoConsulta.Name = "Txt_MotivoConsulta";
-            this.Txt_MotivoConsulta.Size = new System.Drawing.Size(968, 117);
-            this.Txt_MotivoConsulta.TabIndex = 47;
+            this.Txt_MotivoPrincipalConsulta.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.Txt_MotivoPrincipalConsulta.Location = new System.Drawing.Point(256, 382);
+            this.Txt_MotivoPrincipalConsulta.Multiline = true;
+            this.Txt_MotivoPrincipalConsulta.Name = "Txt_MotivoPrincipalConsulta";
+            this.Txt_MotivoPrincipalConsulta.Size = new System.Drawing.Size(968, 117);
+            this.Txt_MotivoPrincipalConsulta.TabIndex = 47;
             // 
             // Lbl_NombreMotivosIniciales
             // 
@@ -252,33 +262,33 @@
             this.LbL_NombreMotivoConsulta.TabIndex = 43;
             this.LbL_NombreMotivoConsulta.Text = "Motivo Principal de Consulta:";
             // 
-            // CBox_llegada
+            // CBox_Modollegada
             // 
-            this.CBox_llegada.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBox_llegada.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.CBox_llegada.FormattingEnabled = true;
-            this.CBox_llegada.Location = new System.Drawing.Point(256, 338);
-            this.CBox_llegada.Name = "CBox_llegada";
-            this.CBox_llegada.Size = new System.Drawing.Size(128, 31);
-            this.CBox_llegada.TabIndex = 42;
+            this.CBox_Modollegada.AutoCompleteCustomSource.AddRange(new string[] {
+            "ambulancia",
+            "propio",
+            "referencia"});
+            this.CBox_Modollegada.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBox_Modollegada.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.CBox_Modollegada.FormattingEnabled = true;
+            this.CBox_Modollegada.Items.AddRange(new object[] {
+            "ambulancia",
+            "propio",
+            "referencia"});
+            this.CBox_Modollegada.Location = new System.Drawing.Point(256, 338);
+            this.CBox_Modollegada.Name = "CBox_Modollegada";
+            this.CBox_Modollegada.Size = new System.Drawing.Size(128, 31);
+            this.CBox_Modollegada.TabIndex = 42;
             // 
-            // Txt_NmbNoIdentificado
+            // comboBoxPacientes
             // 
-            this.Txt_NmbNoIdentificado.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.Txt_NmbNoIdentificado.Location = new System.Drawing.Point(485, 211);
-            this.Txt_NmbNoIdentificado.Name = "Txt_NmbNoIdentificado";
-            this.Txt_NmbNoIdentificado.Size = new System.Drawing.Size(162, 30);
-            this.Txt_NmbNoIdentificado.TabIndex = 41;
-            // 
-            // CBox_ModoLlegada
-            // 
-            this.CBox_ModoLlegada.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBox_ModoLlegada.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.CBox_ModoLlegada.FormattingEnabled = true;
-            this.CBox_ModoLlegada.Location = new System.Drawing.Point(365, 210);
-            this.CBox_ModoLlegada.Name = "CBox_ModoLlegada";
-            this.CBox_ModoLlegada.Size = new System.Drawing.Size(103, 31);
-            this.CBox_ModoLlegada.TabIndex = 40;
+            this.comboBoxPacientes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxPacientes.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboBoxPacientes.FormattingEnabled = true;
+            this.comboBoxPacientes.Location = new System.Drawing.Point(403, 210);
+            this.comboBoxPacientes.Name = "comboBoxPacientes";
+            this.comboBoxPacientes.Size = new System.Drawing.Size(181, 31);
+            this.comboBoxPacientes.TabIndex = 40;
             // 
             // Lbl_NombreModoLlegada
             // 
@@ -289,15 +299,14 @@
             this.Lbl_NombreModoLlegada.Size = new System.Drawing.Size(143, 23);
             this.Lbl_NombreModoLlegada.TabIndex = 39;
             this.Lbl_NombreModoLlegada.Text = "Modo de llegada:";
-            this.Lbl_NombreModoLlegada.Click += new System.EventHandler(this.Lbl_NombreModoLlegada_Click);
             // 
-            // dateTimePicker2
+            // dateTimePickerHoraIngreso
             // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.dateTimePicker2.Location = new System.Drawing.Point(256, 293);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(328, 30);
-            this.dateTimePicker2.TabIndex = 38;
+            this.dateTimePickerHoraIngreso.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.dateTimePickerHoraIngreso.Location = new System.Drawing.Point(256, 293);
+            this.dateTimePickerHoraIngreso.Name = "dateTimePickerHoraIngreso";
+            this.dateTimePickerHoraIngreso.Size = new System.Drawing.Size(328, 30);
+            this.dateTimePickerHoraIngreso.TabIndex = 38;
             // 
             // Lbl_NombrHoraIngreso
             // 
@@ -309,33 +318,23 @@
             this.Lbl_NombrHoraIngreso.TabIndex = 37;
             this.Lbl_NombrHoraIngreso.Text = "Hora de ingreso:";
             // 
-            // Lbl_N
+            // CBox_TipoIdentificacion
             // 
-            this.Lbl_N.AutoSize = true;
-            this.Lbl_N.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.Lbl_N.Location = new System.Drawing.Point(446, 260);
-            this.Lbl_N.Name = "Lbl_N";
-            this.Lbl_N.Size = new System.Drawing.Size(33, 23);
-            this.Lbl_N.TabIndex = 36;
-            this.Lbl_N.Text = "N°:";
-            // 
-            // Txt_Cedula
-            // 
-            this.Txt_Cedula.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.Txt_Cedula.Location = new System.Drawing.Point(485, 256);
-            this.Txt_Cedula.Name = "Txt_Cedula";
-            this.Txt_Cedula.Size = new System.Drawing.Size(162, 30);
-            this.Txt_Cedula.TabIndex = 35;
-            // 
-            // CBox_Opciones
-            // 
-            this.CBox_Opciones.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBox_Opciones.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.CBox_Opciones.FormattingEnabled = true;
-            this.CBox_Opciones.Location = new System.Drawing.Point(256, 256);
-            this.CBox_Opciones.Name = "CBox_Opciones";
-            this.CBox_Opciones.Size = new System.Drawing.Size(175, 31);
-            this.CBox_Opciones.TabIndex = 34;
+            this.CBox_TipoIdentificacion.AutoCompleteCustomSource.AddRange(new string[] {
+            "Cédula",
+            "Pasaporte",
+            "Desconocido"});
+            this.CBox_TipoIdentificacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBox_TipoIdentificacion.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.CBox_TipoIdentificacion.FormattingEnabled = true;
+            this.CBox_TipoIdentificacion.Items.AddRange(new object[] {
+            "Cédula",
+            "Pasaporte",
+            "Desconocido"});
+            this.CBox_TipoIdentificacion.Location = new System.Drawing.Point(256, 256);
+            this.CBox_TipoIdentificacion.Name = "CBox_TipoIdentificacion";
+            this.CBox_TipoIdentificacion.Size = new System.Drawing.Size(175, 31);
+            this.CBox_TipoIdentificacion.TabIndex = 34;
             // 
             // Lbl_NombreTipoIdentificación
             // 
@@ -346,17 +345,22 @@
             this.Lbl_NombreTipoIdentificación.Size = new System.Drawing.Size(178, 23);
             this.Lbl_NombreTipoIdentificación.TabIndex = 33;
             this.Lbl_NombreTipoIdentificación.Text = "Tipo de Identificación:";
-            this.Lbl_NombreTipoIdentificación.Click += new System.EventHandler(this.Lbl_NombreTipoIdentificación_Click);
             // 
-            // CBox_NombresPacientes
+            // comboBoxPacientoNoIdentificado
             // 
-            this.CBox_NombresPacientes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBox_NombresPacientes.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.CBox_NombresPacientes.FormattingEnabled = true;
-            this.CBox_NombresPacientes.Location = new System.Drawing.Point(256, 211);
-            this.CBox_NombresPacientes.Name = "CBox_NombresPacientes";
-            this.CBox_NombresPacientes.Size = new System.Drawing.Size(98, 31);
-            this.CBox_NombresPacientes.TabIndex = 32;
+            this.comboBoxPacientoNoIdentificado.AutoCompleteCustomSource.AddRange(new string[] {
+            "Paciente",
+            "No identificado"});
+            this.comboBoxPacientoNoIdentificado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxPacientoNoIdentificado.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboBoxPacientoNoIdentificado.FormattingEnabled = true;
+            this.comboBoxPacientoNoIdentificado.Items.AddRange(new object[] {
+            "Paciente",
+            "No identificado"});
+            this.comboBoxPacientoNoIdentificado.Location = new System.Drawing.Point(256, 211);
+            this.comboBoxPacientoNoIdentificado.Name = "comboBoxPacientoNoIdentificado";
+            this.comboBoxPacientoNoIdentificado.Size = new System.Drawing.Size(139, 31);
+            this.comboBoxPacientoNoIdentificado.TabIndex = 32;
             // 
             // label17
             // 
@@ -401,14 +405,6 @@
             this.Lbl_Titulo.TabIndex = 28;
             this.Lbl_Titulo.Text = "Registro de Atención de Urgencias";
             // 
-            // TxtIDAU
-            // 
-            this.TxtIDAU.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.TxtIDAU.Location = new System.Drawing.Point(256, 169);
-            this.TxtIDAU.Name = "TxtIDAU";
-            this.TxtIDAU.Size = new System.Drawing.Size(241, 30);
-            this.TxtIDAU.TabIndex = 27;
-            // 
             // Lbl_NombreID
             // 
             this.Lbl_NombreID.AutoSize = true;
@@ -433,44 +429,42 @@
             this.tabPage2.Size = new System.Drawing.Size(1254, 877);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Triaje Urgencias";
-            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // btn_guardartriaje
             // 
-            this.btn_guardartriaje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(95)))), ((int)(((byte)(166)))));
+            this.btn_guardartriaje.BackColor = System.Drawing.Color.Green;
             this.btn_guardartriaje.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_guardartriaje.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btn_guardartriaje.ForeColor = System.Drawing.Color.White;
-            this.btn_guardartriaje.Image = global::Borrador.Properties.Resources.guardar;
+            this.btn_guardartriaje.Image = ((System.Drawing.Image)(resources.GetObject("btn_guardartriaje.Image")));
             this.btn_guardartriaje.Location = new System.Drawing.Point(1138, 789);
             this.btn_guardartriaje.Name = "btn_guardartriaje";
             this.btn_guardartriaje.Size = new System.Drawing.Size(110, 85);
             this.btn_guardartriaje.TabIndex = 1;
             this.btn_guardartriaje.UseVisualStyleBackColor = false;
-            this.btn_guardartriaje.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(166)))), ((int)(((byte)(217)))));
-            this.panel2.Controls.Add(this.textBox7);
+            this.panel2.Controls.Add(this.textBoxObservaciones);
             this.panel2.Controls.Add(this.label12);
-            this.panel2.Controls.Add(this.dateTimePicker1);
+            this.panel2.Controls.Add(this.dateTimePickerFechaTriaje);
             this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.comboBox2);
+            this.panel2.Controls.Add(this.comboBoxMedico);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Location = new System.Drawing.Point(23, 495);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1208, 288);
             this.panel2.TabIndex = 3;
             // 
-            // textBox7
+            // textBoxObservaciones
             // 
-            this.textBox7.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox7.Location = new System.Drawing.Point(34, 132);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(1150, 137);
-            this.textBox7.TabIndex = 21;
+            this.textBoxObservaciones.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.textBoxObservaciones.Location = new System.Drawing.Point(34, 132);
+            this.textBoxObservaciones.Multiline = true;
+            this.textBoxObservaciones.Name = "textBoxObservaciones";
+            this.textBoxObservaciones.Size = new System.Drawing.Size(1150, 137);
+            this.textBoxObservaciones.TabIndex = 21;
             // 
             // label12
             // 
@@ -481,15 +475,14 @@
             this.label12.Size = new System.Drawing.Size(120, 23);
             this.label12.TabIndex = 20;
             this.label12.Text = "Observaciones";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
-            // dateTimePicker1
+            // dateTimePickerFechaTriaje
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.dateTimePicker1.Location = new System.Drawing.Point(601, 65);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(326, 30);
-            this.dateTimePicker1.TabIndex = 19;
+            this.dateTimePickerFechaTriaje.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.dateTimePickerFechaTriaje.Location = new System.Drawing.Point(601, 65);
+            this.dateTimePickerFechaTriaje.Name = "dateTimePickerFechaTriaje";
+            this.dateTimePickerFechaTriaje.Size = new System.Drawing.Size(326, 30);
+            this.dateTimePickerFechaTriaje.TabIndex = 19;
             // 
             // label11
             // 
@@ -501,15 +494,15 @@
             this.label11.TabIndex = 18;
             this.label11.Text = "Fecha/hora de triaje";
             // 
-            // comboBox2
+            // comboBoxMedico
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(34, 65);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(179, 31);
-            this.comboBox2.TabIndex = 17;
+            this.comboBoxMedico.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxMedico.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboBoxMedico.FormattingEnabled = true;
+            this.comboBoxMedico.Location = new System.Drawing.Point(34, 65);
+            this.comboBoxMedico.Name = "comboBoxMedico";
+            this.comboBoxMedico.Size = new System.Drawing.Size(276, 31);
+            this.comboBoxMedico.TabIndex = 17;
             // 
             // label10
             // 
@@ -531,7 +524,6 @@
             this.label9.Size = new System.Drawing.Size(484, 52);
             this.label9.TabIndex = 2;
             this.label9.Text = "Registro y Observaciones";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // lb_TituloPanel1
             // 
@@ -547,43 +539,38 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(166)))), ((int)(((byte)(217)))));
-            this.panel1.Controls.Add(this.comboBox3);
+            this.panel1.Controls.Add(this.comboBoxPacientePage2);
             this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.numericUpDown1);
+            this.panel1.Controls.Add(this.numericUpDownEsclDolor);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.textBox6);
+            this.panel1.Controls.Add(this.textBoxTemperatura);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.textBox5);
+            this.panel1.Controls.Add(this.textBoxSaturacion);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.textBoxPresionArtDiastolica);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.textBoxPresionRespiratoria);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.textBoxPresionArtSitolica);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.textBoxFrecuenciaCaridaca);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.comboBoxNivelTriaje);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(23, 69);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1208, 351);
             this.panel1.TabIndex = 0;
             // 
-            // comboBox3
+            // comboBoxPacientePage2
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "Sam",
-            "Leo",
-            "Jean",
-            "Leiro"});
-            this.comboBox3.Location = new System.Drawing.Point(60, 53);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(179, 31);
-            this.comboBox3.TabIndex = 17;
+            this.comboBoxPacientePage2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxPacientePage2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboBoxPacientePage2.FormattingEnabled = true;
+            this.comboBoxPacientePage2.Location = new System.Drawing.Point(60, 53);
+            this.comboBoxPacientePage2.Name = "comboBoxPacientePage2";
+            this.comboBoxPacientePage2.Size = new System.Drawing.Size(250, 31);
+            this.comboBoxPacientePage2.TabIndex = 17;
             // 
             // label13
             // 
@@ -595,13 +582,13 @@
             this.label13.TabIndex = 16;
             this.label13.Text = "Paciente";
             // 
-            // numericUpDown1
+            // numericUpDownEsclDolor
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.numericUpDown1.Location = new System.Drawing.Point(457, 305);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(204, 30);
-            this.numericUpDown1.TabIndex = 15;
+            this.numericUpDownEsclDolor.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.numericUpDownEsclDolor.Location = new System.Drawing.Point(457, 305);
+            this.numericUpDownEsclDolor.Name = "numericUpDownEsclDolor";
+            this.numericUpDownEsclDolor.Size = new System.Drawing.Size(204, 30);
+            this.numericUpDownEsclDolor.TabIndex = 15;
             // 
             // label8
             // 
@@ -613,13 +600,13 @@
             this.label8.TabIndex = 14;
             this.label8.Text = "Escala del dolor";
             // 
-            // textBox6
+            // textBoxTemperatura
             // 
-            this.textBox6.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox6.Location = new System.Drawing.Point(60, 304);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(179, 30);
-            this.textBox6.TabIndex = 13;
+            this.textBoxTemperatura.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.textBoxTemperatura.Location = new System.Drawing.Point(60, 304);
+            this.textBoxTemperatura.Name = "textBoxTemperatura";
+            this.textBoxTemperatura.Size = new System.Drawing.Size(179, 30);
+            this.textBoxTemperatura.TabIndex = 13;
             // 
             // label7
             // 
@@ -631,13 +618,13 @@
             this.label7.TabIndex = 12;
             this.label7.Text = "Temperatura";
             // 
-            // textBox5
+            // textBoxSaturacion
             // 
-            this.textBox5.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox5.Location = new System.Drawing.Point(797, 302);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(203, 30);
-            this.textBox5.TabIndex = 11;
+            this.textBoxSaturacion.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.textBoxSaturacion.Location = new System.Drawing.Point(797, 302);
+            this.textBoxSaturacion.Name = "textBoxSaturacion";
+            this.textBoxSaturacion.Size = new System.Drawing.Size(203, 30);
+            this.textBoxSaturacion.TabIndex = 11;
             // 
             // label6
             // 
@@ -649,13 +636,13 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Saturación O2";
             // 
-            // textBox4
+            // textBoxPresionArtDiastolica
             // 
-            this.textBox4.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox4.Location = new System.Drawing.Point(457, 185);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(204, 30);
-            this.textBox4.TabIndex = 9;
+            this.textBoxPresionArtDiastolica.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.textBoxPresionArtDiastolica.Location = new System.Drawing.Point(457, 185);
+            this.textBoxPresionArtDiastolica.Name = "textBoxPresionArtDiastolica";
+            this.textBoxPresionArtDiastolica.Size = new System.Drawing.Size(204, 30);
+            this.textBoxPresionArtDiastolica.TabIndex = 9;
             // 
             // label5
             // 
@@ -667,13 +654,13 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Presión arterial diastólica";
             // 
-            // textBox3
+            // textBoxPresionRespiratoria
             // 
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox3.Location = new System.Drawing.Point(60, 181);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(179, 30);
-            this.textBox3.TabIndex = 7;
+            this.textBoxPresionRespiratoria.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.textBoxPresionRespiratoria.Location = new System.Drawing.Point(60, 181);
+            this.textBoxPresionRespiratoria.Name = "textBoxPresionRespiratoria";
+            this.textBoxPresionRespiratoria.Size = new System.Drawing.Size(179, 30);
+            this.textBoxPresionRespiratoria.TabIndex = 7;
             // 
             // label4
             // 
@@ -685,13 +672,13 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Presión Respiratoria";
             // 
-            // textBox2
+            // textBoxPresionArtSitolica
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox2.Location = new System.Drawing.Point(797, 172);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(203, 30);
-            this.textBox2.TabIndex = 5;
+            this.textBoxPresionArtSitolica.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.textBoxPresionArtSitolica.Location = new System.Drawing.Point(797, 172);
+            this.textBoxPresionArtSitolica.Name = "textBoxPresionArtSitolica";
+            this.textBoxPresionArtSitolica.Size = new System.Drawing.Size(203, 30);
+            this.textBoxPresionArtSitolica.TabIndex = 5;
             // 
             // label3
             // 
@@ -703,13 +690,13 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Presión arterial sistólica";
             // 
-            // textBox1
+            // textBoxFrecuenciaCaridaca
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox1.Location = new System.Drawing.Point(797, 53);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(204, 30);
-            this.textBox1.TabIndex = 3;
+            this.textBoxFrecuenciaCaridaca.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.textBoxFrecuenciaCaridaca.Location = new System.Drawing.Point(797, 53);
+            this.textBoxFrecuenciaCaridaca.Name = "textBoxFrecuenciaCaridaca";
+            this.textBoxFrecuenciaCaridaca.Size = new System.Drawing.Size(204, 30);
+            this.textBoxFrecuenciaCaridaca.TabIndex = 3;
             // 
             // label2
             // 
@@ -721,21 +708,26 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Frecuencia cardiaca";
             // 
-            // comboBox1
+            // comboBoxNivelTriaje
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBoxNivelTriaje.AutoCompleteCustomSource.AddRange(new string[] {
+            "I",
+            "II",
+            "III",
+            "IV"});
+            this.comboBoxNivelTriaje.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxNivelTriaje.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboBoxNivelTriaje.FormattingEnabled = true;
+            this.comboBoxNivelTriaje.Items.AddRange(new object[] {
             "Nivel I",
             "Nivel II",
             "Nivel III",
             "Nivel IV",
             "Nivel V"});
-            this.comboBox1.Location = new System.Drawing.Point(457, 53);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(179, 31);
-            this.comboBox1.TabIndex = 1;
+            this.comboBoxNivelTriaje.Location = new System.Drawing.Point(457, 53);
+            this.comboBoxNivelTriaje.Name = "comboBoxNivelTriaje";
+            this.comboBoxNivelTriaje.Size = new System.Drawing.Size(179, 31);
+            this.comboBoxNivelTriaje.TabIndex = 1;
             // 
             // label1
             // 
@@ -750,18 +742,31 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(200)))), ((int)(((byte)(242)))));
-            this.tabPage3.Controls.Add(this.button4);
+            this.tabPage3.Controls.Add(this.buttonRefrescar);
             this.tabPage3.Controls.Add(this.label14);
-            this.tabPage3.Controls.Add(this.button3);
+            this.tabPage3.Controls.Add(this.buttonReasignarPrioridad);
             this.tabPage3.Controls.Add(this.panel3);
-            this.tabPage3.Controls.Add(this.button2);
-            this.tabPage3.Controls.Add(this.button1);
+            this.tabPage3.Controls.Add(this.buttonMarcarAtendido);
+            this.tabPage3.Controls.Add(this.buttonLlamarPaciente);
             this.tabPage3.Location = new System.Drawing.Point(4, 32);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(1254, 877);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Cola de Urgencias";
+            // 
+            // buttonRefrescar
+            // 
+            this.buttonRefrescar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(95)))), ((int)(((byte)(166)))));
+            this.buttonRefrescar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRefrescar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.buttonRefrescar.ForeColor = System.Drawing.Color.White;
+            this.buttonRefrescar.Location = new System.Drawing.Point(887, 775);
+            this.buttonRefrescar.Name = "buttonRefrescar";
+            this.buttonRefrescar.Size = new System.Drawing.Size(272, 73);
+            this.buttonRefrescar.TabIndex = 8;
+            this.buttonRefrescar.Text = "Refrescar";
+            this.buttonRefrescar.UseVisualStyleBackColor = false;
             // 
             // label14
             // 
@@ -774,70 +779,31 @@
             this.label14.TabIndex = 1;
             this.label14.Text = "Cola de atención";
             // 
+            // buttonReasignarPrioridad
+            // 
+            this.buttonReasignarPrioridad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(95)))), ((int)(((byte)(166)))));
+            this.buttonReasignarPrioridad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonReasignarPrioridad.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.buttonReasignarPrioridad.ForeColor = System.Drawing.Color.White;
+            this.buttonReasignarPrioridad.Location = new System.Drawing.Point(609, 775);
+            this.buttonReasignarPrioridad.Name = "buttonReasignarPrioridad";
+            this.buttonReasignarPrioridad.Size = new System.Drawing.Size(245, 73);
+            this.buttonReasignarPrioridad.TabIndex = 7;
+            this.buttonReasignarPrioridad.Text = "Reasignar Prioridad";
+            this.buttonReasignarPrioridad.UseVisualStyleBackColor = false;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(166)))), ((int)(((byte)(217)))));
             this.panel3.Controls.Add(this.dataGridView1);
-            this.panel3.Controls.Add(this.comboBox5);
+            this.panel3.Controls.Add(this.comboBoxFiltro);
             this.panel3.Controls.Add(this.label16);
-            this.panel3.Controls.Add(this.comboBox4);
+            this.panel3.Controls.Add(this.comboBoxPrioridad);
             this.panel3.Controls.Add(this.label15);
             this.panel3.Location = new System.Drawing.Point(19, 70);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1201, 678);
             this.panel3.TabIndex = 0;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(95)))), ((int)(((byte)(166)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(887, 775);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(272, 73);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "Refrescar";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(95)))), ((int)(((byte)(166)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(609, 775);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(245, 73);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Reasignar Prioridad";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(95)))), ((int)(((byte)(166)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(349, 775);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(227, 73);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Marcar atendido";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(95)))), ((int)(((byte)(166)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(90, 775);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(220, 73);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Llamar paciente";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // dataGridView1
             // 
@@ -856,7 +822,6 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1150, 481);
             this.dataGridView1.TabIndex = 4;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Column1
             // 
@@ -888,20 +853,20 @@
             this.Column_MedcAsignado.MinimumWidth = 6;
             this.Column_MedcAsignado.Name = "Column_MedcAsignado";
             // 
-            // comboBox5
+            // comboBoxFiltro
             // 
-            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox5.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.comboBox5.Items.AddRange(new object[] {
+            this.comboBoxFiltro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxFiltro.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboBoxFiltro.FormattingEnabled = true;
+            this.comboBoxFiltro.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.comboBoxFiltro.Items.AddRange(new object[] {
             "En espera",
             "En atención",
             "Alta"});
-            this.comboBox5.Location = new System.Drawing.Point(366, 64);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(187, 31);
-            this.comboBox5.TabIndex = 3;
+            this.comboBoxFiltro.Location = new System.Drawing.Point(366, 64);
+            this.comboBoxFiltro.Name = "comboBoxFiltro";
+            this.comboBoxFiltro.Size = new System.Drawing.Size(187, 31);
+            this.comboBoxFiltro.TabIndex = 3;
             // 
             // label16
             // 
@@ -913,16 +878,16 @@
             this.label16.TabIndex = 2;
             this.label16.Text = "Filtro por estado";
             // 
-            // comboBox4
+            // comboBoxPrioridad
             // 
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.comboBox4.Location = new System.Drawing.Point(29, 64);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(187, 31);
-            this.comboBox4.TabIndex = 1;
+            this.comboBoxPrioridad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxPrioridad.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboBoxPrioridad.FormattingEnabled = true;
+            this.comboBoxPrioridad.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.comboBoxPrioridad.Location = new System.Drawing.Point(29, 64);
+            this.comboBoxPrioridad.Name = "comboBoxPrioridad";
+            this.comboBoxPrioridad.Size = new System.Drawing.Size(187, 31);
+            this.comboBoxPrioridad.TabIndex = 1;
             // 
             // label15
             // 
@@ -933,6 +898,32 @@
             this.label15.Size = new System.Drawing.Size(153, 23);
             this.label15.TabIndex = 0;
             this.label15.Text = "Filtro por prioridad";
+            // 
+            // buttonMarcarAtendido
+            // 
+            this.buttonMarcarAtendido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(95)))), ((int)(((byte)(166)))));
+            this.buttonMarcarAtendido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMarcarAtendido.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.buttonMarcarAtendido.ForeColor = System.Drawing.Color.White;
+            this.buttonMarcarAtendido.Location = new System.Drawing.Point(349, 775);
+            this.buttonMarcarAtendido.Name = "buttonMarcarAtendido";
+            this.buttonMarcarAtendido.Size = new System.Drawing.Size(227, 73);
+            this.buttonMarcarAtendido.TabIndex = 6;
+            this.buttonMarcarAtendido.Text = "Marcar atendido";
+            this.buttonMarcarAtendido.UseVisualStyleBackColor = false;
+            // 
+            // buttonLlamarPaciente
+            // 
+            this.buttonLlamarPaciente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(95)))), ((int)(((byte)(166)))));
+            this.buttonLlamarPaciente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLlamarPaciente.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.buttonLlamarPaciente.ForeColor = System.Drawing.Color.White;
+            this.buttonLlamarPaciente.Location = new System.Drawing.Point(90, 775);
+            this.buttonLlamarPaciente.Name = "buttonLlamarPaciente";
+            this.buttonLlamarPaciente.Size = new System.Drawing.Size(220, 73);
+            this.buttonLlamarPaciente.TabIndex = 5;
+            this.buttonLlamarPaciente.Text = "Llamar paciente";
+            this.buttonLlamarPaciente.UseVisualStyleBackColor = false;
             // 
             // Modulo9
             // 
@@ -950,7 +941,7 @@
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEsclDolor)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -969,74 +960,72 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lb_TituloPanel1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxNivelTriaje;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxPresionRespiratoria;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxPresionArtSitolica;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxFrecuenciaCaridaca;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numericUpDownEsclDolor;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBoxTemperatura;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBoxSaturacion;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBoxPresionArtDiastolica;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBoxMedico;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePickerFechaTriaje;
         private System.Windows.Forms.Button btn_guardartriaje;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBoxObservaciones;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBoxPacientePage2;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox comboBoxFiltro;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox comboBoxPrioridad;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonReasignarPrioridad;
+        private System.Windows.Forms.Button buttonMarcarAtendido;
+        private System.Windows.Forms.Button buttonLlamarPaciente;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_HrIngr;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_NvTriaje;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_Estado;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_MedcAsignado;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button buttonRefrescar;
         private System.Windows.Forms.Button Btn_Registrar;
         private System.Windows.Forms.TextBox Txt_ObservacionesIniciales;
-        private System.Windows.Forms.TextBox Txt_NumeroTelefono;
+        private System.Windows.Forms.TextBox Txt_NumeroAcompañante;
         private System.Windows.Forms.TextBox Txt_Nombre_Acompañante;
-        private System.Windows.Forms.TextBox Txt_MotivoConsulta;
+        private System.Windows.Forms.TextBox Txt_MotivoPrincipalConsulta;
         private System.Windows.Forms.Label Lbl_NombreMotivosIniciales;
         private System.Windows.Forms.Label Lbl_NombreDeNumeroTelefono;
         private System.Windows.Forms.Label Lbl_NombredeAcompañante;
         private System.Windows.Forms.Label LbL_NombreMotivoConsulta;
-        private System.Windows.Forms.ComboBox CBox_llegada;
-        private System.Windows.Forms.TextBox Txt_NmbNoIdentificado;
-        private System.Windows.Forms.ComboBox CBox_ModoLlegada;
+        private System.Windows.Forms.ComboBox CBox_Modollegada;
+        private System.Windows.Forms.ComboBox comboBoxPacientes;
         private System.Windows.Forms.Label Lbl_NombreModoLlegada;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dateTimePickerHoraIngreso;
         private System.Windows.Forms.Label Lbl_NombrHoraIngreso;
-        private System.Windows.Forms.Label Lbl_N;
-        private System.Windows.Forms.TextBox Txt_Cedula;
-        private System.Windows.Forms.ComboBox CBox_Opciones;
+        private System.Windows.Forms.ComboBox CBox_TipoIdentificacion;
         private System.Windows.Forms.Label Lbl_NombreTipoIdentificación;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label Lbl_NombreDatosClinicos;
         private System.Windows.Forms.Label Lbl_NombreRegistroPaciente;
         private System.Windows.Forms.Label Lbl_Titulo;
-        private System.Windows.Forms.TextBox TxtIDAU;
         private System.Windows.Forms.Label Lbl_NombreID;
-        private System.Windows.Forms.ComboBox CBox_NombresPacientes;
+        private System.Windows.Forms.ComboBox comboBoxPacientoNoIdentificado;
+        private System.Windows.Forms.TextBox textBoxPacienteNoIdentificado;
+        private System.Windows.Forms.TextBox textBoxIDAtencionUsuario;
     }
 }
