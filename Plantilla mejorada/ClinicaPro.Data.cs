@@ -43,11 +43,24 @@ namespace Borrador
         /// Obtiene la cadena de conexión desde App.config o Web.config
         /// Si no existe, usa una cadena por defecto para SQL Server local
         /// </summary>
+        
+
+        /// <summary>
+        /// Construye una cadena de conexión para SQL Server local con autenticación SQL
+        /// </summary>
         private string ObtenerCadenaConexion()
         {
             try
             {
-                // Intenta leer desde archivo de configuración
+                // Primero intenta leer la conexión de Azure
+                string cadenaAzure = ConfigurationManager.ConnectionStrings["ConexionAzure"]?.ConnectionString;
+
+                if (!string.IsNullOrEmpty(cadenaAzure))
+                {
+                    return cadenaAzure;
+                }
+
+                // Si no existe, intenta leer ClinicaProDB (conexión local)
                 string cadenaConfig = ConfigurationManager.ConnectionStrings["ClinicaProDB"]?.ConnectionString;
 
                 if (!string.IsNullOrEmpty(cadenaConfig))
@@ -60,47 +73,26 @@ namespace Borrador
                 Console.WriteLine($"Error leyendo configuración: {ex.Message}");
             }
 
-            // Cadena de conexión por defecto para SQL Server con autenticación SQL
-            return ConstruirCadenaConexionLocal();
-        }
-
-        /// <summary>
-        /// Construye una cadena de conexión para SQL Server local con autenticación SQL
-        /// </summary>
-        private string ConstruirCadenaConexionLocal()
-        {
-            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder
-            {
-                DataSource = "DESKTOP-QN52C2T\\MIPRO",  // Equivalente a localhost o (local)
-                InitialCatalog = "ClinicaPro2",
-                UserID = "clinica_user",
-                Password = "sm@123DS4UTP",
-                IntegratedSecurity = false,  // IMPORTANTE: false para usar SQL Authentication
-                MultipleActiveResultSets = true,
-                ConnectTimeout = 30,
-                Encrypt = false,
-                TrustServerCertificate = true
-            };
-
-            return builder.ConnectionString;
+            // Cadena de conexión por defecto para Azure SQL Database
+            return ConstruirCadenaConexionAzure();
         }
 
         /// <summary>
         /// Construye cadena de conexión con usuario y contraseña SQL Server
         /// </summary>
-        public string ConstruirCadenaConexionSQL(string servidor, string baseDatos, string usuario, string password)
+        private string ConstruirCadenaConexionAzure()
         {
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder
             {
-                DataSource = servidor,
-                InitialCatalog = baseDatos,
-                UserID = usuario,
-                Password = password,
+                DataSource = "hospitalserver.database.windows.net",
+                InitialCatalog = "BD-Hospital",
+                UserID = "SuperAdmin",
+                Password = "Hospital.123",
                 IntegratedSecurity = false,
                 MultipleActiveResultSets = true,
                 ConnectTimeout = 30,
-                Encrypt = false,
-                TrustServerCertificate = true
+                Encrypt = true,  // IMPORTANTE: Azure requiere encrypt=true
+                TrustServerCertificate = false  // Azure usa certificados válidos
             };
 
             return builder.ConnectionString;

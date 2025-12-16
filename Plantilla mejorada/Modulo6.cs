@@ -24,7 +24,15 @@ namespace Borrador
             InitializeComponent();
 
             // IMPORTANTE: Reemplaza esta cadena de conexión con la tuya
-            connectionString = "Data Source=JOSAEL\\SQLEXPRESS;Initial Catalog=ClinicaPro2;User ID=sa;Password=Locura060425;Integrated Security=False;MultipleActiveResultSets=True;TrustServerCertificate=True;Connect Timeout=30";
+            connectionString = "Data Source=hospitalserver.database.windows.net;" +
+                    "Initial Catalog=BD-Hospital;" +
+                    "User ID=SuperAdmin;" +
+                    "Password=Hospital.123;" +
+                    "Integrated Security=False;" +
+                    "MultipleActiveResultSets=True;" +
+                    "Connect Timeout=30;" +
+                    "Encrypt=True;" +
+                    "TrustServerCertificate=False;";
 
             // Inicializar repositorios
             imagenRepo = new ImagenRepository(connectionString);
