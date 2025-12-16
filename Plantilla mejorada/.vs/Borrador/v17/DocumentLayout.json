@@ -1,22 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\",
+  "WorkspaceRootPath": "C:\\Users\\alexi\\Documents\\PROY_C#\\S4\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\alexi\\documents\\proy_c#\\s4\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo4.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo4.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\alexi\\documents\\proy_c#\\s4\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\alexi\\documents\\proy_c#\\s4\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\dresq\\onedrive\\escritorio\\proyecto c#\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\alexi\\documents\\proy_c#\\s4\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\clinicapro.data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:clinicapro.data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\alexi\\documents\\proy_c#\\s4\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo8.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo8.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|c:\\users\\alexi\\documents\\proy_c#\\s4\\sistema-de-informaci-n-m-dico-integrado\\plantilla mejorada\\modulo8.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9994576B-278D-4028-92BD-EE76B6D65D49}|Borrador.csproj|solutionrelative:modulo8.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,47 +34,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 271,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             },
             {
               "$type": "Bookmark",
@@ -74,71 +46,90 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Modulo4.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo4.Designer.cs",
-              "RelativeDocumentMoniker": "Modulo4.Designer.cs",
-              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo4.Designer.cs",
-              "RelativeToolTip": "Modulo4.Designer.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAiwCUDAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T20:22:38.512Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Modulo4.cs",
-              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo4.cs",
-              "RelativeDocumentMoniker": "Modulo4.cs",
-              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo4.cs",
-              "RelativeToolTip": "Modulo4.cs",
-              "ViewState": "AgIAAHkAAAAAAAAAAADwvwkAAAAAAAAAAAAAAA==",
+              "Title": "Modulo8.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\alexi\\Documents\\PROY_C#\\S4\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo8.cs",
+              "RelativeDocumentMoniker": "Modulo8.cs",
+              "ToolTip": "C:\\Users\\alexi\\Documents\\PROY_C#\\S4\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo8.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Modulo8.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T20:20:41.138Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Modulo4.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo4.cs",
-              "RelativeDocumentMoniker": "Modulo4.cs",
-              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo4.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Modulo4.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T20:20:38.417Z",
+              "WhenOpened": "2025-12-16T02:50:01.438Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Modulo2.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo2.cs",
-              "RelativeDocumentMoniker": "Modulo2.cs",
-              "ToolTip": "C:\\Users\\dresq\\OneDrive\\Escritorio\\Proyecto C#\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo2.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Modulo2.cs [Dise\u00F1o]",
+              "Title": "ClinicaPro.Data.cs",
+              "DocumentMoniker": "C:\\Users\\alexi\\Documents\\PROY_C#\\S4\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\ClinicaPro.Data.cs",
+              "RelativeDocumentMoniker": "ClinicaPro.Data.cs",
+              "ToolTip": "C:\\Users\\alexi\\Documents\\PROY_C#\\S4\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\ClinicaPro.Data.cs",
+              "RelativeToolTip": "ClinicaPro.Data.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwAwAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T20:20:32.138Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 129,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+              "WhenOpened": "2025-12-16T02:49:06.956Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Modulo8.cs",
+              "DocumentMoniker": "C:\\Users\\alexi\\Documents\\PROY_C#\\S4\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo8.cs",
+              "RelativeDocumentMoniker": "Modulo8.cs",
+              "ToolTip": "C:\\Users\\alexi\\Documents\\PROY_C#\\S4\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo8.cs",
+              "RelativeToolTip": "Modulo8.cs",
+              "ViewState": "AgIAALUAAAAAAAAAAAAcwBkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T02:42:25.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\alexi\\Documents\\PROY_C#\\S4\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "C:\\Users\\alexi\\Documents\\PROY_C#\\S4\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\MainForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "MainForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T02:41:50.597Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Modulo8.resx",
+              "DocumentMoniker": "C:\\Users\\alexi\\Documents\\PROY_C#\\S4\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo8.resx",
+              "RelativeDocumentMoniker": "Modulo8.resx",
+              "ToolTip": "C:\\Users\\alexi\\Documents\\PROY_C#\\S4\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo8.resx",
+              "RelativeToolTip": "Modulo8.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-12-16T02:35:55.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Modulo8.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\alexi\\Documents\\PROY_C#\\S4\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo8.Designer.cs",
+              "RelativeDocumentMoniker": "Modulo8.Designer.cs",
+              "ToolTip": "C:\\Users\\alexi\\Documents\\PROY_C#\\S4\\Sistema-de-Informaci-n-M-dico-Integrado\\Plantilla mejorada\\Modulo8.Designer.cs",
+              "RelativeToolTip": "Modulo8.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgCAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T02:35:53.46Z",
+              "EditorCaption": ""
             }
           ]
         }
