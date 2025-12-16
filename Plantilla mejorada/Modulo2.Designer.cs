@@ -30,32 +30,33 @@
         {
             this.tbAgendaCita = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.cmbVista = new System.Windows.Forms.ComboBox();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnRefrescar = new System.Windows.Forms.Button();
+            this.cmbVistaSemanaDia = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.btnDetallesCita = new System.Windows.Forms.Button();
-            this.dgvCVistaCitas = new System.Windows.Forms.DataGridView();
+            this.btnVerDetalles = new System.Windows.Forms.Button();
+            this.dgvVistaCitas = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cmbEstado = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.dtmFechaDeCita = new System.Windows.Forms.DateTimePicker();
+            this.cmbEspecialidad = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbMedico2 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lblSubTituloSeleccion = new System.Windows.Forms.Label();
             this.lblTituloSeleccion = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panelNuevaCita = new System.Windows.Forms.Panel();
+            this.cmbConsultorio = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.btnGuardarCita = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.cmbTipoDeCita = new System.Windows.Forms.ComboBox();
             this.lblTituloAgendarCita = new System.Windows.Forms.Label();
-            this.btnCancelarRegistroCita = new System.Windows.Forms.Button();
-            this.dtpFechaDelRegisgtro = new System.Windows.Forms.DateTimePicker();
+            this.btnLimpiarCampos = new System.Windows.Forms.Button();
+            this.dtpHora = new System.Windows.Forms.DateTimePicker();
             this.label25 = new System.Windows.Forms.Label();
             this.txtMotivo = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
@@ -66,14 +67,16 @@
             this.label21 = new System.Windows.Forms.Label();
             this.txtPaciente = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaDeLaCita = new System.Windows.Forms.DateTimePicker();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCancelarCita = new System.Windows.Forms.Button();
+            this.btnGuardarCambios = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.dgvEditarCitas = new System.Windows.Forms.DataGridView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tbAgendaCita.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCVistaCitas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVistaCitas)).BeginInit();
             this.panel1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.panelNuevaCita.SuspendLayout();
@@ -95,16 +98,16 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.comboBox5);
-            this.tabPage1.Controls.Add(this.button2);
-            this.tabPage1.Controls.Add(this.cmbVista);
+            this.tabPage1.AutoScroll = true;
+            this.tabPage1.Controls.Add(this.btnLimpiar);
+            this.tabPage1.Controls.Add(this.btnRefrescar);
+            this.tabPage1.Controls.Add(this.cmbVistaSemanaDia);
             this.tabPage1.Controls.Add(this.label7);
-            this.tabPage1.Controls.Add(this.btnDetallesCita);
-            this.tabPage1.Controls.Add(this.dgvCVistaCitas);
+            this.tabPage1.Controls.Add(this.btnVerDetalles);
+            this.tabPage1.Controls.Add(this.dgvVistaCitas);
             this.tabPage1.Controls.Add(this.panel1);
             this.tabPage1.Controls.Add(this.lblSubTituloSeleccion);
             this.tabPage1.Controls.Add(this.lblTituloSeleccion);
-            this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Location = new System.Drawing.Point(4, 34);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -114,41 +117,47 @@
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
-            // comboBox5
+            // btnLimpiar
             // 
-            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox5.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(664, 487);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(292, 31);
-            this.comboBox5.TabIndex = 12;
+            this.btnLimpiar.BackColor = System.Drawing.Color.Gray;
+            this.btnLimpiar.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.ForeColor = System.Drawing.Color.White;
+            this.btnLimpiar.Location = new System.Drawing.Point(807, 839);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(346, 46);
+            this.btnLimpiar.TabIndex = 30;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiarCampos_Click);
             // 
-            // button2
+            // btnRefrescar
             // 
-            this.button2.BackColor = System.Drawing.Color.Green;
-            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(372, 840);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(346, 46);
-            this.button2.TabIndex = 29;
-            this.button2.Text = "Refrescar";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnRefrescar.AccessibleDescription = "CTRL + S";
+            this.btnRefrescar.BackColor = System.Drawing.Color.Green;
+            this.btnRefrescar.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefrescar.ForeColor = System.Drawing.Color.White;
+            this.btnRefrescar.Location = new System.Drawing.Point(27, 839);
+            this.btnRefrescar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRefrescar.Name = "btnRefrescar";
+            this.btnRefrescar.Size = new System.Drawing.Size(346, 46);
+            this.btnRefrescar.TabIndex = 29;
+            this.btnRefrescar.Text = "Refrescar";
+            this.btnRefrescar.UseVisualStyleBackColor = false;
+            this.btnRefrescar.Click += new System.EventHandler(this.btnRefrescar_Click);
             // 
-            // cmbVista
+            // cmbVistaSemanaDia
             // 
-            this.cmbVista.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbVista.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbVista.FormattingEnabled = true;
-            this.cmbVista.Items.AddRange(new object[] {
+            this.cmbVistaSemanaDia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbVistaSemanaDia.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbVistaSemanaDia.FormattingEnabled = true;
+            this.cmbVistaSemanaDia.Items.AddRange(new object[] {
             "Semana",
             "Dia"});
-            this.cmbVista.Location = new System.Drawing.Point(193, 487);
-            this.cmbVista.Name = "cmbVista";
-            this.cmbVista.Size = new System.Drawing.Size(292, 31);
-            this.cmbVista.TabIndex = 10;
+            this.cmbVistaSemanaDia.Location = new System.Drawing.Point(193, 487);
+            this.cmbVistaSemanaDia.Name = "cmbVistaSemanaDia";
+            this.cmbVistaSemanaDia.Size = new System.Drawing.Size(292, 31);
+            this.cmbVistaSemanaDia.TabIndex = 10;
             // 
             // label7
             // 
@@ -160,55 +169,60 @@
             this.label7.TabIndex = 11;
             this.label7.Text = "Vista (Semana/Dia)";
             // 
-            // btnDetallesCita
+            // btnVerDetalles
             // 
-            this.btnDetallesCita.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnDetallesCita.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDetallesCita.ForeColor = System.Drawing.Color.White;
-            this.btnDetallesCita.Location = new System.Drawing.Point(726, 840);
-            this.btnDetallesCita.Margin = new System.Windows.Forms.Padding(4);
-            this.btnDetallesCita.Name = "btnDetallesCita";
-            this.btnDetallesCita.Size = new System.Drawing.Size(364, 46);
-            this.btnDetallesCita.TabIndex = 28;
-            this.btnDetallesCita.Text = "Ver detalles";
-            this.btnDetallesCita.UseVisualStyleBackColor = false;
+            this.btnVerDetalles.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnVerDetalles.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerDetalles.ForeColor = System.Drawing.Color.White;
+            this.btnVerDetalles.Location = new System.Drawing.Point(393, 839);
+            this.btnVerDetalles.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVerDetalles.Name = "btnVerDetalles";
+            this.btnVerDetalles.Size = new System.Drawing.Size(364, 46);
+            this.btnVerDetalles.TabIndex = 28;
+            this.btnVerDetalles.Text = "Ver detalles";
+            this.btnVerDetalles.UseVisualStyleBackColor = false;
+            this.btnVerDetalles.Click += new System.EventHandler(this.btnVerDetalles_Click);
             // 
-            // dgvCVistaCitas
+            // dgvVistaCitas
             // 
-            this.dgvCVistaCitas.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dgvCVistaCitas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCVistaCitas.Location = new System.Drawing.Point(31, 531);
-            this.dgvCVistaCitas.Name = "dgvCVistaCitas";
-            this.dgvCVistaCitas.RowHeadersWidth = 51;
-            this.dgvCVistaCitas.RowTemplate.Height = 24;
-            this.dgvCVistaCitas.Size = new System.Drawing.Size(1245, 289);
-            this.dgvCVistaCitas.TabIndex = 13;
+            this.dgvVistaCitas.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvVistaCitas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvVistaCitas.Location = new System.Drawing.Point(31, 531);
+            this.dgvVistaCitas.Name = "dgvVistaCitas";
+            this.dgvVistaCitas.ReadOnly = true;
+            this.dgvVistaCitas.RowHeadersWidth = 51;
+            this.dgvVistaCitas.RowTemplate.Height = 24;
+            this.dgvVistaCitas.Size = new System.Drawing.Size(1245, 289);
+            this.dgvVistaCitas.TabIndex = 13;
             // 
             // panel1
             // 
+            this.panel1.AccessibleDescription = "";
+            this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.comboBox3);
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.cmbEstado);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.dateTimePicker1);
-            this.panel1.Controls.Add(this.comboBox2);
+            this.panel1.Controls.Add(this.dtmFechaDeCita);
+            this.panel1.Controls.Add(this.cmbEspecialidad);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.cmbMedico2);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(31, 109);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1245, 359);
             this.panel1.TabIndex = 12;
             // 
-            // comboBox3
+            // cmbEstado
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(24, 299);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(632, 31);
-            this.comboBox3.TabIndex = 9;
+            this.cmbEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEstado.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbEstado.FormattingEnabled = true;
+            this.cmbEstado.Location = new System.Drawing.Point(24, 299);
+            this.cmbEstado.Name = "cmbEstado";
+            this.cmbEstado.Size = new System.Drawing.Size(632, 31);
+            this.cmbEstado.TabIndex = 9;
             // 
             // label5
             // 
@@ -230,23 +244,24 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Fecha de cita*";
             // 
-            // dateTimePicker1
+            // dtmFechaDeCita
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(24, 220);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(329, 30);
-            this.dateTimePicker1.TabIndex = 6;
+            this.dtmFechaDeCita.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtmFechaDeCita.Location = new System.Drawing.Point(24, 220);
+            this.dtmFechaDeCita.Name = "dtmFechaDeCita";
+            this.dtmFechaDeCita.ShowCheckBox = true;
+            this.dtmFechaDeCita.Size = new System.Drawing.Size(329, 30);
+            this.dtmFechaDeCita.TabIndex = 6;
             // 
-            // comboBox2
+            // cmbEspecialidad
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(23, 141);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(633, 31);
-            this.comboBox2.TabIndex = 5;
+            this.cmbEspecialidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEspecialidad.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbEspecialidad.FormattingEnabled = true;
+            this.cmbEspecialidad.Location = new System.Drawing.Point(25, 141);
+            this.cmbEspecialidad.Name = "cmbEspecialidad";
+            this.cmbEspecialidad.Size = new System.Drawing.Size(633, 31);
+            this.cmbEspecialidad.TabIndex = 5;
             // 
             // label3
             // 
@@ -258,15 +273,15 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Especialidad";
             // 
-            // comboBox1
+            // cmbMedico2
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(25, 60);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(631, 31);
-            this.comboBox1.TabIndex = 3;
+            this.cmbMedico2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbMedico2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbMedico2.FormattingEnabled = true;
+            this.cmbMedico2.Location = new System.Drawing.Point(25, 60);
+            this.cmbMedico2.Name = "cmbMedico2";
+            this.cmbMedico2.Size = new System.Drawing.Size(631, 31);
+            this.cmbMedico2.TabIndex = 3;
             // 
             // label2
             // 
@@ -300,16 +315,6 @@
             this.lblTituloSeleccion.TabIndex = 3;
             this.lblTituloSeleccion.Text = "Manejo de Citas y Agenda";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(603, 495);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 23);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Filtros";
-            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.panelNuevaCita);
@@ -325,12 +330,14 @@
             // 
             this.panelNuevaCita.BackColor = System.Drawing.Color.White;
             this.panelNuevaCita.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelNuevaCita.Controls.Add(this.cmbConsultorio);
+            this.panelNuevaCita.Controls.Add(this.label9);
             this.panelNuevaCita.Controls.Add(this.btnGuardarCita);
             this.panelNuevaCita.Controls.Add(this.label8);
-            this.panelNuevaCita.Controls.Add(this.comboBox4);
+            this.panelNuevaCita.Controls.Add(this.cmbTipoDeCita);
             this.panelNuevaCita.Controls.Add(this.lblTituloAgendarCita);
-            this.panelNuevaCita.Controls.Add(this.btnCancelarRegistroCita);
-            this.panelNuevaCita.Controls.Add(this.dtpFechaDelRegisgtro);
+            this.panelNuevaCita.Controls.Add(this.btnLimpiarCampos);
+            this.panelNuevaCita.Controls.Add(this.dtpHora);
             this.panelNuevaCita.Controls.Add(this.label25);
             this.panelNuevaCita.Controls.Add(this.txtMotivo);
             this.panelNuevaCita.Controls.Add(this.label24);
@@ -341,11 +348,30 @@
             this.panelNuevaCita.Controls.Add(this.label21);
             this.panelNuevaCita.Controls.Add(this.txtPaciente);
             this.panelNuevaCita.Controls.Add(this.label20);
-            this.panelNuevaCita.Controls.Add(this.dtpFecha);
+            this.panelNuevaCita.Controls.Add(this.dtpFechaDeLaCita);
             this.panelNuevaCita.Location = new System.Drawing.Point(6, 3);
             this.panelNuevaCita.Name = "panelNuevaCita";
             this.panelNuevaCita.Size = new System.Drawing.Size(1283, 883);
             this.panelNuevaCita.TabIndex = 16;
+            // 
+            // cmbConsultorio
+            // 
+            this.cmbConsultorio.FormattingEnabled = true;
+            this.cmbConsultorio.Location = new System.Drawing.Point(18, 423);
+            this.cmbConsultorio.Name = "cmbConsultorio";
+            this.cmbConsultorio.Size = new System.Drawing.Size(268, 33);
+            this.cmbConsultorio.TabIndex = 32;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(17, 397);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(98, 23);
+            this.label9.TabIndex = 31;
+            this.label9.Text = "Consultorio";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // btnGuardarCita
             // 
@@ -365,21 +391,21 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(15, 364);
+            this.label8.Location = new System.Drawing.Point(15, 333);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(99, 23);
             this.label8.TabIndex = 29;
             this.label8.Text = "Tipo de cita";
             // 
-            // comboBox4
+            // cmbTipoDeCita
             // 
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(20, 393);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(268, 31);
-            this.comboBox4.TabIndex = 28;
+            this.cmbTipoDeCita.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTipoDeCita.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbTipoDeCita.FormattingEnabled = true;
+            this.cmbTipoDeCita.Location = new System.Drawing.Point(18, 359);
+            this.cmbTipoDeCita.Name = "cmbTipoDeCita";
+            this.cmbTipoDeCita.Size = new System.Drawing.Size(268, 31);
+            this.cmbTipoDeCita.TabIndex = 28;
             // 
             // lblTituloAgendarCita
             // 
@@ -393,30 +419,30 @@
             this.lblTituloAgendarCita.TabIndex = 1;
             this.lblTituloAgendarCita.Text = "Nueva Cita";
             // 
-            // btnCancelarRegistroCita
+            // btnLimpiarCampos
             // 
-            this.btnCancelarRegistroCita.BackColor = System.Drawing.Color.Green;
-            this.btnCancelarRegistroCita.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelarRegistroCita.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCancelarRegistroCita.Location = new System.Drawing.Point(19, 799);
-            this.btnCancelarRegistroCita.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCancelarRegistroCita.Name = "btnCancelarRegistroCita";
-            this.btnCancelarRegistroCita.Size = new System.Drawing.Size(584, 46);
-            this.btnCancelarRegistroCita.TabIndex = 27;
-            this.btnCancelarRegistroCita.Text = "Limpiar ";
-            this.btnCancelarRegistroCita.UseVisualStyleBackColor = false;
-            this.btnCancelarRegistroCita.Click += new System.EventHandler(this.btnCancelarRegistroCita_Click);
+            this.btnLimpiarCampos.BackColor = System.Drawing.Color.Gray;
+            this.btnLimpiarCampos.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiarCampos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnLimpiarCampos.Location = new System.Drawing.Point(19, 799);
+            this.btnLimpiarCampos.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLimpiarCampos.Name = "btnLimpiarCampos";
+            this.btnLimpiarCampos.Size = new System.Drawing.Size(584, 46);
+            this.btnLimpiarCampos.TabIndex = 27;
+            this.btnLimpiarCampos.Text = "Limpiar ";
+            this.btnLimpiarCampos.UseVisualStyleBackColor = false;
+            this.btnLimpiarCampos.Click += new System.EventHandler(this.btnLimpiarCampos_Click);
             // 
-            // dtpFechaDelRegisgtro
+            // dtpHora
             // 
-            this.dtpFechaDelRegisgtro.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFechaDelRegisgtro.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpFechaDelRegisgtro.Location = new System.Drawing.Point(20, 575);
-            this.dtpFechaDelRegisgtro.Margin = new System.Windows.Forms.Padding(4);
-            this.dtpFechaDelRegisgtro.Name = "dtpFechaDelRegisgtro";
-            this.dtpFechaDelRegisgtro.ShowUpDown = true;
-            this.dtpFechaDelRegisgtro.Size = new System.Drawing.Size(583, 30);
-            this.dtpFechaDelRegisgtro.TabIndex = 25;
+            this.dtpHora.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpHora.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpHora.Location = new System.Drawing.Point(20, 575);
+            this.dtpHora.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpHora.Name = "dtpHora";
+            this.dtpHora.ShowUpDown = true;
+            this.dtpHora.Size = new System.Drawing.Size(583, 30);
+            this.dtpHora.TabIndex = 25;
             // 
             // label25
             // 
@@ -451,7 +477,7 @@
             // txtEspecialidad
             // 
             this.txtEspecialidad.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEspecialidad.Location = new System.Drawing.Point(18, 302);
+            this.txtEspecialidad.Location = new System.Drawing.Point(19, 285);
             this.txtEspecialidad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEspecialidad.Multiline = true;
             this.txtEspecialidad.Name = "txtEspecialidad";
@@ -472,7 +498,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(15, 277);
+            this.label22.Location = new System.Drawing.Point(17, 260);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(103, 23);
             this.label22.TabIndex = 19;
@@ -519,40 +545,56 @@
             this.label20.TabIndex = 15;
             this.label20.Text = "Nombre del paciente";
             // 
-            // dtpFecha
+            // dtpFechaDeLaCita
             // 
-            this.dtpFecha.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFecha.Location = new System.Drawing.Point(18, 484);
-            this.dtpFecha.Margin = new System.Windows.Forms.Padding(4);
-            this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(583, 30);
-            this.dtpFecha.TabIndex = 14;
+            this.dtpFechaDeLaCita.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFechaDeLaCita.Location = new System.Drawing.Point(18, 484);
+            this.dtpFechaDeLaCita.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpFechaDeLaCita.Name = "dtpFechaDeLaCita";
+            this.dtpFechaDeLaCita.Size = new System.Drawing.Size(583, 30);
+            this.dtpFechaDeLaCita.TabIndex = 14;
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.button1);
+            this.tabPage3.Controls.Add(this.btnCancelarCita);
+            this.tabPage3.Controls.Add(this.btnGuardarCambios);
             this.tabPage3.Controls.Add(this.label6);
             this.tabPage3.Controls.Add(this.dgvEditarCitas);
             this.tabPage3.Location = new System.Drawing.Point(4, 34);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1331, 892);
+            this.tabPage3.Size = new System.Drawing.Size(1331, 895);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Editar";
             this.tabPage3.UseVisualStyleBackColor = true;
             this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
-            // button1
+            // btnCancelarCita
             // 
-            this.button1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(634, 776);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(657, 46);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "Guardar Cambios";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnCancelarCita.BackColor = System.Drawing.Color.Red;
+            this.btnCancelarCita.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelarCita.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCancelarCita.Location = new System.Drawing.Point(13, 776);
+            this.btnCancelarCita.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCancelarCita.Name = "btnCancelarCita";
+            this.btnCancelarCita.Size = new System.Drawing.Size(576, 46);
+            this.btnCancelarCita.TabIndex = 28;
+            this.btnCancelarCita.Text = "Cancelar Cita";
+            this.btnCancelarCita.UseVisualStyleBackColor = false;
+            this.btnCancelarCita.Click += new System.EventHandler(this.btnCancelarCita_Click);
+            // 
+            // btnGuardarCambios
+            // 
+            this.btnGuardarCambios.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnGuardarCambios.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardarCambios.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnGuardarCambios.Location = new System.Drawing.Point(693, 776);
+            this.btnGuardarCambios.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGuardarCambios.Name = "btnGuardarCambios";
+            this.btnGuardarCambios.Size = new System.Drawing.Size(598, 46);
+            this.btnGuardarCambios.TabIndex = 27;
+            this.btnGuardarCambios.Text = "Guardar Cambios";
+            this.btnGuardarCambios.UseVisualStyleBackColor = false;
+            this.btnGuardarCambios.Click += new System.EventHandler(this.btnGuardarCambios_Click);
             // 
             // label6
             // 
@@ -578,17 +620,34 @@
             this.dgvEditarCitas.TabIndex = 0;
             this.dgvEditarCitas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.textBox1.Location = new System.Drawing.Point(790, 58);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(319, 80);
+            this.textBox1.TabIndex = 10;
+            this.textBox1.Text = "Refrescar: Control + S\r\nLimpiar Campos: Control + N\r\nVer detalles: Control + D\r\n\r" +
+    "\n";
+            // 
             // Modulo2
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.AutoSize = true;
             this.Controls.Add(this.tbAgendaCita);
             this.Name = "Modulo2";
             this.Size = new System.Drawing.Size(1359, 973);
+            this.Load += new System.EventHandler(this.Modulo2_Load);
             this.tbAgendaCita.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCVistaCitas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVistaCitas)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
@@ -609,42 +668,45 @@
         private System.Windows.Forms.Label lblTituloSeleccion;
         private System.Windows.Forms.Label lblSubTituloSeleccion;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cmbEstado;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.DateTimePicker dtmFechaDeCita;
+        private System.Windows.Forms.ComboBox cmbEspecialidad;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbMedico2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dgvCVistaCitas;
+        private System.Windows.Forms.DataGridView dgvVistaCitas;
         private System.Windows.Forms.Panel panelNuevaCita;
         private System.Windows.Forms.Label lblTituloAgendarCita;
-        private System.Windows.Forms.Button btnCancelarRegistroCita;
+        private System.Windows.Forms.Button btnLimpiarCampos;
         private System.Windows.Forms.Button btnGuardarCita;
-        private System.Windows.Forms.DateTimePicker dtpFechaDelRegisgtro;
+        private System.Windows.Forms.DateTimePicker dtpHora;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.TextBox txtMotivo;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox txtEspecialidad;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label22;
         private System.Windows.Forms.ComboBox cmbMedico;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.TextBox txtPaciente;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.DateTimePicker dtpFecha;
+        private System.Windows.Forms.DateTimePicker dtpFechaDeLaCita;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnGuardarCambios;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView dgvEditarCitas;
-        private System.Windows.Forms.ComboBox cmbVista;
-        private System.Windows.Forms.Button btnDetallesCita;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox cmbVistaSemanaDia;
+        private System.Windows.Forms.Button btnVerDetalles;
+        private System.Windows.Forms.Button btnRefrescar;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox cmbTipoDeCita;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox cmbConsultorio;
+        private System.Windows.Forms.TextBox txtEspecialidad;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Button btnCancelarCita;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
